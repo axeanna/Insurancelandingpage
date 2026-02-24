@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
        2. Sticky Header Setup
        ------------------------------------- */
     const navbar = document.querySelector('.navbar');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -69,31 +69,37 @@ document.addEventListener('DOMContentLoaded', () => {
     if (quotationForm) {
         quotationForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             // Basic validation check (built-in HTML5 validaton handles most of it due to 'required' attributes)
             if (quotationForm.checkValidity()) {
                 // Collect form data (for potential API submission in the future)
                 const formData = new FormData(quotationForm);
                 const dataObj = Object.fromEntries(formData.entries());
-                
+
                 console.log('Quotation Request Submitted:', dataObj);
 
-                // Simulate API Call / Processing Delay
-                const btn = quotationForm.querySelector('button[type="submit"]');
-                const originalText = btn.textContent;
-                btn.textContent = 'Processing...';
-                btn.disabled = true;
+                // Send data to Google Apps Script Webhook
+                fetch('https://script.google.com/macros/s/AKfycbzjFuplyMFZCEeSqB5HmUz3RQUUbFeSR_3RY4hN4EUfYleERu5YTRAYzfDMmXHb0XLp/exec', {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: formData
+                })
+                    .then(response => {
+                        // Hide Form, Show Success Message
+                        quotationForm.classList.add('hidden');
+                        formSuccess.classList.remove('hidden');
 
-                setTimeout(() => {
-                    // Hide Form, Show Success Message
-                    quotationForm.classList.add('hidden');
-                    formSuccess.classList.remove('hidden');
-                    
-                    // Reset button state
-                    btn.textContent = originalText;
-                    btn.disabled = false;
-                    quotationForm.reset();
-                }, 1500);
+                        // Reset button state
+                        btn.textContent = originalText;
+                        btn.disabled = false;
+                        quotationForm.reset();
+                    })
+                    .catch(error => {
+                        console.error('Error submitting form:', error);
+                        alert('There was a problem submitting your request. Please try again.');
+                        btn.textContent = originalText;
+                        btn.disabled = false;
+                    });
             }
         });
     }
