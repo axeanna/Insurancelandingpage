@@ -253,15 +253,9 @@
             <p>To help me provide the best advice, please drag and drop to rank your financial priorities from 1
                 (Highest) to 5 (Lowest).</p>
 
-            <div class="ranking-container">
-                <div class="ranking-numbers">
-                    <div class="rank-num">1</div>
-                    <div class="rank-num">2</div>
-                    <div class="rank-num">3</div>
-                    <div class="rank-num">4</div>
-                    <div class="rank-num">5</div>
-                </div>
-                <ul id="rankingListEnglish" class="ranking-list">
+            <div class="unranked-container">
+                <p class="text-muted" style="margin-bottom: 10px;">Available Options:</p>
+                <ul id="unrankedListEnglish" class="ranking-list unranked-list">
                     <li class="ranking-item" data-category="family_rank">
                         <span class="drag-handle">☰</span> Family Protection
                     </li>
@@ -278,6 +272,28 @@
                         <span class="drag-handle">☰</span> Investment & Savings
                     </li>
                 </ul>
+            </div>
+
+            <div class="ranking-container mt-4">
+                <div class="ranking-numbers">
+                    <div class="rank-num">1</div>
+                    <div class="rank-num">2</div>
+                    <div class="rank-num">3</div>
+                    <div class="rank-num">4</div>
+                    <div class="rank-num">5</div>
+                </div>
+                <div class="ranked-list-wrapper" style="flex: 1; position: relative;">
+                    <div class="ranking-placeholders">
+                        <div class="placeholder-box">Drop item here</div>
+                        <div class="placeholder-box">Drop item here</div>
+                        <div class="placeholder-box">Drop item here</div>
+                        <div class="placeholder-box">Drop item here</div>
+                        <div class="placeholder-box">Drop item here</div>
+                    </div>
+                    <ul id="rankingListEnglish" class="ranking-list ranked-list">
+                        <!-- Empty list -->
+                    </ul>
+                </div>
             </div>
 
             <div class="modal-actions">

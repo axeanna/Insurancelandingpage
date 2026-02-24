@@ -86,7 +86,8 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
             "footer_desc": "Providing premium insurance solutions and peace of mind for you and your family.",
             "links": "Quick Links", "contact": "Contact", "rights": "All Rights Reserved.",
             "modal_title": "Just a Few Quick Questions",
-            "modal_desc": "To help me provide the best advice, please rank your financial priorities from 1 (Lowest) to 5 (Highest).",
+            "modal_desc": "To help me provide the best advice, please drag and drop to rank your financial priorities from 1 (Highest) to 5 (Lowest).",
+            "available_options": "Available Options:",
             "q_family": "Family Protection", "q_income": "Income Replacement", "q_accident": "Accident Coverage",
             "q_medical": "Medical Bills", "q_invest": "Investment & Savings",
             "modal_cancel": "Cancel", "modal_submit": "Complete Submission",
@@ -105,7 +106,8 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
             "footer_desc": "Menyediakan penyelesaian insurans premium dan ketenangan fikiran untuk anda dan keluarga.",
             "links": "Pautan Pantas", "contact": "Hubungi Kami", "rights": "Hak Cipta Terpelihara.",
             "modal_title": "Soalan Ringkas Untuk Anda",
-            "modal_desc": "Bagi membantu saya memberikan nasihat terbaik, sila nilaikan keutamaan kewangan anda dari 1 (Paling Rendah) hingga 5 (Paling Tinggi).",
+            "modal_desc": "Bagi membantu saya memberikan nasihat terbaik, sila seret dan lepas untuk menilai keutamaan kewangan anda dari 1 (Paling Tinggi) hingga 5 (Paling Rendah).",
+            "available_options": "Pilihan Yang Ada:",
             "q_family": "Perlindungan Keluarga", "q_income": "Penggantian Pendapatan", "q_accident": "Perlindungan Kemalangan",
             "q_medical": "Bil Perubatan", "q_invest": "Pelaburan & Simpanan",
             "modal_cancel": "Batal", "modal_submit": "Hantar Butiran",
@@ -335,15 +337,9 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
             <h2>{txt['modal_title']}</h2>
             <p>{txt['modal_desc']}</p>
             
-            <div class="ranking-container">
-                <div class="ranking-numbers">
-                    <div class="rank-num">1</div>
-                    <div class="rank-num">2</div>
-                    <div class="rank-num">3</div>
-                    <div class="rank-num">4</div>
-                    <div class="rank-num">5</div>
-                </div>
-                <ul class="ranking-list">
+            <div class="unranked-container">
+                <p class="text-muted" style="margin-bottom: 10px;">{txt['available_options']}</p>
+                <ul class="ranking-list unranked-list">
                     <li class="ranking-item" data-category="family_rank">
                         <span class="drag-handle">☰</span> {txt['q_family']}
                     </li>
@@ -362,10 +358,33 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
                 </ul>
             </div>
 
+            <div class="ranking-container mt-4">
+                <div class="ranking-numbers">
+                    <div class="rank-num">1</div>
+                    <div class="rank-num">2</div>
+                    <div class="rank-num">3</div>
+                    <div class="rank-num">4</div>
+                    <div class="rank-num">5</div>
+                </div>
+                <div class="ranked-list-wrapper" style="flex: 1; position: relative;">
+                    <div class="ranking-placeholders">
+                         <div class="placeholder-box">{"Drop item here" if lang == "en" else "Seret item ke sini"}</div>
+                         <div class="placeholder-box">{"Drop item here" if lang == "en" else "Seret item ke sini"}</div>
+                         <div class="placeholder-box">{"Drop item here" if lang == "en" else "Seret item ke sini"}</div>
+                         <div class="placeholder-box">{"Drop item here" if lang == "en" else "Seret item ke sini"}</div>
+                         <div class="placeholder-box">{"Drop item here" if lang == "en" else "Seret item ke sini"}</div>
+                    </div>
+                    <ul class="ranking-list ranked-list">
+                        <!-- Empty list -->
+                    </ul>
+                </div>
+            </div>
+
             <div class="modal-actions">
                 <button id="closeModalBtn" class="btn btn-outline" style="min-width: 120px;">{txt['modal_cancel']}</button>
                 <button id="submitFinalBtn" class="btn btn-primary" style="flex: 1;">{txt['modal_submit']}</button>
             </div>
+            <p id="modalError" class="text-red hidden" style="margin-top: 15px; font-size: 0.9rem;">{txt['modal_error']}</p>
         </div>
     </div>
 

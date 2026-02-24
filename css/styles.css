@@ -978,6 +978,42 @@ select option {
     padding: 0;
 }
 
+.ranked-list-wrapper {
+    flex: 1;
+    position: relative;
+}
+
+.ranking-placeholders {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.placeholder-box {
+    height: 48px;
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.ranked-list {
+    position: relative;
+    z-index: 2;
+    min-height: 280px;
+    /* 5 items * 48px + 4 gaps * 10px = 280px */
+}
+
 .ranking-item {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.2);

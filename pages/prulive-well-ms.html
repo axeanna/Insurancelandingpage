@@ -237,17 +237,11 @@
     <div id="factFinderModal" class="modal-overlay hidden">
         <div class="modal-content glass-dark fade-in">
             <h2>Soalan Ringkas Untuk Anda</h2>
-            <p>Bagi membantu saya memberikan nasihat terbaik, sila nilaikan keutamaan kewangan anda dari 1 (Paling Rendah) hingga 5 (Paling Tinggi).</p>
+            <p>Bagi membantu saya memberikan nasihat terbaik, sila seret dan lepas untuk menilai keutamaan kewangan anda dari 1 (Paling Tinggi) hingga 5 (Paling Rendah).</p>
             
-            <div class="ranking-container">
-                <div class="ranking-numbers">
-                    <div class="rank-num">1</div>
-                    <div class="rank-num">2</div>
-                    <div class="rank-num">3</div>
-                    <div class="rank-num">4</div>
-                    <div class="rank-num">5</div>
-                </div>
-                <ul class="ranking-list">
+            <div class="unranked-container">
+                <p class="text-muted" style="margin-bottom: 10px;">Pilihan Yang Ada:</p>
+                <ul class="ranking-list unranked-list">
                     <li class="ranking-item" data-category="family_rank">
                         <span class="drag-handle">☰</span> Perlindungan Keluarga
                     </li>
@@ -266,10 +260,33 @@
                 </ul>
             </div>
 
+            <div class="ranking-container mt-4">
+                <div class="ranking-numbers">
+                    <div class="rank-num">1</div>
+                    <div class="rank-num">2</div>
+                    <div class="rank-num">3</div>
+                    <div class="rank-num">4</div>
+                    <div class="rank-num">5</div>
+                </div>
+                <div class="ranked-list-wrapper" style="flex: 1; position: relative;">
+                    <div class="ranking-placeholders">
+                         <div class="placeholder-box">Seret item ke sini</div>
+                         <div class="placeholder-box">Seret item ke sini</div>
+                         <div class="placeholder-box">Seret item ke sini</div>
+                         <div class="placeholder-box">Seret item ke sini</div>
+                         <div class="placeholder-box">Seret item ke sini</div>
+                    </div>
+                    <ul class="ranking-list ranked-list">
+                        <!-- Empty list -->
+                    </ul>
+                </div>
+            </div>
+
             <div class="modal-actions">
                 <button id="closeModalBtn" class="btn btn-outline" style="min-width: 120px;">Batal</button>
                 <button id="submitFinalBtn" class="btn btn-primary" style="flex: 1;">Hantar Butiran</button>
             </div>
+            <p id="modalError" class="text-red hidden" style="margin-top: 15px; font-size: 0.9rem;">Sila nilaikannya untuk semua kategori bagi meneruskan proses.</p>
         </div>
     </div>
 

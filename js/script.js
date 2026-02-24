@@ -71,19 +71,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModalBtn = document.getElementById('closeModalBtn');
     const submitFinalBtn = document.getElementById('submitFinalBtn');
     const modalError = document.getElementById('modalError');
-    const rankingLists = document.querySelectorAll('.ranking-list');
+    const unrankedLists = document.querySelectorAll('.unranked-list');
+    const rankedLists = document.querySelectorAll('.ranked-list');
 
     let pendingFormData = null;
 
-    // Initialize SortableJS
+    // Initialize SortableJS for both lists to allow dragging between them
     if (typeof Sortable !== 'undefined') {
-        rankingLists.forEach(list => {
-            new Sortable(list, {
-                animation: 150,
-                ghostClass: 'sortable-ghost',
-                handle: '.drag-handle' // Only allow dragging from the handle icon
-            });
-        });
+        const sortableOptions = {
+            group: 'shared', // Allow dragging between lists
+            animation: 150,
+            ghostClass: 'sortable-ghost',
+            handle: '.drag-handle'
+        };
+
+        unrankedLists.forEach(list => new Sortable(list, sortableOptions));
+        rankedLists.forEach(list => new Sortable(list, sortableOptions));
     }
 
     if (quotationForm) {
@@ -115,9 +118,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modal Final Submit Button
     if (submitFinalBtn) {
         submitFinalBtn.addEventListener('click', () => {
-            // Compute rankings based on current DOM order
-            // Find the active (visible) ranking list inside the modal
-            const activeList = factFinderModal.querySelector('.ranking-list');
+            const activeUnrankedList = factFinderModal.querySelector('.unranked-list');
+            if (activeUnrankedList && activeUnrankedList.children.length > 0) {
+                if (modalError) modalError.classList.remove('hidden');
+                return;
+            } else {
+                if (modalError) modalError.classList.add('hidden');
+            }
+
+            const activeList = factFinderModal.querySelector('.ranked-list');
             if (activeList && pendingFormData) {
                 const items = activeList.querySelectorAll('.ranking-item');
                 items.forEach((item, index) => {
@@ -151,8 +160,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitFinalBtn.disabled = false;
                     quotationForm.reset();
 
-                    // Reset ranking selections (not strictly necessary as page reload wipes state, but good practice)
-                    // ...
+                    // Reset ranking selections by moving items back to unranked list
+                    const activeUnrankedList = factFinderModal.querySelector('.unranked-list');
+                    const activeList = factFinderModal.querySelector('.ranked-list');
+                    if (activeUnrankedList && activeList) {
+                        const items = activeList.querySelectorAll('.ranking-item');
+                        items.forEach(item => activeUnrankedList.appendChild(item));
+                    }
                 })
                 .catch(error => {
                     console.error('Error submitting form:', error);

@@ -251,15 +251,9 @@
             <p>Bagi membantu saya memberikan nasihat terbaik, sila seret dan lepas untuk menilai keutamaan kewangan anda
                 dari 1 (Paling Tinggi) hingga 5 (Paling Rendah).</p>
 
-            <div class="ranking-container">
-                <div class="ranking-numbers">
-                    <div class="rank-num">1</div>
-                    <div class="rank-num">2</div>
-                    <div class="rank-num">3</div>
-                    <div class="rank-num">4</div>
-                    <div class="rank-num">5</div>
-                </div>
-                <ul id="rankingListMalay" class="ranking-list">
+            <div class="unranked-container">
+                <p class="text-muted" style="margin-bottom: 10px;">Pilihan Yang Ada:</p>
+                <ul id="unrankedListMalay" class="ranking-list unranked-list">
                     <li class="ranking-item" data-category="family_rank">
                         <span class="drag-handle">☰</span> Perlindungan Keluarga
                     </li>
@@ -276,6 +270,28 @@
                         <span class="drag-handle">☰</span> Pelaburan & Simpanan
                     </li>
                 </ul>
+            </div>
+
+            <div class="ranking-container mt-4">
+                <div class="ranking-numbers">
+                    <div class="rank-num">1</div>
+                    <div class="rank-num">2</div>
+                    <div class="rank-num">3</div>
+                    <div class="rank-num">4</div>
+                    <div class="rank-num">5</div>
+                </div>
+                <div class="ranked-list-wrapper" style="flex: 1; position: relative;">
+                    <div class="ranking-placeholders">
+                        <div class="placeholder-box">Seret item ke sini</div>
+                        <div class="placeholder-box">Seret item ke sini</div>
+                        <div class="placeholder-box">Seret item ke sini</div>
+                        <div class="placeholder-box">Seret item ke sini</div>
+                        <div class="placeholder-box">Seret item ke sini</div>
+                    </div>
+                    <ul id="rankingListMalay" class="ranking-list ranked-list">
+                        <!-- Empty list -->
+                    </ul>
+                </div>
             </div>
 
             <div class="modal-actions">
