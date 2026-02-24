@@ -76,12 +76,12 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
     if lang == "en":
         txt = {
             "home": "Home", "about": "About Me", "products": "Products", "partners": "Partners", 
-            "btn_quote": "Get a Quote", "lang_lbl": "EN | MS",
+            "btn_quote": "Connect With Me", "lang_lbl": "EN | MS",
             "overview_title": "Overview & Benefits",
             "guidance": f"As your dedicated Wealth Planner, I am here to personally guide you through the intricacies of the <strong>{name}</strong> plan. We will assess your current situation to ensure this coverage aligns perfectly with your goals.",
             "cta_title": "Secure Your Future Today",
-            "cta_desc": "Ready to take the next step? Get a personalized review and free quotation designed specifically for you.",
-            "req_quote": "Request Quotation", "whatsapp": "WhatsApp Me",
+            "cta_desc": "Ready to take the next step? Let's connect to discuss a personalized protection plan designed specifically for you.",
+            "req_quote": "Submit Details", "whatsapp": "WhatsApp Me",
             "back_btn": "← Explore Other Products",
             "footer_desc": "Providing premium insurance solutions and peace of mind for you and your family.",
             "links": "Quick Links", "contact": "Contact", "rights": "All Rights Reserved."
@@ -89,12 +89,12 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
     else:
         txt = {
             "home": "Utama", "about": "Tentang Saya", "products": "Produk", "partners": "Rakan Kongsi", 
-            "btn_quote": "Dapatkan Sebut Harga", "lang_lbl": "MS | EN",
+            "btn_quote": "Hubungi Saya", "lang_lbl": "MS | EN",
             "overview_title": "Gambaran Keseluruhan & Faedah",
             "guidance": f"Sebagai Perunding Insurans anda yang berdedikasi, saya di sini untuk membimbing anda secara peribadi merasai manfaat pelan <strong>{name}</strong>. Kami akan menilai situasi semasa anda untuk memastikan perlindungan ini sejajar dengan matlamat anda.",
             "cta_title": "Lindungi Masa Depan Anda Hari Ini",
-            "cta_desc": "Bersedia untuk mengorak langkah seterusnya? Dapatkan ulasan peribadi dan sebut harga percuma yang direka khas untuk anda.",
-            "req_quote": "Minta Sebut Harga", "whatsapp": "WhatsApp Saya",
+            "cta_desc": "Bersedia untuk mengorak langkah seterusnya? Mari berhubung untuk membincangkan pelan perlindungan peribadi yang direka khas untuk anda.",
+            "req_quote": "Hantar Butiran", "whatsapp": "WhatsApp Saya",
             "back_btn": "← Teroka Produk Lain",
             "footer_desc": "Menyediakan penyelesaian insurans premium dan ketenangan fikiran untuk anda dan keluarga.",
             "links": "Pautan Pantas", "contact": "Hubungi Kami", "rights": "Hak Cipta Terpelihara."
