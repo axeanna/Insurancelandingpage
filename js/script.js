@@ -140,11 +140,21 @@ document.addEventListener('DOMContentLoaded', () => {
             submitFinalBtn.textContent = 'Processing...';
             submitFinalBtn.disabled = true;
 
+            // Convert FormData to URLSearchParams safely, handling File objects
+            const urlEncodedData = new URLSearchParams();
+            for (const pair of pendingFormData.entries()) {
+                if (pair[1] instanceof File) {
+                    urlEncodedData.append(pair[0], pair[1].name || 'Hidden File');
+                } else {
+                    urlEncodedData.append(pair[0], pair[1]);
+                }
+            }
+
             // Send data to Google Apps Script Webhook
             fetch('https://script.google.com/macros/s/AKfycbzjFuplyMFZCEeSqB5HmUz3RQUUbFeSR_3RY4hN4EUfYleERu5YTRAYzfDMmXHb0XLp/exec', {
                 method: 'POST',
                 mode: 'no-cors',
-                body: pendingFormData
+                body: urlEncodedData
             })
                 .then(response => {
                     // Hide Modal and original Form, Show Success
