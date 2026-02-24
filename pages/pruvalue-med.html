@@ -233,6 +233,75 @@
         </div>
     </footer>
 
+    <!-- Fact Finder Modal -->
+    <div id="factFinderModal" class="modal-overlay hidden">
+        <div class="modal-content glass-dark fade-in">
+            <h2>Just a Few Quick Questions</h2>
+            <p>To help me provide the best advice, please rank your financial priorities from 1 (Lowest) to 5 (Highest).</p>
+            
+            <div class="ranking-group">
+                <label>Family Protection</label>
+                <div class="ranking-options" data-category="family_rank">
+                    <button type="button" class="rank-btn" data-value="1">1</button>
+                    <button type="button" class="rank-btn" data-value="2">2</button>
+                    <button type="button" class="rank-btn" data-value="3">3</button>
+                    <button type="button" class="rank-btn" data-value="4">4</button>
+                    <button type="button" class="rank-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <div class="ranking-group">
+                <label>Income Replacement</label>
+                <div class="ranking-options" data-category="income_rank">
+                    <button type="button" class="rank-btn" data-value="1">1</button>
+                    <button type="button" class="rank-btn" data-value="2">2</button>
+                    <button type="button" class="rank-btn" data-value="3">3</button>
+                    <button type="button" class="rank-btn" data-value="4">4</button>
+                    <button type="button" class="rank-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <div class="ranking-group">
+                <label>Accident Coverage</label>
+                <div class="ranking-options" data-category="accident_rank">
+                    <button type="button" class="rank-btn" data-value="1">1</button>
+                    <button type="button" class="rank-btn" data-value="2">2</button>
+                    <button type="button" class="rank-btn" data-value="3">3</button>
+                    <button type="button" class="rank-btn" data-value="4">4</button>
+                    <button type="button" class="rank-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <div class="ranking-group">
+                <label>Medical Bills</label>
+                <div class="ranking-options" data-category="medical_rank">
+                    <button type="button" class="rank-btn" data-value="1">1</button>
+                    <button type="button" class="rank-btn" data-value="2">2</button>
+                    <button type="button" class="rank-btn" data-value="3">3</button>
+                    <button type="button" class="rank-btn" data-value="4">4</button>
+                    <button type="button" class="rank-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <div class="ranking-group">
+                <label>Investment & Savings</label>
+                <div class="ranking-options" data-category="investment_rank">
+                    <button type="button" class="rank-btn" data-value="1">1</button>
+                    <button type="button" class="rank-btn" data-value="2">2</button>
+                    <button type="button" class="rank-btn" data-value="3">3</button>
+                    <button type="button" class="rank-btn" data-value="4">4</button>
+                    <button type="button" class="rank-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button id="closeModalBtn" class="btn btn-outline" style="min-width: 120px;">Cancel</button>
+                <button id="submitFinalBtn" class="btn btn-primary" style="flex: 1;">Complete Submission</button>
+            </div>
+            <p id="modalError" class="text-red hidden" style="margin-top: 15px; font-size: 0.9rem;">Please select a rank for all categories to proceed.</p>
+        </div>
+    </div>
+
     <!-- App Scripts -->
     <script src="../js/script.js"></script>
 </body>

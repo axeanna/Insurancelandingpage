@@ -84,7 +84,13 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
             "req_quote": "Submit Details", "whatsapp": "WhatsApp Me",
             "back_btn": "← Explore Other Products",
             "footer_desc": "Providing premium insurance solutions and peace of mind for you and your family.",
-            "links": "Quick Links", "contact": "Contact", "rights": "All Rights Reserved."
+            "links": "Quick Links", "contact": "Contact", "rights": "All Rights Reserved.",
+            "modal_title": "Just a Few Quick Questions",
+            "modal_desc": "To help me provide the best advice, please rank your financial priorities from 1 (Lowest) to 5 (Highest).",
+            "q_family": "Family Protection", "q_income": "Income Replacement", "q_accident": "Accident Coverage",
+            "q_medical": "Medical Bills", "q_invest": "Investment & Savings",
+            "modal_cancel": "Cancel", "modal_submit": "Complete Submission",
+            "modal_error": "Please select a rank for all categories to proceed."
         }
     else:
         txt = {
@@ -97,7 +103,13 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
             "req_quote": "Hantar Butiran", "whatsapp": "WhatsApp Saya",
             "back_btn": "← Teroka Produk Lain",
             "footer_desc": "Menyediakan penyelesaian insurans premium dan ketenangan fikiran untuk anda dan keluarga.",
-            "links": "Pautan Pantas", "contact": "Hubungi Kami", "rights": "Hak Cipta Terpelihara."
+            "links": "Pautan Pantas", "contact": "Hubungi Kami", "rights": "Hak Cipta Terpelihara.",
+            "modal_title": "Soalan Ringkas Untuk Anda",
+            "modal_desc": "Bagi membantu saya memberikan nasihat terbaik, sila nilaikan keutamaan kewangan anda dari 1 (Paling Rendah) hingga 5 (Paling Tinggi).",
+            "q_family": "Perlindungan Keluarga", "q_income": "Penggantian Pendapatan", "q_accident": "Perlindungan Kemalangan",
+            "q_medical": "Bil Perubatan", "q_invest": "Pelaburan & Simpanan",
+            "modal_cancel": "Batal", "modal_submit": "Hantar Butiran",
+            "modal_error": "Sila nilaikannya untuk semua kategori bagi meneruskan proses."
         }
     
     return f"""<!DOCTYPE html>
@@ -316,6 +328,75 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
             <p>&copy; 2026 Prudential. {txt['rights']}</p>
         </div>
     </footer>
+
+    <!-- Fact Finder Modal -->
+    <div id="factFinderModal" class="modal-overlay hidden">
+        <div class="modal-content glass-dark fade-in">
+            <h2>{txt['modal_title']}</h2>
+            <p>{txt['modal_desc']}</p>
+            
+            <div class="ranking-group">
+                <label>{txt['q_family']}</label>
+                <div class="ranking-options" data-category="family_rank">
+                    <button type="button" class="rank-btn" data-value="1">1</button>
+                    <button type="button" class="rank-btn" data-value="2">2</button>
+                    <button type="button" class="rank-btn" data-value="3">3</button>
+                    <button type="button" class="rank-btn" data-value="4">4</button>
+                    <button type="button" class="rank-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <div class="ranking-group">
+                <label>{txt['q_income']}</label>
+                <div class="ranking-options" data-category="income_rank">
+                    <button type="button" class="rank-btn" data-value="1">1</button>
+                    <button type="button" class="rank-btn" data-value="2">2</button>
+                    <button type="button" class="rank-btn" data-value="3">3</button>
+                    <button type="button" class="rank-btn" data-value="4">4</button>
+                    <button type="button" class="rank-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <div class="ranking-group">
+                <label>{txt['q_accident']}</label>
+                <div class="ranking-options" data-category="accident_rank">
+                    <button type="button" class="rank-btn" data-value="1">1</button>
+                    <button type="button" class="rank-btn" data-value="2">2</button>
+                    <button type="button" class="rank-btn" data-value="3">3</button>
+                    <button type="button" class="rank-btn" data-value="4">4</button>
+                    <button type="button" class="rank-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <div class="ranking-group">
+                <label>{txt['q_medical']}</label>
+                <div class="ranking-options" data-category="medical_rank">
+                    <button type="button" class="rank-btn" data-value="1">1</button>
+                    <button type="button" class="rank-btn" data-value="2">2</button>
+                    <button type="button" class="rank-btn" data-value="3">3</button>
+                    <button type="button" class="rank-btn" data-value="4">4</button>
+                    <button type="button" class="rank-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <div class="ranking-group">
+                <label>{txt['q_invest']}</label>
+                <div class="ranking-options" data-category="investment_rank">
+                    <button type="button" class="rank-btn" data-value="1">1</button>
+                    <button type="button" class="rank-btn" data-value="2">2</button>
+                    <button type="button" class="rank-btn" data-value="3">3</button>
+                    <button type="button" class="rank-btn" data-value="4">4</button>
+                    <button type="button" class="rank-btn" data-value="5">5</button>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button id="closeModalBtn" class="btn btn-outline" style="min-width: 120px;">{txt['modal_cancel']}</button>
+                <button id="submitFinalBtn" class="btn btn-primary" style="flex: 1;">{txt['modal_submit']}</button>
+            </div>
+            <p id="modalError" class="text-red hidden" style="margin-top: 15px; font-size: 0.9rem;">{txt['modal_error']}</p>
+        </div>
+    </div>
 
     <!-- App Scripts -->
     <script src="../js/script.js"></script>
