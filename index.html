@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional Insurance Agent - Securing your future with trusted life, health, and wealth protection plans.">
+    <title>Prudential | Secure Your Future</title>
+    <link rel="icon" type="image/png" href="assets/prudential-1.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo">
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li class="lang-item">
+                    <a href="index-ms.html" class="lang-btn" aria-label="Toggle Language" title="Toggle Language">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="globe-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                        <span>EN | MS</span>
+                    </a>
+                </li>
+                <li><a href="#quote" class="btn btn-outline">Get a Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <span class="badge">Trusted Protection</span>
+                <h1>Secure Your Family's Future <span class="text-red">Today</span>.</h1>
+                <p>Comprehensive insurance solutions tailored to your unique lifestyle. Because peace of mind shouldn't
+                    be complicated.</p>
+                <div class="hero-actions">
+                    <a href="#quote" class="btn btn-primary">Calculate Your Coverage</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+
+            </div>
+            <div class="hero-image slide-in-right">
+                <!-- Using a placeholder for the hero image -->
+                <div class="image-wrapper glass">
+                    <img src="assets/hero_bg.webp?v=4" alt="Insurance Protection Concept" loading="lazy" id="hero-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </header>
+
+    <!-- Moved Partners Section to bottom -->
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-image slide-in-left">
+                <div class="portrait-wrapper">
+                    <!-- Agent's picture -->
+                    <img src="assets/agent_portrait.jpeg" alt="Professional Insurance Agent" loading="lazy"
+                        class="portrait">
+                </div>
+            </div>
+            <div class="about-content fade-in">
+                <h2 class="section-title">Hello, I'm your dedicated <span class="text-red">Wealth Planner</span>.
+                </h2>
+                <p>Navigating the world of insurance can be overwhelming. My mission is to simplify the process,
+                    offering you transparent, expert advice that puts your needs first.</p>
+                <p>Whether you're looking for health coverage, life insurance, or long-term wealth planning, I'm here to
+                    ensure you and your loved ones are completely protected.</p>
+                <ul class="features-list">
+                    <li>✓ Personalized advice based on your lifestyle</li>
+                    <li>✓ Hassle-free claim assistance</li>
+                    <li>✓ Continuous portfolio review</li>
+                </ul>
+                <a href="#quote" class="btn btn-primary mt-4">Let's Connect</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quotation Generator Section -->
+    <section id="quote" class="quote bg-dark">
+        <div class="container quote-container">
+            <div class="quote-text fade-in">
+                <h2 class="section-title text-white">Get Your Free <span class="text-red">Quotation</span></h2>
+                <p class="text-muted">Fill out the details below, and I'll generate a personalized protection plan that
+                    fits your budget and needs perfectly.</p>
+                <div class="contact-info mt-4">
+                    <p>Prefer to chat directly?</p>
+                    <a href="https://wa.me/60183176361" target="_blank" class="phone-link">� WhatsApp Me (+60 18-317
+                        6361)</a>
+                </div>
+            </div>
+            <div class="quote-form-wrapper glass-dark fade-in">
+                <form id="quotationForm" class="quote-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+1 234 567 8900">
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occupation">Occupation</label>
+                        <select id="occupation" name="occupation" required>
+                            <option value="" disabled selected>Select your occupation type</option>
+                            <option value="office">Office / Indoor</option>
+                            <option value="outdoor">Outdoor / Physical</option>
+                            <option value="hazardous">Hazardous / High Risk</option>
+                            <option value="unemployed">Unemployed / Student</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group radio-group">
+                        <label>Do you smoke?</label>
+                        <div class="radio-options">
+                            <label class="radio-label">
+                                <input type="radio" name="smoker" value="yes" required>
+                                <span class="radio-custom"></span> Yes
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="smoker" value="no" required>
+                                <span class="radio-custom"></span> No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-top:20px;">
+                        <label for="policy_pdf">Attach Existing Policy (PDF format, optional)</label>
+                        <input type="file" id="policy_pdf" name="policy_pdf" accept="application/pdf"
+                            style="padding: 10px; background: rgba(0,0,0,0.2); border: 1px dashed rgba(255,255,255,0.4);">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Generate Quotation</button>
+                    <p class="form-disclaimer mt-2">By submitting this form, you agree to being contacted for insurance
+                        purposes.</p>
+                </form>
+                <div id="formSuccess" class="form-success hidden">
+                    <div class="success-icon">✓</div>
+                    <h3>Request Received!</h3>
+                    <p>Thank you for reaching out. I will assess your details and contact you shortly with your
+                        personalized quotation.</p>
+                    <button id="resetForm" class="btn btn-outline btn-block mt-4">Submit Another Request</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners bg-light">
+        <div class="container">
+            <p class="section-subtitle text-center fade-in">Proudly Partnered With</p>
+            <div class="partner-logos fade-in">
+                <a href="https://www.prudential.com.my/en/" target="_blank"><img src="assets/prudential-1.webp"
+                        alt="Prudential Logo" loading="lazy" class="partner-logo"></a>
+                <a href="https://www.eastspring.com/" target="_blank"><img src="assets/eastspring investment(1).png"
+                        alt="Eastspring Investments Logo" loading="lazy" class="partner-logo"></a>
+                <a href="https://www.facebook.com/gloryexcellentmm1/" target="_blank"><img
+                        src="assets/GEM Final New.png" alt="GM Agency Logo" loading="lazy" class="partner-logo"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><img src="assets/prudential-1.png" alt="Prudential Logo"
+                        class="brand-logo"></a>
+                <p class="mt-2">Providing premium insurance solutions and peace of mind for you and your family.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#quote">Get a Quote</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: annabelong6997@prupartner.com.my</p>
+                <p>Phone: +60 18-317 6361</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Prudential. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- App Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

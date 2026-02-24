@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Terokai produk insurans premium kami yang disesuaikan untuk hayat, kesihatan dan kekayaan anda.">
+    <title>Produk | Prudential Insurans</title>
+    <link rel="icon" type="image/png" href="assets/prudential-1.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .products-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, var(--off-white) 0%, var(--pure-white) 100%);
+            color: var(--dark-bg);
+            text-align: center;
+        }
+
+        .products-hero h1 {
+            color: var(--dark-bg);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 80px 0;
+        }
+
+        .product-card {
+            background: var(--pure-white);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-red);
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary-red);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .product-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .product-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark-bg);
+        }
+
+        .product-desc {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index-ms.html" class="logo">
+                <img src="assets/prudential-1.png" alt="Logo Prudential" class="brand-logo">
+            </a>
+            <button class="mobile-toggle" aria-label="Togol Navigasi">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index-ms.html#home">Utama</a></li>
+                <li><a href="index-ms.html#about">Tentang Saya</a></li>
+                <li><a href="products-ms.html" class="text-red">Produk</a></li>
+                <li><a href="index-ms.html#partners">Rakan Kongsi</a></li>
+                <li class="lang-item">
+                    <a href="products.html" class="lang-btn" aria-label="Tukar Bahasa" title="Tukar Bahasa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="globe-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                        <span>MS | EN</span>
+                    </a>
+                </li>
+                <li><a href="index-ms.html#quote" class="btn btn-primary">Dapatkan Sebut Harga</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Products Hero Section -->
+    <header class="products-hero">
+        <div class="container fade-in active">
+            <h1>Produk <span class="text-red">Perlindungan</span> Kami.</h1>
+            <p class="mt-2" style="max-width: 600px; margin: 0 auto; color: var(--text-muted);">Terokai pelbagai
+                penyelesaian komprehensif yang direka untuk melindungi anda daripada sebarang ketidakpastian. Pilih
+                produk untuk mempelajari lebih lanjut.</p>
+        </div>
+    </header>
+
+    <!-- Products Grid Section -->
+    <section class="products-list bg-light">
+        <div class="container">
+            <div class="products-grid fade-in active">
+
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-icon">🛡️</div>
+                    <h3 class="product-title">Insurans Hayat</h3>
+                    <ul class="product-sub-list">
+                        <li><a href="pages/pruwith-you-plus-ms.html">PRUWith You Plus</a></li>
+                        <li><a href="pages/prulive-well-ms.html">PRULive Well</a></li>
+                        <li><a href="pages/pruterm-ms.html">PRUTerm</a></li>
+                    </ul>
+                    <a href="index-ms.html#quote" class="btn btn-outline btn-block" style="margin-top: auto;">Pertanyaan
+                        Sekarang</a>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-icon">❤️</div>
+                    <h3 class="product-title">Insurans Penyakit Kritikal</h3>
+                    <ul class="product-sub-list">
+                        <li><a href="pages/prumy-critical-care-ms.html">PRUMy Critical Care</a></li>
+                        <li><a href="pages/pruman-and-prulady-ms.html">PRUMan & PRULady</a></li>
+                    </ul>
+                    <a href="index-ms.html#quote" class="btn btn-outline btn-block" style="margin-top: auto;">Pertanyaan
+                        Sekarang</a>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-icon">🏥</div>
+                    <h3 class="product-title">Insurans Perubatan</h3>
+                    <ul class="product-sub-list">
+                        <li><a href="pages/prumillion-med-active-2-ms.html">PRUMillion Med Active 2.0</a></li>
+                        <li><a href="pages/prumillion-med-2-ms.html">PRUMillion Med 2.0</a></li>
+                        <li><a href="pages/pruvalue-med-ms.html">PRUValue Med</a></li>
+                    </ul>
+                    <a href="index-ms.html#quote" class="btn btn-outline btn-block" style="margin-top: auto;">Pertanyaan
+                        Sekarang</a>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-icon">👶</div>
+                    <h3 class="product-title">Insurans Bayi & Kanak-kanak</h3>
+                    <ul class="product-sub-list">
+                        <li><a href="pages/prumy-child-plus-ms.html">PRUMy Child Plus</a></li>
+                    </ul>
+                    <a href="index-ms.html#quote" class="btn btn-outline btn-block" style="margin-top: auto;">Pertanyaan
+                        Sekarang</a>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-icon">🏛️</div>
+                    <h3 class="product-title">Insurans Harta & Legasi</h3>
+                    <ul class="product-sub-list">
+                        <li><a href="pages/legacy-settlement-option-ms.html">Legacy Settlement Option</a></li>
+                        <li><a href="pages/pruwealth-enrich-2-ms.html">PRUWealth Enrich 2.0</a></li>
+                        <li><a href="pages/pruelite-flex-ms.html">PRUElite Flex</a></li>
+                        <li><a href="pages/prucash-enrich-ms.html">PRUCash Enrich</a></li>
+                    </ul>
+                    <a href="index-ms.html#quote" class="btn btn-outline btn-block" style="margin-top: auto;">Pertanyaan
+                        Sekarang</a>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-icon">📈</div>
+                    <h3 class="product-title">Insurans Simpanan & Pelaburan</h3>
+                    <ul class="product-sub-list">
+                        <li><a href="pages/pruelite-invest-ms.html">PRUElite Invest</a></li>
+                        <li><a href="pages/prucash-double-reward-ms.html">PRUCash Double Reward</a></li>
+                    </ul>
+                    <a href="index-ms.html#quote" class="btn btn-outline btn-block" style="margin-top: auto;">Pertanyaan
+                        Sekarang</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index-ms.html" class="logo"><img src="assets/prudential-1.png" alt="Logo Prudential"
+                        class="brand-logo"></a>
+                <p class="mt-2">Menyediakan penyelesaian insurans premium dan ketenangan fikiran untuk anda dan
+                    keluarga.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Pautan Pantas</h3>
+                <ul>
+                    <li><a href="index-ms.html#home">Utama</a></li>
+                    <li><a href="index-ms.html#about">Tentang</a></li>
+                    <li><a href="products-ms.html">Produk</a></li>
+                    <li><a href="#partners">Rakan Kongsi</a></li>
+                    <li><a href="index-ms.html#quote">Dapatkan Sebut Harga</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p>E-mel: annabelong6997@prupartner.com.my</p>
+                <p>Telefon: +60 18-317 6361</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Prudential. Hak Cipta Terpelihara.</p>
+        </div>
+    </footer>
+
+    <!-- App Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
