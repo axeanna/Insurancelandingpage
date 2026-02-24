@@ -78,6 +78,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 console.log('Quotation Request Submitted:', dataObj);
 
+                // Update button state immediately
+                const btn = quotationForm.querySelector('button[type="submit"]');
+                const originalText = btn.textContent;
+                btn.textContent = 'Processing...';
+                btn.disabled = true;
+
                 // Send data to Google Apps Script Webhook
                 fetch('https://script.google.com/macros/s/AKfycbzjFuplyMFZCEeSqB5HmUz3RQUUbFeSR_3RY4hN4EUfYleERu5YTRAYzfDMmXHb0XLp/exec', {
                     method: 'POST',
