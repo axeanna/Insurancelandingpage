@@ -140,14 +140,11 @@ document.addEventListener('DOMContentLoaded', () => {
             submitFinalBtn.textContent = 'Processing...';
             submitFinalBtn.disabled = true;
 
-            // Convert FormData to URLSearchParams
-            const formEncodedData = new URLSearchParams(pendingFormData);
-
             // Send data to Google Apps Script Webhook
             fetch('https://script.google.com/macros/s/AKfycbzjFuplyMFZCEeSqB5HmUz3RQUUbFeSR_3RY4hN4EUfYleERu5YTRAYzfDMmXHb0XLp/exec', {
                 method: 'POST',
                 mode: 'no-cors',
-                body: formEncodedData
+                body: pendingFormData
             })
                 .then(response => {
                     // Hide Modal and original Form, Show Success
