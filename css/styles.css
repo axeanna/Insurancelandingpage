@@ -947,42 +947,72 @@ select option {
     font-size: 0.95rem;
 }
 
-.ranking-group {
-    margin-bottom: 20px;
-}
-
-.ranking-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #e2e8f0;
-}
-
-.ranking-options {
+.ranking-container {
     display: flex;
-    gap: 8px;
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
-.rank-btn {
+.ranking-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rank-num {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.ranking-list {
     flex: 1;
-    padding: 10px 0;
-    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.ranking-item {
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    color: var(--pure-white);
     border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: var(--transition);
+    padding: 0 15px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--pure-white);
+    font-weight: 500;
+    cursor: grab;
+    transition: background 0.2s, box-shadow 0.2s;
+    user-select: none;
 }
 
-.rank-btn:hover {
+.ranking-item:hover {
     background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
-.rank-btn.selected {
+.ranking-item:active {
+    cursor: grabbing;
+}
+
+.ranking-item.sortable-ghost {
+    opacity: 0.4;
     background: var(--primary-red);
     border-color: var(--primary-red);
-    color: var(--pure-white);
+}
+
+.drag-handle {
+    color: var(--text-muted);
+    cursor: grab;
+    font-size: 1.2rem;
 }
 
 .modal-actions {

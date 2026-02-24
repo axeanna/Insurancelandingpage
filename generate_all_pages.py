@@ -335,70 +335,42 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
             <h2>{txt['modal_title']}</h2>
             <p>{txt['modal_desc']}</p>
             
-            <div class="ranking-group">
-                <label>{txt['q_family']}</label>
-                <div class="ranking-options" data-category="family_rank">
-                    <button type="button" class="rank-btn" data-value="1">1</button>
-                    <button type="button" class="rank-btn" data-value="2">2</button>
-                    <button type="button" class="rank-btn" data-value="3">3</button>
-                    <button type="button" class="rank-btn" data-value="4">4</button>
-                    <button type="button" class="rank-btn" data-value="5">5</button>
+            <div class="ranking-container">
+                <div class="ranking-numbers">
+                    <div class="rank-num">1</div>
+                    <div class="rank-num">2</div>
+                    <div class="rank-num">3</div>
+                    <div class="rank-num">4</div>
+                    <div class="rank-num">5</div>
                 </div>
-            </div>
-
-            <div class="ranking-group">
-                <label>{txt['q_income']}</label>
-                <div class="ranking-options" data-category="income_rank">
-                    <button type="button" class="rank-btn" data-value="1">1</button>
-                    <button type="button" class="rank-btn" data-value="2">2</button>
-                    <button type="button" class="rank-btn" data-value="3">3</button>
-                    <button type="button" class="rank-btn" data-value="4">4</button>
-                    <button type="button" class="rank-btn" data-value="5">5</button>
-                </div>
-            </div>
-
-            <div class="ranking-group">
-                <label>{txt['q_accident']}</label>
-                <div class="ranking-options" data-category="accident_rank">
-                    <button type="button" class="rank-btn" data-value="1">1</button>
-                    <button type="button" class="rank-btn" data-value="2">2</button>
-                    <button type="button" class="rank-btn" data-value="3">3</button>
-                    <button type="button" class="rank-btn" data-value="4">4</button>
-                    <button type="button" class="rank-btn" data-value="5">5</button>
-                </div>
-            </div>
-
-            <div class="ranking-group">
-                <label>{txt['q_medical']}</label>
-                <div class="ranking-options" data-category="medical_rank">
-                    <button type="button" class="rank-btn" data-value="1">1</button>
-                    <button type="button" class="rank-btn" data-value="2">2</button>
-                    <button type="button" class="rank-btn" data-value="3">3</button>
-                    <button type="button" class="rank-btn" data-value="4">4</button>
-                    <button type="button" class="rank-btn" data-value="5">5</button>
-                </div>
-            </div>
-
-            <div class="ranking-group">
-                <label>{txt['q_invest']}</label>
-                <div class="ranking-options" data-category="investment_rank">
-                    <button type="button" class="rank-btn" data-value="1">1</button>
-                    <button type="button" class="rank-btn" data-value="2">2</button>
-                    <button type="button" class="rank-btn" data-value="3">3</button>
-                    <button type="button" class="rank-btn" data-value="4">4</button>
-                    <button type="button" class="rank-btn" data-value="5">5</button>
-                </div>
+                <ul class="ranking-list">
+                    <li class="ranking-item" data-category="family_rank">
+                        <span class="drag-handle">☰</span> {txt['q_family']}
+                    </li>
+                    <li class="ranking-item" data-category="income_rank">
+                        <span class="drag-handle">☰</span> {txt['q_income']}
+                    </li>
+                    <li class="ranking-item" data-category="accident_rank">
+                        <span class="drag-handle">☰</span> {txt['q_accident']}
+                    </li>
+                    <li class="ranking-item" data-category="medical_rank">
+                        <span class="drag-handle">☰</span> {txt['q_medical']}
+                    </li>
+                    <li class="ranking-item" data-category="investment_rank">
+                        <span class="drag-handle">☰</span> {txt['q_invest']}
+                    </li>
+                </ul>
             </div>
 
             <div class="modal-actions">
                 <button id="closeModalBtn" class="btn btn-outline" style="min-width: 120px;">{txt['modal_cancel']}</button>
                 <button id="submitFinalBtn" class="btn btn-primary" style="flex: 1;">{txt['modal_submit']}</button>
             </div>
-            <p id="modalError" class="text-red hidden" style="margin-top: 15px; font-size: 0.9rem;">{txt['modal_error']}</p>
         </div>
     </div>
 
-    <!-- App Scripts -->
+    <!-- SortableJS for drag and drop -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>"""

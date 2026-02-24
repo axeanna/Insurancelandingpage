@@ -248,73 +248,45 @@
     <div id="factFinderModal" class="modal-overlay hidden">
         <div class="modal-content glass-dark fade-in">
             <h2>Soalan Ringkas Untuk Anda</h2>
-            <p>Bagi membantu saya memberikan nasihat terbaik, sila nilaikan keutamaan kewangan anda dari 1 (Paling
-                Rendah) hingga 5 (Paling Tinggi).</p>
+            <p>Bagi membantu saya memberikan nasihat terbaik, sila seret dan lepas untuk menilai keutamaan kewangan anda
+                dari 1 (Paling Tinggi) hingga 5 (Paling Rendah).</p>
 
-            <div class="ranking-group">
-                <label>Perlindungan Keluarga</label>
-                <div class="ranking-options" data-category="family_rank">
-                    <button type="button" class="rank-btn" data-value="1">1</button>
-                    <button type="button" class="rank-btn" data-value="2">2</button>
-                    <button type="button" class="rank-btn" data-value="3">3</button>
-                    <button type="button" class="rank-btn" data-value="4">4</button>
-                    <button type="button" class="rank-btn" data-value="5">5</button>
+            <div class="ranking-container">
+                <div class="ranking-numbers">
+                    <div class="rank-num">1</div>
+                    <div class="rank-num">2</div>
+                    <div class="rank-num">3</div>
+                    <div class="rank-num">4</div>
+                    <div class="rank-num">5</div>
                 </div>
-            </div>
-
-            <div class="ranking-group">
-                <label>Penggantian Pendapatan</label>
-                <div class="ranking-options" data-category="income_rank">
-                    <button type="button" class="rank-btn" data-value="1">1</button>
-                    <button type="button" class="rank-btn" data-value="2">2</button>
-                    <button type="button" class="rank-btn" data-value="3">3</button>
-                    <button type="button" class="rank-btn" data-value="4">4</button>
-                    <button type="button" class="rank-btn" data-value="5">5</button>
-                </div>
-            </div>
-
-            <div class="ranking-group">
-                <label>Perlindungan Kemalangan</label>
-                <div class="ranking-options" data-category="accident_rank">
-                    <button type="button" class="rank-btn" data-value="1">1</button>
-                    <button type="button" class="rank-btn" data-value="2">2</button>
-                    <button type="button" class="rank-btn" data-value="3">3</button>
-                    <button type="button" class="rank-btn" data-value="4">4</button>
-                    <button type="button" class="rank-btn" data-value="5">5</button>
-                </div>
-            </div>
-
-            <div class="ranking-group">
-                <label>Bil Perubatan</label>
-                <div class="ranking-options" data-category="medical_rank">
-                    <button type="button" class="rank-btn" data-value="1">1</button>
-                    <button type="button" class="rank-btn" data-value="2">2</button>
-                    <button type="button" class="rank-btn" data-value="3">3</button>
-                    <button type="button" class="rank-btn" data-value="4">4</button>
-                    <button type="button" class="rank-btn" data-value="5">5</button>
-                </div>
-            </div>
-
-            <div class="ranking-group">
-                <label>Pelaburan & Simpanan</label>
-                <div class="ranking-options" data-category="investment_rank">
-                    <button type="button" class="rank-btn" data-value="1">1</button>
-                    <button type="button" class="rank-btn" data-value="2">2</button>
-                    <button type="button" class="rank-btn" data-value="3">3</button>
-                    <button type="button" class="rank-btn" data-value="4">4</button>
-                    <button type="button" class="rank-btn" data-value="5">5</button>
-                </div>
+                <ul id="rankingListMalay" class="ranking-list">
+                    <li class="ranking-item" data-category="family_rank">
+                        <span class="drag-handle">☰</span> Perlindungan Keluarga
+                    </li>
+                    <li class="ranking-item" data-category="income_rank">
+                        <span class="drag-handle">☰</span> Penggantian Pendapatan
+                    </li>
+                    <li class="ranking-item" data-category="accident_rank">
+                        <span class="drag-handle">☰</span> Perlindungan Kemalangan
+                    </li>
+                    <li class="ranking-item" data-category="medical_rank">
+                        <span class="drag-handle">☰</span> Bil Perubatan
+                    </li>
+                    <li class="ranking-item" data-category="investment_rank">
+                        <span class="drag-handle">☰</span> Pelaburan & Simpanan
+                    </li>
+                </ul>
             </div>
 
             <div class="modal-actions">
                 <button id="closeModalBtn" class="btn btn-outline" style="min-width: 120px;">Batal</button>
                 <button id="submitFinalBtn" class="btn btn-primary" style="flex: 1;">Hantar Butiran</button>
             </div>
-            <p id="modalError" class="text-red hidden" style="margin-top: 15px; font-size: 0.9rem;">Sila nilaikannya
-                untuk semua kategori bagi meneruskan proses.</p>
         </div>
     </div>
 
+    <!-- SortableJS for drag and drop -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

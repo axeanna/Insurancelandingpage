@@ -71,35 +71,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModalBtn = document.getElementById('closeModalBtn');
     const submitFinalBtn = document.getElementById('submitFinalBtn');
     const modalError = document.getElementById('modalError');
-    const rankingOptionsGroups = document.querySelectorAll('.ranking-options');
+    const rankingLists = document.querySelectorAll('.ranking-list');
 
     let pendingFormData = null;
-    let rankings = {
-        family_rank: null,
-        income_rank: null,
-        accident_rank: null,
-        medical_rank: null,
-        investment_rank: null
-    };
 
-    // Handle Ranking Button Clicks
-    rankingOptionsGroups.forEach(group => {
-        const category = group.getAttribute('data-category');
-        const buttons = group.querySelectorAll('.rank-btn');
-
-        buttons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Remove selected class from all buttons in this row
-                buttons.forEach(b => b.classList.remove('selected'));
-                // Add selected class to the clicked one
-                btn.classList.add('selected');
-                // Save the ranking
-                rankings[category] = btn.getAttribute('data-value');
-                // Hide error message if active
-                if (modalError) modalError.classList.add('hidden');
+    // Initialize SortableJS
+    if (typeof Sortable !== 'undefined') {
+        rankingLists.forEach(list => {
+            new Sortable(list, {
+                animation: 150,
+                ghostClass: 'sortable-ghost',
+                handle: '.drag-handle' // Only allow dragging from the handle icon
             });
         });
-    });
+    }
 
     if (quotationForm) {
         quotationForm.addEventListener('submit', (e) => {
@@ -130,15 +115,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modal Final Submit Button
     if (submitFinalBtn) {
         submitFinalBtn.addEventListener('click', () => {
-            // Validate all 5 questions are answered
-            if (!rankings.family_rank || !rankings.income_rank || !rankings.accident_rank || !rankings.medical_rank || !rankings.investment_rank) {
-                if (modalError) modalError.classList.remove('hidden');
-                return;
-            }
-
-            // Append rankings to pending FormData
-            for (const [key, value] of Object.entries(rankings)) {
-                pendingFormData.append(key, value);
+            // Compute rankings based on current DOM order
+            // Find the active (visible) ranking list inside the modal
+            const activeList = factFinderModal.querySelector('.ranking-list');
+            if (activeList && pendingFormData) {
+                const items = activeList.querySelectorAll('.ranking-item');
+                items.forEach((item, index) => {
+                    const category = item.getAttribute('data-category');
+                    pendingFormData.append(category, index + 1); // 1 to 5
+                });
             }
 
             // Update button UI
@@ -166,9 +151,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitFinalBtn.disabled = false;
                     quotationForm.reset();
 
-                    // Reset ranking selections
-                    document.querySelectorAll('.rank-btn').forEach(b => b.classList.remove('selected'));
-                    for (let key in rankings) rankings[key] = null;
+                    // Reset ranking selections (not strictly necessary as page reload wipes state, but good practice)
+                    // ...
                 })
                 .catch(error => {
                     console.error('Error submitting form:', error);
