@@ -340,19 +340,19 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
             <div class="unranked-container">
                 <p class="text-muted" style="margin-bottom: 10px;">{txt['available_options']}</p>
                 <ul class="ranking-list unranked-list">
-                    <li class="ranking-item" data-category="family_rank">
+                    <li class="ranking-item" data-category="Family">
                         <span class="drag-handle">☰</span> {txt['q_family']}
                     </li>
-                    <li class="ranking-item" data-category="income_rank">
+                    <li class="ranking-item" data-category="Income">
                         <span class="drag-handle">☰</span> {txt['q_income']}
                     </li>
-                    <li class="ranking-item" data-category="accident_rank">
+                    <li class="ranking-item" data-category="Accident">
                         <span class="drag-handle">☰</span> {txt['q_accident']}
                     </li>
-                    <li class="ranking-item" data-category="medical_rank">
+                    <li class="ranking-item" data-category="Medical">
                         <span class="drag-handle">☰</span> {txt['q_medical']}
                     </li>
-                    <li class="ranking-item" data-category="investment_rank">
+                    <li class="ranking-item" data-category="Investment">
                         <span class="drag-handle">☰</span> {txt['q_invest']}
                     </li>
                 </ul>
@@ -390,7 +390,7 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
 
     <!-- SortableJS for drag and drop -->
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-    <script src="../js/script.js?v=4"></script>
+    <script src="../js/script.js?v=5"></script>
 </body>
 </html>"""
 
