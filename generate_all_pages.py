@@ -390,7 +390,7 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
 
     <!-- SortableJS for drag and drop -->
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-    <script src="../js/script.js?v=6"></script>
+    <script src="../js/script.js?v=7"></script>
 </body>
 </html>"""
 

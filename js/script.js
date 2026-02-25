@@ -140,21 +140,42 @@ document.addEventListener('DOMContentLoaded', () => {
             submitFinalBtn.textContent = 'Processing...';
             submitFinalBtn.disabled = true;
 
-            // Convert FormData to URLSearchParams safely, handling File objects
             const urlEncodedData = new URLSearchParams();
+            let filePromise = Promise.resolve(); // Default if no file
+
+            // Prepare non-file fields immediately
             for (const pair of pendingFormData.entries()) {
-                if (pair[1] instanceof File) {
-                    urlEncodedData.append(pair[0], pair[1].name || 'Hidden File');
-                } else {
+                if (!(pair[1] instanceof File)) {
                     urlEncodedData.append(pair[0], pair[1]);
                 }
             }
 
-            // Send data to Google Apps Script Webhook
-            fetch('https://script.google.com/macros/s/AKfycbzjFuplyMFZCEeSqB5HmUz3RQUUbFeSR_3RY4hN4EUfYleERu5YTRAYzfDMmXHb0XLp/exec', {
-                method: 'POST',
-                mode: 'no-cors',
-                body: urlEncodedData
+            // Check if there is a file attached
+            const pdfFile = pendingFormData.get('policy_pdf');
+            if (pdfFile && pdfFile.size > 0) {
+                filePromise = new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const base64String = e.target.result.split(',')[1];
+                        urlEncodedData.append('policy_pdf_base64', base64String);
+                        urlEncodedData.append('policy_pdf_name', pdfFile.name);
+                        urlEncodedData.append('policy_pdf_mimeType', pdfFile.type);
+                        resolve();
+                    };
+                    reader.onerror = function (error) {
+                        reject(error);
+                    };
+                    reader.readAsDataURL(pdfFile);
+                });
+            }
+
+            // Send data to Google Apps Script Webhook once the file is ready
+            filePromise.then(() => {
+                return fetch('https://script.google.com/macros/s/AKfycbzjFuplyMFZCEeSqB5HmUz3RQUUbFeSR_3RY4hN4EUfYleERu5YTRAYzfDMmXHb0XLp/exec', {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: urlEncodedData
+                });
             })
                 .then(response => {
                     // Hide Modal and original Form, Show Success
