@@ -122,80 +122,27 @@
     </section>
 
     <!-- Quotation Generator Section -->
-    <section id="quote" class="quote bg-dark">
+    <section id="quote" class="quote bg-dark" style="padding: 60px 0;">
         <div class="container quote-container">
             <div class="quote-text fade-in">
                 <h2 class="section-title text-white">Biar kami <span class="text-red">hubungi anda</span></h2>
-                <p class="text-muted">Masukkan butiran anda di bawah, dan saya akan menghubungi anda untuk membincangkan
-                    pelan perlindungan peribadi anda.</p>
+                <p class="text-muted">Sila pilih masa yang sesuai untuk anda. Saya tidak sabar untuk bercakap dengan
+                    anda!</p>
                 <div class="contact-info mt-4">
                     <p>Lebih suka bersembang terus?</p>
                     <a href="https://wa.me/60183176361" target="_blank" class="phone-link">📱 WhatsApp Saya (+60 18-317
                         6361)</a>
                 </div>
             </div>
-            <div class="quote-form-wrapper glass-dark fade-in">
-                <form id="quotationForm" class="quote-form">
-                    <div class="form-group">
-                        <label for="name">Nama Penuh</label>
-                        <input type="text" id="name" name="name" required placeholder="Ali bin Abu">
-                    </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Nombor Telefon</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="+60 123 456 789">
-                        </div>
-                        <div class="form-group">
-                            <label for="dob">Tarikh Lahir</label>
-                            <input type="date" id="dob" name="dob" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="topic">Sila pilih topik <span class="text-red">*</span></label>
-                        <select id="topic" name="occupation" required>
-                            <option value="" disabled selected>Sila pilih topik</option>
-                            <option value="Interested in life insurance products or riders">Berminat dengan produk
-                                insurans hayat atau rider</option>
-                            <option value="To know more about Medical Revision">Untuk mengetahui
-                                lebih lanjut tentang Semakan Perubatan</option>
-                            <option value="To give feedback">Untuk memberi maklum balas</option>
-                            <option value="Other enquiries">Pertanyaan lain</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group radio-group">
-                        <label>Adakah anda merokok?</label>
-                        <div class="radio-options">
-                            <label class="radio-label">
-                                <input type="radio" name="smoker" value="yes" required>
-                                <span class="radio-custom"></span> Ya
-                            </label>
-                            <label class="radio-label">
-                                <input type="radio" name="smoker" value="no" required>
-                                <span class="radio-custom"></span> Tidak
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group" style="margin-top:20px;">
-                        <label for="policy_pdf">Lampirkan Polisi Sedia Ada (format PDF, pilihan)</label>
-                        <input type="file" id="policy_pdf" name="policy_pdf" accept="application/pdf"
-                            style="padding: 10px; background: rgba(0,0,0,0.2); border: 1px dashed rgba(255,255,255,0.4);">
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-block">Hantar Butiran</button>
-                    <p class="form-disclaimer mt-2">Dengan menghantar borang ini, anda bersetuju untuk dihubungi bagi
-                        tujuan insurans.</p>
-                </form>
-                <div id="formSuccess" class="form-success hidden">
-                    <div class="success-icon">✓</div>
-                    <h3>Permintaan Diterima!</h3>
-                    <p>Terima kasih kerana menghubungi saya. Saya telah menerima butiran anda dan akan menghubungi anda
-                        segera untuk menjadualkan semakan peribadi anda.</p>
-                    <button id="resetForm" class="btn btn-outline btn-block mt-4">Hantar Permintaan Lain</button>
-                </div>
+            <div class="calendly-wrapper fade-in"
+                style="background: var(--pure-white); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 100%; max-width: 500px;">
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/axeannaxx/30min"
+                    style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                    async></script>
+                <!-- Calendly inline widget end -->
             </div>
         </div>
     </section>
@@ -246,66 +193,10 @@
     </footer>
 
     <!-- App Scripts -->
-    <!-- Fact Finder Modal -->
-    <div id="factFinderModal" class="modal-overlay hidden">
-        <div class="modal-content glass-dark fade-in">
-            <h2>Soalan Ringkas Untuk Anda</h2>
-            <p>Bagi membantu saya memberikan nasihat terbaik, sila seret dan lepas untuk menilai keutamaan kewangan anda
-                dari 1 (Paling Tinggi) hingga 5 (Paling Rendah).</p>
+    <!-- Fact Finder Modal Removed -->
 
-            <div class="unranked-container">
-                <p class="text-muted" style="margin-bottom: 10px;">Pilihan Yang Ada:</p>
-                <ul id="unrankedListMalay" class="ranking-list unranked-list">
-                    <li class="ranking-item" data-category="family_rank">
-                        <span class="drag-handle">☰</span> Perlindungan Keluarga
-                    </li>
-                    <li class="ranking-item" data-category="income_rank">
-                        <span class="drag-handle">☰</span> Penggantian Pendapatan
-                    </li>
-                    <li class="ranking-item" data-category="accident_rank">
-                        <span class="drag-handle">☰</span> Perlindungan Kemalangan
-                    </li>
-                    <li class="ranking-item" data-category="medical_rank">
-                        <span class="drag-handle">☰</span> Bil Perubatan
-                    </li>
-                    <li class="ranking-item" data-category="investment_rank">
-                        <span class="drag-handle">☰</span> Pelaburan & Simpanan
-                    </li>
-                </ul>
-            </div>
-
-            <div class="ranking-container mt-4">
-                <div class="ranking-numbers">
-                    <div class="rank-num">1</div>
-                    <div class="rank-num">2</div>
-                    <div class="rank-num">3</div>
-                    <div class="rank-num">4</div>
-                    <div class="rank-num">5</div>
-                </div>
-                <div class="ranked-list-wrapper" style="flex: 1; position: relative;">
-                    <div class="ranking-placeholders">
-                        <div class="placeholder-box">Seret item ke sini</div>
-                        <div class="placeholder-box">Seret item ke sini</div>
-                        <div class="placeholder-box">Seret item ke sini</div>
-                        <div class="placeholder-box">Seret item ke sini</div>
-                        <div class="placeholder-box">Seret item ke sini</div>
-                    </div>
-                    <ul id="rankingListMalay" class="ranking-list ranked-list">
-                        <!-- Empty list -->
-                    </ul>
-                </div>
-            </div>
-
-            <div class="modal-actions">
-                <button id="closeModalBtn" class="btn btn-outline" style="min-width: 120px;">Batal</button>
-                <button id="submitFinalBtn" class="btn btn-primary" style="flex: 1;">Hantar Butiran</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- SortableJS for drag and drop -->
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-    <script src="js/script.js?v=7"></script>
+    <!-- Calendar Integration -->
+    <script src="js/script.js?v=9"></script>
 </body>
 
 </html>

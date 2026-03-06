@@ -331,66 +331,10 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
         </div>
     </footer>
 
-    <!-- Fact Finder Modal -->
-    <div id="factFinderModal" class="modal-overlay hidden">
-        <div class="modal-content glass-dark fade-in">
-            <h2>{txt['modal_title']}</h2>
-            <p>{txt['modal_desc']}</p>
-            
-            <div class="unranked-container">
-                <p class="text-muted" style="margin-bottom: 10px;">{txt['available_options']}</p>
-                <ul class="ranking-list unranked-list">
-                    <li class="ranking-item" data-category="family_rank">
-                        <span class="drag-handle">☰</span> {txt['q_family']}
-                    </li>
-                    <li class="ranking-item" data-category="income_rank">
-                        <span class="drag-handle">☰</span> {txt['q_income']}
-                    </li>
-                    <li class="ranking-item" data-category="accident_rank">
-                        <span class="drag-handle">☰</span> {txt['q_accident']}
-                    </li>
-                    <li class="ranking-item" data-category="medical_rank">
-                        <span class="drag-handle">☰</span> {txt['q_medical']}
-                    </li>
-                    <li class="ranking-item" data-category="investment_rank">
-                        <span class="drag-handle">☰</span> {txt['q_invest']}
-                    </li>
-                </ul>
-            </div>
+    <!-- Fact Finder Modal Removed -->
 
-            <div class="ranking-container mt-4">
-                <div class="ranking-numbers">
-                    <div class="rank-num">1</div>
-                    <div class="rank-num">2</div>
-                    <div class="rank-num">3</div>
-                    <div class="rank-num">4</div>
-                    <div class="rank-num">5</div>
-                </div>
-                <div class="ranked-list-wrapper" style="flex: 1; position: relative;">
-                    <div class="ranking-placeholders">
-                         <div class="placeholder-box">{"Drop item here" if lang == "en" else "Seret item ke sini"}</div>
-                         <div class="placeholder-box">{"Drop item here" if lang == "en" else "Seret item ke sini"}</div>
-                         <div class="placeholder-box">{"Drop item here" if lang == "en" else "Seret item ke sini"}</div>
-                         <div class="placeholder-box">{"Drop item here" if lang == "en" else "Seret item ke sini"}</div>
-                         <div class="placeholder-box">{"Drop item here" if lang == "en" else "Seret item ke sini"}</div>
-                    </div>
-                    <ul class="ranking-list ranked-list">
-                        <!-- Empty list -->
-                    </ul>
-                </div>
-            </div>
-
-            <div class="modal-actions">
-                <button id="closeModalBtn" class="btn btn-outline" style="min-width: 120px;">{txt['modal_cancel']}</button>
-                <button id="submitFinalBtn" class="btn btn-primary" style="flex: 1;">{txt['modal_submit']}</button>
-            </div>
-            <p id="modalError" class="text-red hidden" style="margin-top: 15px; font-size: 0.9rem;">{txt['modal_error']}</p>
-        </div>
-    </div>
-
-    <!-- SortableJS for drag and drop -->
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-    <script src="../js/script.js?v=7"></script>
+    <!-- Calendar Integration Scripts -->
+    <script src="../js/script.js?v=9"></script>
 </body>
 </html>"""
 

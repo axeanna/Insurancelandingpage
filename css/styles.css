@@ -1047,7 +1047,6 @@ select option {
 
 .drag-handle {
     color: var(--text-muted);
-    cursor: grab;
     font-size: 1.2rem;
 }
 

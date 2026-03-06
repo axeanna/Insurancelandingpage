@@ -125,80 +125,27 @@
     </section>
 
     <!-- Quotation Generator Section -->
-    <section id="quote" class="quote bg-dark">
+    <section id="quote" class="quote bg-dark" style="padding: 60px 0;">
         <div class="container quote-container">
             <div class="quote-text fade-in">
                 <h2 class="section-title text-white">Let us <span class="text-red">reach out</span></h2>
-                <p class="text-muted">Put your details below, and I'll reach out to discuss your personalized protection
-                    plan.</p>
+                <p class="text-muted">Pick a time that works best for you below. I look forward to speaking with you!
+                </p>
                 <div class="contact-info mt-4">
                     <p>Prefer to chat directly?</p>
-                    <a href="https://wa.me/60183176361" target="_blank" class="phone-link">� WhatsApp Me (+60 18-317
+                    <a href="https://wa.me/60183176361" target="_blank" class="phone-link">📱 WhatsApp Me (+60 18-317
                         6361)</a>
                 </div>
             </div>
-            <div class="quote-form-wrapper glass-dark fade-in">
-                <form id="quotationForm" class="quote-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required placeholder="John Doe">
-                    </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="+1 234 567 8900">
-                        </div>
-                        <div class="form-group">
-                            <label for="dob">Date of Birth</label>
-                            <input type="date" id="dob" name="dob" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="topic">Please select a topic <span class="text-red">*</span></label>
-                        <select id="topic" name="occupation" required>
-                            <option value="" disabled selected>Please select a topic</option>
-                            <option value="Interested in life insurance products or riders">Interested in life insurance
-                                products or riders</option>
-                            <option value="To know more about Medical Revision">To know more about Medical Revision
-                            </option>
-                            <option value="To give feedback">To give feedback</option>
-                            <option value="Other enquiries">Other enquiries</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group radio-group">
-                        <label>Do you smoke?</label>
-                        <div class="radio-options">
-                            <label class="radio-label">
-                                <input type="radio" name="smoker" value="yes" required>
-                                <span class="radio-custom"></span> Yes
-                            </label>
-                            <label class="radio-label">
-                                <input type="radio" name="smoker" value="no" required>
-                                <span class="radio-custom"></span> No
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group" style="margin-top:20px;">
-                        <label for="policy_pdf">Attach Existing Policy (PDF format, optional)</label>
-                        <input type="file" id="policy_pdf" name="policy_pdf" accept="application/pdf"
-                            style="padding: 10px; background: rgba(0,0,0,0.2); border: 1px dashed rgba(255,255,255,0.4);">
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-block">Submit Details</button>
-                    <p class="form-disclaimer mt-2">By submitting this form, you agree to being contacted for insurance
-                        purposes.</p>
-                </form>
-                <div id="formSuccess" class="form-success hidden">
-                    <div class="success-icon">✓</div>
-                    <h3>Request Received!</h3>
-                    <p>Thank you for reaching out. I have received your details and will contact you shortly to schedule
-                        your personalized review.</p>
-                    <button id="resetForm" class="btn btn-outline btn-block mt-4">Submit Another Request</button>
-                </div>
+            <div class="calendly-wrapper fade-in"
+                style="background: var(--pure-white); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 100%; max-width: 500px;">
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/axeannaxx/30min"
+                    style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                    async></script>
+                <!-- Calendly inline widget end -->
             </div>
         </div>
     </section>
@@ -248,66 +195,10 @@
     </footer>
 
     <!-- App Scripts -->
-    <!-- Fact Finder Modal -->
-    <div id="factFinderModal" class="modal-overlay hidden">
-        <div class="modal-content glass-dark fade-in">
-            <h2>Just a Few Quick Questions</h2>
-            <p>To help me provide the best advice, please drag and drop to rank your financial priorities from 1
-                (Highest) to 5 (Lowest).</p>
+    <!-- Fact Finder Modal Removed -->
 
-            <div class="unranked-container">
-                <p class="text-muted" style="margin-bottom: 10px;">Available Options:</p>
-                <ul id="unrankedListEnglish" class="ranking-list unranked-list">
-                    <li class="ranking-item" data-category="family_rank">
-                        <span class="drag-handle">☰</span> Family Protection
-                    </li>
-                    <li class="ranking-item" data-category="income_rank">
-                        <span class="drag-handle">☰</span> Income Replacement
-                    </li>
-                    <li class="ranking-item" data-category="accident_rank">
-                        <span class="drag-handle">☰</span> Accident Coverage
-                    </li>
-                    <li class="ranking-item" data-category="medical_rank">
-                        <span class="drag-handle">☰</span> Medical Bills
-                    </li>
-                    <li class="ranking-item" data-category="investment_rank">
-                        <span class="drag-handle">☰</span> Investment & Savings
-                    </li>
-                </ul>
-            </div>
-
-            <div class="ranking-container mt-4">
-                <div class="ranking-numbers">
-                    <div class="rank-num">1</div>
-                    <div class="rank-num">2</div>
-                    <div class="rank-num">3</div>
-                    <div class="rank-num">4</div>
-                    <div class="rank-num">5</div>
-                </div>
-                <div class="ranked-list-wrapper" style="flex: 1; position: relative;">
-                    <div class="ranking-placeholders">
-                        <div class="placeholder-box">Drop item here</div>
-                        <div class="placeholder-box">Drop item here</div>
-                        <div class="placeholder-box">Drop item here</div>
-                        <div class="placeholder-box">Drop item here</div>
-                        <div class="placeholder-box">Drop item here</div>
-                    </div>
-                    <ul id="rankingListEnglish" class="ranking-list ranked-list">
-                        <!-- Empty list -->
-                    </ul>
-                </div>
-            </div>
-
-            <div class="modal-actions">
-                <button id="closeModalBtn" class="btn btn-outline" style="min-width: 120px;">Cancel</button>
-                <button id="submitFinalBtn" class="btn btn-primary" style="flex: 1;">Complete Submission</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- SortableJS for drag and drop -->
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-    <script src="js/script.js?v=7"></script>
+    <!-- Calendar Integration -->
+    <script src="js/script.js?v=9"></script>
 </body>
 
 </html>
