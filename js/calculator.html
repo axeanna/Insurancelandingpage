@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Use our free Life Cover and Critical Illness calculator to estimate how much insurance protection your family needs — tailored to your goals.">
+    <meta name="keywords"
+        content="Life Insurance Calculator, Critical Illness Calculator, Insurance Coverage, Malaysia, Prudential">
+    <meta name="author" content="Anna Prudential">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://annaprudential.com/calculator.html">
+    <meta property="og:title" content="Finance Calculator | Prudential Insurance">
+    <meta property="og:description"
+        content="Estimate your Life Cover and Critical Illness needs in minutes — personalised to your goals and commitments.">
+
+    <title>Finance Calculator | Prudential Insurance</title>
+    <link rel="icon" type="image/png" href="assets/prudential-1.png">
+    <link rel="canonical" href="https://annaprudential.com/calculator.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo">
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="calculator.html" class="nav-active">Calculator</a></li>
+                <li><a href="index.html#partners">Partners</a></li>
+                <li class="lang-item">
+                    <a href="calculator-ms.html" class="lang-btn" aria-label="Toggle Language" title="Toggle Language">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="globe-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span>EN | MS</span>
+                    </a>
+                </li>
+                <li><a href="index.html#quote" class="nav-cta">Let's Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="container fade-in active">
+            <span class="badge">Free Estimation Tool</span>
+            <h1>Know Your <span class="text-red">Coverage Needs</span></h1>
+            <p>Answer a few simple questions and find out how much life and critical illness coverage your family needs.</p>
+        </div>
+    </header>
+
+    <!-- Calculator Type Cards -->
+    <section class="calc-nav-section">
+        <div class="container">
+            <div class="calc-nav-cards fade-in active">
+                <div class="calc-nav-card active">
+                    <span class="card-icon">🛡️</span>
+                    <div class="card-text">
+                        <h3>Life &amp; Critical Illness <span class="active-badge">Here</span></h3>
+                        <p>Estimate your life cover and CI needs based on your goals and monthly commitments.</p>
+                    </div>
+                </div>
+                <a href="calculator-medical.html" class="calc-nav-card">
+                    <span class="card-icon">📈</span>
+                    <div class="card-text">
+                        <h3>Medical Inflation Trend</h3>
+                        <p>See how Malaysia's 15–16% annual medical inflation affects future healthcare costs.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Calculator -->
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calc-wrapper fade-in active">
+
+                <!-- Step 1: Goal -->
+                <span class="calc-step-label">Step 1 — What are you protecting for?</span>
+                <div class="goal-tabs" role="tablist" aria-label="Protection Goals">
+                    <button class="goal-tab" data-goal="education" role="tab" aria-selected="false" id="tab-education">
+                        <span class="tab-icon">🎓</span> Kids Education
+                    </button>
+                    <button class="goal-tab" data-goal="parents" role="tab" aria-selected="false" id="tab-parents">
+                        <span class="tab-icon">👨‍👩‍👧</span> Supporting Parents
+                    </button>
+                    <button class="goal-tab active" data-goal="family" role="tab" aria-selected="true" id="tab-family">
+                        <span class="tab-icon">👨‍👩‍👧‍👦</span> Family
+                    </button>
+                </div>
+
+                <!-- Step 2: Years -->
+                <span class="calc-step-label">Step 2 — How many years to achieve this goal?</span>
+                <div class="years-block">
+                    <div class="years-display-row">
+                        <div>
+                            <span class="years-number" id="years-display">20</span>
+                            <span class="years-unit">years</span>
+                        </div>
+                        <span class="years-hint">Drag to adjust</span>
+                    </div>
+                    <input type="range" class="calc-slider" id="years-slider"
+                        min="1" max="40" value="20"
+                        aria-label="Years to goal" aria-valuemin="1" aria-valuemax="40" aria-valuenow="20">
+                    <div class="slider-range-labels">
+                        <span>1 year</span>
+                        <span>40 years</span>
+                    </div>
+                </div>
+
+                <div class="calc-divider"></div>
+
+                <!-- Step 3: Financial Inputs -->
+                <span class="calc-step-label">Step 3 — Your monthly financial picture</span>
+
+                <div class="calc-inputs">
+                    <!-- DOB -->
+                    <div class="calc-field">
+                        <label>Date of Birth</label>
+                        <div style="display: flex; gap: 8px;">
+                            <select id="dob-day" class="calc-input" style="flex: 1; padding: 0 10px;" aria-label="Day">
+                                <option value="" disabled selected>Day</option>
+                            </select>
+                            <select id="dob-month" class="calc-input" style="flex: 1; padding: 0 10px;" aria-label="Month">
+                                <option value="" disabled selected>Month</option>
+                                <option value="01">Jan</option>
+                                <option value="02">Feb</option>
+                                <option value="03">Mar</option>
+                                <option value="04">Apr</option>
+                                <option value="05">May</option>
+                                <option value="06">Jun</option>
+                                <option value="07">Jul</option>
+                                <option value="08">Aug</option>
+                                <option value="09">Sep</option>
+                                <option value="10">Oct</option>
+                                <option value="11">Nov</option>
+                                <option value="12">Dec</option>
+                            </select>
+                            <select id="dob-year" class="calc-input" style="flex: 1.2; padding: 0 10px;" aria-label="Year">
+                                <option value="" disabled selected>Year</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Annual Income -->
+                    <div class="calc-field">
+                        <label for="income">Annual Income (RM)</label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="income"
+                                placeholder="e.g. 60000" min="0" step="1000"
+                                aria-label="Annual income in Ringgit Malaysia">
+                        </div>
+                        <span class="field-hint">Your gross yearly salary</span>
+                    </div>
+
+                    <!-- Housing / Rental -->
+                    <div class="calc-field">
+                        <label for="housing">Housing Loan / Rental (RM/mo)</label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="housing"
+                                placeholder="e.g. 2000" min="0" step="100"
+                                aria-label="Monthly housing repayment">
+                        </div>
+                    </div>
+
+                    <!-- Car Loan -->
+                    <div class="calc-field">
+                        <label for="car">Car Loan Repayment (RM/mo)</label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="car"
+                                placeholder="e.g. 800" min="0" step="100"
+                                aria-label="Monthly car loan repayment">
+                        </div>
+                    </div>
+
+                    <!-- Bills & Necessities (always shown) -->
+                    <div class="calc-field">
+                        <label for="bills">Bills &amp; Necessities (RM/mo)</label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="bills"
+                                placeholder="e.g. 1500" min="0" step="100"
+                                aria-label="Monthly bills, food and groceries">
+                        </div>
+                        <span class="field-hint">Food, groceries, utilities &amp; other essentials</span>
+                    </div>
+
+                    <!-- Other Monthly Expenses (optional, always shown) -->
+                    <div class="calc-field">
+                        <label for="others">Other Monthly Expenses (RM/mo) <span style="font-weight:400; color: var(--text-muted);">— Optional</span></label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="others"
+                                placeholder="e.g. 500" min="0" step="100"
+                                aria-label="Other optional monthly expenses">
+                        </div>
+                        <span class="field-hint">Insurance premiums, subscriptions, hobbies, etc.</span>
+                    </div>
+
+                    <!-- Kids Education — conditional -->
+                    <div class="calc-field conditional-field" id="field-education">
+                        <label for="education">Kids Education Contribution (RM/mo)</label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="education"
+                                placeholder="e.g. 500" min="0" step="100"
+                                aria-label="Monthly education contribution">
+                        </div>
+                    </div>
+
+                    <!-- Parents Allowance — conditional -->
+                    <div class="calc-field conditional-field" id="field-parents">
+                        <label for="parents">Monthly Allowance for Parents (RM/mo)</label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="parents"
+                                placeholder="e.g. 1000" min="0" step="100"
+                                aria-label="Monthly parent allowance">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculate CTA -->
+                <button class="btn btn-primary btn-block" id="calculate-btn"
+                    style="font-size: 1.1rem; padding: 18px 32px; border-radius: 14px;">
+                    Show My Coverage Estimate →
+                </button>
+
+                <p style="text-align:center; font-size: 0.8rem; color: var(--text-muted); margin-top: 14px;">
+                    🔒 Your results are personalised and private. Takes under 30 seconds.
+                </p>
+
+            </div><!-- /.calc-wrapper -->
+
+            <!-- Results Section (hidden until gate passed) -->
+            <div class="results-section" id="results-section">
+
+                <div class="results-header fade-in">
+                    <h2>Your Estimated <span class="text-red">Coverage Needs</span></h2>
+                    <p>Based on your inputs, here's what we recommend for your family's protection.</p>
+                </div>
+
+                <div class="results-grid fade-in">
+                    <!-- Life Cover Card -->
+                    <div class="result-card life-card">
+                        <span class="result-icon">🛡️</span>
+                        <span class="result-label">Recommended Life Coverage</span>
+                        <div class="result-amount" id="result-life">RM —</div>
+                        <div class="result-subtitle">Sum Assured</div>
+                        <div class="result-why">
+                            <strong>How we calculated this</strong>
+                            Ensures all your family's commitments are fully paid throughout your goal period — so they can maintain their lifestyle without financial burden.
+                        </div>
+                    </div>
+
+                    <!-- CI Card -->
+                    <div class="result-card ci-card">
+                        <span class="result-icon">❤️</span>
+                        <span class="result-label">Recommended Critical Illness Coverage</span>
+                        <div class="result-amount" id="result-ci">RM —</div>
+                        <div class="result-subtitle">CI Sum Assured</div>
+                        <div class="result-why">
+                            <strong>Why 5× your monthly commitments?</strong>
+                            Early-stage critical illness typically requires 3–7 years to recover. This covers your debts and expenses throughout that period without depleting your savings.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Breakdown -->
+                <div class="results-breakdown fade-in">
+                    <p class="breakdown-title">📊 Calculation Breakdown</p>
+                    <div class="breakdown-row">
+                        <span>Annual Income</span>
+                        <span>RM <span id="bd-income">0</span></span>
+                    </div>
+                    <div class="breakdown-row">
+                        <span>Goal Period</span>
+                        <span id="bd-years">—</span>
+                    </div>
+                    <div class="breakdown-row">
+                        <span>Annual Commitments</span>
+                        <span>RM <span id="bd-commitments">0</span></span>
+                    </div>
+                    <div class="breakdown-row">
+                        <span><strong>Recommended Life Cover</strong></span>
+                        <span id="bd-total">—</span>
+                    </div>
+                    <div class="breakdown-row" style="margin-top: 12px; border-top: 1px solid var(--border-color); padding-top: 12px;">
+                        <span>Monthly Commitments × 5 years</span>
+                        <span>RM <span id="bd-ci-base">0</span></span>
+                    </div>
+                    <div class="breakdown-row">
+                        <span><strong>Recommended CI Cover</strong></span>
+                        <span id="bd-ci-total">—</span>
+                    </div>
+                </div>
+
+                <!-- Quotation Request -->
+                <div class="quote-request-block" id="quote-request-block" style="text-align: center; margin: 30px 0; padding: 24px; background: rgba(237, 28, 36, 0.05); border-radius: 16px; border: 1px solid rgba(237, 28, 36, 0.1);">
+                    <p style="font-weight: 500; font-size: 1.1rem; color: var(--text-dark); margin-bottom: 16px;">Want a personalised quotation based on these numbers?</p>
+                    <button class="btn btn-primary" id="request-quote-btn" onclick="requestQuotation()">
+                        📋 Request a Quotation
+                    </button>
+                    <p class="quote-confirm" id="quote-confirm" style="display:none; color: #10B981; margin-top: 16px; font-weight: 500;">
+                        ✅ Request sent! Anna will be in touch within 24 hours.
+                    </p>
+                </div>
+
+                <!-- Disclaimer -->
+                <p class="results-disclaimer">
+                    ⚠️ These figures are estimates for <strong>illustration purposes only</strong> and are not a financial advice or offer of insurance. Actual coverage needs vary by individual circumstances. Please consult a licensed advisor for a personalised plan.
+                </p>
+
+                <!-- Results CTA -->
+                <div class="results-cta-card fade-in">
+                    <h3>Ready to protect your family? 💪</h3>
+                    <p>Get a personalised plan from Anna — no obligations, just clarity.</p>
+                    <div class="cta-buttons">
+                        <a href="https://calendly.com/axeannaxx/30min" target="_blank" class="btn btn-primary">
+                            📅 Book a Free Consultation
+                        </a>
+                        <a href="https://wa.me/60183176361" target="_blank" class="btn btn-secondary">
+                            📱 WhatsApp Anna
+                        </a>
+                    </div>
+                </div>
+
+            </div><!-- /#results-section -->
+        </div>
+    </section>
+
+    <!-- Lead Gate Overlay -->
+    <div class="gate-overlay" id="gate-overlay" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+        <div class="gate-card">
+            <span class="gate-emoji">🎯</span>
+            <h3 id="gate-title">Your results are ready!</h3>
+            <p class="gate-sub">
+                Enter your details below to unlock your personalised coverage estimate.
+            </p>
+
+            <div class="gate-fields">
+                <input type="text" class="gate-input" id="gate-name"
+                    placeholder="Your Name" autocomplete="name" aria-label="Your name">
+                <div id="gate-name-error" class="gate-error">Please enter your name</div>
+
+                <input type="email" class="gate-input" id="gate-email"
+                    placeholder="Email Address (e.g. you@example.com)"
+                    autocomplete="email" aria-label="Your email address">
+                <div id="gate-email-error" class="gate-error">Please enter your email address</div>
+
+                <input type="text" class="gate-input" id="gate-occupation"
+                    placeholder="Occupation (e.g. Engineer, Teacher)" autocomplete="organization-title" aria-label="Your occupation">
+                <div id="gate-occupation-error" class="gate-error">Please enter your occupation</div>
+
+                <input type="text" class="gate-input" id="gate-business"
+                    placeholder="Nature of Business (e.g. Technology, Education)" autocomplete="organization" aria-label="Nature of business">
+                <div id="gate-business-error" class="gate-error">Please enter your nature of business</div>
+            </div>
+
+            <!-- PDPA Consent Block -->
+            <div class="pdpa-block">
+                <p class="pdpa-purpose">
+                    By providing your details, you consent to <strong>Prudential (Annabel Ong)</strong> collecting and processing your name and email address to:
+                    <br>• Deliver your personalised insurance estimate
+                    <br>• Send relevant product information and service updates via email
+                </p>
+                <p class="pdpa-disclosure">
+                    Your data will <strong>not</strong> be shared with third parties without your consent. You may withdraw consent at any time by clicking <strong>unsubscribe</strong> in any email, or by contacting us at annabelong6997@prupartner.com.my.
+                </p>
+
+                <label class="consent-label" id="consent-label">
+                    <input type="checkbox" id="consent-checkbox" aria-required="true">
+                    <span class="consent-custom-check" aria-hidden="true"></span>
+                    <span class="consent-text">
+                        I consent to the collection and use of my personal data as described above, in accordance with Malaysia's <strong>Personal Data Protection Act 2010 (PDPA)</strong>.
+                    </span>
+                </label>
+                <div id="consent-error" class="gate-error">Please tick the checkbox to proceed</div>
+            </div>
+
+            <button class="btn btn-primary btn-block" id="unlock-btn" disabled
+                style="font-size: 1rem; padding: 16px 24px; border-radius: 14px; opacity: 0.5; cursor: not-allowed;">
+                Show My Results →
+            </button>
+
+            <div class="gate-divider">or</div>
+
+            <a href="https://calendly.com/axeannaxx/30min" target="_blank" class="gate-alt-btn">
+                📅 Book a free consultation instead
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo">
+                </a>
+                <p class="mt-2">Providing premium insurance solutions and peace of mind for you and your family.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="index.html#partners">Partners</a></li>
+                    <li><a href="index.html#quote">Let's Connect</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: annabelong6997@prupartner.com.my</p>
+                <p>Phone: +60 18-317 6361</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Prudential. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js?v=9"></script>
+    <script src="js/calculator.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lihat bagaimana inflasi perubatan Malaysia yang meningkat — purata 15–16% setahun — memberi kesan kepada kos penjagaan kesihatan masa depan anda.">
+    <meta name="keywords"
+        content="Inflasi Perubatan Malaysia, Kos Penjagaan Kesihatan, Insurans Perubatan, Prudential, Bil Hospital Malaysia">
+    <meta name="author" content="Anna Prudential">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://annaprudential.com/calculator-medical-ms.html">
+    <meta property="og:title" content="Tren Inflasi Perubatan Malaysia | Prudential">
+    <meta property="og:description"
+        content="Kos perubatan Malaysia meningkat pada kadar 15–16% setahun. Lihat kesannya ke atas bil penjagaan kesihatan masa depan anda.">
+
+    <title>Tren Inflasi Perubatan Malaysia | Prudential</title>
+    <link rel="icon" type="image/png" href="assets/prudential-1.png">
+    <link rel="canonical" href="https://annaprudential.com/calculator-medical-ms.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+
+<body>
+
+    <!-- Navigasi -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index-ms.html" class="logo">
+                <img src="assets/prudential-1.png" alt="Logo Prudential" class="brand-logo">
+            </a>
+            <button class="mobile-toggle" aria-label="Togol Navigasi">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index-ms.html#home">Utama</a></li>
+                <li><a href="index-ms.html#about">Tentang Saya</a></li>
+                <li><a href="products-ms.html">Produk</a></li>
+                <li><a href="calculator-ms.html" class="nav-active">Kalkulator</a></li>
+                <li><a href="index-ms.html#partners">Rakan Kongsi</a></li>
+                <li class="lang-item">
+                    <a href="calculator-medical.html" class="lang-btn" aria-label="Tukar Bahasa" title="Tukar Bahasa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="globe-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span>MS | EN</span>
+                    </a>
+                </li>
+                <li><a href="index-ms.html#quote" class="nav-cta">Hubungi Saya</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dark Hero -->
+    <header class="medical-hero">
+        <div class="container">
+            <span class="badge">Inflasi Perubatan Malaysia</span>
+            <h1>Sebab Bil Perubatan <span class="text-red">Berganda</span> Setiap 5 Tahun</h1>
+            <p>Kos penjagaan kesihatan Malaysia meningkat pada kadar 15–16% setahun. Lihat apa yang ini bermaksud untuk masa depan keluarga anda.</p>
+        </div>
+    </header>
+
+    <!-- Navigasi Balik -->
+    <div style="background: var(--off-white); padding: 20px 0;">
+        <div class="container">
+            <div class="calc-nav-cards" style="max-width: 760px; margin: 0 auto;">
+                <a href="calculator-ms.html" class="calc-nav-card">
+                    <span class="card-icon">🛡️</span>
+                    <div class="card-text">
+                        <h3>Kalkulator Hayat &amp; Penyakit Kritikal</h3>
+                        <p>Anggarkan keperluan perlindungan hayat dan PK anda berdasarkan matlamat.</p>
+                    </div>
+                </a>
+                <div class="calc-nav-card active">
+                    <span class="card-icon">📈</span>
+                    <div class="card-text">
+                        <h3>Tren Inflasi Perubatan <span class="active-badge">Di Sini</span></h3>
+                        <p>Lihat bagaimana inflasi perubatan 15–16% setahun mempengaruhi kos masa depan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bahagian Utama -->
+    <section class="medical-section">
+        <div class="container">
+
+            <div class="medical-layout fade-in">
+
+                <!-- Kiri: Teks -->
+                <div class="medical-text">
+                    <h2>Realiti <span class="text-red">Kos Penjagaan Kesihatan</span> yang Meningkat</h2>
+                    <p>
+                        Malaysia secara konsisten mencatatkan salah satu kadar inflasi perubatan tertinggi di Asia Tenggara.
+                        Berbeza dengan inflasi pengguna umum yang berjalan pada kadar 2–4%, inflasi perubatan berganda pada
+                        <strong>15–16% setahun</strong> — didorong oleh kenaikan kos ubat, yuran pakar, dan teknologi diagnostik termaju.
+                    </p>
+                    <p>
+                        Ini bermakna rawatan hospital yang berharga <strong>RM 10,000 hari ini</strong> boleh berharga lebih
+                        <strong>RM 40,000 dalam masa 10 tahun sahaja</strong> — dan melebihi RM 160,000 menjelang 2045,
+                        tanpa sebarang perlindungan insurans.
+                    </p>
+                    <p>
+                        Graf menunjukkan <strong>kos sejarah sebenar</strong> (2020–2024) berdasarkan data Mercer Marsh
+                        Benefits, dan kos unjuran berdasarkan tren yang sama berterusan. Gunakan peluncur untuk melihat
+                        kos penjagaan kesihatan pada mana-mana tahun yang anda pilih.
+                    </p>
+
+                    <div class="inflation-stat-box">
+                        <div class="big-number">15–16%</div>
+                        <div class="stat-label">Purata inflasi perubatan tahunan di Malaysia (2022–2024)</div>
+                        <div class="inflation-stat-row">
+                            <div class="mini-stat">
+                                <strong>~5 thn</strong>
+                                <span>Kos berganda setiap</span>
+                            </div>
+                            <div class="mini-stat">
+                                <strong>#1</strong>
+                                <span>Tertinggi di Asia Tenggara (2023)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kanan: Graf -->
+                <div>
+                    <div class="chart-box">
+                        <div class="chart-box-header">
+                            <div>
+                                <h3>Kos Rawatan Hospital dari Masa ke Masa</h3>
+                                <p>Berdasarkan prosedur RM 10,000 (garis dasar 2020)</p>
+                            </div>
+                            <div class="chart-legend">
+                                <div class="legend-item">
+                                    <span class="legend-dot historical"></span>
+                                    Sejarah (sebenar)
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-dot projected"></span>
+                                    Unjuran (15% setahun)
+                                </div>
+                            </div>
+                        </div>
+
+                        <canvas id="medicalChart" height="280" aria-label="Graf Inflasi Perubatan Malaysia" role="img"></canvas>
+
+                        <div class="chart-callout">
+                            <span class="callout-icon">⚠️</span>
+                            <div class="callout-text">
+                                Menjelang <strong id="callout-year">2050</strong>, rawatan hospital yang sama boleh berharga
+                                <strong id="callout-cost">RM —</strong> tanpa perlindungan — kos perubatan meningkat sebanyak <strong><span id="callout-multiplier">4.1</span>x</strong>.
+                            </div>
+                        </div>
+
+                        <p class="source-note">
+                            Sumber: Mercer Marsh Benefits Malaysia Medical Trend Survey 2020–2024 &amp; Willis Towers Watson Global Medical Trends Survey
+                        </p>
+                    </div>
+                </div>
+
+            </div><!-- /.medical-layout -->
+
+            <!-- Peluncur Tahun -->
+            <div class="slider-section fade-in">
+                <h3>🗓️ Unjurkan ke Mana-Mana Tahun Masa Hadapan</h3>
+                <p class="slider-sub">Seret peluncur untuk melihat bagaimana kos perubatan berganda dari masa ke masa</p>
+
+                <div class="year-display-row">
+                    <div class="year-display-big" id="year-display">2050</div>
+                    <div class="year-display-label">Tahun sasaran yang dipilih</div>
+                </div>
+
+                <input type="range" class="calc-slider" id="year-slider"
+                    min="2025" max="2080" value="2050" step="1"
+                    aria-label="Tahun sasaran" aria-valuemin="2025" aria-valuemax="2080">
+
+                <div class="slider-range-row">
+                    <span>2025</span>
+                    <span>2080</span>
+                </div>
+            </div>
+
+            <!-- Kadar Inflasi Sejarah -->
+            <div class="results-breakdown fade-in" style="max-width: 760px; margin: 0 auto 40px;">
+                <p class="breakdown-title">📅 Kadar Inflasi Perubatan Sejarah Malaysia</p>
+                <div class="breakdown-row">
+                    <span>2020</span>
+                    <span style="display:flex;align-items:center;gap:8px;">
+                        <span style="width:60px;height:8px;background:rgba(211,18,37,0.25);border-radius:4px;display:inline-block;"></span>
+                        9.8%
+                    </span>
+                </div>
+                <div class="breakdown-row">
+                    <span>2021</span>
+                    <span style="display:flex;align-items:center;gap:8px;">
+                        <span style="width:75px;height:8px;background:rgba(211,18,37,0.35);border-radius:4px;display:inline-block;"></span>
+                        11.2%
+                    </span>
+                </div>
+                <div class="breakdown-row">
+                    <span>2022</span>
+                    <span style="display:flex;align-items:center;gap:8px;">
+                        <span style="width:95px;height:8px;background:rgba(211,18,37,0.5);border-radius:4px;display:inline-block;"></span>
+                        14.1%
+                    </span>
+                </div>
+                <div class="breakdown-row">
+                    <span>2023</span>
+                    <span style="display:flex;align-items:center;gap:8px;">
+                        <span style="width:108px;height:8px;background:rgba(211,18,37,0.65);border-radius:4px;display:inline-block;"></span>
+                        15.6%
+                    </span>
+                </div>
+                <div class="breakdown-row">
+                    <span>2024 (terkini)</span>
+                    <span style="display:flex;align-items:center;gap:8px;">
+                        <span style="width:112px;height:8px;background:var(--primary-red);border-radius:4px;display:inline-block;"></span>
+                        <strong>15.9%</strong>
+                    </span>
+                </div>
+            </div>
+
+            <!-- CTA Bawah -->
+            <div class="medical-cta fade-in">
+                <h2>Jangan Biarkan Kos yang Meningkat <span class="text-red">Mengejutkan Anda</span></h2>
+                <p>
+                    Pelan perubatan yang komprehensif bermakna bil penjagaan kesihatan anda diuruskan — tidak kira betapa pantas kos meningkat.
+                    Tempah perbualan percuma dengan Anna untuk mencari pelan yang sesuai dengan gaya hidup dan bajet anda.
+                </p>
+                <div class="cta-buttons" style="justify-content:center;">
+                    <a href="https://calendly.com/axeannaxx/30min" target="_blank" class="btn btn-primary">
+                        📅 Tempah Konsultasi Percuma
+                    </a>
+                    <a href="https://wa.me/60183176361" target="_blank" class="btn btn-secondary">
+                        📱 WhatsApp Anna
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index-ms.html" class="logo">
+                    <img src="assets/prudential-1.png" alt="Logo Prudential" class="brand-logo">
+                </a>
+                <p class="mt-2">Menyediakan penyelesaian insurans premium dan ketenangan fikiran untuk anda dan keluarga.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Pautan Pantas</h3>
+                <ul>
+                    <li><a href="index-ms.html#home">Utama</a></li>
+                    <li><a href="index-ms.html#about">Tentang</a></li>
+                    <li><a href="products-ms.html">Produk</a></li>
+                    <li><a href="calculator-ms.html">Kalkulator</a></li>
+                    <li><a href="index-ms.html#partners">Rakan Kongsi</a></li>
+                    <li><a href="index-ms.html#quote">Hubungi Saya</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p>E-mel: annabelong6997@prupartner.com.my</p>
+                <p>Telefon: +60 18-317 6361</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Prudential. Hak Cipta Terpelihara.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js?v=9"></script>
+    <script src="js/calculator-medical.js"></script>
+
+</body>
+</html>

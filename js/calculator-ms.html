@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gunakan kalkulator percuma kami untuk menganggarkan keperluan perlindungan hayat dan penyakit kritikal anda — disesuaikan dengan matlamat anda.">
+    <meta name="keywords"
+        content="Kalkulator Insurans Hayat, Kalkulator Penyakit Kritikal, Perlindungan Insurans, Malaysia, Prudential">
+    <meta name="author" content="Anna Prudential">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://annaprudential.com/calculator-ms.html">
+    <meta property="og:title" content="Kalkulator Kewangan | Prudential Insurance">
+    <meta property="og:description"
+        content="Anggarkan keperluan Perlindungan Hayat dan Penyakit Kritikal anda dalam beberapa minit.">
+
+    <title>Kalkulator Kewangan | Prudential Insurance</title>
+    <link rel="icon" type="image/png" href="assets/prudential-1.png">
+    <link rel="canonical" href="https://annaprudential.com/calculator-ms.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigasi -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index-ms.html" class="logo">
+                <img src="assets/prudential-1.png" alt="Logo Prudential" class="brand-logo">
+            </a>
+            <button class="mobile-toggle" aria-label="Togol Navigasi">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index-ms.html#home">Utama</a></li>
+                <li><a href="index-ms.html#about">Tentang Saya</a></li>
+                <li><a href="products-ms.html">Produk</a></li>
+                <li><a href="calculator-ms.html" class="nav-active">Kalkulator</a></li>
+                <li><a href="index-ms.html#partners">Rakan Kongsi</a></li>
+                <li class="lang-item">
+                    <a href="calculator.html" class="lang-btn" aria-label="Tukar Bahasa" title="Tukar Bahasa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="globe-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span>MS | EN</span>
+                    </a>
+                </li>
+                <li><a href="index-ms.html#quote" class="nav-cta">Hubungi Saya</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="page-hero">
+        <div class="container fade-in active">
+            <span class="badge">Alat Anggaran Percuma</span>
+            <h1>Ketahui Keperluan <span class="text-red">Perlindungan</span> Anda</h1>
+            <p>Jawab beberapa soalan mudah dan ketahui berapa banyak perlindungan hayat dan penyakit kritikal yang diperlukan keluarga anda.</p>
+        </div>
+    </header>
+
+    <!-- Kad Jenis Kalkulator -->
+    <section class="calc-nav-section">
+        <div class="container">
+            <div class="calc-nav-cards fade-in active">
+                <div class="calc-nav-card active">
+                    <span class="card-icon">🛡️</span>
+                    <div class="card-text">
+                        <h3>Hayat &amp; Penyakit Kritikal <span class="active-badge">Di Sini</span></h3>
+                        <p>Anggarkan keperluan perlindungan hayat dan PK anda berdasarkan matlamat dan komitmen bulanan.</p>
+                    </div>
+                </div>
+                <a href="calculator-medical-ms.html" class="calc-nav-card">
+                    <span class="card-icon">📈</span>
+                    <div class="card-text">
+                        <h3>Tren Inflasi Perubatan</h3>
+                        <p>Lihat bagaimana inflasi perubatan Malaysia 15–16% setahun mempengaruhi kos penjagaan kesihatan masa depan.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kalkulator Utama -->
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calc-wrapper fade-in active">
+
+                <!-- Langkah 1: Matlamat -->
+                <span class="calc-step-label">Langkah 1 — Apakah yang anda lindungi?</span>
+                <div class="goal-tabs" role="tablist" aria-label="Matlamat Perlindungan">
+                    <button class="goal-tab" data-goal="education" role="tab" aria-selected="false">
+                        <span class="tab-icon">🎓</span> Pendidikan Anak
+                    </button>
+                    <button class="goal-tab" data-goal="parents" role="tab" aria-selected="false">
+                        <span class="tab-icon">👨‍👩‍👧</span> Sokongan Ibu Bapa
+                    </button>
+                    <button class="goal-tab active" data-goal="family" role="tab" aria-selected="true">
+                        <span class="tab-icon">👨‍👩‍👧‍👦</span> Keluarga
+                    </button>
+                </div>
+
+                <!-- Langkah 2: Tempoh -->
+                <span class="calc-step-label">Langkah 2 — Berapa tahun untuk mencapai matlamat ini?</span>
+                <div class="years-block">
+                    <div class="years-display-row">
+                        <div>
+                            <span class="years-number" id="years-display">20</span>
+                            <span class="years-unit">tahun</span>
+                        </div>
+                        <span class="years-hint">Seret untuk laraskan</span>
+                    </div>
+                    <input type="range" class="calc-slider" id="years-slider"
+                        min="1" max="40" value="20"
+                        aria-label="Tempoh matlamat" aria-valuemin="1" aria-valuemax="40" aria-valuenow="20">
+                    <div class="slider-range-labels">
+                        <span>1 tahun</span>
+                        <span>40 tahun</span>
+                    </div>
+                </div>
+
+                <div class="calc-divider"></div>
+
+                <!-- Langkah 3: Input Kewangan -->
+                <span class="calc-step-label">Langkah 3 — Gambaran kewangan bulanan anda</span>
+
+                <div class="calc-inputs">
+                    <!-- DOB -->
+                    <div class="calc-field">
+                        <label>Tarikh Lahir</label>
+                        <div style="display: flex; gap: 8px;">
+                            <select id="dob-day" class="calc-input" style="flex: 1; padding: 0 10px;" aria-label="Hari">
+                                <option value="" disabled selected>Hari</option>
+                            </select>
+                            <select id="dob-month" class="calc-input" style="flex: 1; padding: 0 10px;" aria-label="Bulan">
+                                <option value="" disabled selected>Bulan</option>
+                                <option value="01">Jan</option>
+                                <option value="02">Feb</option>
+                                <option value="03">Mac</option>
+                                <option value="04">Apr</option>
+                                <option value="05">Mei</option>
+                                <option value="06">Jun</option>
+                                <option value="07">Jul</option>
+                                <option value="08">Ogo</option>
+                                <option value="09">Sep</option>
+                                <option value="10">Okt</option>
+                                <option value="11">Nov</option>
+                                <option value="12">Dis</option>
+                            </select>
+                            <select id="dob-year" class="calc-input" style="flex: 1.2; padding: 0 10px;" aria-label="Tahun">
+                                <option value="" disabled selected>Tahun</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Pendapatan Tahunan -->
+                    <div class="calc-field">
+                        <label for="income">Pendapatan Tahunan (RM)</label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="income"
+                                placeholder="cth. 60000" min="0" step="1000"
+                                aria-label="Pendapatan tahunan dalam Ringgit Malaysia">
+                        </div>
+                        <span class="field-hint">Gaji kasar tahunan anda</span>
+                    </div>
+
+                    <!-- Pinjaman Perumahan -->
+                    <div class="calc-field">
+                        <label for="housing">Pinjaman Perumahan / Sewa (RM/bln)</label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="housing"
+                                placeholder="cth. 2000" min="0" step="100"
+                                aria-label="Bayaran perumahan bulanan">
+                        </div>
+                    </div>
+
+                    <!-- Pinjaman Kereta -->
+                    <div class="calc-field">
+                        <label for="car">Bayaran Balik Pinjaman Kereta (RM/bln)</label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="car"
+                                placeholder="cth. 800" min="0" step="100"
+                                aria-label="Bayaran pinjaman kereta bulanan">
+                        </div>
+                    </div>
+
+                    <!-- Bil & Keperluan (sentiasa ditunjukkan) -->
+                    <div class="calc-field">
+                        <label for="bills">Bil &amp; Keperluan (RM/bln)</label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="bills"
+                                placeholder="cth. 1500" min="0" step="100"
+                                aria-label="Bil bulanan, makanan dan barangan runcit">
+                        </div>
+                        <span class="field-hint">Makanan, barangan runcit, utiliti &amp; keperluan lain</span>
+                    </div>
+
+                    <!-- Perbelanjaan Lain (pilihan, sentiasa ditunjukkan) -->
+                    <div class="calc-field">
+                        <label for="others">Perbelanjaan Lain (RM/bln) <span style="font-weight:400; color: var(--text-muted);">— Pilihan</span></label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="others"
+                                placeholder="cth. 500" min="0" step="100"
+                                aria-label="Perbelanjaan bulanan lain yang pilihan">
+                        </div>
+                        <span class="field-hint">Premium insurans, langganan, hobi, dll.</span>
+                    </div>
+
+                    <!-- Pendidikan Anak — bersyarat -->
+                    <div class="calc-field conditional-field" id="field-education">
+                        <label for="education">Caruman Pendidikan Anak (RM/bln)</label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="education"
+                                placeholder="cth. 500" min="0" step="100"
+                                aria-label="Caruman pendidikan bulanan">
+                        </div>
+                    </div>
+
+                    <!-- Allowan Ibu Bapa — bersyarat -->
+                    <div class="calc-field conditional-field" id="field-parents">
+                        <label for="parents">Elaun Bulanan untuk Ibu Bapa (RM/bln)</label>
+                        <div class="input-prefix-wrap">
+                            <span class="prefix-symbol">RM</span>
+                            <input type="number" class="calc-input" id="parents"
+                                placeholder="cth. 1000" min="0" step="100"
+                                aria-label="Elaun bulanan ibu bapa">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Butang Kira -->
+                <button class="btn btn-primary btn-block" id="calculate-btn"
+                    style="font-size: 1.1rem; padding: 18px 32px; border-radius: 14px;">
+                    Tunjukkan Anggaran Perlindungan Saya →
+                </button>
+
+                <p style="text-align:center; font-size: 0.8rem; color: var(--text-muted); margin-top: 14px;">
+                    🔒 Keputusan anda adalah peribadi dan selamat. Mengambil masa kurang daripada 30 saat.
+                </p>
+
+            </div><!-- /.calc-wrapper -->
+
+            <!-- Bahagian Keputusan -->
+            <div class="results-section" id="results-section">
+
+                <div class="results-header fade-in">
+                    <h2>Keperluan <span class="text-red">Perlindungan</span> Anggaran Anda</h2>
+                    <p>Berdasarkan maklumat anda, inilah yang kami syorkan untuk perlindungan keluarga anda.</p>
+                </div>
+
+                <div class="results-grid fade-in">
+                    <!-- Kad Perlindungan Hayat -->
+                    <div class="result-card life-card">
+                        <span class="result-icon">🛡️</span>
+                        <span class="result-label">Perlindungan Hayat yang Disyorkan</span>
+                        <div class="result-amount" id="result-life">RM —</div>
+                        <div class="result-subtitle">Jumlah Dilindungi</div>
+                        <div class="result-why">
+                            <strong>Cara kami mengira ini</strong>
+                            Memastikan semua komitmen bulanan keluarga anda dibayar sepenuhnya sepanjang tempoh matlamat anda — supaya mereka dapat mengekalkan gaya hidup tanpa beban kewangan.
+                        </div>
+                    </div>
+
+                    <!-- Kad Penyakit Kritikal -->
+                    <div class="result-card ci-card">
+                        <span class="result-icon">❤️</span>
+                        <span class="result-label">Perlindungan Penyakit Kritikal yang Disyorkan</span>
+                        <div class="result-amount" id="result-ci">RM —</div>
+                        <div class="result-subtitle">Jumlah PK Dilindungi</div>
+                        <div class="result-why">
+                            <strong>Mengapa 5× komitmen bulanan anda?</strong>
+                            Peringkat awal penyakit kritikal biasanya memerlukan 3–7 tahun untuk pulih. Ini menanggung hutang dan perbelanjaan anda sepanjang tempoh itu tanpa menguras simpanan anda.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pecahan -->
+                <div class="results-breakdown fade-in">
+                    <p class="breakdown-title">📊 Pecahan Pengiraan</p>
+                    <div class="breakdown-row">
+                        <span>Pendapatan Tahunan</span>
+                        <span>RM <span id="bd-income">0</span></span>
+                    </div>
+                    <div class="breakdown-row">
+                        <span>Tempoh Matlamat</span>
+                        <span id="bd-years">—</span>
+                    </div>
+                    <div class="breakdown-row">
+                        <span>Komitmen Tahunan</span>
+                        <span>RM <span id="bd-commitments">0</span></span>
+                    </div>
+                    <div class="breakdown-row">
+                        <span><strong>Perlindungan Hayat yang Disyorkan</strong></span>
+                        <span id="bd-total">—</span>
+                    </div>
+                    <div class="breakdown-row" style="margin-top: 12px; border-top: 1px solid var(--border-color); padding-top: 12px;">
+                        <span>Komitmen Bulanan × 5 tahun</span>
+                        <span>RM <span id="bd-ci-base">0</span></span>
+                    </div>
+                    <div class="breakdown-row">
+                        <span><strong>Perlindungan PK yang Disyorkan</strong></span>
+                        <span id="bd-ci-total">—</span>
+                    </div>
+                </div>
+
+                <!-- Quotation Request -->
+                <div class="quote-request-block" id="quote-request-block" style="text-align: center; margin: 30px 0; padding: 24px; background: rgba(237, 28, 36, 0.05); border-radius: 16px; border: 1px solid rgba(237, 28, 36, 0.1);">
+                    <p style="font-weight: 500; font-size: 1.1rem; color: var(--text-dark); margin-bottom: 16px;">Mahu sebut harga yang diperibadikan berdasarkan angka ini?</p>
+                    <button class="btn btn-primary" id="request-quote-btn" onclick="requestQuotation()">
+                        📋 Minta Sebut Harga
+                    </button>
+                    <p class="quote-confirm" id="quote-confirm" style="display:none; color: #10B981; margin-top: 16px; font-weight: 500;">
+                        ✅ Permintaan dihantar! Anna akan menghubungi anda dalam masa 24 jam.
+                    </p>
+                </div>
+
+                <!-- Penafian -->
+                <p class="results-disclaimer">
+                    ⚠️ Angka-angka ini adalah anggaran untuk <strong>tujuan ilustrasi sahaja</strong> dan bukan nasihat kewangan atau tawaran insurans. Keperluan perlindungan sebenar berbeza mengikut keadaan individu. Sila rujuk penasihat berlesen untuk pelan yang diperibadikan.
+                </p>
+
+                <!-- CTA Keputusan -->
+                <div class="results-cta-card fade-in">
+                    <h3>Bersedia melindungi keluarga anda? 💪</h3>
+                    <p>Dapatkan pelan yang diperibadikan daripada Anna — tiada obligasi, hanya kejelasan.</p>
+                    <div class="cta-buttons">
+                        <a href="https://calendly.com/axeannaxx/30min" target="_blank" class="btn btn-primary">
+                            📅 Tempah Konsultasi Percuma
+                        </a>
+                        <a href="https://wa.me/60183176361" target="_blank" class="btn btn-secondary">
+                            📱 WhatsApp Anna
+                        </a>
+                    </div>
+                </div>
+
+            </div><!-- /#results-section -->
+        </div>
+    </section>
+
+    <!-- Overlay Pintu Masuk -->
+    <div class="gate-overlay" id="gate-overlay" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+        <div class="gate-card">
+            <span class="gate-emoji">🎯</span>
+            <h3 id="gate-title">Keputusan anda sudah sedia!</h3>
+            <p class="gate-sub">
+                Masukkan maklumat anda di bawah untuk membuka kunci anggaran perlindungan anda.
+            </p>
+
+            <div class="gate-fields">
+                <input type="text" class="gate-input" id="gate-name"
+                    placeholder="Nama Anda" autocomplete="name" aria-label="Nama anda">
+                <div id="gate-name-error" class="gate-error">Sila masukkan nama anda</div>
+
+                <input type="email" class="gate-input" id="gate-email"
+                    placeholder="Alamat e-mel anda"
+                    autocomplete="email" aria-label="Alamat e-mel anda">
+                <div id="gate-email-error" class="gate-error">Sila masukkan alamat e-mel anda</div>
+
+                <input type="text" class="gate-input" id="gate-occupation"
+                    placeholder="Pekerjaan (cth. Jurutera, Guru)" autocomplete="organization-title" aria-label="Pekerjaan anda">
+                <div id="gate-occupation-error" class="gate-error">Sila masukkan pekerjaan anda</div>
+
+                <input type="text" class="gate-input" id="gate-business"
+                    placeholder="Bidang Perniagaan (cth. Teknologi, Pendidikan)" autocomplete="organization" aria-label="Bidang perniagaan">
+                <div id="gate-business-error" class="gate-error">Sila masukkan bidang perniagaan anda</div>
+            </div>
+
+            <!-- Blok Kebenaran PDPA -->
+            <div class="pdpa-block">
+                <p class="pdpa-purpose">
+                    Dengan memberikan maklumat anda, anda bersetuju untuk <strong>Prudential (Annabel Ong)</strong> mengumpul dan memproses nama dan alamat e-mel anda untuk:
+                    <br>• Menghantar anggaran insurans yang diperibadikan kepada anda
+                    <br>• Menghantar maklumat produk dan kemas kini perkhidmatan yang berkaitan melalui e-mel
+                </p>
+                <p class="pdpa-disclosure">
+                    Data anda <strong>tidak</strong> akan dikongsi dengan pihak ketiga tanpa kebenaran anda. Anda boleh menarik balik kebenaran pada bila-bila masa dengan mengklik <strong>berhenti langgan</strong> dalam mana-mana e-mel, atau hubungi kami di annabelong6997@prupartner.com.my.
+                </p>
+
+                <label class="consent-label" id="consent-label">
+                    <input type="checkbox" id="consent-checkbox" aria-required="true">
+                    <span class="consent-custom-check" aria-hidden="true"></span>
+                    <span class="consent-text">
+                        Saya bersetuju dengan pengumpulan dan penggunaan data peribadi saya seperti yang dinyatakan di atas, selaras dengan <strong>Akta Perlindungan Data Peribadi 2010 (PDPA)</strong> Malaysia.
+                    </span>
+                </label>
+                <div id="consent-error" class="gate-error">Sila tandakan kotak semak untuk meneruskan</div>
+            </div>
+
+            <button class="btn btn-primary btn-block" id="unlock-btn" disabled
+                style="font-size: 1rem; padding: 16px 24px; border-radius: 14px; opacity: 0.5; cursor: not-allowed;">
+                Tunjukkan Keputusan Saya →
+            </button>
+
+            <div class="gate-divider">atau</div>
+
+            <a href="https://calendly.com/axeannaxx/30min" target="_blank" class="gate-alt-btn">
+                📅 Tempah konsultasi percuma
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index-ms.html" class="logo">
+                    <img src="assets/prudential-1.png" alt="Logo Prudential" class="brand-logo">
+                </a>
+                <p class="mt-2">Menyediakan penyelesaian insurans premium dan ketenangan fikiran untuk anda dan keluarga.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Pautan Pantas</h3>
+                <ul>
+                    <li><a href="index-ms.html#home">Utama</a></li>
+                    <li><a href="index-ms.html#about">Tentang</a></li>
+                    <li><a href="products-ms.html">Produk</a></li>
+                    <li><a href="calculator-ms.html">Kalkulator</a></li>
+                    <li><a href="index-ms.html#partners">Rakan Kongsi</a></li>
+                    <li><a href="index-ms.html#quote">Hubungi Saya</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p>E-mel: annabelong6997@prupartner.com.my</p>
+                <p>Telefon: +60 18-317 6361</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Prudential. Hak Cipta Terpelihara.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js?v=9"></script>
+    <script src="js/calculator.js"></script>
+
+</body>
+</html>

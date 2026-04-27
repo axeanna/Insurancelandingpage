@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="See how Malaysia's rising medical inflation — averaging 15–16% per year — impacts your future healthcare costs, and why medical coverage matters more than ever.">
+    <meta name="keywords"
+        content="Medical Inflation Malaysia, Healthcare Costs, Medical Insurance, Prudential, Hospital Bills Malaysia">
+    <meta name="author" content="Anna Prudential">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://annaprudential.com/calculator-medical.html">
+    <meta property="og:title" content="Malaysia Medical Inflation Trend | Prudential">
+    <meta property="og:description"
+        content="Malaysia's medical costs are rising at 15–16% per year. See how this affects your future healthcare bills.">
+
+    <title>Malaysia Medical Inflation Trend | Prudential</title>
+    <link rel="icon" type="image/png" href="assets/prudential-1.png">
+    <link rel="canonical" href="https://annaprudential.com/calculator-medical.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo">
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="calculator.html" class="nav-active">Calculator</a></li>
+                <li><a href="index.html#partners">Partners</a></li>
+                <li class="lang-item">
+                    <a href="calculator-medical-ms.html" class="lang-btn" aria-label="Toggle Language" title="Toggle Language">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="globe-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span>EN | MS</span>
+                    </a>
+                </li>
+                <li><a href="index.html#quote" class="nav-cta">Let's Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dark Hero -->
+    <header class="medical-hero">
+        <div class="container">
+            <span class="badge">Malaysia Medical Inflation</span>
+            <h1>Why Medical Bills <span class="text-red">Double</span> Every 5 Years</h1>
+            <p>Malaysia's healthcare costs are rising at 15–16% per year. See what that means for your family's future.</p>
+        </div>
+    </header>
+
+    <!-- Back nav -->
+    <div style="background: var(--off-white); padding: 20px 0;">
+        <div class="container">
+            <div class="calc-nav-cards" style="max-width: 760px; margin: 0 auto;">
+                <a href="calculator.html" class="calc-nav-card">
+                    <span class="card-icon">🛡️</span>
+                    <div class="card-text">
+                        <h3>Life &amp; Critical Illness Calculator</h3>
+                        <p>Estimate your life cover and CI needs based on your goals.</p>
+                    </div>
+                </a>
+                <div class="calc-nav-card active">
+                    <span class="card-icon">📈</span>
+                    <div class="card-text">
+                        <h3>Medical Inflation Trend <span class="active-badge">Here</span></h3>
+                        <p>See how Malaysia's 15–16% annual medical inflation affects future costs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <section class="medical-section">
+        <div class="container">
+
+            <!-- Two-column layout -->
+            <div class="medical-layout fade-in">
+
+                <!-- Left: Text -->
+                <div class="medical-text">
+                    <h2>The Reality of <span class="text-red">Rising Healthcare Costs</span></h2>
+                    <p>
+                        Malaysia has consistently recorded some of the highest medical inflation rates in Southeast Asia.
+                        Unlike general consumer inflation which runs at 2–4%, medical inflation compounds at
+                        <strong>15–16% per year</strong> — driven by rising drug costs, specialist fees, and advanced
+                        diagnostic technology.
+                    </p>
+                    <p>
+                        This means a hospitalisation that costs <strong>RM 10,000 today</strong> could cost over
+                        <strong>RM 40,000 in just 10 years</strong> — and over RM 160,000 by 2045,
+                        without any insurance protection.
+                    </p>
+                    <p>
+                        The chart shows <strong>actual historical costs</strong> (2020–2024) based on Mercer Marsh
+                        Benefits data, and projected costs based on the same trend continuing forward. Use the
+                        slider to see what healthcare could cost by any year you choose.
+                    </p>
+
+                    <div class="inflation-stat-box">
+                        <div class="big-number">15–16%</div>
+                        <div class="stat-label">Average annual medical inflation in Malaysia (2022–2024)</div>
+                        <div class="inflation-stat-row">
+                            <div class="mini-stat">
+                                <strong>~5 yrs</strong>
+                                <span>Cost doubles every</span>
+                            </div>
+                            <div class="mini-stat">
+                                <strong>#1</strong>
+                                <span>Highest in SEA (2023)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Chart -->
+                <div>
+                    <div class="chart-box">
+                        <div class="chart-box-header">
+                            <div>
+                                <h3>Cost of Hospitalisation Over Time</h3>
+                                <p>Based on RM 10,000 procedure (2020 baseline)</p>
+                            </div>
+                            <div class="chart-legend">
+                                <div class="legend-item">
+                                    <span class="legend-dot historical"></span>
+                                    Historical (actual)
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-dot projected"></span>
+                                    Projected (15% p.a.)
+                                </div>
+                            </div>
+                        </div>
+
+                        <canvas id="medicalChart" height="280" aria-label="Malaysian Medical Inflation Chart" role="img"></canvas>
+
+                        <div class="chart-callout">
+                            <span class="callout-icon">⚠️</span>
+                            <div class="callout-text">
+                                By <strong id="callout-year">2050</strong>, the same hospitalisation could cost
+                                <strong id="callout-cost">RM —</strong> without coverage — that's medical costs increasing by <strong><span id="callout-multiplier">4.1</span>x</strong>.
+                            </div>
+                        </div>
+
+                        <p class="source-note">
+                            Source: Mercer Marsh Benefits Malaysia Medical Trend Survey 2020–2024 &amp; Willis Towers Watson Global Medical Trends Survey
+                        </p>
+                    </div>
+                </div>
+
+            </div><!-- /.medical-layout -->
+
+            <!-- Year Slider -->
+            <div class="slider-section fade-in">
+                <h3>🗓️ Project to Any Future Year</h3>
+                <p class="slider-sub">Drag the slider to see how medical costs compound over time</p>
+
+                <div class="year-display-row">
+                    <div class="year-display-big" id="year-display">2050</div>
+                    <div class="year-display-label">Selected target year</div>
+                </div>
+
+                <input type="range" class="calc-slider" id="year-slider"
+                    min="2025" max="2080" value="2050" step="1"
+                    aria-label="Target year" aria-valuemin="2025" aria-valuemax="2080">
+
+                <div class="slider-range-row">
+                    <span>2025</span>
+                    <span>2080</span>
+                </div>
+            </div>
+
+            <!-- Historical Inflation Rate Context -->
+            <div class="results-breakdown fade-in" style="max-width: 760px; margin: 0 auto 40px;">
+                <p class="breakdown-title">📅 Historical Malaysia Medical Inflation Rates</p>
+                <div class="breakdown-row">
+                    <span>2020</span>
+                    <span style="display:flex;align-items:center;gap:8px;">
+                        <span style="width:60px;height:8px;background:rgba(211,18,37,0.25);border-radius:4px;display:inline-block;"></span>
+                        9.8%
+                    </span>
+                </div>
+                <div class="breakdown-row">
+                    <span>2021</span>
+                    <span style="display:flex;align-items:center;gap:8px;">
+                        <span style="width:75px;height:8px;background:rgba(211,18,37,0.35);border-radius:4px;display:inline-block;"></span>
+                        11.2%
+                    </span>
+                </div>
+                <div class="breakdown-row">
+                    <span>2022</span>
+                    <span style="display:flex;align-items:center;gap:8px;">
+                        <span style="width:95px;height:8px;background:rgba(211,18,37,0.5);border-radius:4px;display:inline-block;"></span>
+                        14.1%
+                    </span>
+                </div>
+                <div class="breakdown-row">
+                    <span>2023</span>
+                    <span style="display:flex;align-items:center;gap:8px;">
+                        <span style="width:108px;height:8px;background:rgba(211,18,37,0.65);border-radius:4px;display:inline-block;"></span>
+                        15.6%
+                    </span>
+                </div>
+                <div class="breakdown-row">
+                    <span>2024 (latest)</span>
+                    <span style="display:flex;align-items:center;gap:8px;">
+                        <span style="width:112px;height:8px;background:var(--primary-red);border-radius:4px;display:inline-block;"></span>
+                        <strong>15.9%</strong>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="medical-cta fade-in">
+                <h2>Don't Let Rising Costs <span class="text-red">Catch You Off Guard</span></h2>
+                <p>
+                    A comprehensive medical plan means your healthcare bills are managed — no matter how fast costs rise.
+                    Book a free chat with Anna to find a plan that fits your lifestyle and budget.
+                </p>
+                <div class="cta-buttons" style="justify-content:center;">
+                    <a href="https://calendly.com/axeannaxx/30min" target="_blank" class="btn btn-primary">
+                        📅 Book a Free Consultation
+                    </a>
+                    <a href="https://wa.me/60183176361" target="_blank" class="btn btn-secondary">
+                        📱 WhatsApp Anna
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo">
+                </a>
+                <p class="mt-2">Providing premium insurance solutions and peace of mind for you and your family.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="index.html#partners">Partners</a></li>
+                    <li><a href="index.html#quote">Let's Connect</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: annabelong6997@prupartner.com.my</p>
+                <p>Phone: +60 18-317 6361</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Prudential. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js?v=9"></script>
+    <script src="js/calculator-medical.js"></script>
+
+</body>
+</html>

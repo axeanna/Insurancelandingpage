@@ -75,7 +75,7 @@ products = [
 def get_template(lang, name, category, desc, features_html, toggle_link):
     if lang == "en":
         txt = {
-            "home": "Home", "about": "About Me", "products": "Products", "partners": "Partners", 
+            "home": "Home", "about": "About Me", "products": "Products", "partners": "Partners", "calculator": "Calculator",
             "btn_quote": "Connect With Me", "lang_lbl": "EN | MS",
             "overview_title": "Overview & Benefits",
             "guidance": f"As your dedicated Wealth Planner, I am here to personally guide you through the intricacies of the <strong>{name}</strong> plan. We will assess your current situation to ensure this coverage aligns perfectly with your goals.",
@@ -95,7 +95,7 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
         }
     else:
         txt = {
-            "home": "Utama", "about": "Tentang Saya", "products": "Produk", "partners": "Rakan Kongsi", 
+            "home": "Utama", "about": "Tentang Saya", "products": "Produk", "partners": "Rakan Kongsi", "calculator": "Kalkulator",
             "btn_quote": "Hubungi Saya", "lang_lbl": "MS | EN",
             "overview_title": "Gambaran Keseluruhan & Faedah",
             "guidance": f"Sebagai Perunding Insurans anda yang berdedikasi, saya di sini untuk membimbing anda secara peribadi merasai manfaat pelan <strong>{name}</strong>. Kami akan menilai situasi semasa anda untuk memastikan perlindungan ini sejajar dengan matlamat anda.",
@@ -255,6 +255,7 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
                 <li><a href="../index{'-ms' if lang=='ms' else ''}.html#home">{txt['home']}</a></li>
                 <li><a href="../index{'-ms' if lang=='ms' else ''}.html#about">{txt['about']}</a></li>
                 <li><a href="../products{'-ms' if lang=='ms' else ''}.html" class="text-red">{txt['products']}</a></li>
+                <li><a href="../calculator{'-ms' if lang=='ms' else ''}.html">{txt['calculator']}</a></li>
                 <li><a href="../index{'-ms' if lang=='ms' else ''}.html#partners">{txt['partners']}</a></li>
                 <li class="lang-item">
                     <a href="{toggle_link}" class="lang-btn" aria-label="Toggle Language" title="Toggle Language">
@@ -316,6 +317,7 @@ def get_template(lang, name, category, desc, features_html, toggle_link):
                     <li><a href="../index{'-ms' if lang=='ms' else ''}.html#home">{txt['home']}</a></li>
                     <li><a href="../index{'-ms' if lang=='ms' else ''}.html#about">{txt['about']}</a></li>
                     <li><a href="../products{'-ms' if lang=='ms' else ''}.html">{txt['products']}</a></li>
+                    <li><a href="../calculator{'-ms' if lang=='ms' else ''}.html">{txt['calculator']}</a></li>
                     <li><a href="../index{'-ms' if lang=='ms' else ''}.html#partners">{txt['partners']}</a></li>
                     <li><a href="../index{'-ms' if lang=='ms' else ''}.html#quote">{txt['btn_quote']}</a></li>
                 </ul>
