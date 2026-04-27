@@ -145,7 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Validation logic to enable submit button
         let isValid = genderVal && smokerVal && medicalVal && contactVal && coverageVal;
-        console.log({ genderVal, smokerVal, medicalVal, contactVal, coverageVal, isValid });
         
         if ((medicalVal === 'Yes' || medicalVal === 'Ya') && medicalDescInput.value.trim() === '') {
             isValid = false;
