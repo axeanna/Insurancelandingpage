@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Handle form changes to validate and enforce business logic
     modal.addEventListener('change', () => {
+        const genderVal = document.querySelector('input[name="modal_gender"]:checked')?.value;
         const smokerVal = document.querySelector('input[name="modal_smoker"]:checked')?.value;
         const medicalVal = document.querySelector('input[name="modal_medical"]:checked')?.value;
         const coverageVal = document.querySelector('input[name="modal_coverage"]:checked')?.value;
@@ -143,7 +144,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cardConsult) cardConsult.classList.toggle('selected', cardConsult.querySelector('input').checked);
 
         // Validation logic to enable submit button
-        let isValid = smokerVal && medicalVal && contactVal && coverageVal;
+        let isValid = genderVal && smokerVal && medicalVal && contactVal && coverageVal;
+        console.log({ genderVal, smokerVal, medicalVal, contactVal, coverageVal, isValid });
         
         if ((medicalVal === 'Yes' || medicalVal === 'Ya') && medicalDescInput.value.trim() === '') {
             isValid = false;
@@ -167,6 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Submit Action
     if (submitBtn) {
         submitBtn.addEventListener('click', () => {
+            const genderVal = document.querySelector('input[name="modal_gender"]:checked')?.value;
             const smokerVal = document.querySelector('input[name="modal_smoker"]:checked')?.value;
             const medicalVal = document.querySelector('input[name="modal_medical"]:checked')?.value;
             const coverageVal = document.querySelector('input[name="modal_coverage"]:checked')?.value;
@@ -205,6 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 annual_income: currentResults.annualIncome ? currentResults.annualIncome.toLocaleString('en-MY') : '0',
                 goal: currentResults.goal || '',
                 years: currentResults.years || 0,
+                gender: genderVal,
                 smoker_status: smokerVal,
                 medical_conditions: finalMedicalText,
                 existing_life_cover: finalExistingLifeText,
