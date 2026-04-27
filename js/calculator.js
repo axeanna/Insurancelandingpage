@@ -5,7 +5,7 @@
 
 // ⚠️ IMPORTANT: Replace the string below with your EmailJS Public Key
 // Get it from: emailjs.com → Account → General → Public Key
-emailjs.init('YOUR_PUBLIC_KEY_HERE');
+emailjs.init('wqFxp4IHe9q_HnHIJ');
 
 let currentResults = {};
 
