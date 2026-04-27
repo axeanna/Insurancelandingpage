@@ -479,8 +479,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function sendWebhook(name, email, occupation, natureOfBusiness) {
-        const dobInput     = document.getElementById('dob');
-        const dob          = dobInput ? dobInput.value : '';
+        // Read the three DOB dropdown selects and combine into DD/MM/YYYY
+        const dobDay   = document.getElementById('dob-day');
+        const dobMonth = document.getElementById('dob-month');
+        const dobYear  = document.getElementById('dob-year');
+        const dob = (dobDay && dobDay.value && dobMonth && dobMonth.value && dobYear && dobYear.value)
+            ? dobDay.value + '/' + dobMonth.value + '/' + dobYear.value
+            : '';
         const annualIncome = getVal('income');
         const housing      = getVal('housing');
         const car          = getVal('car');
