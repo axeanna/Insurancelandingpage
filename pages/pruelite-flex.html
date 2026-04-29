@@ -3,133 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore PRUElite Flex, a guaranteed income insurance plan that delivers a lifelong income through annual payments and effortless wealth transfer.">
-    <title>PRUElite Flex | Prudential Insurance</title>
+    <title>PRUElite Flex | Prudential</title>
     <link rel="icon" type="image/png" href="../assets/prudential-1.png">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <style>
-        :root {
-            --product-theme: var(--primary-red);
-        }
-        
-        .product-detail-hero {
-            padding: 180px 0 120px;
-            background: linear-gradient(135deg, rgba(20,20,20,0.95) 0%, rgba(138, 20, 36, 0.95) 100%), url('../assets/hero_bg.webp?v=4') no-repeat center center/cover;
+        .product-hero {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #1a1a1a 100%);
             color: var(--pure-white);
+            padding: 160px 0 100px;
             text-align: center;
-            position: relative;
         }
-        
-        .product-detail-hero h1 {
-            color: var(--pure-white);
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-        
-        .product-detail-hero p.lead {
-            font-size: 1.25rem;
-            max-width: 700px;
-            margin: 0 auto;
-            color: rgba(255,255,255,0.9);
-            line-height: 1.6;
-        }
-
-        .product-info-wrapper {
-            margin-top: -60px;
-            position: relative;
-            z-index: 10;
-            padding: 0 20px;
-        }
-
-        .product-card-main {
-            background: var(--pure-white);
+        .category-badge {
+            background: var(--primary-red);
+            color: white;
+            padding: 6px 16px;
             border-radius: 20px;
-            padding: 60px;
-            max-width: 900px;
-            margin: 0 auto;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-            text-align: left;
-        }
-
-        .product-card-main h2 {
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-            color: var(--dark-bg);
-            border-bottom: 3px solid var(--product-theme);
-            padding-bottom: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
             display: inline-block;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
-            margin: 40px 0;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            padding: 25px;
-            background: var(--off-white);
-            border-radius: 12px;
-            border-left: 4px solid var(--product-theme);
-            transition: var(--transition);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
-        .feature-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        /* Dropdown CSS - UPDATED TO ANIMATED VERSION */
+        .nav-dropdown { position: relative; }
+        .dropdown-content {
+            visibility: hidden; opacity: 0; transform: translateY(10px);
+            position: absolute; top: 100%; left: -150px;
+            background-color: var(--pure-white); min-width: 650px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15); z-index: 100;
+            border-radius: 16px; padding: 25px; gap: 20px; display: flex;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(0,0,0,0.05);
         }
-
-        .feature-icon {
-            font-size: 2rem;
-            line-height: 1;
+        .nav-dropdown:hover .dropdown-content { visibility: visible; opacity: 1; transform: translateY(0); }
+        .drop-col { flex: 1; display: flex; flex-direction: column; }
+        .drop-col strong { color: var(--dark-bg); margin-bottom: 10px; font-size: 0.9rem; border-bottom: 1px solid var(--border-color); padding-bottom: 5px; }
+        .drop-col a { color: var(--text-main) !important; padding: 8px 0; text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+        .drop-col a:hover { color: var(--primary-red) !important; padding-left: 5px; }
+        @media (max-width: 992px) {
+            .dropdown-content { position: static; display: none; min-width: 100%; box-shadow: none; padding: 10px; flex-direction: column; }
+            .nav-dropdown.active .dropdown-content { display: flex; }
         }
-
-        .feature-text p {
-            margin: 0;
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: var(--text-main);
-        }
-
-        .cta-container {
-            margin-top: 50px;
-            padding: 50px;
-            background: linear-gradient(135deg, var(--off-white) 0%, var(--pure-white) 100%);
-            border-radius: 15px;
-            border: 1px solid var(--border-color);
-            text-align: center;
-        }
-        
-        @media (max-width: 768px) {
-            .product-card-main {
-                padding: 40px 20px;
-            }
-            .product-detail-hero h1 {
-                font-size: 2.5rem;
+            .nav-dropdown.active .dropdown-content {
+                display: flex;
             }
         }
     </style>
 </head>
 <body>
-
-    <!-- Navigation -->
+    <!-- Navbar -->
     <nav class="navbar scrolled">
         <div class="container nav-container">
             <a href="../index.html" class="logo">
                 <img src="../assets/prudential-1.png" alt="Prudential Logo" class="brand-logo">
             </a>
+            <!-- FIXED: ADDED MOBILE TOGGLE -->
             <button class="mobile-toggle" aria-label="Toggle Navigation">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -137,77 +68,151 @@
             </button>
             <ul class="nav-links">
                 <li><a href="../index.html#home">Home</a></li>
-                <li><a href="../index.html#about">About Me</a></li>
-                <li><a href="../products.html" class="text-red">Products</a></li>
+                <li class="nav-dropdown">
+                    <a href="../products.html" class="nav-drop-btn">Products ▾</a>
+                    <div class="dropdown-content">
+                        <div class="drop-col">
+                            <strong>🛡️ Life Insurance</strong>
+                            <a href="pruwith-you-plus.html">PRUWith You Plus</a>
+                            <a href="pruwealth-enrich-2.html">PRUWealth Enrich 2.0</a>
+                            <a href="prulive-well.html">PRULive Well</a>
+                            <a href="pruterm.html">PRUTerm</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>❤️ Critical Illness</strong>
+                            <a href="total-multi-crisis-care.html">Total Multi Crisis Care</a>
+                            <a href="critical-care-plus.html">Critical Care Plus</a>
+                            <a href="critical-care.html">Critical Care</a>
+                            <a href="essential-child-plus.html">Essential Child Plus</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>🏥 Medical Insurance</strong>
+                            <a href="prumillion-med-2.html">PRUMillion Med 2.0</a>
+                            <br>
+                            <strong>👶 Infant & Child</strong>
+                            <a href="prumy-child-plus.html">PRUMy Child Plus</a>
+                            <br>
+                            <strong>💰 Wealth & Savings</strong>
+                            <a href="prucash-enrich.html">PRUCash Enrich</a>
+                            <a href="pruelite-flex.html">PRUElite Flex</a>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="../calculator.html">Calculator</a></li>
-                <li><a href="../index.html#partners">Partners</a></li>
+                <!-- FIXED: ADDED LANGUAGE TOGGLE -->
                 <li class="lang-item">
-                    <a href="pruelite-flex-ms.html" class="lang-btn" aria-label="Toggle Language" title="Toggle Language">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="globe-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <a href="../pages/pruelite-flex-ms.html" class="lang-btn" aria-label="Toggle Language" title="Toggle Language" style="display:flex; align-items:center; gap:5px; padding:6px 12px; border:1px solid var(--border-color); border-radius:20px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="globe-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
                         <span>EN | MS</span>
                     </a>
                 </li>
-                <li><a href="../index.html#quote" class="btn btn-primary">Connect With Me</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Product Detail Hero -->
-    <header class="product-detail-hero">
-        <div class="container fade-in active">
-            <span class="badge" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); color: white; display: inline-block; padding: 6px 20px; border-radius: 30px; font-weight: 600; margin-bottom: 20px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">Wealth & Legacy Insurance</span>
-            <h1>PRUElite Flex</h1>
-            <p class="lead">Explore PRUElite Flex, a guaranteed income insurance plan that delivers a lifelong income through annual payments and effortless wealth transfer.</p>
+    <!-- Hero Section -->
+    <header class="product-hero">
+        <div class="container fade-in active" style="max-width: 800px;">
+            <span class="category-badge">Savings & Investment</span>
+            <h1 style="font-size: 3rem; margin-bottom: 20px;">PRUElite Flex</h1>
+            <p style="font-size: 1.2rem; opacity: 0.9;">Growing wealth across generations with flexible guaranteed lifetime income</p>
         </div>
     </header>
 
-    <!-- Main Content Wrapper -->
-    <div class="product-info-wrapper">
-        <div class="product-card-main fade-in active">
-            <h2>Overview & Benefits</h2>
+    <!-- Main Content -->
+    <section class="bg-light" style="padding: 80px 0;">
+        <div class="container">
             
-            <div class="feature-grid">
-                
-                <div class="feature-item">
-                    <div class="feature-icon">✨</div>
-                    <div class="feature-text">
-                        <p>Secure your future with PRUElite Flex, a wealth solution providing guaranteed annual income for life and effortless wealth transfer. This income insurance plan ensures your financial security and simplifies legacy planning for your loved ones.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🛡️</div>
-                    <div class="feature-text">
-                        <p>PRUElite Flex is a solution that offers flexible guaranteed lifetime income, which aligns with your current ambitions and evolves to meet your future needs. ​</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🤝</div>
-                    <div class="feature-text">
-                        <p>Whether you are reinvesting for future growth or transferring wealth across generations, your value remains at the core of every decision. Growing wealth across generations, our reason is you.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-main); margin-top: 30px;">
-                As your dedicated Wealth Planner, I am here to personally guide you through the intricacies of the <strong>PRUElite Flex</strong> plan. We will assess your current situation to ensure this coverage aligns perfectly with your goals.
-            </p>
+            <div style="margin-bottom: 60px;">
+                <h2 style="color: var(--dark-bg); text-align: center; margin-bottom: 40px; font-size: 2.2rem;">Why This Plan?</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
 
-            <div class="cta-container">
-                <h3 style="margin-bottom: 20px; font-size: 1.8rem; color: var(--dark-bg);">Secure Your Future Today</h3>
-                <p style="margin-bottom: 35px; font-size: 1.1rem; color: var(--text-muted); max-width: 600px; margin-inline: auto;">Ready to take the next step? Let's connect to discuss a personalized protection plan designed specifically for you.</p>
-                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <a href="../index.html#quote" class="btn btn-primary" style="padding: 15px 35px; font-size: 1.1rem;">Submit Details</a>
-                    <a href="https://wa.me/60183176361" target="_blank" class="btn btn-secondary" style="background: #25D366; color: white; border-color: #25D366; padding: 15px 35px; font-size: 1.1rem;">WhatsApp Me</a>
+                <div class="benefit-card glass" style="background: var(--pure-white); padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); border-left: 4px solid var(--primary-red);">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">💵</div>
+                    <h3 style="color: var(--dark-bg); font-size: 1.2rem; margin-bottom: 10px;">FlexIncome</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Flexible guaranteed lifetime income until age 80 or 100</p>
+                </div>
+                <div class="benefit-card glass" style="background: var(--pure-white); padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); border-left: 4px solid var(--primary-red);">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">👨‍👩‍👧</div>
+                    <h3 style="color: var(--dark-bg); font-size: 1.2rem; margin-bottom: 10px;">Policy Split Option</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Distribute wealth across multiple beneficiaries seamlessly</p>
+                </div>
+                <div class="benefit-card glass" style="background: var(--pure-white); padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); border-left: 4px solid var(--primary-red);">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">✅</div>
+                    <h3 style="color: var(--dark-bg); font-size: 1.2rem; margin-bottom: 10px;">Guaranteed Issuance</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Guaranteed Issuance Offer with no health questions</p>
+                </div>
                 </div>
             </div>
-            <div style="margin-top: 50px; text-align: center;">
-                <a href="../products.html" class="btn btn-outline" style="border: none; border-bottom: 2px solid var(--primary-red); border-radius: 0; padding: 5px 0;">← Explore Other Products</a>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 60px;">
+                <div style="flex: 1; min-width: 300px; background: var(--pure-white); padding: 40px; border-radius: 16px; box-shadow: var(--shadow-sm);">
+                    <h3 style="color: var(--dark-bg); margin-bottom: 20px; font-size: 1.5rem;">Plan Highlights</h3>
+<ul>
+                    <li style='margin-bottom: 10px; font-size: 1.05rem; display: flex; align-items: flex-start; gap: 10px;'><span style='color: var(--primary-red);'>✓</span> <span>Flexible guaranteed lifetime income until age 80 or 100</span></li>
+                    <li style='margin-bottom: 10px; font-size: 1.05rem; display: flex; align-items: flex-start; gap: 10px;'><span style='color: var(--primary-red);'>✓</span> <span>Distribute wealth across multiple beneficiaries seamlessly</span></li>
+                    <li style='margin-bottom: 10px; font-size: 1.05rem; display: flex; align-items: flex-start; gap: 10px;'><span style='color: var(--primary-red);'>✓</span> <span>Guaranteed Issuance Offer with no health questions</span></li>
+                </ul>
+
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <h3 style="color: var(--dark-bg); margin-bottom: 20px; font-size: 1.5rem;">Who Is This For?</h3>
+
+                <div style="background: var(--off-white); padding: 20px; border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--border-color);">
+                    <h4 style="color: var(--dark-bg); margin: 0; display: flex; align-items: center; gap: 10px;"><span>👤</span> High-income earners focused on legacy planning</h4>
+                </div>
+                <div style="background: var(--off-white); padding: 20px; border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--border-color);">
+                    <h4 style="color: var(--dark-bg); margin: 0; display: flex; align-items: center; gap: 10px;"><span>👤</span> Parents wanting to distribute wealth</h4>
+                </div>
+                <div style="background: var(--off-white); padding: 20px; border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--border-color);">
+                    <h4 style="color: var(--dark-bg); margin: 0; display: flex; align-items: center; gap: 10px;"><span>👤</span> Those wanting guaranteed lifetime income</h4>
+                </div>
+                </div>
             </div>
+
+            <!-- FAQ Section -->
+            <div style="margin-bottom: 60px; max-width: 800px; margin: 0 auto;">
+                <h2 style="color: var(--dark-bg); text-align: center; margin-bottom: 30px; font-size: 2rem;">Frequently Asked Questions</h2>
+
+                <div class="faq-item" style="margin-bottom: 15px; border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; background: var(--pure-white);">
+                    <div class="faq-header" style="padding: 20px; background: var(--off-white); font-weight: 600; cursor: pointer; color: var(--dark-bg);" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+                        What are the eligibility requirements for this plan? ▾
+                    </div>
+                    <div class="faq-content" style="padding: 20px; display: none; color: var(--text-muted); border-top: 1px solid var(--border-color);">
+                        Eligibility depends on your entry age and health status. Anna can help you check your eligibility for free.
+                    </div>
+                </div>
+                <div class="faq-item" style="margin-bottom: 15px; border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; background: var(--pure-white);">
+                    <div class="faq-header" style="padding: 20px; background: var(--off-white); font-weight: 600; cursor: pointer; color: var(--dark-bg);" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+                        Can I upgrade my plan in the future? ▾
+                    </div>
+                    <div class="faq-content" style="padding: 20px; display: none; color: var(--text-muted); border-top: 1px solid var(--border-color);">
+                        Yes, most of our plans allow you to attach additional riders or increase your coverage amount as your life needs change.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div style="text-align: center; padding: 60px; background: var(--pure-white); border-radius: 20px; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color);">
+                <h2 style="color: var(--dark-bg); margin-bottom: 20px;">Ready to secure your future?</h2>
+                <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">Get a personalized quotation or speak directly with Anna to find the best configuration for you.</p>
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <a href="../calculator.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 30px;">Get a Quotation</a>
+                    <a href="https://wa.me/60183176361" target="_blank" class="btn btn-secondary" style="font-size: 1.1rem; padding: 15px 30px;">📱 WhatsApp Anna</a>
+                </div>
+            </div>
+
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer" style="margin-top: 100px;">
+    <footer class="footer">
         <div class="container footer-container">
             <div class="footer-brand">
                 <a href="../index.html" class="logo"><img src="../assets/prudential-1.png" alt="Prudential Logo" class="brand-logo"></a>
@@ -217,11 +222,11 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="../index.html#home">Home</a></li>
-                    <li><a href="../index.html#about">About Me</a></li>
+                    <li><a href="../index.html#about">About</a></li>
                     <li><a href="../products.html">Products</a></li>
                     <li><a href="../calculator.html">Calculator</a></li>
-                    <li><a href="../index.html#partners">Partners</a></li>
-                    <li><a href="../index.html#quote">Connect With Me</a></li>
+                    <li><a href="../partners.html">Partners</a></li>
+                    <li><a href="../index.html#quote">Let's Connect</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -234,10 +239,7 @@
             <p>&copy; 2026 Prudential. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <!-- Fact Finder Modal Removed -->
-
-    <!-- Calendar Integration Scripts -->
+    <!-- Add JS script to make toggle work -->
     <script src="../js/script.js?v=9"></script>
 </body>
 </html>

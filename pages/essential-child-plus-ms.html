@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Child Plus | Prudential</title>
+    <link rel="icon" type="image/png" href="../assets/prudential-1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .product-hero {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #1a1a1a 100%);
+            color: var(--pure-white);
+            padding: 160px 0 100px;
+            text-align: center;
+        }
+        .category-badge {
+            background: var(--primary-red);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Dropdown CSS - UPDATED TO ANIMATED VERSION */
+        .nav-dropdown { position: relative; }
+        .dropdown-content {
+            visibility: hidden; opacity: 0; transform: translateY(10px);
+            position: absolute; top: 100%; left: -150px;
+            background-color: var(--pure-white); min-width: 650px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15); z-index: 100;
+            border-radius: 16px; padding: 25px; gap: 20px; display: flex;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .nav-dropdown:hover .dropdown-content { visibility: visible; opacity: 1; transform: translateY(0); }
+        .drop-col { flex: 1; display: flex; flex-direction: column; }
+        .drop-col strong { color: var(--dark-bg); margin-bottom: 10px; font-size: 0.9rem; border-bottom: 1px solid var(--border-color); padding-bottom: 5px; }
+        .drop-col a { color: var(--text-main) !important; padding: 8px 0; text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+        .drop-col a:hover { color: var(--primary-red) !important; padding-left: 5px; }
+        @media (max-width: 992px) {
+            .dropdown-content { position: static; display: none; min-width: 100%; box-shadow: none; padding: 10px; flex-direction: column; }
+            .nav-dropdown.active .dropdown-content { display: flex; }
+        }
+            .nav-dropdown.active .dropdown-content {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="../index-ms.html" class="logo">
+                <img src="../assets/prudential-1.png" alt="Prudential Logo" class="brand-logo">
+            </a>
+            <!-- FIXED: ADDED MOBILE TOGGLE -->
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index-ms.html#home">Utama</a></li>
+                <li class="nav-dropdown">
+                    <a href="../products-ms.html" class="nav-drop-btn">Produk ▾</a>
+                    <div class="dropdown-content">
+                        <div class="drop-col">
+                            <strong>🛡️ Insurans Hayat</strong>
+                            <a href="pruwith-you-plus-ms.html">PRUWith You Plus</a>
+                            <a href="pruwealth-enrich-2-ms.html">PRUWealth Enrich 2.0</a>
+                            <a href="prulive-well-ms.html">PRULive Well</a>
+                            <a href="pruterm-ms.html">PRUTerm</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>❤️ Penyakit Kritikal</strong>
+                            <a href="total-multi-crisis-care-ms.html">Total Multi Crisis Care</a>
+                            <a href="critical-care-plus-ms.html">Critical Care Plus</a>
+                            <a href="critical-care-ms.html">Critical Care</a>
+                            <a href="essential-child-plus-ms.html">Essential Child Plus</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>🏥 Insurans Perubatan</strong>
+                            <a href="prumillion-med-2-ms.html">PRUMillion Med 2.0</a>
+                            <br>
+                            <strong>👶 Bayi & Kanak-Kanak</strong>
+                            <a href="prumy-child-plus-ms.html">PRUMy Child Plus</a>
+                            <br>
+                            <strong>💰 Simpanan & Pelaburan</strong>
+                            <a href="prucash-enrich-ms.html">PRUCash Enrich</a>
+                            <a href="pruelite-flex-ms.html">PRUElite Flex</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../calculator-ms.html">Kalkulator</a></li>
+                <!-- FIXED: ADDED LANGUAGE TOGGLE -->
+                <li class="lang-item">
+                    <a href="../pages/essential-child-plus.html" class="lang-btn" aria-label="Toggle Language" title="Toggle Language" style="display:flex; align-items:center; gap:5px; padding:6px 12px; border:1px solid var(--border-color); border-radius:20px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="globe-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span>MS | EN</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="product-hero">
+        <div class="container fade-in active" style="max-width: 800px;">
+            <span class="category-badge">Penyakit Kritikal</span>
+            <h1 style="font-size: 3rem; margin-bottom: 20px;">Essential Child Plus</h1>
+            <p style="font-size: 1.2rem; opacity: 0.9;">Perlindungan penyakit kritikal khusus disesuaikan untuk kanak-kanak</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="bg-light" style="padding: 80px 0;">
+        <div class="container">
+            
+            <div style="margin-bottom: 60px;">
+                <h2 style="color: var(--dark-bg); text-align: center; margin-bottom: 40px; font-size: 2.2rem;">Mengapa Pelan Ini?</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+                <div class="benefit-card glass" style="background: var(--pure-white); padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); border-left: 4px solid var(--primary-red);">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">👶</div>
+                    <h3 style="color: var(--dark-bg); font-size: 1.2rem; margin-bottom: 10px;">Keadaan Juvana</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Meliputi 10 keadaan juvana tertentu</p>
+                </div>
+                <div class="benefit-card glass" style="background: var(--pure-white); padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); border-left: 4px solid var(--primary-red);">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">🔄</div>
+                    <h3 style="color: var(--dark-bg); font-size: 1.2rem; margin-bottom: 10px;">Penukaran Automatik</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Bertukar secara automatik kepada Critical Care Plus pada umur 25 tahun</p>
+                </div>
+                <div class="benefit-card glass" style="background: var(--pure-white); padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); border-left: 4px solid var(--primary-red);">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">🛡️</div>
+                    <h3 style="color: var(--dark-bg); font-size: 1.2rem; margin-bottom: 10px;">Perlindungan Awal</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Melindungi anak anda semasa tahun-tahun mereka yang paling terdedah</p>
+                </div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 60px;">
+                <div style="flex: 1; min-width: 300px; background: var(--pure-white); padding: 40px; border-radius: 16px; box-shadow: var(--shadow-sm);">
+                    <h3 style="color: var(--dark-bg); margin-bottom: 20px; font-size: 1.5rem;">Sorotan Pelan</h3>
+<ul>
+                    <li style='margin-bottom: 10px; font-size: 1.05rem; display: flex; align-items: flex-start; gap: 10px;'><span style='color: var(--primary-red);'>✓</span> <span>Meliputi 10 keadaan juvana tertentu</span></li>
+                    <li style='margin-bottom: 10px; font-size: 1.05rem; display: flex; align-items: flex-start; gap: 10px;'><span style='color: var(--primary-red);'>✓</span> <span>Bertukar secara automatik kepada Critical Care Plus pada umur 25 tahun</span></li>
+                    <li style='margin-bottom: 10px; font-size: 1.05rem; display: flex; align-items: flex-start; gap: 10px;'><span style='color: var(--primary-red);'>✓</span> <span>Melindungi anak anda semasa tahun-tahun mereka yang paling terdedah</span></li>
+                </ul>
+<div style="margin-top: 20px; padding: 15px; background: var(--off-white); border-radius: 8px;"><p style="margin:0; color: var(--text-muted); font-size: 0.9rem;">ℹ️ Ini adalah penunggang yang dilampirkan pada pelan asas seperti PRUWith You Plus. Bincang dengan Anna untuk mengetahui kombinasi yang sesuai untuk keperluan anda.</p></div>
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <h3 style="color: var(--dark-bg); margin-bottom: 20px; font-size: 1.5rem;">Siapa Yang Sesuai?</h3>
+
+                <div style="background: var(--off-white); padding: 20px; border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--border-color);">
+                    <h4 style="color: var(--dark-bg); margin: 0; display: flex; align-items: center; gap: 10px;"><span>👤</span> Ibu bapa baru</h4>
+                </div>
+                <div style="background: var(--off-white); padding: 20px; border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--border-color);">
+                    <h4 style="color: var(--dark-bg); margin: 0; display: flex; align-items: center; gap: 10px;"><span>👤</span> Ibu bapa yang sedang mengandung</h4>
+                </div>
+                <div style="background: var(--off-white); padding: 20px; border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--border-color);">
+                    <h4 style="color: var(--dark-bg); margin: 0; display: flex; align-items: center; gap: 10px;"><span>👤</span> Ibu bapa yang ingin bermula awal</h4>
+                </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div style="margin-bottom: 60px; max-width: 800px; margin: 0 auto;">
+                <h2 style="color: var(--dark-bg); text-align: center; margin-bottom: 30px; font-size: 2rem;">Soalan Lazim (FAQ)</h2>
+
+                <div class="faq-item" style="margin-bottom: 15px; border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; background: var(--pure-white);">
+                    <div class="faq-header" style="padding: 20px; background: var(--off-white); font-weight: 600; cursor: pointer; color: var(--dark-bg);" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+                        Apakah syarat kelayakan untuk pelan ini? ▾
+                    </div>
+                    <div class="faq-content" style="padding: 20px; display: none; color: var(--text-muted); border-top: 1px solid var(--border-color);">
+                        Kelayakan bergantung pada umur kemasukan dan status kesihatan anda. Anna boleh membantu anda menyemak kelayakan anda secara percuma.
+                    </div>
+                </div>
+                <div class="faq-item" style="margin-bottom: 15px; border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; background: var(--pure-white);">
+                    <div class="faq-header" style="padding: 20px; background: var(--off-white); font-weight: 600; cursor: pointer; color: var(--dark-bg);" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+                        Bolehkah saya menaik taraf pelan saya pada masa hadapan? ▾
+                    </div>
+                    <div class="faq-content" style="padding: 20px; display: none; color: var(--text-muted); border-top: 1px solid var(--border-color);">
+                        Ya, kebanyakan pelan kami membenarkan anda menambah perlindungan tambahan (riders) apabila keperluan anda berubah.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div style="text-align: center; padding: 60px; background: var(--pure-white); border-radius: 20px; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color);">
+                <h2 style="color: var(--dark-bg); margin-bottom: 20px;">Bersedia untuk melindungi masa depan anda?</h2>
+                <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">Dapatkan sebut harga peribadi atau bercakap dengan Anna untuk mencari pelan terbaik.</p>
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <a href="../calculator-ms.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 30px;">Dapatkan Sebut Harga</a>
+                    <a href="https://wa.me/60183176361" target="_blank" class="btn btn-secondary" style="font-size: 1.1rem; padding: 15px 30px;">📱 WhatsApp Anna</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="../index-ms.html" class="logo"><img src="../assets/prudential-1.png" alt="Prudential Logo" class="brand-logo"></a>
+                <p class="mt-2">Menyediakan penyelesaian insurans premium dan ketenangan fikiran untuk anda dan keluarga.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Pautan Pantas</h3>
+                <ul>
+                    <li><a href="../index-ms.html#home">Utama</a></li>
+                    <li><a href="../index-ms.html#about">Tentang</a></li>
+                    <li><a href="../products-ms.html">Produk</a></li>
+                    <li><a href="../calculator-ms.html">Kalkulator</a></li>
+                    <li><a href="../partners-ms.html">Rakan Kongsi</a></li>
+                    <li><a href="../index-ms.html#quote">Hubungi Saya</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p>Email: annabelong6997@prupartner.com.my</p>
+                <p>Phone: +60 18-317 6361</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Prudential. Hak Cipta Terpelihara.</p>
+        </div>
+    </footer>
+    <!-- Add JS script to make toggle work -->
+    <script src="../js/script.js?v=9"></script>
+</body>
+</html>

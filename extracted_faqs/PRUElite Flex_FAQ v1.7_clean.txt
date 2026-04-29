@@ -1,0 +1,3567 @@
+Version 1.6 
+1 
+PRUElite Flex 
+Table of Content  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+      
+      Page 
+Contents 
+OVERVIEW OF PRUELITE FLEX......................................................................................................................... 5 
+1. 
+WHAT IS PRUELITE FLEX? ............................................................................................................................. 5 
+2. 
+WHO ARE OUR TARGET CUSTOMERS? ......................................................................................................... 5 
+3. 
+WHO ARE THE NON-TARGET CUSTOMERS?.................................................................................................. 5 
+4. 
+WHAT IS THE POLICY TERM OR COVERAGE TERM FOR PRUELITE FLEX? ....................................................... 5 
+5. 
+WHAT ARE THE ENTRY AGE AND PREMIUM PAYMENT TERM AVAILABLE FOR PRUELITE FLEX? ................... 5 
+6. 
+WHAT ARE THE PREMIUM PAYMENT FREQUENCY AND METHODS OF PAYMENT FOR PRUELITE FLEX? ....... 5 
+7. 
+WHAT IS THE MODAL FACTOR FOR EACH PREMIUM PAYMENT FREQUENCY AND METHODS OF PAYMENT?5 
+8. 
+WHAT IS THE MINIMUM AND MAXIMUM BASIC ANNUALISED PREMIUM APPLICABLE FOR PRUELITE FLEX?6 
+9. 
+IS PRUELITE FLEX’S PREMIUM GUARANTEED? ............................................................................................. 6 
+10. 
+IS ADVANCE PREMIUM PAYMENT ALLOWED FOR PRUELITE FLEX? .............................................................. 6 
+11. 
+CAN CUSTOMER GET BACK HIS/HER PREMIUM PAID UPON CANCELLATION OF POLICY? ............................. 6 
+12. 
+IS PRUELITE FLEX APPLICABLE TO BUSINESS APPLICATION? ......................................................................... 6 
+13. 
+IS PRUELITE FLEX PROTECTED BY PERBADANAN INSURANS DEPOSIT MALAYSIA (PIDM)? ........................... 6 
+PRODUCT BENEFITS .............................................................................................................................................. 6 
+14. 
+WHAT ARE THE BENEFITS OF PRUELITE FLEX? .............................................................................................. 6 
+15. 
+WHAT ARE THE PAYOUT OPTIONS AVAILABLE FOR THE FLEXINCOME? ........................................................ 8 
+16. 
+CAN I CHANGE MY FLEXINCOME PAYOUT FROM REGULAR PAYOUT TO REINVESTMENT OR VICE VERSA? .. 8 
+17. 
+WHAT IS THE DEATH BENEFIT IF THE CUSTOMER PASSES AWAY DUE TO NON-ACCIDENTAL CAUSES WITHIN 
+THE FIRST 2 YEARS AND THERE IS NO ALTERNATE LIFE ASSURED APPOINTED? ............................................ 9 
+18. 
+WHAT IS THE DEATH BENEFIT IF THE CUSTOMER PASSES AWAY FROM THE 3RD POLICY YEAR ONWARDS AND 
+THERE IS NO ALTERNATE LIFE ASSURED APPOINTED? .................................................................................. 9 
+19. 
+WHAT ARE THE OPTIONAL RIDERS AVAILABLE FOR PRUELITE FLEX? .......................................................... 10 
+20. 
+WHAT IS THE ENTRY AGE OF THE OPTIONAL RIDERS AVAILABLE FOR PRUELITE FLEX? ............................... 10 
+21. 
+WILL FLEXINCOME / MATURITY BENEFIT CONTINUE TO BE PAYABLE AFTER A CLAIM ON LIFE ASSURED 
+WAIVER PLUS OR ASSURED WAIVER PLUS? ............................................................................................... 10 
+22. 
+WHAT HAPPENS TO THE DISCOUNTED ADVANCE PREMIUM (DAP) PAID IF THERE IS A CLAIM ON LIFE ASSURED 
+WAIVER PLUS OR ASSURED WAIVER PLUS? ............................................................................................... 11 
+23. 
+WHAT ARE THE POLICY EXCLUSIONS APPLICABLE FOR PRUELITE FLEX? ..................................................... 11 
+24. 
+WHY THE DEATH BENEFIT IS ONLY REFUND OF PREMIUM UPON NON-ACCIDENTAL DEATH DURING FIRST 2 
+YEARS ? ...................................................................................................................................................... 11 
+ALTERNATE LIFE ASSURED AND ALTERNATE ASSURED ....................................................................... 12 
+25. 
+WHAT IS ALTERNATE LIFE ASSURED FOR PRUELITE FLEX? .......................................................................... 12 
+26. 
+WHAT DOES LIVING ASSURED MEANS? ..................................................................................................... 12 
+27. 
+WHAT IS ALTERNATE ASSURED FOR PRUELITE FLEX? ................................................................................. 12 
+28. 
+WHAT ARE THE REQUIREMENTS OF AN ALTERNATE LIFE ASSURED AND ALTERNATE ASSURED? ............... 13 
+29. 
+IS PROOF OF RELATIONSHIP REQUIRED FOR THE APPOINTMENT OF ALTERNATE ASSURED? ..................... 14 
+30. 
+WHEN CAN THE LIVING ASSURED APPOINT AN ALTERNATE LIFE ASSURED / ALTERNATE ASSURED AND HOW 
+TO APPLY? ................................................................................................................................................. 14 
+31. 
+WHY SHOULD THE LIVING ASSURED APPOINT ALTERNATE LIFE ASSURED? ................................................ 14 
+32. 
+WHY SHOULD THE LIVING ASSURED APPOINT AN ALTERNATE ASSURED? ................................................. 15 
+Version 1.6 
+2 
+33. 
+WHY SHOULD THE LIVING ASSURED PERFORM SPECIAL APPOINTMENT? .................................................. 15 
+34. 
+WHAT ARE THE TERMS AND CONDITIONS FOR APPOINTMENT OF ALTERNATE LIFE ASSURED/ ALTERNATE 
+ASSURED? .................................................................................................................................................. 15 
+35. 
+WHAT ARE THE TERMS AND CONDITIONS FOR SPECIAL APPOINTMENT? .................................................. 16 
+36. 
+WHAT HAPPEN TO THE LIFE ASSURED WAIVER PLUS IF EXISTING LIFE ASSURED PASSES AWAY AND 
+ALTERNATE LIFE ASSURED IS ACTIVATED? ................................................................................................. 16 
+37. 
+IS THE APPOINTMENT OF ALTERNATE LIFE ASSURED / SPECIAL APPOINTMENT MANDATORY FOR PRUELITE 
+FLEX? ......................................................................................................................................................... 16 
+OTHERS - RELATED TO ALTERNATE LIFE ASSURED AND ALTERNATE ASSURED ........................ 16 
+38. 
+CAN THE LIVING ASSURED STILL APPLY FOR ASSIGNMENT, TRUST & NOMINATION OR NOVATION EVEN IF THE 
+POLICY IS ALREADY APPOINTED WITH ALTERNATE LIFE ASSURED OR ALTERNATE ASSURED? .................... 16 
+39. 
+CAN THE LIVING ASSURED STILL APPOINT ALTERNATE LIFE ASSURED OR ALTERNATE ASSURED IF THE POLICY 
+ALREADY HAS ASSIGNEE OR NOMINEE? .................................................................................................... 16 
+40. 
+HOW CAN THE LIVING ASSURED SUCCESSFULLY APPOINT AN ALTERNATE LIFE ASSURED OR ALTERNATE 
+ASSURED FOR THE POLICY WITH ASSIGNEE OR NOMINEE? ........................................................................ 16 
+41. 
+CAN SPOUSE AS A FOREIGNER BECOME ALTERNATE LIFE ASSURED OR ALTERNATE ASSURED? ................. 17 
+42. 
+WHAT IS THE DIFFERENCE BETWEEN ALTERNATE ASSURED AND CONTINGENT ASSURED? ........................ 17 
+43. 
+IS CONTINGENT ASSURED APPLICABLE TO PRUELITE FLEX? ........................................................................ 17 
+44. 
+WHEN CAN THE POLICYOWNER MAKE NOMINATION FOR PRUELITE FLEX? ............................................... 17 
+45. 
+DOES POLICYOWNER STILL NEED TO PAY PREMIUM WHEN ALTERNATE LIFE ASSURED OR ALTERNATE 
+ASSURED IS ACTIVATED? ............................................................................................................................ 17 
+46. 
+ARE ALTERNATE LIFE ASSURED AND ALTERNATE ASSURED APPLICABLE TO OTHER EXISTING PRODUCT IN 
+PAMB? ....................................................................................................................................................... 17 
+POLICY SPLIT OPTION ........................................................................................................................................ 17 
+47. 
+WHAT IS POLICY SPLIT OPTION? ................................................................................................................ 17 
+48. 
+WHO IS ELIGIBLE TO BE THE POLICYOWNER OF SPLIT POLICY? .................................................................. 17 
+49. 
+IS THERE ANY AGE LIMIT FOR THE NEW SPLIT POLICY OWNER? ................................................................. 18 
+50. 
+HOW MANY POLICIES CAN BE SPLIT FOR EACH POLICY SPLIT OPTION? ...................................................... 18 
+51. 
+HOW MANY TIMES CAN THE POLICY SPLIT OPTION BE EXERCISED? ........................................................... 18 
+52. 
+WHAT IS TERMS AND CONDITIONS TO EXERCISE POLICY SPLIT OPTION? ................................................... 19 
+53. 
+HOW TO APPLY POLICY SPLIT OPTION? ...................................................................................................... 19 
+54. 
+DOES LIFE ASSURED’S SIGNATURE REQUIRED TO EXERCISE POLICY SPLIT OPTION? ................................... 19 
+55. 
+IS PREMIUM REQUIRED FOR THE SPLIT POLICY? ........................................................................................ 19 
+56. 
+WHAT IS THE POLICY TERM FOR THE SPLIT POLICY? ................................................................................... 19 
+57. 
+CAN THE POLICYOWNER OF SPLIT POLICY CHANGE FLEXINCOME ALLOCATION FOR SPLIT POLICY? ........... 19 
+58. 
+CAN THE POLICYOWNER OF SPLIT POLICY CHANGE THE INITIAL INSTRUCTION OF REINVESTMENT FOR 
+FLEXINCOME OF THE SPLIT POLICY ? .......................................................................................................... 19 
+59. 
+CAN THE POLICYOWNER OF SPLIT POLICY DO NOMINATION OR ASSIGNMENT FOR THE SPLIT POLICY? .... 20 
+60. 
+CAN THE POLICYOWNER OF ORIGINAL POLICY MAKE CHANGES TO THE SPLIT POLICY? ............................. 20 
+61. 
+IS THERE UNDERWRITING FOR THE SPLIT POLICY? ..................................................................................... 20 
+62. 
+ARE THERE ANY CHARGES FOR THE SPLIT POLICY? ..................................................................................... 20 
+63. 
+IS THE POLICY SPLIT OPTION LEGALLY BINDING, AND UNDER WHICH ACT DOES IT FALL? .......................... 20 
+64. 
+CAN IT BE SPLIT TO AN INDIVIDUAL WITHOUT INSURABLE INTEREST, AND WILL THIS LEAD TO DISPUTES 
+INVOLVING THE SPOUSE OR CHILDREN? .................................................................................................... 20 
+65. 
+WHAT ARE THE IMPLICATIONS IF THERE IS EXISTING DEBT OR IF THE CUSTOMER IS DECLARED BANKRUPT 
+AND THE POLICY IS THEN SPLIT? ................................................................................................................ 20 
+Version 1.6 
+3 
+66. 
+IS LIVING TRUST OR THE SPLIT POLICY WILL BE CHALLENGED BY THE DIRECTOR GENERAL OF INSOLVENCY 
+(DGI) ? ........................................................................................................................................................ 20 
+67. 
+WOULD IT BE POSSIBLE TO IMPLEMENT THE POLICY SPLIT OPTION EFFECTIVE UPON THE DEATH OF THE 
+ASSURED, RATHER THAN IMMEDIATELY? .................................................................................................. 21 
+POLICY LIMITS ...................................................................................................................................................... 21 
+68. 
+WHAT IS THE ENTRY AGE FOR PRUELITE FLEX? .......................................................................................... 21 
+69. 
+WHAT IS THE MINIMUM AND MAXIMUM BASIC SUM ASSURED APPLICABLE FOR PRUELITE FLEX? ........... 21 
+70. 
+CAN THE FREQUENCY OF PREMIUM PAYMENT BE REVISED AFTER POLICY INCEPTION? ............................ 21 
+71. 
+IS AUTO-TRANSFER OF OWNERSHIP APPLICABLE FOR PRUELITE FLEX? ...................................................... 21 
+POLICY OPTIONS .................................................................................................................................................. 22 
+72. 
+IS POLICY LOAN AVAILABLE FOR PRUELITE FLEX? ....................................................................................... 22 
+73. 
+IS REVIVAL APPLICABLE FOR PRUELITE FLEX? ............................................................................................. 22 
+74. 
+IS AUTO-REVIVAL APPLICABLE FOR PRUELITE FLEX?................................................................................... 23 
+75. 
+WHAT ARE OTHER POLICY OPTIONS AVAILABLE FOR PRUELITE FLEX? ....................................................... 23 
+76. 
+HOW AUTOMATIC PREMIUM LOAN (APL) WORKS? ................................................................................... 24 
+77. 
+HOW IS THE POLICY LOAN AND ALL INDEBTEDNESS REPAID? .................................................................... 24 
+78. 
+CAN POLICYHOLDER OPT FOR ADVANCE PREMIUM PAYMENT AT INCEPTION OF THE POLICY? ................. 24 
+ENDORSEMENTS ................................................................................................................................................... 24 
+79. 
+IS AN INCREASE OR DECREASE BASIC ANNUALISED PREMIUM ALLOWED AFTER POLICY INCEPTION? ....... 24 
+80. 
+CAN RIDERS BE ADDED TO OR REMOVED FROM THE POLICY AFTER ITS INCEPTION? ................................. 25 
+81. 
+CAN THE PREMIUM PAYMENT TERM OR POLICY TERM BE REVISED AFTER POLICY INCEPTION? ................ 25 
+82. 
+CAN THE DETAILS OF LIFE ASSURED AND ASSURED (E.G. OCCUPATION, SMOKING STATUS) BE CHANGED 
+AFTER POLICY INCEPTION? ......................................................................................................................... 25 
+83. 
+IS REVISION OF LOADING ALLOWED AFTER POLICY INCEPTION? ................................................................ 26 
+FUNDS (IF APPLICABLE) ..................................................................................................................................... 26 
+84. 
+WHAT ARE THE FUNDS AVAILABLE FOR PRUELITE FLEX? ............................................................................ 26 
+85. 
+HOW MUCH IS THE FUND MANAGEMENT CHARGE FOR EACH FUND? ....................................................... 26 
+86. 
+CAN THE CUSTOMER PERFORM TOP-UP IN INVESTMENT UNIT ACCOUNT? ............................................... 26 
+87. 
+CAN POLICYHOLDERS REVISE HIS/HER FUND DIRECTION FOR FLEXINCOME ALLOCATED FOR REINVESTMENT?
+ 27 
+88. 
+IS THERE FUND SWITCHING CHARGES WHEN POLICYHOLDERS REVISE HIS/HER FUNDS FOR FLEXINCOME 
+ALLOCATED FOR REINVESTMENT? ............................................................................................................. 27 
+WITHDRAWAL (IF APPLICABLE) ..................................................................................................................... 27 
+89. 
+WHAT ARE THE WITHDRAWAL RULES OF PRUELITE FLEX? ......................................................................... 27 
+90. 
+WILL PARTIAL WITHDRAWAL IMPACT BASIC ANNUALISED PREMIUM? ..................................................... 27 
+91. 
+WILL PARTIAL WITHDRAWAL IMPACT THE FLEXINCOME?.......................................................................... 27 
+COMPENSATION.................................................................................................................................................... 27 
+92. 
+WHAT IS THE COMMISSION FOR PRUELITE FLEX? ...................................................................................... 27 
+UNDERWRITING .................................................................................................................................................... 27 
+93. 
+WHAT IS THE UNDERWRITING APPROACH FOR PRUELITE FLEX? ................................................................ 27 
+94. 
+WHAT IS THE NON-MEDICAL LIMIT AND TOTAL RELEVANT SUM ASSURED (TRSA) FOR PRUELITE FLEX? .... 28 
+95. 
+WHAT IS THE FINANCIAL UNDERWRITING LIMIT FOR PRUELITE FLEX? ....................................................... 28 
+Version 1.6 
+4 
+TAX RELIEF ON LIFE ASSURANCE PREMIUM STATEMENT (LAPS) ..................................................... 28 
+96. 
+WHAT ARE THE CATEGORIES OF PREMIUM IN LAPS (LIFE ASSURANCE PREMIUM STATEMENT) FOR PRUELITE 
+FLEX? ......................................................................................................................................................... 28 
+APPENDIX : QUOTATION .................................................................................................................................... 29 
+1. 
+WHY IS THE ANNUALISED RETURN FOR GUARANTEED BENEFITS NEGATIVE UNDER CERTAIN PRUELITE FLEX 
+QUOTATIONS? ........................................................................................................................................... 29 
+2. 
+WHY IS THE RETURN FOR SCENARIO X AND SCENARIO Y NOT 2% AND 5 %? .............................................. 29 
+3. 
+HOW TO DO QUOTATION FOR LIFE ASSURED WITH ANB LESS THAN 70 AND ASSURED WITH ANB MORE THAN 
+70? ............................................................................................................................................................. 30 
+APPENDIX : TOTAL PREMIUM PAID MULTIPLIER (% OF TOTAL PREMIUM PAID) ........................ 31 
+ 
+ 
+Version 1.6 
+5 
+OVERVIEW OF PRUELITE FLEX 
+1. What is PRUElite Flex?  
+PRUElite Flex is a non-participating insurance plan that offers a combination of insurance protection and savings 
+with investment-linked feature. It provides a long-term savings benefit- FlexIncome, that could continue beyond 
+customer’s lifetime to enrich the financial future of their family. It provides flexibility for customer to split or transfer 
+their policies to their loved ones. It pays a lump sum death benefit if you die during the term of the policy. In 
+addition, it pays FlexIncome at the end of every policy year and Maturity Benefit at maturity of the policy. 
+Furthermore, this plan allows appointment of Alternate Life Assured while the policy is in force. It pays a 
+Compassionate Benefit which is 10% of Basic Annualised Premium, up to maximum RM 5,000 upon the death of 
+Life Assured during the term of the policy. The Alternate Life Assured will replace the existing Life Assured after 
+he/she passed away. 
+2. Who are our target customers?  
+Customers who are seeking for an insurance savings plan with yearly cash payment from the end of 1st policy year 
+and potential upside upon policy maturity. 
+3. Who are the non-target customers? 
+a) Customers who are looking for a high/pure protection plan 
+b) Customers who are seeking for comprehensive protection plan 
+4. What is the policy term or coverage term for PRUElite Flex? 
+Customers can choose the policy term or coverage term up to Age 80 or Age 100, subject to the entry age.  
+5. What are the entry age and premium payment term available for PRUElite Flex? 
+Minimum Entry Age: 14 days old 
+Maximum Entry Age:  
+Premium Payment Term 
+Entry Age 
+Coverage term up to Age 80 
+Coverage term up to Age 100 
+5 years 
+50 years old 
+70 years old 
+10 years 
+65 years old 
+20 years 
+55 years old 
+ 
+Note:  
+Premium payment terms for riders will follow premium paying term of basic plan. 
+6. What are the premium payment frequency and methods of payment for PRUElite Flex? 
+Premiums can be paid yearly, half-yearly, quarterly, or monthly through direct debit, cash/cheque, or credit/debit 
+card.   
+7. What is the modal factor for each premium payment frequency and methods of payment? 
+Premium Payment Frequency 
+Premium Payment Method 
+Cash / Cheque, Credit / Debit Card, Direct Debit 
+Monthly  
+Annualised premium = Installment premium x 12 
+Quarterly  
+Annualised premium = Installment Premium x 4 
+Version 1.6 
+6 
+Half-yearly  
+Annualised premium = Installment Premium x 2 
+Yearly 
+Annualised premium = Installment Premium x 1 
+ 
+8. What is the minimum and maximum Basic Annualised Premium applicable for PRUElite Flex? 
+Premium Payment Term 
+Minimum 
+Basic 
+Annualised 
+Premium 
+Maximum 
+Basic 
+Annualised 
+Premium 
+5 years 
+RM 30,000 
+Subject to underwriting 
+10 years 
+RM 12,000 
+20 years 
+RM 12,000 
+ 
+9. Is PRUElite Flex’s premium guaranteed? 
+Premium rates for the basic plan are guaranteed. However, premium rates for the optional riders are not 
+guaranteed. Prudential reserves the right to revise the premium rates for the optional riders at policy anniversary 
+by giving a 90-day prior notice. 
+10. Is advance premium payment allowed for PRUElite Flex?  
+Yes. Advance premium paid to date feature or Discounted advance premium is allowed. 
+ 
+Payment of total commission and other compensation (if any) will be payable to agents according to the original 
+scheduled premium due date. 
+11. Can customer get back his/her premium paid upon cancellation of policy?  
+There is a free-look period of 15 days after the date of delivery of the policy, to allow customers to review if the 
+product meets his/her needs. If the policy is cancelled within the free-look period, Prudential Assurance Malaysia 
+Berhad (PAMB) will refund to customers the premiums that he/she has paid less any medical fee incurred. 
+12. Is PRUElite Flex applicable to business application?  
+No, PRUElite Flex is not applicable for business application.  
+ 
+13. Is PRUElite Flex protected by Perbadanan Insurans Deposit Malaysia (PIDM)? 
+Yes.  
+ 
+The benefit(s) payable under eligible certificate/policy is(are) protected by Perbadanan Insurans Deposit 
+Malaysia (“PIDM”) up to limits. Please refer to PIDM’s Takaful and Insurance Benefits Protection System 
+(“TIPS”) Brochure or contact Prudential Assurance Malaysia Berhad or PIDM (visit www.pidm.gov.my). 
+ 
+PRODUCT BENEFITS 
+14. What are the benefits of PRUElite Flex? 
+Basic Benefits 
+Descriptions 
+Death Benefit 
+(a) 
+The higher of 
+• 
+105% of total Basic Premium paid less FlexIncome paid (if any) paid/reinvested, or 
+Version 1.6 
+7 
+• 
+Surrender Value, 
+plus 
+(b) 
+the value of units in Investment Unit Account (IUA) (if any). 
+Upon death due to non-accidental causes on the first two (2) policy years, the Company will 
+only refund the total Basic Premium paid and the value of units in IUA (if any) less 
+FlexIncome paid/reinvested. 
+ 
+Note: For policy with Discounted Advanced Premium (DAP), the refund of premium will be 
+calculated based on DAP amount.  
+Compassionate 
+Benefit 
+10% of Basic Annualised Premium subject to maximum of RM5,000 per life will be payable 
+upon death of the Life Assured, whereby the Alternate Life Assured has been successfully 
+converted to the new Life Assured. 
+ 
+FlexIncome 
+FlexIncome will be payable upon every end of policy year, starting the end of 1st policy year 
+until death or surrender or maturity of the policy, whichever occurs first. Customers can 
+receive the FlexIncome in 2 different options (Regular Payout and/ or Reinvestment). Please 
+refer to Q15 for further details on the payout options.   
+ 
+The FlexIncome payable are shown as follows: 
+Coverage Term 100 
+Entry Age 1-55 
+End of Policy 
+Year 
+FlexIncome payable (% of Basic Annualised Premium) 
+5 pay 
+10 pay 
+20 pay 
+1 
+12.5% 
+22.5% 
+25% 
+2 to 6 
+12.5% 
+22.5% 
+30% 
+7 to 10 
+12.5% 
+22.5% 
+45% 
+11 to 30 
+13.5% 
+25% 
+46% 
+31 to 40 
+15% 
+30% 
+47.5% 
+41 to 60 
+17.5% 
+32.5% 
+47.5% 
+61 to 99 
+22.5% 
+42.5% 
+62.5% 
+ 
+Entry Age 56 and above 
+End of Policy 
+Year 
+FlexIncome payable (% of Basic Annualised Premium) 
+5 pay 
+10 pay 
+1 to 30 
+10% 
+20% 
+31 to 44 
+17.5% 
+35% 
+ 
+Coverage Term 80 
+Entry Age 1-50 
+End of Policy 
+Year 
+FlexIncome payable (% of Basic Annualised Premium) 
+5 pay 
+10 pay 
+20 pay 
+1 
+12.5% 
+22.5% 
+25% 
+2 to 6 
+12.5% 
+22.5% 
+30% 
+7 to 30 
+12.5% 
+22.5% 
+45% 
+31 to 60 
+15.0% 
+25.0% 
+45% 
+Version 1.6 
+8 
+15. What are the payout options available for the FlexIncome?  
+There are two payout options available: 
+ 
+Option 1: Regular Payout 
+Receive the FlexIncome. 
+• 
+FlexIncome will be paid to policyholder yearly from the end of the 1st policy year, until death or surrender or 
+maturity of the policy, whichever occurs first. 
+ 
+Option 2: Reinvestment 
+Deposit the FlexIncome into the IUA after the end of every policy year to buy units in the PRULink Funds selected 
+by customers.   
+• 
+The FlexIncome will be reinvested into IUA at 100% allocation rate to buy units for the IUA. 
+ 
+16. Can I change my FlexIncome Payout from Regular Payout to Reinvestment or vice versa?  
+Change of option is allowed anytime and shall take effect on subsequent FlexIncome payable, as long as the 
+changes are in multiple of 10%. There is no limit to the number of switches made. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+61 to 79 
+20.0% 
+35.0% 
+60% 
+  
+Maturity 
+Benefit 
+At maturity, the sum of benefits of following shall be payable: 
+a) x% of basic annualised premium; and 
+b) The value of units in Investment Unit Account (IUA), if any 
+less any indebtedness. 
+ 
+The Maturity Benefit will be subject to Coverage Term and Premium Payment Term as 
+follows: 
+Coverage Term Age 100 
+(% of Basic Annualised Premium) 
+5 pay 
+10 pay 
+20 pay 
+500% 
+1000% 
+1500% 
+ 
+Coverage Term Age 80 
+(% of Basic Annualised Premium) 
+5 pay 
+10 pay 
+20 pay 
+450% 
+850% 
+1200% 
+  
+Version 1.6 
+9 
+17. What is the Death Benefit if the customer passes away due to non-accidental causes within the first 2 years and 
+there is no Alternate Life Assured appointed? 
+For DAP customers: 
+Company will refund the Discounted Advance Premium paid and the value of units in IUA (if any) less FlexIncome 
+paid/reinvested. However, any commission claw back will be calculated based on the original premium amount. 
+ 
+Example: Death Occurring in Policy Year 2 
+• 
+Basic Annualised premium of RM100k, 5 pay with Discounted Advance Premium.  
+• 
+Discounted Advance Premium paid is RM469,498.31 
+If death occurs in the 2nd policy year, the Death Benefit payable will be calculated as the DAP amount less any 
+FlexIncome paid / reinvested: 
+• 
+Death Benefit = RM 469,498.31 – RM 12,500 = RM 456,998.31 
+• 
+Commission claw back will be based on the total original premium amount in the first two policy years which 
+is RM 200,000. 
+For non-DAP customers: 
+Company will refund the total Basic Premium paid and the value of units in IUA (if any) less FlexIncome 
+paid/reinvested. Any commission claw back will be calculated based on the original premium amount. 
+ 
+18. What is the Death Benefit if the customer passes away from the 3rd policy year onwards and there is no Alternate 
+Life Assured appointed? 
+For DAP customers: 
+The Death Benefit will be payable based on the original premium amount (refer to Q14). In addition, any remaining 
+DAP balance will be refunded to the customer. 
+ 
+Example: Death Occurring in Policy Year 3 
+• 
+Basic Annualised Premium of RM100k, 5 pay with Discounted Advance Premium.  
+• 
+Discounted Advance Premium paid is RM469,498.31 
+• 
+Surrender Value at the end of Policy Year 3 is RM 126,060 
+End of 
+Policy 
+Year 
+Original Premium Amount 
+(RM) 
+Remaining DAP Balance* 
+(RM) 
+FlexIncome Paid / 
+Reinvested (RM) 
+1 
+100,000 
+369,498.31 
+12,500 
+2 
+100,000 
+272,646.01 
+12,500 
+3 
+100,000 
+178,842.33 
+ 
+4 
+100,000 
+87,991.31 
+ 
+5 
+100,000 
+0 
+ 
+*The amounts illustrated are rounded to the nearest two decimal places. 
+ 
+If death occurs in the 3rd policy year, the Death Benefit payable will be calculated based on the original premium 
+amount. 
+Death Benefit = Higher of [(105% x RM 300,000 less RM 25,000) or RM 126,060] + Remaining DAP balance 
+ 
+ 
+  = RM 290,000 + RM 178,842.33 
+ 
+ 
+  = RM 468,842.33 
+Version 1.6 
+10 
+ 
+For non-DAP customers: 
+The Death Benefit will be payable based on the original premium amount (refer to Q14). 
+19. What are the optional riders available for PRUElite Flex?  
+No. 
+Rider 
+Insured Person 
+Benefit Description 
+1 
+Life 
+Assured 
+Waiver Plus 
+Life Assured 
+Waives all future premiums under the policy on Life Assured’s 
+Total and Permanent Disability prior to the Policy Anniversary 
+Date of age 70 next birthday or expiry of policy, death or 
+diagnosis of a covered critical illness* during the term of the 
+rider. 
+2 
+Assured Waiver 
+Plus 
+Spouse/Parent 
+of Life Assured 
+Waives all future premiums under the policy on Assured’s Total 
+and Permanent Disability prior to the Policy Anniversary Date of 
+age 70 next birthday or expiry of policy, death or diagnosis of a 
+covered critical illness* during the term of the rider. 
+ 
+*Critical Illness: 
+A total of 42 illnesses are covered under the waiver riders. Kindly refer to Annexure CI6 for more detailed 
+information. 
+20. What is the entry age of the optional riders available for PRUElite Flex? 
+Rider 
+Entry Age 
+Life Assured Waiver Plus 
+Minimum: 14 days 
+Maximum: ANB 70 
+Assured Waiver Plus 
+Minimum ANB 17 
+Maximum: ANB 70 
+ 
+21. Will FlexIncome / Maturity Benefit continue to be payable after a claim on Life Assured Waiver Plus or Assured 
+Waiver Plus? 
+Yes, FlexIncome and Maturity Benefit will be payable as long as the policy remains in force. 
+1) Stroke 
+2) Heart Attack 
+3) Kidney Failure 
+4) Cancer 
+5) Coronary Artery By-Pass 
+Surgery 
+6) Serious Coronary Artery 
+Disease 
+7) End-Stage Liver Failure 
+8) Fulminant Viral Hepatitis 
+9) Coma 
+10) Benign Brain Tumor 
+11) Paralysis Of Limbs 
+12) Blindness 
+13) Deafness 
+14) Third Degree Burns 
+15) HIV Infection Due To 
+Blood Transfusion 
+16) Full-Blown AIDS 
+17) End-Stage 
+Lung 
+Disease 
+18) Encephalitis 
+19) Major Organ / Bone 
+Marrow Transplant 
+20) Loss Of Speech 
+21) Brain Surgery 
+22) Heart Valve Surgery 
+23) Loss Of Independent 
+Existence 
+24) Bacterial Meningitis 
+25) Major Head Trauma 
+26) Chronic Aplastic Anemia 
+27) Motor Neuron Disease 
+28) Parkinson’s Disease 
+29) Alzheimer’s Disease / 
+Severe Dementia 
+30) Surgery To Aorta 
+31) Multiple Sclerosis 
+32) Primary 
+Pulmonary 
+Arterial Hypertension 
+33) Medullary Cystic Disease
+34) Cardiomyopathy 
+35) Systemic 
+Lupus 
+Erythematosus 
+With 
+Severe 
+Kidney 
+Complications 
+36) Occupationally Acquired 
+Human 
+Immunodeficiency Virus 
+(HIV) Infection 
+37) Muscular Dystrophy 
+38) Terminal Illness 
+39) Poliomyelitis 
+40) Apallic Syndrome 
+41) Chronic 
+Relapsing 
+Pancreatitis 
+42) Progressive Scleroderma 
+Version 1.6 
+11 
+22. What happens to the Discounted Advance Premium (DAP) paid if there is a claim on Life Assured Waiver Plus or 
+Assured Waiver Plus? 
+Life Assured Waiver Plus/ Assured Waiver Plus kick in and the remaining of the DAP will be refunded to the 
+customer. The policy will not be terminated. 
+23. What are the policy exclusions applicable for PRUElite Flex? 
+This list is non-exhaustive. Please refer to the policy contract for the full list of exclusions. 
+Benefit 
+Exclusions 
+Death  
+If death was due to suicide within one year from the effective date of policy or the date 
+of policy revival, whichever is later, all premiums paid without interest plus the value of 
+units at the valuation date after the date of notification shall be payable. 
+Total 
+& 
+Permanent 
+Disability 
+(for 
+Waiver Riders) 
+Total and Permanent Disability Benefit is not payable if the disability is directly or 
+indirectly caused by: 
+• 
+any pre-existing condition; 
+• 
+any attempted suicide or self-inflicted injury whether attempted/inflicted while sane 
+or insane;  
+• 
+any travelling in an aircraft; other than as a pilot, member of the crew or a fare-paying 
+passenger in a commercial aircraft licensed for passenger service on scheduled flights 
+over established routes only; or 
+• 
+any involvement in any aerial sporting activities such as hang-gliding, ballooning, 
+parachuting, sky-diving, bungee jumping and other such similar activities. 
+Critical 
+Illness 
+Benefit 
+(for 
+Waiver Riders) 
+Critical Illness benefit is not payable if: 
+• 
+symptoms of illness occur prior to or within 30 days after the policy has commenced 
+or is revived, whichever is later except for Heart Attack, Coronary Artery By-Pass 
+Surgery, Serious Coronary Artery Disease and Cancer in which a 60-days waiting 
+period applies;  
+• 
+illness that is directly or indirectly caused by the existence of AIDS or the presence of 
+any HIV infection, except for “HIV Infection Due To Blood Transfusion", "Full-Blown 
+AIDS" and “Occupationally Acquired Human Immunodeficiency Virus (HIV) Infection; 
+• 
+illness that is a congenital condition or is caused directly or indirectly from a 
+congenital condition which happens, or which the Life Assured start to get symptoms 
+of, within the first two (2) years from the date of birth of the Life Assured; or 
+• 
+Critical Illness that arises directly or indirectly from a Pre-Existing Condition. 
+ 
+Life Assured Waiver Plus, Assured Waiver Plus will not be applicable for the claim on 
+Angioplasty. 
+ 
+24. Why the death benefit is only refund of premium upon non-accidental death during first 2 years ? 
+This product has been engineered with a savings-first philosophy — prioritising the maximisation of returns over 
+protection features.   
+ 
+We also encourage policyholders to take advantage of the Alternate Life Assured (ALA) option. In the event of the 
+Life Assured’s passing during this early period, a Compassionate Benefit instead of Death Benefit will be payable. 
+Version 1.6 
+12 
+ 
+ALTERNATE LIFE ASSURED AND ALTERNATE ASSURED 
+25. What is Alternate Life Assured for PRUElite Flex? 
+PRUElite Flex allows appointment of Alternate Life Assured while the policy is in force. The Alternate Life Assured* 
+will become the new Life Assured if:  
+• 
+the existing Life Assured passed away; and 
+• 
+Policy still remains in force. 
+ 
+*Alternate Life Assured (ALA) means the primary Alternate Life Assured, except when the following happens:  
+Primary Alternate Life Assured is automatically substituted by the Secondary Alternate Life Assured, if the Primary 
+Alternate Life Assured dies before the existing Life Assured. 
+ 
+Assuming the Primary Life Assured and Secondary Life Assured is appointed when policy is incepted for the following 
+scenarios: 
+ 
+* Upon activation of ALA as new Life Assured of the policy, the existing appointed Primary ALA and Secondary ALA 
+will be invalid. Hence, recommend to appoints a new Alternate Life Assured after the activation. 
+ 
+26. What does Living Assured means? 
+The existing Assured/ policy owner of the policy. Living Assured can be the: 
+• 
+original Assured of the policy during policy inception; or 
+• 
+Alternate Assured that replaced the Assured upon death of Assured. 
+ 
+27. What is Alternate Assured for PRUElite Flex? 
+PRUElite Flex allows appointment of Alternate Assured while the policy is in force. The Alternate Assured* will 
+become the new Assured if:  
+• 
+the existing Assured passed away; and 
+• 
+Policy still remains in force. 
+ 
+*Alternate Assured (AA) means the primary Alternate Assured, except when the following happens:  
+Primary Alternate Assured is automatically substituted by the Secondary Alternate Assured, if the Primary Alternate 
+Assured dies before the existing Life Assured. 
+ 
+ 
+Version 1.6 
+13 
+28. What are the requirements of an Alternate Life Assured and Alternate Assured? 
+ 
+1. If the Assured is with spouse / children: 
+ 
+Alternate Life Assured 
+Alternate Assured 
+Minimum Age 
+No Limit 
+ANB 19 and above 
+Conditions 
+Living Assured must have insurable 
+interest in the life of the Alternate 
+Life Assured at the time the 
+appointment is made: 
+• 
+Living Assured must be 
+spouse, parent or legal guardian to 
+ALA. 
+• 
+Living Assured can also 
+appoint own-self as Alternate Life 
+Assured (only when Living Assured ≠ 
+Life Assured). 
+ 
+i.e. Assured’s spouse/child/himself 
+can be ALA. 
+ 
+Living Assured must be spouse, parent, 
+child or sibling (legitimate, illegitimate, 
+adopted or stepchild, parent or sibling), 
+grandparent to Alternate Assured.  
+ 
+i.e. 
+Assured’s 
+spouse/child/parent/grandchild/sibling 
+can be AA 
+ 
+Proof of relationship is required.  
+Who has the right to appoint 
+Alternate 
+Life 
+Assured/ 
+Alternate Assured? 
+ 
+Living Assured of the policy has the 
+right to appoint Alternate Life 
+Assured. The Living Assured can 
+appoint up to 2 Alternate Life 
+Assured (Primary and Secondary) at 
+any point of time. 
+Living Assured of the policy has the 
+right to appoint Alternate Assured. The 
+Living Assured can appoint up to 2 
+Alternate 
+Assured 
+(Primary 
+and 
+Secondary) at any point of time.  
+How many times can the 
+Living Assured appoint the 
+Alternate 
+Life 
+Assured/Alternate Assured 
+throughout the policy term? 
+Living Assured can change the named Alternate Life Assured/Alternate Assured 
+for unlimited number of times provided policy is in force. 
+The proof of relationship is not required if the Living Assured is appointing Spouse or Child as the Alternate Life 
+Assured. However, if the Living Assured is legal guardian of Alternate Life Assured, proof of relationship is required 
+upon appointment.  
+ 
+2. If the Assured is with single without children (Special Appointment): 
+ 
+Alternate Life Assured 
+Alternate Assured 
+Minimum Age 
+ANB 19 and above 
+Conditions 
+• 
+Assured and Life Assured must be the same person. 
+• 
+Alternate Assured and Alternate Life Assured must be the same person, 
+and appointed at the same time. 
+Coming Soon in Sep 2025 
+Version 1.6 
+14 
+• 
+Living Assured must be child or sibling (legitimate, illegitimate, 
+adopted or step child or sibling) to Alternate Life Assured and 
+Alternate Assured. 
+i.e. Assured’s parent/sibling can be AA/ALA 
+Who has the right to perform 
+Special Appointment? 
+Living Assured of the policy who is single and without children has the right to 
+perform Special Appointment. The Living Assured can appoint up to 2 ALA and 
+AA (Primary and Secondary) at the same time. 
+How many times can the 
+Living Assured who is single 
+and 
+without 
+children 
+perform 
+Special 
+Appointment throughout the 
+policy term? 
+Living Assured who is single and without children can change the named ALA 
+and AA at the same time for unlimited number of times provided policy is in 
+force. 
+The proof of relationship is required for Special Appointment. 
+ 
+29. Is proof of relationship required for the appointment of Alternate Assured? 
+Yes. Proof of relationship is required upon appointment of Alternate Assured.  
+30. When can the Living Assured appoint an Alternate Life Assured / Alternate Assured and How to apply?  
+When to appoint? 
+How to apply? 
+During Proposal Stage 
+Under Trust & Nomination Screen in PRUWay Plus.  
+After Policy Inception 
+Complete & submit ALTERNATE LIFE ASSURED/ ALTERNATE ASSURED FORM to 
+Prudential. The form can be obtained from Corporate Website or RAISe. 
+Living Assured can change the named Alternate Life Assured for unlimited number of times provided policy is in 
+force. 
+31. Why should the Living Assured appoint Alternate Life Assured?  
+It is important to appoint Alternate Life Assured to ensure the policy remains in force if existing Life Assured passed 
+away. Please find the differences between with appointment and without appointment of Alternate Life Assured 
+when the existing Life Assured passed away: 
+Policy Detail 
+With Alternate Life Assured 
+Without Alternate Life Assured 
+New Life Assured 
+Alternate Life Assured 
+N/A 
+Policy will 
+Remain In force 
+Terminate   
+Death Benefit 
+N/A 
+Death Benefit 
+Compassionate Benefit 
+Compassionate Benefit 
+N/A 
+FlexIncome 
+Continue 
+Ceased 
+Maturity Benefit 
+Payable upon Policy Maturity 
+provided policy is in force 
+Ceased 
+Therefore, customers are advised to appoint an Alternate Life Assured for your insurance application to ensure the 
+policy remains in force in the event of death of existing Life Assured. 
+ 
+Version 1.6 
+15 
+32. Why should the Living Assured appoint an Alternate Assured? 
+It is important to appoint Alternate Assured to ensure the wealth is passed down to the Alternate Assured when  
+existing Assured passed away, given that the policy status still remains as in force. Please find the difference  
+between with appointment and without appointment of Alternate Assured when the existing Assured passed  
+away: 
+Policy Detail 
+With Alternate Assured 
+Without Alternate Assured 
+New Assured 
+Alternate Assured 
+Existing Assured’s Legal Representative 
+FlexIncome payable to  
+Maturity Benefit payable 
+to  
+ 
+33. Why should the Living Assured perform Special Appointment?  
+Living Assured who is single and without children should be aware of the differences when the Life Assured and 
+Assured of the policy passed away with and without Special Appointment for informed decision. Please find the 
+difference between with appointment and without Special Appointment of Alternate Life Assured and Alternate 
+Assured when the existing Life Assured and Assured passed away: 
+Policy Detail 
+With Special Appointment 
+Without Special Appointment 
+New Life Assured 
+Alternate Life Assured 
+N/A 
+New Assured 
+Alternate Assured 
+N/A 
+Policy Status 
+Remain In force 
+Terminate, Death Benefit will be payable 
+Death Benefit payable 
+Compassionate Benefit 
+Death Benefit 
+FlexIncome 
+Continue 
+Ceased 
+Maturity Benefit 
+Payable upon Policy Maturity 
+provided policy is in force 
+Ceased 
+34. What are the terms and conditions for appointment of Alternate Life Assured/ Alternate Assured?  
+• 
+Signatures of the Living Assured and the appointed Alternate Life Assured (only for individual who age 18 and 
+above)/Alternate Assured are required during application. 
+• 
+Any appointment of Alternate Life Assured/ Alternate Assured shall come to an end automatically and become 
+not applicable to this Policy, once any of the following happens:  
+➢ The Alternate Life Assured does not survive the Life Assured for at least 7 days;  
+➢ This Policy has been assigned before or after the date of the application for appointment;  
+➢ There is trust created or nomination made for this Policy before or after the date of the application for 
+appointment; 
+➢ This Policy has been novated after the date of the application for appointment;   
+➢ Policy Split Option is exercised; 
+➢ The appointment is revoked; 
+➢ There is false information provided or false declaration made during application for appointment; or 
+➢ This Policy is terminated, avoided or cancelled. 
+In this situation, the policy will be treated as no Alternate Life Assured has been appointed. 
+ 
+• 
+After the Assured is replaced by Alternate Assured, all rights, interest, privileges, liabilities, options and benefits 
+under the policy shall continue to be applicable to the new Assured, provided the Policy is in force. 
+Version 1.6 
+16 
+35. What are the terms and conditions for Special Appointment?  
+• 
+Signatures of Living Assured and the appointed person are required during application. 
+• 
+Any appointment of Alternate Assured shall come to an end automatically and become not applicable to this 
+Policy, once any of the following happens:  
+➢ The appointed person does not survive the Life Assured & Assured for at least 7 days;  
+➢ The Policy has been assigned before or after the date of the application for appointment;  
+➢ There is trust created or nomination made for the Policy before or after the date of the application for 
+appointment; 
+➢ The Policy has been novated after the date of the application for appointment;  
+➢ There is a subsequent appointment; 
+➢ Policy Split Option is exercised; 
+➢ The appointment is revoked; 
+➢ There is false information provided or false declaration made during application for appointment; 
+➢ Life Assured & Assured have a spouse or child, when Life Assured & Assured submit this application for 
+appointment; or 
+➢ The Policy is terminated, voided or cancelled. 
+In this situation, the policy will be treated as no Alternate Life Assured and no Alternate Assured have been 
+appointed. 
+• 
+After the Assured is replaced by Alternate Assured, all rights, interest, privileges, liabilities, options and benefits 
+under the policy shall continue to be applicable to the new Assured, provided the Policy is in force.  
+36. What happen to the Life Assured Waiver Plus if existing Life Assured passes away and Alternate Life Assured is 
+activated? 
+If Alternate Life Assured is activated, Life Assured Waiver Plus will kick in and the policy will not be terminated.  
+ 
+Note: The remaining balance of DAP amount (if any) will be refunded to the customer.  
+37. Is the appointment of Alternate Life Assured / Special Appointment mandatory for PRUElite Flex? 
+No, Alternate Life Assured / Special Appointment is not mandatory for this product. However, customers are 
+advised to appoint an Alternate Life Assured / perform Special Appointment to ensure the policy remains in force 
+in the event of death of existing Life Assured. 
+ 
+OTHERS - RELATED TO ALTERNATE LIFE ASSURED AND ALTERNATE ASSURED 
+38. Can the Living Assured still apply for Assignment, Trust & Nomination or Novation even if the policy is already 
+appointed with Alternate Life Assured or Alternate Assured?  
+Yes. However, the appointment of Alternate Life Assured and Alternate Assured shall be revoked automatically. 
+39. Can the Living Assured still appoint Alternate Life Assured or Alternate Assured if the policy already has 
+assignee or nominee?  
+No, the application of Appointment of Alternate Life Assured and Alternate Assured will be rejected if the policy 
+already has assignee or nominee. 
+40. How can the Living Assured successfully appoint an Alternate Life Assured or Alternate Assured for the policy 
+with assignee or nominee? 
+The Living Assured may apply to reassign the policy to Living Assured or revoke the existing nominee of the policy 
+before you apply for appointment of Alternate Life Assured or Alternate Assured. 
+Version 1.6 
+17 
+41. Can spouse as a foreigner become Alternate Life Assured or Alternate Assured?  
+Yes, Assured can appoint his/her non-Malaysian spouse as Alternate Life Assured or Alternate Assured. 
+42. What is the difference between Alternate Assured and Contingent Assured?  
+Policy Detail 
+Alternate Assured 
+Contingent Assured 
+Applicable to 
+Adult policy only 
+Juvenile policy only 
+Appointment 
+Validity 
+Valid as long as policy remain in force 
+Invalid upon the Child attaining age 25 
+years  
+When 
+Assured 
+Pass Away 
+Alternate Assured becomes the new 
+Assured of the policy. For Juvenile policy, 
+Alternate Assured becomes the new 
+Assured until LA reaches 25 years old. 
+Contingent Assured becomes the new 
+Assured until the Life Assured reaches 25 
+years old. 
+Remark 
+No limit to the number of appointments as 
+long as policy in force 
+Once Contingent Assured becomes the 
+Assured, 
+subsequent 
+appointment 
+of 
+Contingent Assured is not allowed 
+43. Is Contingent Assured applicable to PRUElite Flex?  
+Yes, Contingent Assured is applicable to PRUElite Flex.  
+ 
+Note: This feature will not be applicable once Alternate Assured feature is available in September 2025.  
+44. When can the policyowner make Nomination for PRUElite Flex?  
+Assuming Living Assured and the Living Life Assured is the same person, Living Assured can make Nomination after 
+the inception of policy by submitting the Trust and Nomination form to Prudential. You may get the form from our 
+Corporate Website or Raise. 
+45. Does policyowner still need to pay premium when Alternate Life Assured or Alternate Assured is activated?  
+Yes. The payment of total premium must continue unless the policy is attached with waiver rider that covered the 
+individual who has passed away. Kindly refer to Q32 for more details.  
+46. Are Alternate Life Assured and Alternate Assured applicable to other existing product in PAMB?  
+Alternate Life Assured and Alternate Assured only applicable to PRUCash Enrich and PRUElite Flex. 
+ 
+POLICY SPLIT OPTION 
+47. What is Policy Split Option? 
+Policy Split option is an option available for the policyowner to split the Original Policy into several policies and 
+transfer the benefit to the new owner(s). Once the splitting of policy is approved, the request for Policy Split Option 
+cannot be reversed or withdrawn. The Original Policy will be terminated.  
+48. Who is eligible to be the policyowner of Split Policy? 
+While the policy is in force, after the end of premium payment term and all of premiums are paid, the policy can be 
+split to anyone according to the Assured’s preference. There is no insurable interest checking between the 
+policyowner of Original Policy and new Split Policy.  
+ 
+ 
+Version 1.6 
+18 
+49. Is there any age limit for the new Split Policy owner? 
+The entry age limit of Split Policy will be as below: 
+ 
+ 
+Entry Age 
+Life Assured 
+Minimum: 14 days 
+Maximum: ANB 70 
+Assured 
+Minimum ANB 17 
+Maximum: ANB 70 
+ 
+50. How many policies can be split for each Policy Split Option? 
+For each policy split, the policy can be split into a maximum of 4 separate policies.  
+ 
+After the split, all the policy values, such as the FlexIncome, units in IUA and surrender value of the Split Policy will 
+be according to the split ratio. 
+51. How many times can the Policy Split Option be exercised? 
+This Policy Split Option shall be permitted once for the Original Policy and once for the Split Policy that is issued 
+immediately after the Policy Split Option is exercised and approved for the Original Policy. There is maximum 2 
+rounds of splitting from Original Policy. Any request exceeding these limits shall not be accepted. For each policy 
+split, it may be split into a maximum of four (4) separate policies. Please refer to the Figure 1 below:   
+ 
+ 
+Figure 1: Policy Split Option 
+Original Policy
+Split Policy 
+A
+Split Policy E
+Split Policy F
+Split Policy 
+G
+Split Policy 
+H
+Split Policy 
+B
+Split Policy I
+Split Policy J
+Split Policy 
+C
+Split Policy 
+K
+Split Policy L
+Split Policy 
+D
+Split Policy 
+M
+Split Policy 
+N
+Version 1.6 
+19 
+Note: Split Policy B, C and D can also split into 4 policies. Maximum number of split policies from the Original Policy 
+is 16 policies in force at the same time.  
+52. What is terms and conditions to exercise Policy Split Option? 
+At the time of application for Policy Split Option, provided the policy is in force, the following terms and conditions 
+should be met: 
+➢ All the premiums are paid and the Premium Payment Term of the Policy has completed; 
+➢ The remaining Policy Year upon the application must be more than one (1) year; 
+➢ This Policy is not assigned; 
+➢ There is no trust created or nomination made for this Policy;  
+➢ This Policy is not novated; and 
+➢ There is no outstanding debt for this Policy 
+➢ The allocation ratio to divide the Original Policy is in multiple of 5%.  
+Upon the Policy Split Option effective, all the benefits and policy values of the Original Policy including but not 
+limited to Death Benefit, Compassionate Benefit, FlexIncome, Maturity Benefit, Surrender Value, value of Units in 
+IUA (if any), will be adjusted or allocated to the Split Policies according to the ratio of the Basic Premium applicable 
+to such Split Policies. 
+ 
+53. How to apply Policy Split Option? 
+1. Prepare the Policy Split Form + simplified Proposal Form(s) 
+2. Submit the stamped Policy Split Form + simplified Proposal Form(s) to PAMB.  
+3. New policies issued with proportionate split portions and the original policy will be terminated. 
+4. The new split policy owner will continue to receive the annual FlexIncome with peace of mind. 
+54. Does Life Assured’s signature required to exercise Policy Split Option? 
+Not required. Only signature of Assured is required.  
+55. Is premium required for the Split Policy? 
+Split Policy does not require premium. All the premiums should be fully paid before Policy Split Option becomes 
+effective.  
+56. What is the Policy Term for the Split Policy? 
+The Policy Term of the Split Policy depends on the Coverage Term of the Original Policy. The Maturity Date of the 
+Split Policy shall be the same as its Original Policy.  
+57. Can the policyowner of Split Policy change FlexIncome Allocation for Split Policy? 
+Yes. Change of option is allowed for Split Policy and shall take effect on subsequent FlexIncome payable, as long as 
+the changes are in multiple of 10%.  There is no limit to the number of switches made. 
+58. Can the policyowner of Split Policy change the Initial Instruction of Reinvestment for FlexIncome of the Split 
+Policy ? 
+Yes. They can change the policy instruction as an Assured.  
+Version 1.6 
+20 
+59. Can the policyowner of Split Policy do Nomination or Assignment for the Split Policy? 
+Yes. They can nominate or assign the split policy.  
+60. Can the policyowner of Original Policy make changes to the Split Policy? 
+Any changes on the Split Policy shall be based on the policyowner of the Split Policy only.  
+61. Is there underwriting for the Split Policy? 
+There is no underwriting required for Split Policy. The benefit coverage term of Split Policy follows the benefit 
+coverage term of the original policy.  
+62. Are there any charges for the Split Policy? 
+There is no fees and charges for Split Policy. However, there might be stamp duty applicable to the Policy Split. The 
+stamp duty will be RM10 stamp duty per round of split, regardless of how many policies are split. Nevertheless, 
+customer is advised to seek for further advice from their tax advisor instead. 
+63. Is the Policy Split Option legally binding, and under which Act does it fall?  
+Yes, as the original Assured, the new Assured and PAMB have contractually agreed to the Policy Split Option (via 
+the Policy Split Option form), i.e. original policy terminates for new split policy to be in force. As this is by operation 
+of contract, it will fall under Contracts Act 1950. 
+64. Can it be split to an individual without insurable interest, and will this lead to disputes involving the spouse or 
+children?  
+Yes, the original Assured can split the policy to any person he wishes to even if there is no insurable interest between 
+the original Assured and the intended new Assured. Requirement for insurable interest is only applicable between 
+an Assured and Life Assured. 
+65. What are the implications if there is existing debt or if the customer is declared bankrupt and the policy is then 
+split?  
+A bankrupt is not allowed to transfer his asset (insurance policy in this case) to a third party after he is declared 
+bankrupt as all assets of the bankrupt automatically vest in the Director General of Insolvency (DGI) for the purpose 
+of administration and settlement of the bankrupt’s debts to his creditor. The DGI is entitled to invalidate/void the 
+split option form/split policy. 
+66. Is living trust or the split policy will be challenged by the Director General of Insolvency (DGI) ? 
+It depends on the timing and intent behind the creation of the trust or split policy. 
+ 
+• 
+If the living trust or split policy is established prior to the individual being declared bankrupt, and the transfer 
+of assets is done in good faith, the DGI generally cannot challenge it. Once the assets are transferred to the 
+trust / policy is split to other person, the individual no longer retains ownership or control over them. 
+• 
+However, if the arrangement is found to be a fraudulent settlement—for example, if it was created with the 
+intention of shielding assets from creditors—the DGI may challenge and potentially unwind the trust or split 
+policy under insolvency laws. 
+ 
+In summary, both living trusts and split policies are subject to scrutiny by the DGI, particularly if there is evidence 
+of fraudulent intent or asset concealment. 
+ 
+Version 1.6 
+21 
+67. Would it be possible to implement the Policy Split Option effective upon the death of the Assured, rather than 
+immediately?  
+The Policy Split Option is thoughtfully designed to enable wealth distribution during one’s lifetime — allowing the 
+Assured to proactively shape their legacy and exercise flexibility in how they allocate their wealth. 
+ 
+Implementing the option upon death may align more naturally with traditional legacy-oriented products, such as 
+PRUWealth Enrich, which are structured with superior death benefits for estate planning. That said, the team 
+acknowledges the merit of this suggestion and will explore how a split option after death might be considered in 
+the evolution of our legacy-centric solutions.  
+ 
+If the concern is about the policy not continuing after the Assured/Life Assured passes away, there’s still the 
+Alternate Life Assured option. By appointing an ALA, the policy can continue remain in force. 
+ 
+POLICY LIMITS 
+68. What is the entry age for PRUElite Flex? 
+*Subject to Premium Payment Term and Policy Term/Coverage Term selected. Please refer to Q5 for more details.  
+69. What is the minimum and maximum Basic Sum Assured applicable for PRUElite Flex? 
+Basic Sum Assured is not applicable under this plan. Instead, Basic Premium is used as the basis to determine the 
+coverage, benefits, and minimum amount to be received at maturity under this plan. Please refer to Q8 for more 
+details.  
+70. Can the frequency of premium payment be revised after policy inception? 
+Yes.  
+• 
+Changing to a bigger frequency will take effect from policy’s anniversary (i.e. Monthly to Quarterly). 
+• 
+Changing to a smaller frequency will take effect from the policy’s next premium due date (i.e. Yearly to 
+Quarterly). 
+71. Is auto-transfer of ownership applicable for PRUElite Flex? 
+Applicable. Auto transfer policy ownership to Life Assured (child) when Life Assured reaches 25 years old, with the 
+eligibility criteria of:  
+➢ Life Assured’s Entry Age ≤ ANB16; or 
+➢ Activated ALA at Age ≤ ANB18 
+ 
+Basic Plan 
+Entry Age (Next Birthday) 
+PRUElite Flex 
+Minimum: 14 days 
+Maximum: 70 years old* 
+Riders 
+ 
+Life Assured Waiver Plus 
+Minimum: 14 days 
+Maximum: 70 years old 
+Assured Waiver Plus 
+Minimum:  17 years old   
+Maximum: 70 years old 
+Version 1.6 
+22 
+POLICY OPTIONS 
+72. Is policy loan available for PRUElite Flex? 
+Policyholder may apply for a policy loan if the policy has a surrender value and the loan application will be subject 
+to PAMB’s approval. If PAMB grant a loan under this Policy, it shall be under the terms and conditions set out in the 
+loan agreement. The interest we charge on the loan shall be at the current rate set. Information about the interest 
+rate can be found on our Corporate Website or can be obtained from us upon request. Every year we shall then 
+charge interest on this interest (compounded) on each Policy Anniversary. The current interest rate charged is 
+6.50% p.a. The loan may be repaid at any time together with the interest to date, from the sum payable upon a 
+claim arising from maturity or death, etc. or from the cash value in case of surrender. The policy shall lapse when 
+the sum of policy loan, accumulated interests and all other indebtedness exceed the total surrender value.  
+ 
+Minimum loan:  RM500 
+Maximum loan:  90% of the sum of guaranteed surrender value, less any amount the policyholder owes us during 
+the Policy Term. 
+73. Is revival applicable for PRUElite Flex? 
+Yes, only allowed when both Living Assured and Living Life Assured are alive. 
+Guaranteed 
+Acceptance/ 
+Non-Guaranteed 
+Acceptance 
+Revival Process 
+Underwriting Process 
+Guaranteed 
+Acceptance at NB 
+Lapsed 1 - 6 months 
+Questionnaires in RAF not required.  
+ 
+However, if questionnaires are fill up, do take note of 
+below: 
+If questionnaires are answered Yes and with details, to 
+pass to underwriter to evaluate on the necessity to 
+update u/w status R for future alert. 
+If questionnaires are answered Yes with no details, to 
+get further requirement for the details 
+ 
+Age limit @ revival 
+If exceed revival max age limit, to accept (max 
+premium payment term is 20 years, therefore the 
+latest age of revival we are looking at is (70+20=90).) 
+Lapsed 1 - 6 months 
+No underwriting required 
+Lapsed > 6 months 
+Required to complete the Health Questionnaire in 
+Revival Application form 
+Personal Statement (PS) – Waived. 
+Medical Examination (ME) – Waived. 
+Lapsed > 6 months 
+Subjected to underwriting 
+and 
+decision 
+will 
+be 
+Accept/Reject. 
+No medicals to be called.  
+Follow current revival age 
+limit. If above revival max age 
+limit, to decline.  
+Any appeal, to consider on 
+case to case basis. 
+Version 1.6 
+23 
+Non-Guaranteed 
+Acceptance 
+(full 
+underwriting) 
+No change in revival process 
+No change in underwriting 
+process 
+ 
+The policy may be reinstated within 3 years after the day on which the unpaid premiums become due, subject to 
+the evidence that the Life Assured is in good health. The policyholder will have to back pay any outstanding amount 
+with 6.5% revival interest rate, charged from the first day the policy lapses.  
+ 
+74. Is auto-revival applicable for PRUElite Flex? 
+No. Auto-revival is not applicable.  
+75. What are other policy options available for PRUElite Flex?  
+Policy Options 
+Descriptions 
+Paid-up policy 
+Applicable for First Original Policy. (Not Applicable for Split Policy) 
+• Upon a Paid-Up Application Form from policyholders, the Policy may be 
+converted to a paid-up policy for a reduced death benefit that is payable in 
+the event of the Life Assured’s death.  
+• Policyholders will not be required to pay any premiums for the remaining term 
+of the Policy.  
+• PAMB shall set the reduced death benefit as the paid-up value upon the 
+conversion. 
+Once the Policy is converted to a paid-up policy: 
+• With the exception of the Reduced Death Benefit, all other benefits under this 
+Policy, including the FlexIncome shall terminate; 
+• We will refund the value of Units in the IUA at the next Valuation Date after 
+the conversion to a paid-up policy; 
+• The paid-up policy shall not participate in profits; 
+• The paid-up policy shall continue until the Maturity Date of this Policy, when 
+the Life Assured dies, or when you surrender the paid-up policy, whichever 
+happens first; 
+• No Maturity Benefit shall be payable when this Policy expires on the Maturity 
+Date of this Policy. 
+Upon surrender, the surrender value of the paid-up policy shall be payable. 
+Advanced Premium 
+Applicable. Advance premium paid to date feature or Discounted advance 
+premium is allowed. 
+Discounted 
+Advanced 
+Premium (DAP) 
+Applicable. The discounted rate may change from time to time, and it is not 
+guaranteed. 
+Automatic Premium Loan 
+(APL) 
+Applicable. If the plan has acquired sufficient surrender value and if the 
+policyholder is unable to pay premiums after the grace period, PAMB will deduct 
+the premium from the IUA (if any), provided there is sufficient value in the IUA. If 
+the units in IUA are not sufficient for your Installment Premium, PAMB will 
+advance premium on the security of the surrender value under the Automatic 
+Version 1.6 
+24 
+Premium Loan Scheme. The interest we charge on the loan shall be at the current 
+rate we set. Information about the interest rate can be found on our Corporate 
+Website or can be obtained from us upon request. Every year we shall then 
+charge interest on this interest (compounded) on each Policy Anniversary. The 
+current interest rate charged is 6.50% p.a.. The benefits will still be enforceable 
+under the plan until the loan plus interest is greater than the total surrender 
+value.   
+76. How Automatic Premium Loan (APL) works? 
+In the event of non-payment of premium, the outstanding premium will be paid using the units deducted from the 
+IUA, provided there is sufficient value in the IUA. If the units in IUA are not sufficient for your Installment Premium, 
+APL will take effect to pay the outstanding premium in accordance with your policy provision if your policy has 
+acquired a surrender value.  
+ 
+Example:  
+Scenario 1 
+Instalment Premium Due: RM 300 
+IUA Value: RM 500 
+ 
+IUA> Premium Due → unitize RM 300 from IUA to pay the outstanding premium.  
+ 
+Scenario 2 
+Instalment Premium Due: RM 300 
+IUA Value: RM 250 
+ 
+IUA< Premium Due → trigger APL to pay the outstanding premium as per current practice.  
+77. How is the policy loan and all indebtedness repaid? 
+Any indebtedness (policy loan, APL, interest to date and outstanding premium) is offset from: 
+i) the sum payable upon a death/maturity claim (will offset APL, policy loan and outstanding premium, if any); or 
+ii) cash value upon surrender (will offset APL, policy loan and outstanding premium, if any); or 
+iii) Any FlexIncome entitled, either received in cash or reinvested in the fund;  
+whichever is earlier. 
+78. Can policyholder opt for advance premium payment at inception of the policy? 
+Yes, discounted advance premium feature is available, allowing customers to pay all the required premiums at a 
+discounted value. The current discount rate is set at 3.25% per annum. However, this rate is not guaranteed and 
+subject to change from time to time. 
+ 
+ 
+ENDORSEMENTS 
+79. Is an increase or decrease Basic Annualised Premium allowed after policy inception? 
+ 
+Endorsements 
+Descriptions 
+Version 1.6 
+25 
+Increase 
+in 
+Basic 
+Annualised 
+Premium 
+• 
+Allowed for the first six months provided both original Life Assured 
+and original Assured of the policy at the point of inception are still 
+alive. 
+Note: Subject to underwriting for policy with Waiver riders. 
+• 
+Revised instalment premium to take effect from inception and 
+customer would need to back pay the incremental premium from 
+inception without being subjected to any additional interest rate. 
+• 
+Minimum Basic Annualised Premium increment and multiplier = 
+RM100. 
+• 
+FlexIncome shall be based on the revised Basic Annualised Premium 
+Decrease in Basic Annualised 
+Premium 
+• 
+Allowed at any time. The revision will take effect from the policy’s 
+next premium due date.  
+• 
+Future instalment premiums will be reduced accordingly. 
+• 
+Proportionate surrender value will be payable based on the reduced 
+Basic Annualised Premium. 
+• 
+Please note that Basic Premium after reduction must be at least 
+equal to the minimum Basic Premium allowed during new business. 
+• 
+Minimum Baisc Annualised Premium reduction and multiplier = 
+RM100. 
+• 
+FlexIncome shall be based on the revised Basic Annualised Premium. 
+ 
+Note: Not applicable for Split Policy 
+80. Can riders be added to or removed from the policy after its inception?  
+Endorsements 
+Descriptions 
+Addition of riders 
+• 
+Allowed for the first six months provided both original Life Assured 
+and original Assured of the policy at the point of inception are still 
+alive, subject to underwriting.  
+• 
+Revised instalment premium to take effect from inception and 
+customer would need to back pay any incremental premiums from 
+inception of policy.  
+Removal of riders 
+• 
+Allowed throughout the premium payment term.  
+• 
+The premium revision will take effect from the policy’s next 
+premium due date. 
+ 
+Note: Not applicable for Split Policy 
+81. Can the premium payment term or policy term be revised after policy inception?  
+No, premium payment term or policy term cannot be revised after policy inception. 
+82. Can the details of Life Assured and Assured (e.g. occupation, smoking status) be changed after policy inception? 
+- 
+Allow to change the details of original Life Assured only when original Life Assured is still alive. 
+- 
+Allow to change the details of original Assured (policy attached with Assured Waiver Plus rider) only when 
+original Assured is still alive. 
+- 
+Request to change details of new Life Assured and new Assured (scenario when the ALA or AA is activated to 
+become the new Life Assured or new Assured) is not applicable. 
+Version 1.6 
+26 
+83. Is revision of loading allowed after policy inception? 
+Yes, it is allowed and subject to premium revision. 
+ 
+Note: Not applicable for Split Policy 
+ 
+FUNDS (IF APPLICABLE) 
+84. What are the funds available for PRUElite Flex? 
+Customers can choose from a range of different funds as below: 
+ 
+PRULink Funds 
+PRULink Global Funds 
+PRULink Local and Global Funds 
+PRULink Equity Income Fund 
+PRUlink Dragon Peacock Fund 
+PRUlink Equity Plus Fund 
+PRULink Equity Focus Fund 
+PRUlink Asia Equity Fund 
+PRUlink Managed Plus Fund 
+PRULink Bond Fund II 
+PRULink Global Leaders Fund 
+ 
+PRULink Managed Fund II 
+PRULink US Equity Fund 
+ 
+PRULink Strategic Managed Fund 
+ 
+PRULink Euro Equity Fund 
+ 
+ 
+PRULink Sustainable Equity Fund 
+ 
+  
+ 
+85. How much is the fund management charge for each fund? 
+Fund 
+Fund Management Charge 
+PRULink Equity Focus Fund 
+1.50% p.a. 
+PRULink Equity Income Fund 
+1.50% p.a. 
+PRULink Managed Fund II 
+1.30% p.a. 
+PRULink Strategic Managed Fund 
+1.10% p.a. 
+PRULink Bond Fund II 
+1.00% p.a. 
+PRULink Dragon Peacock Fund 
+1.50% p.a. 
+PRULink Asia Equity Fund 
+1.50% p.a. 
+PRULink Global Leaders Fund 
+1.50% p.a. 
+PRULink US Equity Fund 
+1.50% p.a. 
+PRULink Euro Equity Fund 
+1.50% p.a. 
+PRULink Sustainable Equity Fund 
+1.50% p.a. 
+PRULink Equity Plus Fund 
+1.50% p.a. 
+PRULink Managed Plus Fund 
+1.30% p.a. 
+ 
+We reserve the right to change the fund management charge from time to time.  
+86. Can the customer perform top-up in Investment Unit Account? 
+Yes, Single Premium Top Up is allowed for both Split Policy and Original Policy, subject to a minimum top-up amount 
+of RM100. Top-up amount will be allocated into Investment Unit Account with the allocation rate of 95%.  
+ 
+Version 1.6 
+27 
+Note: Single Premium Top Up can only perform when Reinvestment is/was chosen for FlexIncome allocation.  
+87. Can policyholders revise his/her fund direction for FlexIncome allocated for reinvestment? 
+Yes, policyholders can revise fund direction (in multiples of 5%) for the FlexIncome allocated for reinvestment 
+(including past allocated FlexIncome and future FlexIncome). 
+ 
+88. Is there fund switching charges when policyholders revise his/her funds for FlexIncome allocated for 
+reinvestment? 
+No. However, fund management charges will be applicable and may vary depending on the funds. Please refer to 
+Q78. 
+WITHDRAWAL (IF APPLICABLE) 
+89. What are the withdrawal rules of PRUElite Flex? 
+• 
+Partial or full withdrawal is allowed for IUA (if any) only.  
+• 
+Partial or full withdrawal is allowed at any time during the policy term, including Split Policy.  
+• 
+Minimum transaction for partial withdrawal is RM 500 per transaction.  
+• 
+Policyholder is not required to maintain the minimum value after withdrawal from the IUA.  
+• 
+Should the value of units in IUA is less then RM 500, only complete withdrawal is allowed.  
+90. Will partial withdrawal impact Basic Annualised Premium? 
+No, partial withdrawal from IUA will NOT affect the Basic Annualised Premium. 
+91. Will partial withdrawal impact the FlexIncome? 
+No, partial withdrawal from IUA will NOT affect the FlexIncome.  
+ 
+COMPENSATION 
+92. What is the commission for PRUElite Flex? 
+ 
+• 
+Commission 
+- 
+For Balanced Scorecard agents (i.e. agents with tenure from 3rd calendar year onwards), kindly refer to 
+the commission table (Schedule A(1): Table 1A) as per the Agency Instruction (I2018-01) issued on 17 
+January 2018. 
+- 
+For non-Balanced Scorecard agents, kindly refer to the commission rate table and all related benefits as 
+per your agency agreement (Schedule A: Table 1A). 
+• 
+High Producer’s Fringe Benefit (HPFB), Retirement Gratuity Benefit (RGB), Persistency and Production Bonuses 
+where applicable* (for Non-Balanced Scorecard agents*) are also provided. 
+ 
+UNDERWRITING 
+93. What is the underwriting approach for PRUElite Flex? 
+Underwriting 
+Policy 
+Basic Plan Only 
+Basic Plan with Annual 
+Premium > RM 1 million 
+Attached with rider 
+Version 1.6 
+28 
+Approach 
+Guaranteed Acceptance# 
+up to RM 1 million annual 
+premium per product per life 
+Simplified Issuance Offer (SIO)* 
+Medical 
+Underwriting 
+Not Required 
+Yes 
+Financial 
+Underwriting 
+Not Required but Anti-money laundering assessment will be applied. 
+  
+# Applicable for Malaysian and Category A country foreigners only. Foreigners other than Category A country will 
+need to undergo the foreigner underwriting requirement. 
+*SIO Questionnaire – Lifestyle/SIO Health/Previous Insurance Questionnaire, will be applied.  
+ 
+Multiple application for this product is allowed with no limit on the number of policy or coverage. 
+94. What is the non-medical limit and Total Relevant Sum Assured (TRSA) for PRUElite Flex?  
+Non-medical limit and TRSA is not applicable for PRUElite Flex. The maximum acceptance per life is subject to 
+underwriting assessment.  
+95. What is the financial underwriting limit for PRUElite Flex? 
+There is no financial underwriting on this product. However, this product is still subjected to other assessments as 
+usual, such as Anti-Money Laundering  regulatory requirements.  
+ 
+TAX RELIEF ON LIFE ASSURANCE PREMIUM STATEMENT (LAPS)  
+96. What are the categories of premium in LAPS (Life Assurance Premium Statement) for PRUElite Flex?  
+Product/ Rider 
+LAPS Category 
+PRUElite Flex 
+100% Life Insurance Premium 
+Life Assured Waiver Plus 100% Life Insurance Premium 
+Assured Waiver Plus 
+100% Life Insurance Premium 
+ 
+ 
+ 
+Version 1.6 
+29 
+APPENDIX : QUOTATION  
+1. Why is the Annualised Return for Guaranteed Benefits negative under certain PRUElite Flex quotations? 
+ 
+Example: Same model point but the guaranteed return is negative for 100% reinvestment scenario 
+100 % Regular Payout 
+100% Reinvestment 
+ 
+ 
+The guaranteed benefits consist of FlexIncome and Guaranteed Maturity Benefit.  
+ 
+Under the 100% reinvestment scenario, the FlexIncome will be credited to the Investment Unit Account and will 
+subject to fund performance and no longer be guaranteed. Therefore, only the Guaranteed Maturity Benefit is 
+considered in this scenario, which results in a lower guaranteed return compared to the regular payout scenario. 
+2. Why is the return for Scenario X and Scenario Y not 2% and 5 %? 
+ 
+The 2% (Scenario X) and 5% (Scenario Y) refers to the hypothetical rates of return of the underlying assets of the 
+fund. These rates are used to estimate how FlexIncome could grow if it’s reinvested, without taking into account 
+the premiums you’ve paid. 
+ 
+The annualized return, on the other hand, shows how much you earn over time compared to what you paid (your 
+premium). This is different from the 2% and 5% projected rates, which only reflect potential growth of the 
+investment, not your actual earnings. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Version 1.6 
+30 
+ 
+3. How to do quotation for Life Assured with ANB less than 70 and Assured with ANB more than 70? 
+To include Assured in the quotation, please enter Assured’s details as Second Life.  
+ 
+a) Second Life choose “Yes”. 
+ 
+ 
+b) Input Assured’s details and select the relationship between Main Life and Second Life.  Second Life ANB can 
+be more than 70. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Version 1.6 
+31 
+ 
+APPENDIX : TOTAL PREMIUM PAID MULTIPLIER (% OF TOTAL PREMIUM PAID) 
+ 
+Coverage Term until Age 80 
+ 
+Total Premium Paid Multiplier (% of Total Premium Paid) 
+5 pay 
+10 pay 
+20 pay 
+Entry ANB 
+Percentage 
+Entry ANB 
+Percentage 
+Entry ANB 
+Percentage 
+1 
+331% 
+1 
+294% 
+1 
+247% 
+2 
+327% 
+2 
+291% 
+2 
+244% 
+3 
+323% 
+3 
+287% 
+3 
+241% 
+4 
+319% 
+4 
+284% 
+4 
+238% 
+5 
+315% 
+5 
+280% 
+5 
+235% 
+6 
+311% 
+6 
+277% 
+6 
+232% 
+7 
+307% 
+7 
+273% 
+7 
+229% 
+8 
+303% 
+8 
+270% 
+8 
+226% 
+9 
+299% 
+9 
+266% 
+9 
+223% 
+10 
+295% 
+10 
+263% 
+10 
+220% 
+11 
+291% 
+11 
+259% 
+11 
+217% 
+12 
+287% 
+12 
+256% 
+12 
+214% 
+13 
+283% 
+13 
+252% 
+13 
+211% 
+14 
+279% 
+14 
+249% 
+14 
+208% 
+15 
+275% 
+15 
+245% 
+15 
+205% 
+16 
+271% 
+ 
+16 
+242% 
+ 
+16 
+202% 
+17 
+267% 
+17 
+238% 
+17 
+199% 
+18 
+263% 
+18 
+235% 
+18 
+196% 
+19 
+259% 
+19 
+231% 
+19 
+193% 
+20 
+255% 
+20 
+228% 
+20 
+190% 
+21 
+252% 
+21 
+225% 
+21 
+188% 
+22 
+249% 
+22 
+223% 
+22 
+186% 
+23 
+246% 
+23 
+220% 
+23 
+184% 
+24 
+243% 
+24 
+218% 
+24 
+181% 
+25 
+240% 
+25 
+215% 
+25 
+179% 
+26 
+237% 
+26 
+213% 
+26 
+177% 
+27 
+234% 
+27 
+210% 
+27 
+175% 
+28 
+231% 
+28 
+208% 
+28 
+172% 
+29 
+228% 
+29 
+205% 
+29 
+170% 
+30 
+225% 
+30 
+203% 
+30 
+168% 
+31 
+222% 
+31 
+200% 
+31 
+166% 
+32 
+219% 
+32 
+198% 
+32 
+163% 
+33 
+216% 
+33 
+195% 
+33 
+161% 
+34 
+213% 
+34 
+193% 
+34 
+159% 
+35 
+210% 
+ 
+35 
+190% 
+ 
+35 
+157% 
+36 
+207% 
+36 
+188% 
+36 
+154% 
+37 
+204% 
+ 
+37 
+185% 
+ 
+37 
+152% 
+38 
+201% 
+38 
+183% 
+38 
+150% 
+39 
+198% 
+39 
+180% 
+39 
+148% 
+Version 1.6 
+32 
+40 
+195% 
+40 
+178% 
+40 
+145% 
+41 
+192% 
+41 
+175% 
+41 
+143% 
+42 
+189% 
+42 
+173% 
+42 
+141% 
+43 
+186% 
+43 
+170% 
+43 
+139% 
+44 
+183% 
+44 
+168% 
+44 
+136% 
+45 
+180% 
+45 
+165% 
+45 
+134% 
+46 
+177% 
+46 
+163% 
+46 
+132% 
+47 
+174% 
+47 
+160% 
+47 
+130% 
+48 
+171% 
+48 
+158% 
+48 
+127% 
+49 
+168% 
+49 
+155% 
+49 
+125% 
+50 
+165% 
+50 
+153% 
+50 
+123% 
+ 
+Note:  
+i. 
+Figure above is rounded to nearest percentage. 
+ii. 
+Based on 100% Payout Option. 
+iii. If you terminate the policy in the early years, you may receive less than the amount you have paid. 
+ 
+ 
+ 
+Version 1.6 
+33 
+Coverage Term until Age 100 
+ 
+Total Premium Paid Multiplier (% of Total Premium Paid) 
+5 pay 
+ 
+10 pay 
+ 
+20 pay 
+Entry ANB 
+Percentage 
+Entry ANB 
+Percentage 
+Entry ANB 
+Percentage 
+1 
+455% 
+1 
+433% 
+1 
+332% 
+2 
+450% 
+2 
+429% 
+2 
+329% 
+3 
+446% 
+3 
+425% 
+3 
+326% 
+4 
+441% 
+4 
+421% 
+4 
+323% 
+5 
+437% 
+5 
+416% 
+5 
+319% 
+6 
+432% 
+6 
+412% 
+6 
+316% 
+7 
+428% 
+7 
+408% 
+7 
+313% 
+8 
+423% 
+8 
+404% 
+8 
+310% 
+9 
+419% 
+9 
+399% 
+9 
+307% 
+10 
+414% 
+10 
+395% 
+10 
+304% 
+11 
+410% 
+11 
+391% 
+11 
+301% 
+12 
+405% 
+12 
+387% 
+12 
+298% 
+13 
+401% 
+13 
+382% 
+13 
+294% 
+14 
+396% 
+14 
+378% 
+14 
+291% 
+15 
+392% 
+15 
+374% 
+15 
+288% 
+16 
+387% 
+16 
+370% 
+16 
+285% 
+17 
+383% 
+17 
+365% 
+17 
+282% 
+18 
+378% 
+18 
+361% 
+18 
+279% 
+19 
+374% 
+ 
+19 
+357% 
+ 
+19 
+276% 
+20 
+369% 
+20 
+353% 
+20 
+273% 
+21 
+365% 
+21 
+348% 
+21 
+269% 
+22 
+360% 
+22 
+344% 
+22 
+266% 
+23 
+356% 
+23 
+340% 
+23 
+263% 
+24 
+351% 
+24 
+336% 
+24 
+260% 
+25 
+347% 
+25 
+331% 
+25 
+257% 
+26 
+342% 
+26 
+327% 
+26 
+254% 
+27 
+338% 
+27 
+323% 
+27 
+251% 
+28 
+333% 
+28 
+319% 
+28 
+248% 
+29 
+329% 
+29 
+314% 
+29 
+244% 
+30 
+324% 
+30 
+310% 
+30 
+241% 
+31 
+320% 
+31 
+306% 
+31 
+238% 
+32 
+315% 
+32 
+302% 
+32 
+235% 
+33 
+311% 
+33 
+297% 
+33 
+232% 
+34 
+306% 
+34 
+293% 
+34 
+229% 
+35 
+302% 
+35 
+289% 
+35 
+226% 
+36 
+297% 
+36 
+285% 
+36 
+223% 
+37 
+293% 
+37 
+280% 
+37 
+219% 
+38 
+288% 
+38 
+276% 
+38 
+216% 
+39 
+284% 
+39 
+272% 
+39 
+213% 
+40 
+279% 
+ 
+40 
+268% 
+ 
+40 
+210% 
+41 
+276% 
+41 
+264% 
+41 
+208% 
+Version 1.6 
+34 
+42 
+272% 
+42 
+261% 
+42 
+205% 
+43 
+269% 
+43 
+258% 
+43 
+203% 
+44 
+265% 
+44 
+255% 
+44 
+201% 
+45 
+262% 
+45 
+251% 
+45 
+198% 
+46 
+258% 
+46 
+248% 
+46 
+196% 
+47 
+255% 
+47 
+245% 
+47 
+193% 
+48 
+251% 
+48 
+242% 
+48 
+191% 
+49 
+248% 
+49 
+238% 
+49 
+189% 
+50 
+244% 
+50 
+235% 
+50 
+186% 
+51 
+241% 
+51 
+232% 
+51 
+184% 
+52 
+237% 
+52 
+229% 
+52 
+182% 
+53 
+234% 
+53 
+225% 
+53 
+179% 
+54 
+230% 
+54 
+222% 
+54 
+177% 
+55 
+227% 
+55 
+219% 
+55 
+174% 
+56 
+209% 
+56 
+209% 
+56 
+N/A 
+57 
+206% 
+57 
+206% 
+57 
+N/A 
+58 
+202% 
+58 
+202% 
+58 
+N/A 
+59 
+199% 
+59 
+199% 
+59 
+N/A 
+60 
+195% 
+60 
+195% 
+60 
+N/A 
+61 
+192% 
+61 
+192% 
+62 
+188% 
+62 
+188% 
+63 
+185% 
+63 
+185% 
+64 
+181% 
+ 
+64 
+181% 
+ 
+ 
+ 
+65 
+178% 
+65 
+178% 
+66 
+174% 
+66 
+N/A 
+67 
+171% 
+67 
+N/A 
+68 
+167% 
+68 
+N/A 
+69 
+164% 
+69 
+N/A 
+70 
+160% 
+70 
+N/A 
+ 
+Note:  
+i. 
+Figure above is rounded to nearest percentage. 
+ii. 
+Based on 100% Payout Option. 
+iii. If you terminate the policy in the early years, you may receive less than the amount you have paid. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Version 1.6 
+35 
+Coverage Term until Age 80 with DAP 
+ 
+Total Premium Paid Multiplier (% of Total Premium Paid) 
+5 pay 
+10 pay 
+20 pay 
+Entry ANB 
+Percentage 
+Entry ANB 
+Percentage 
+Entry ANB 
+Percentage 
+1 
+353% 
+  
+1 
+338% 
+  
+1 
+329% 
+2 
+348% 
+  
+2 
+334% 
+  
+2 
+325% 
+3 
+344% 
+  
+3 
+330% 
+  
+3 
+321% 
+4 
+340% 
+  
+4 
+326% 
+  
+4 
+317% 
+5 
+335% 
+  
+5 
+322% 
+  
+5 
+313% 
+6 
+331% 
+  
+6 
+318% 
+  
+6 
+309% 
+7 
+327% 
+  
+7 
+314% 
+  
+7 
+305% 
+8 
+323% 
+  
+8 
+310% 
+  
+8 
+301% 
+9 
+318% 
+  
+9 
+306% 
+  
+9 
+297% 
+10 
+314% 
+  
+10 
+302% 
+  
+10 
+293% 
+11 
+310% 
+  
+11 
+298% 
+  
+11 
+289% 
+12 
+306% 
+  
+12 
+294% 
+  
+12 
+285% 
+13 
+301% 
+  
+13 
+290% 
+  
+13 
+281% 
+14 
+297% 
+  
+14 
+286% 
+  
+14 
+277% 
+15 
+293% 
+  
+15 
+282% 
+  
+15 
+273% 
+16 
+289% 
+  
+16 
+278% 
+  
+16 
+269% 
+17 
+284% 
+  
+17 
+274% 
+  
+17 
+265% 
+18 
+280% 
+  
+18 
+270% 
+  
+18 
+261% 
+19 
+276% 
+  
+19 
+266% 
+  
+19 
+257% 
+20 
+272% 
+  
+20 
+262% 
+  
+20 
+253% 
+21 
+268% 
+  
+21 
+259% 
+  
+21 
+250% 
+22 
+265% 
+  
+22 
+256% 
+  
+22 
+247% 
+23 
+262% 
+  
+23 
+253% 
+  
+23 
+244% 
+24 
+259% 
+  
+24 
+250% 
+  
+24 
+241% 
+25 
+256% 
+  
+25 
+247% 
+  
+25 
+238% 
+26 
+252% 
+  
+26 
+244% 
+  
+26 
+235% 
+27 
+249% 
+  
+27 
+241% 
+  
+27 
+232% 
+28 
+246% 
+  
+28 
+239% 
+  
+28 
+229% 
+29 
+243% 
+  
+29 
+236% 
+  
+29 
+226% 
+30 
+240% 
+  
+30 
+233% 
+  
+30 
+223% 
+31 
+236% 
+  
+31 
+230% 
+  
+31 
+220% 
+32 
+233% 
+  
+32 
+227% 
+  
+32 
+217% 
+33 
+230% 
+  
+33 
+224% 
+  
+33 
+214% 
+34 
+227% 
+  
+34 
+221% 
+  
+34 
+211% 
+35 
+224% 
+  
+35 
+218% 
+  
+35 
+209% 
+36 
+220% 
+  
+36 
+216% 
+  
+36 
+206% 
+37 
+217% 
+  
+37 
+213% 
+  
+37 
+203% 
+38 
+214% 
+  
+38 
+210% 
+  
+38 
+200% 
+39 
+211% 
+  
+39 
+207% 
+  
+39 
+197% 
+40 
+208% 
+  
+40 
+204% 
+  
+40 
+194% 
+41 
+204% 
+  
+41 
+201% 
+  
+41 
+191% 
+Version 1.6 
+36 
+42 
+201% 
+  
+42 
+198% 
+  
+42 
+188% 
+43 
+198% 
+  
+43 
+195% 
+  
+43 
+185% 
+44 
+195% 
+  
+44 
+193% 
+  
+44 
+182% 
+45 
+192% 
+  
+45 
+190% 
+  
+45 
+179% 
+46 
+188% 
+  
+46 
+187% 
+  
+46 
+176% 
+47 
+185% 
+  
+47 
+184% 
+  
+47 
+173% 
+48 
+182% 
+  
+48 
+181% 
+  
+48 
+170% 
+49 
+179% 
+  
+49 
+178% 
+  
+49 
+167% 
+50 
+176% 
+  
+50 
+175% 
+  
+50 
+164% 
+ 
+ 
+Note:  
+i. 
+The DAP discount rate is assumed at 3.25%. The DAP discount rate is not guaranteed and subject to change. 
+ii. 
+Figure above is rounded to nearest percentage. 
+iii. Based on 100% Payout Option. 
+iv. If you terminate the policy in the early years, you may receive less than the amount you have paid. 
+ 
+ 
+ 
+Version 1.6 
+37 
+Coverage Term until Age 100 with DAP 
+ 
+Total Premium Paid Multiplier (% of Total Premium Paid) 
+5 pay 
+ 
+10 pay 
+ 
+20 pay 
+Entry ANB 
+Percentage 
+Entry ANB 
+Percentage 
+Entry ANB 
+Percentage 
+1 
+484% 
+  
+1 
+498% 
+  
+1 
+442% 
+2 
+479% 
+  
+2 
+493% 
+  
+2 
+438% 
+3 
+474% 
+  
+3 
+488% 
+  
+3 
+434% 
+4 
+470% 
+  
+4 
+484% 
+  
+4 
+430% 
+5 
+465% 
+  
+5 
+479% 
+  
+5 
+425% 
+6 
+460% 
+  
+6 
+474% 
+  
+6 
+421% 
+7 
+455% 
+  
+7 
+469% 
+  
+7 
+417% 
+8 
+450% 
+  
+8 
+464% 
+  
+8 
+413% 
+9 
+446% 
+  
+9 
+459% 
+  
+9 
+409% 
+10 
+441% 
+  
+10 
+454% 
+  
+10 
+405% 
+11 
+436% 
+  
+11 
+449% 
+  
+11 
+401% 
+12 
+431% 
+  
+12 
+444% 
+  
+12 
+396% 
+13 
+427% 
+  
+13 
+440% 
+  
+13 
+392% 
+14 
+422% 
+  
+14 
+435% 
+  
+14 
+388% 
+15 
+417% 
+  
+15 
+430% 
+  
+15 
+384% 
+16 
+412% 
+  
+16 
+425% 
+  
+16 
+380% 
+17 
+407% 
+  
+17 
+420% 
+  
+17 
+376% 
+18 
+403% 
+  
+18 
+415% 
+  
+18 
+371% 
+19 
+398% 
+  
+19 
+410% 
+  
+19 
+367% 
+20 
+393% 
+  
+20 
+405% 
+  
+20 
+363% 
+21 
+388% 
+  
+21 
+400% 
+  
+21 
+359% 
+22 
+383% 
+  
+22 
+396% 
+  
+22 
+355% 
+23 
+379% 
+  
+23 
+391% 
+  
+23 
+351% 
+24 
+374% 
+  
+24 
+386% 
+  
+24 
+346% 
+25 
+369% 
+  
+25 
+381% 
+  
+25 
+342% 
+26 
+364% 
+  
+26 
+376% 
+  
+26 
+338% 
+27 
+359% 
+  
+27 
+371% 
+  
+27 
+334% 
+28 
+355% 
+  
+28 
+366% 
+  
+28 
+330% 
+29 
+350% 
+  
+29 
+361% 
+  
+29 
+326% 
+30 
+345% 
+  
+30 
+356% 
+  
+30 
+321% 
+31 
+340% 
+  
+31 
+352% 
+  
+31 
+317% 
+32 
+335% 
+  
+32 
+347% 
+  
+32 
+313% 
+33 
+331% 
+  
+33 
+342% 
+  
+33 
+309% 
+34 
+326% 
+  
+34 
+337% 
+  
+34 
+305% 
+35 
+321% 
+  
+35 
+332% 
+  
+35 
+301% 
+36 
+316% 
+  
+36 
+327% 
+  
+36 
+296% 
+37 
+312% 
+  
+37 
+322% 
+  
+37 
+292% 
+38 
+307% 
+  
+38 
+317% 
+  
+38 
+288% 
+39 
+302% 
+  
+39 
+312% 
+  
+39 
+284% 
+40 
+297% 
+  
+40 
+308% 
+  
+40 
+280% 
+41 
+293% 
+  
+41 
+304% 
+  
+41 
+277% 
+Version 1.6 
+38 
+42 
+290% 
+  
+42 
+300% 
+  
+42 
+273% 
+43 
+286% 
+  
+43 
+296% 
+  
+43 
+270% 
+44 
+282% 
+  
+44 
+293% 
+  
+44 
+267% 
+45 
+278% 
+  
+45 
+289% 
+  
+45 
+264% 
+46 
+275% 
+  
+46 
+285% 
+  
+46 
+261% 
+47 
+271% 
+  
+47 
+281% 
+  
+47 
+258% 
+48 
+267% 
+  
+48 
+278% 
+  
+48 
+254% 
+49 
+264% 
+  
+49 
+274% 
+  
+49 
+251% 
+50 
+260% 
+  
+50 
+270% 
+  
+50 
+248% 
+51 
+256% 
+  
+51 
+266% 
+  
+51 
+245% 
+52 
+252% 
+  
+52 
+263% 
+  
+52 
+242% 
+53 
+249% 
+  
+53 
+259% 
+  
+53 
+239% 
+54 
+245% 
+  
+54 
+255% 
+  
+54 
+235% 
+55 
+241% 
+  
+55 
+252% 
+  
+55 
+232% 
+56 
+223% 
+  
+56 
+240% 
+  
+56 
+N/A 
+57 
+219% 
+  
+57 
+236% 
+  
+57 
+N/A 
+58 
+215% 
+  
+58 
+232% 
+  
+58 
+N/A 
+59 
+211% 
+  
+59 
+228% 
+  
+59 
+N/A 
+60 
+208% 
+  
+60 
+224% 
+  
+60 
+N/A 
+61 
+204% 
+  
+61 
+220% 
+  
+  
+  
+62 
+200% 
+  
+62 
+216% 
+  
+  
+  
+63 
+196% 
+  
+63 
+212% 
+  
+  
+  
+64 
+193% 
+  
+64 
+208% 
+  
+  
+  
+65 
+189% 
+  
+65 
+204% 
+  
+  
+  
+66 
+185% 
+  
+66 
+N/A 
+  
+  
+  
+67 
+182% 
+  
+67 
+N/A 
+  
+  
+  
+68 
+178% 
+  
+68 
+N/A 
+  
+  
+  
+69 
+174% 
+  
+69 
+N/A 
+  
+  
+  
+70 
+170% 
+  
+70 
+N/A 
+  
+  
+  
+ 
+Note:  
+i. 
+The DAP discount rate is assumed at 3.25%. The DAP discount rate is not guaranteed and subject to change. 
+ii. 
+Figure above is rounded to nearest percentage. 
+iii. Based on 100% Payout Option. 
+iv. If you terminate the policy in the early years, you may receive less than the amount you have paid. 
+ 
+ 
+ 
+ 

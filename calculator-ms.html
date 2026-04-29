@@ -47,7 +47,36 @@
             <ul class="nav-links">
                 <li><a href="index-ms.html#home">Utama</a></li>
                 <li><a href="index-ms.html#about">Tentang Saya</a></li>
-                <li><a href="products-ms.html">Produk</a></li>
+                                <li class="nav-dropdown">
+                    <a href="products-ms.html" class="nav-drop-btn">Produk ▾</a>
+                    <div class="dropdown-content">
+                        <div class="drop-col">
+                            <strong>🛡️ Insurans Hayat</strong>
+                            <a href="pages/pruwith-you-plus-ms.html">PRUWith You Plus</a>
+                            <a href="pages/pruwealth-enrich-2-ms.html">PRUWealth Enrich 2.0</a>
+                            <a href="pages/prulive-well-ms.html">PRULive Well</a>
+                            <a href="pages/pruterm-ms.html">PRUTerm</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>❤️ Penyakit Kritikal</strong>
+                            <a href="pages/total-multi-crisis-care-ms.html">Total Multi Crisis Care</a>
+                            <a href="pages/critical-care-plus-ms.html">Critical Care Plus</a>
+                            <a href="pages/critical-care-ms.html">Critical Care</a>
+                            <a href="pages/essential-child-plus-ms.html">Essential Child Plus</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>🏥 Insurans Perubatan</strong>
+                            <a href="pages/prumillion-med-2-ms.html">PRUMillion Med 2.0</a>
+                            <br>
+                            <strong>👶 Bayi & Kanak-Kanak</strong>
+                            <a href="pages/prumy-child-plus-ms.html">PRUMy Child Plus</a>
+                            <br>
+                            <strong>💰 Simpanan & Pelaburan</strong>
+                            <a href="pages/prucash-enrich-ms.html">PRUCash Enrich</a>
+                            <a href="pages/pruelite-flex-ms.html">PRUElite Flex</a>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="calculator-ms.html" class="nav-active">Kalkulator</a></li>
                 <li><a href="index-ms.html#partners">Rakan Kongsi</a></li>
                 <li class="lang-item">
@@ -103,22 +132,16 @@
         <div class="container">
             <div class="calc-wrapper fade-in active">
 
-                <!-- Langkah 1: Matlamat -->
-                <span class="calc-step-label">Langkah 1 — Apakah yang anda lindungi?</span>
-                <div class="goal-tabs" role="tablist" aria-label="Matlamat Perlindungan">
-                    <button class="goal-tab" data-goal="education" role="tab" aria-selected="false">
-                        <span class="tab-icon">🎓</span> Pendidikan Anak
-                    </button>
-                    <button class="goal-tab" data-goal="parents" role="tab" aria-selected="false">
-                        <span class="tab-icon">👨‍👩‍👧</span> Sokongan Ibu Bapa
-                    </button>
-                    <button class="goal-tab active" data-goal="family" role="tab" aria-selected="true">
-                        <span class="tab-icon">👨‍👩‍👧‍👦</span> Keluarga
-                    </button>
-                </div>
+                <!-- Langkah 1: Tempoh -->
+                <span class="calc-step-label">Langkah 1 — Berapa tahun untuk mencapai matlamat ini?</span>
 
-                <!-- Langkah 2: Tempoh -->
-                <span class="calc-step-label">Langkah 2 — Berapa tahun untuk mencapai matlamat ini?</span>
+                <select id="goal-milestone" class="calc-input" style="width: 100%; margin-bottom: 20px; font-weight: 500;">
+                    <option value="" disabled selected>Pilih pencapaian...</option>
+                    <option value="Children graduating">Anak tamat pengajian</option>
+                    <option value="Mortgage Fully Paid">Pinjaman Perumahan Selesai Dibayar</option>
+                    <option value="Financial Freedom">Kebebasan Kewangan</option>
+                </select>
+
                 <div class="years-block">
                     <div class="years-display-row">
                         <div>
@@ -138,10 +161,24 @@
 
                 <div class="calc-divider"></div>
 
-                <!-- Langkah 3: Input Kewangan -->
-                <span class="calc-step-label">Langkah 3 — Gambaran kewangan bulanan anda</span>
+                <!-- Langkah 2: Input Kewangan -->
+                <span class="calc-step-label">Langkah 2 — Gambaran kewangan bulanan anda</span>
 
                 <div class="calc-inputs">
+                    <!-- Gender -->
+                    <div class="calc-field">
+                        <label>Jantina</label>
+                        <div class="gender-toggles" style="display: flex; gap: 10px;">
+                            <label class="gender-card" style="flex: 1; text-align: center; border: 2px solid var(--border-color); border-radius: 12px; padding: 12px; cursor: pointer; transition: all 0.2s;">
+                                <input type="radio" name="calc_gender" value="Lelaki" style="display: none;">
+                                <span style="font-weight: 500; color: var(--text-main);">👨 Lelaki</span>
+                            </label>
+                            <label class="gender-card" style="flex: 1; text-align: center; border: 2px solid var(--border-color); border-radius: 12px; padding: 12px; cursor: pointer; transition: all 0.2s;">
+                                <input type="radio" name="calc_gender" value="Perempuan" style="display: none;">
+                                <span style="font-weight: 500; color: var(--text-main);">👩 Perempuan</span>
+                            </label>
+                        </div>
+                    </div>
                     <!-- DOB -->
                     <div class="calc-field">
                         <label>Tarikh Lahir</label>
@@ -228,8 +265,8 @@
                         <span class="field-hint">Premium insurans, langganan, hobi, dll.</span>
                     </div>
 
-                    <!-- Pendidikan Anak — bersyarat -->
-                    <div class="calc-field conditional-field" id="field-education">
+                    <!-- Pendidikan Anak -->
+                    <div class="calc-field" id="field-education">
                         <label for="education">Caruman Pendidikan Anak (RM/bln)</label>
                         <div class="input-prefix-wrap">
                             <span class="prefix-symbol">RM</span>
@@ -239,8 +276,8 @@
                         </div>
                     </div>
 
-                    <!-- Allowan Ibu Bapa — bersyarat -->
-                    <div class="calc-field conditional-field" id="field-parents">
+                    <!-- Allowan Ibu Bapa -->
+                    <div class="calc-field" id="field-parents">
                         <label for="parents">Elaun Bulanan untuk Ibu Bapa (RM/bln)</label>
                         <div class="input-prefix-wrap">
                             <span class="prefix-symbol">RM</span>
@@ -328,7 +365,7 @@
 
                 <!-- Quotation Request -->
                 <div class="quote-request-block" id="quote-request-block" style="text-align: center; margin: 30px 0; padding: 24px; background: rgba(237, 28, 36, 0.05); border-radius: 16px; border: 1px solid rgba(237, 28, 36, 0.1);">
-                    <p style="font-weight: 500; font-size: 1.1rem; color: var(--text-dark); margin-bottom: 16px;">Mahu sebut harga yang diperibadikan berdasarkan angka ini?</p>
+                    <p style="font-weight: 500; font-size: 1.1rem; color: var(--text-main); margin-bottom: 16px;">Mahu sebut harga yang diperibadikan berdasarkan angka ini?</p>
                     <button class="btn btn-primary" id="request-quote-btn" onclick="requestQuotation()">
                         📋 Minta Sebut Harga
                     </button>
@@ -379,13 +416,7 @@
                     autocomplete="email" aria-label="Alamat e-mel anda">
                 <div id="gate-email-error" class="gate-error">Sila masukkan alamat e-mel anda</div>
 
-                <input type="text" class="gate-input" id="gate-occupation"
-                    placeholder="Pekerjaan (cth. Jurutera, Guru)" autocomplete="organization-title" aria-label="Pekerjaan anda">
-                <div id="gate-occupation-error" class="gate-error">Sila masukkan pekerjaan anda</div>
 
-                <input type="text" class="gate-input" id="gate-business"
-                    placeholder="Sifat Perniagaan (cth. Sektor Swasta, Bekerja Sendiri)" autocomplete="organization" aria-label="Sifat perniagaan anda">
-                <div id="gate-business-error" class="gate-error">Sila masukkan sifat perniagaan anda</div>
             </div>
 
             <!-- Blok Kebenaran PDPA -->
@@ -426,9 +457,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-brand">
-                <a href="index-ms.html" class="logo">
-                    <img src="assets/prudential-1.png" alt="Logo Prudential" class="brand-logo">
-                </a>
+                <a href="index-ms.html" class="logo"><img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo"></a>
                 <p class="mt-2">Menyediakan penyelesaian insurans premium dan ketenangan fikiran untuk anda dan keluarga.</p>
             </div>
             <div class="footer-links">
@@ -437,6 +466,18 @@
                     <li><a href="index-ms.html#home">Utama</a></li>
                     <li><a href="index-ms.html#about">Tentang</a></li>
                     <li><a href="products-ms.html">Produk</a></li>
+                    <li><a href="calculator-ms.html">Kalkulator</a></li>
+                    <li><a href="partners-ms.html">Rakan Kongsi</a></li>
+                    <li><a href="index-ms.html#quote">Hubungi Saya</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p>Email: annabelong6997@prupartner.com.my</p>
+                <p>Phone: +60 18-317 6361</p>
+            </div>
+        </div>
+                </li>
                     <li><a href="calculator-ms.html">Kalkulator</a></li>
                     <li><a href="index-ms.html#partners">Rakan Kongsi</a></li>
                     <li><a href="index-ms.html#quote">Hubungi Saya</a></li>
@@ -530,6 +571,75 @@
 #modal_medical_desc::placeholder {
     color: #999;
 }
+
+    /* Dropdown CSS */
+    .nav-dropdown {
+        position: relative;
+    }
+    .dropdown-content {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(10px);
+        position: absolute;
+        top: 100%;
+        left: -150px;
+        background-color: var(--pure-white);
+        min-width: 650px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        z-index: 100;
+        border-radius: 16px;
+        padding: 25px;
+        gap: 20px;
+        display: flex;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    .nav-dropdown:hover .dropdown-content {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .drop-col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .drop-col strong {
+        color: var(--dark-bg);
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 5px;
+    }
+    .drop-col a {
+        color: var(--text-main) !important;
+        padding: 8px 0;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.2s;
+    }
+    .drop-col a:hover {
+        color: var(--primary-red) !important;
+        padding-left: 5px;
+    }
+    
+    @media (max-width: 992px) {
+        .dropdown-content {
+            position: static;
+            display: none;
+            min-width: 100%;
+            box-shadow: none;
+            padding: 10px;
+            flex-direction: column;
+        }
+        .nav-dropdown.active .dropdown-content {
+            display: flex;
+        }
+        .drop-col {
+            margin-bottom: 15px;
+        }
+    }
+
 </style>
 
 <div class="quote-modal-overlay" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title">
@@ -538,16 +648,12 @@
         <h3 id="quote-modal-title" style="color: #D31225; margin-bottom: 20px; font-size: 1.5rem;">Beberapa Butiran Tambahan</h3>
         
         <div class="quote-modal-fields">
-            <!-- Gender -->
-            <label class="modal-field-label" style="margin-top: 0;">Jantina</label>
-            <div class="radio-group">
-                <label class="radio-label">
-                    <input type="radio" name="modal_gender" value="Lelaki"> Lelaki
-                </label>
-                <label class="radio-label">
-                    <input type="radio" name="modal_gender" value="Perempuan"> Perempuan
-                </label>
-            </div>
+            <!-- Occupation & Nature of Business -->
+            <label class="modal-field-label" style="margin-top: 0;">Pekerjaan</label>
+            <input type="text" id="modal_occupation" class="gate-input" placeholder="cth. Jurutera, Guru" style="margin-bottom: 15px; width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px;">
+            
+            <label class="modal-field-label">Sifat Perniagaan</label>
+            <input type="text" id="modal_business" class="gate-input" placeholder="cth. Sektor Swasta, Bekerja Sendiri" style="margin-bottom: 15px; width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px;">
 
             <!-- Smoker Status -->
             <label class="modal-field-label">Status Merokok</label>
@@ -629,6 +735,55 @@
                 Hantar Permintaan
             </button>
         </div>
+    </div>
+</div>
+
+
+<!-- Medical Card Modal Overlay -->
+<div class="quote-modal-overlay" id="medical-modal" role="dialog" aria-modal="true" aria-labelledby="medical-modal-title">
+    <div class="quote-modal-card">
+        <button class="quote-modal-close" id="medical-modal-close" aria-label="Tutup">&times;</button>
+        <h3 id="medical-modal-title" style="color: #D31225; margin-bottom: 10px; font-size: 1.5rem;">Adakah anda mahu Kad Perubatan?</h3>
+        <p style="margin-bottom: 20px; font-size: 0.95rem; color: #666;">Kad perubatan menampung kos penghospitalan anda. Beritahu Anna pilihan anda supaya dia boleh menyertakannya dalam sebut harga anda.</p>
+        
+        <div class="contact-cards">
+            <label class="contact-card" id="med-card-yes">
+                <input type="radio" name="modal_medical_card" value="Ya" class="hidden-radio">
+                <div class="card-content">
+                    <strong>✅ Ya, sertakan kad perubatan</strong>
+                </div>
+            </label>
+            <label class="contact-card" id="med-card-no">
+                <input type="radio" name="modal_medical_card" value="Tidak" class="hidden-radio">
+                <div class="card-content">
+                    <strong>❌ Tidak, perlindungan hayat & PK sahaja</strong>
+                </div>
+            </label>
+        </div>
+
+        <div id="medical-options-container" style="display: none; margin-top: 15px; padding: 15px; background: #f9f9f9; border-radius: 12px;">
+            <label class="modal-field-label" style="font-size: 0.9rem; margin-top: 0;">Had Tahunan</label>
+            <select id="modal_annual_limit" class="calc-input" style="width: 100%; margin-bottom: 15px;">
+                <option value="" disabled selected>Pilih Had Tahunan</option>
+                <option value="RM 2,000,000">RM 2,000,000</option>
+                <option value="RM 5,000,000">RM 5,000,000</option>
+                <option value="RM 8,000,000">RM 8,000,000</option>
+            </select>
+            
+            <label class="modal-field-label" style="font-size: 0.9rem;">Deduktibel</label>
+            <select id="modal_deductible" class="calc-input" style="width: 100%;">
+                <option value="" disabled selected>Pilih Deduktibel</option>
+                <option value="RM 500">RM 500</option>
+                <option value="RM 1,000">RM 1,000</option>
+                <option value="RM 5,000">RM 5,000</option>
+                <option value="RM 10,000">RM 10,000</option>
+            </select>
+        </div>
+        
+        <button class="btn btn-primary btn-block" id="medical-submit-btn" disabled
+            style="font-size: 1rem; padding: 16px 24px; border-radius: 14px; opacity: 0.5; cursor: not-allowed; margin-top: 20px; width: 100%;">
+            Sahkan Pilihan
+        </button>
     </div>
 </div>
 

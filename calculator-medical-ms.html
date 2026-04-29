@@ -31,6 +31,75 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/calculator.css">
+<style>
+    /* Dropdown CSS */
+    .nav-dropdown {
+        position: relative;
+    }
+    .dropdown-content {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(10px);
+        position: absolute;
+        top: 100%;
+        left: -150px;
+        background-color: var(--pure-white);
+        min-width: 650px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        z-index: 100;
+        border-radius: 16px;
+        padding: 25px;
+        gap: 20px;
+        display: flex;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    .nav-dropdown:hover .dropdown-content {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .drop-col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .drop-col strong {
+        color: var(--dark-bg);
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 5px;
+    }
+    .drop-col a {
+        color: var(--text-main) !important;
+        padding: 8px 0;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.2s;
+    }
+    .drop-col a:hover {
+        color: var(--primary-red) !important;
+        padding-left: 5px;
+    }
+    
+    @media (max-width: 992px) {
+        .dropdown-content {
+            position: static;
+            display: none;
+            min-width: 100%;
+            box-shadow: none;
+            padding: 10px;
+            flex-direction: column;
+        }
+        .nav-dropdown.active .dropdown-content {
+            display: flex;
+        }
+        .drop-col {
+            margin-bottom: 15px;
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -49,7 +118,36 @@
             <ul class="nav-links">
                 <li><a href="index-ms.html#home">Utama</a></li>
                 <li><a href="index-ms.html#about">Tentang Saya</a></li>
-                <li><a href="products-ms.html">Produk</a></li>
+                                <li class="nav-dropdown">
+                    <a href="products-ms.html" class="nav-drop-btn">Produk ▾</a>
+                    <div class="dropdown-content">
+                        <div class="drop-col">
+                            <strong>🛡️ Insurans Hayat</strong>
+                            <a href="pages/pruwith-you-plus-ms.html">PRUWith You Plus</a>
+                            <a href="pages/pruwealth-enrich-2-ms.html">PRUWealth Enrich 2.0</a>
+                            <a href="pages/prulive-well-ms.html">PRULive Well</a>
+                            <a href="pages/pruterm-ms.html">PRUTerm</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>❤️ Penyakit Kritikal</strong>
+                            <a href="pages/total-multi-crisis-care-ms.html">Total Multi Crisis Care</a>
+                            <a href="pages/critical-care-plus-ms.html">Critical Care Plus</a>
+                            <a href="pages/critical-care-ms.html">Critical Care</a>
+                            <a href="pages/essential-child-plus-ms.html">Essential Child Plus</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>🏥 Insurans Perubatan</strong>
+                            <a href="pages/prumillion-med-2-ms.html">PRUMillion Med 2.0</a>
+                            <br>
+                            <strong>👶 Bayi & Kanak-Kanak</strong>
+                            <a href="pages/prumy-child-plus-ms.html">PRUMy Child Plus</a>
+                            <br>
+                            <strong>💰 Simpanan & Pelaburan</strong>
+                            <a href="pages/prucash-enrich-ms.html">PRUCash Enrich</a>
+                            <a href="pages/pruelite-flex-ms.html">PRUElite Flex</a>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="calculator-ms.html" class="nav-active">Kalkulator</a></li>
                 <li><a href="index-ms.html#partners">Rakan Kongsi</a></li>
                 <li class="lang-item">
@@ -263,9 +361,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-brand">
-                <a href="index-ms.html" class="logo">
-                    <img src="assets/prudential-1.png" alt="Logo Prudential" class="brand-logo">
-                </a>
+                <a href="index-ms.html" class="logo"><img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo"></a>
                 <p class="mt-2">Menyediakan penyelesaian insurans premium dan ketenangan fikiran untuk anda dan keluarga.</p>
             </div>
             <div class="footer-links">
@@ -274,6 +370,18 @@
                     <li><a href="index-ms.html#home">Utama</a></li>
                     <li><a href="index-ms.html#about">Tentang</a></li>
                     <li><a href="products-ms.html">Produk</a></li>
+                    <li><a href="calculator-ms.html">Kalkulator</a></li>
+                    <li><a href="partners-ms.html">Rakan Kongsi</a></li>
+                    <li><a href="index-ms.html#quote">Hubungi Saya</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p>Email: annabelong6997@prupartner.com.my</p>
+                <p>Phone: +60 18-317 6361</p>
+            </div>
+        </div>
+                </li>
                     <li><a href="calculator-ms.html">Kalkulator</a></li>
                     <li><a href="index-ms.html#partners">Rakan Kongsi</a></li>
                     <li><a href="index-ms.html#quote">Hubungi Saya</a></li>

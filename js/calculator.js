@@ -8,6 +8,7 @@
 emailjs.init('wqFxp4IHe9q_HnHIJ');
 
 let currentResults = {};
+const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbzjFuplyMFZCEeSqB5HmUz3RQUUbFeSR_3RY4hN4EUfYleERu5YTRAYzfDMmXHb0XLp/exec";
 
 function sendResultsByEmail(userName, userEmail, results) {
     const templateParams = {
@@ -16,7 +17,7 @@ function sendResultsByEmail(userName, userEmail, results) {
         life_cover: results.lifeCover.toLocaleString('en-MY'),
         ci_cover: results.ciCover.toLocaleString('en-MY'),
         annual_income: results.annualIncome.toLocaleString('en-MY'),
-        goal: results.goal,
+        goal: 'family',
         years: results.years
     };
 
@@ -35,6 +36,12 @@ function requestQuotation() {
     // Reset modal state
     const radios = modal.querySelectorAll('input[type="radio"]');
     radios.forEach(r => r.checked = false);
+    
+    // Reset text inputs for occupation/business
+    const occInput = document.getElementById('modal_occupation');
+    const busInput = document.getElementById('modal_business');
+    if (occInput) occInput.value = '';
+    if (busInput) busInput.value = '';
     
     document.getElementById('medical-desc-container').style.display = 'none';
     document.getElementById('modal_medical_desc').value = '';
@@ -74,6 +81,21 @@ function requestQuotation() {
 
 // Modal Event Listeners (Setup once on DOMContentLoaded)
 document.addEventListener('DOMContentLoaded', () => {
+    // ---- Gender Card Styles for Main Form ----
+    const genderCards = document.querySelectorAll('.gender-card');
+    genderCards.forEach(card => {
+        card.addEventListener('click', () => {
+            genderCards.forEach(c => {
+                c.style.borderColor = 'var(--border-color)';
+                c.style.background = 'transparent';
+            });
+            card.style.borderColor = '#D31225';
+            card.style.background = 'rgba(211, 18, 37, 0.05)';
+            const input = card.querySelector('input[type="radio"]');
+            if (input) input.checked = true;
+        });
+    });
+
     const modal = document.getElementById('quote-modal');
     if (!modal) return;
 
@@ -96,8 +118,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Handle form changes to validate and enforce business logic
-    modal.addEventListener('change', () => {
-        const genderVal = document.querySelector('input[name="modal_gender"]:checked')?.value;
+    modal.addEventListener('change', validateModal);
+    modal.addEventListener('input', validateModal); // for text inputs
+
+    function validateModal() {
+        const occVal = document.getElementById('modal_occupation')?.value.trim();
+        const busVal = document.getElementById('modal_business')?.value.trim();
         const smokerVal = document.querySelector('input[name="modal_smoker"]:checked')?.value;
         const medicalVal = document.querySelector('input[name="modal_medical"]:checked')?.value;
         const coverageVal = document.querySelector('input[name="modal_coverage"]:checked')?.value;
@@ -117,8 +143,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Auto-switch to consultation if email was selected
             if (contactVal && (contactVal.includes('Email') || contactVal.includes('e-mel'))) {
                 const consultRadio = cardConsult.querySelector('input');
-                consultRadio.checked = true;
-                contactVal = consultRadio.value;
+                if (consultRadio) {
+                    consultRadio.checked = true;
+                    contactVal = consultRadio.value;
+                }
                 if (cardEmail) cardEmail.classList.remove('selected');
                 if (cardConsult) cardConsult.classList.add('selected');
             }
@@ -144,9 +172,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cardConsult) cardConsult.classList.toggle('selected', cardConsult.querySelector('input').checked);
 
         // Validation logic to enable submit button
-        let isValid = genderVal && smokerVal && medicalVal && contactVal && coverageVal;
+        let isValid = occVal && busVal && smokerVal && medicalVal && contactVal && coverageVal;
         
-        if ((medicalVal === 'Yes' || medicalVal === 'Ya') && medicalDescInput.value.trim() === '') {
+        if ((medicalVal === 'Yes' || medicalVal === 'Ya') && (!medicalDescInput || medicalDescInput.value.trim() === '')) {
             isValid = false;
         }
 
@@ -155,20 +183,13 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.style.opacity = isValid ? '1' : '0.5';
             submitBtn.style.cursor = isValid ? 'pointer' : 'not-allowed';
         }
-    });
-
-    // Listen to text area input for validation update
-    if (medicalDescInput) {
-        medicalDescInput.addEventListener('input', () => {
-            const event = new Event('change', { bubbles: true });
-            modal.dispatchEvent(event);
-        });
     }
 
     // Submit Action
     if (submitBtn) {
         submitBtn.addEventListener('click', () => {
-            const genderVal = document.querySelector('input[name="modal_gender"]:checked')?.value;
+            const occVal = document.getElementById('modal_occupation')?.value.trim();
+            const busVal = document.getElementById('modal_business')?.value.trim();
             const smokerVal = document.querySelector('input[name="modal_smoker"]:checked')?.value;
             const medicalVal = document.querySelector('input[name="modal_medical"]:checked')?.value;
             const coverageVal = document.querySelector('input[name="modal_coverage"]:checked')?.value;
@@ -178,14 +199,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const existingLife = document.getElementById('modal_existing_life')?.value || '0';
             const existingCi = document.getElementById('modal_existing_ci')?.value || '0';
 
+            const calcGender = document.querySelector('input[name="calc_gender"]:checked')?.value || '';
+
             const finalMedicalText = (medicalVal === 'Yes' || medicalVal === 'Ya') ? medicalDesc : medicalVal;
-            
             const finalExistingLifeText = (coverageVal === 'Yes' || coverageVal === 'Ya') ? existingLife : 'None';
             const finalExistingCiText = (coverageVal === 'Yes' || coverageVal === 'Ya') ? existingCi : 'None';
 
             const originalBtnText = submitBtn.innerText;
             submitBtn.disabled = true;
-            submitBtn.innerText = originalBtnText === 'Submit Request' ? 'Sending...' : 'Menghantar...';
+            submitBtn.innerText = originalBtnText === 'Submit Request' || originalBtnText === 'Hantar Permintaan' || originalBtnText.includes('Sending') ? 'Sending...' : 'Menghantar...';
             
             if (errorMsg) {
                 errorMsg.style.display = 'none';
@@ -194,20 +216,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const gateName = document.getElementById('gate-name');
             const gateEmail = document.getElementById('gate-email');
-            const gateOccupation = document.getElementById('gate-occupation');
-            const gateBusiness = document.getElementById('gate-business');
 
             const templateParams = {
                 user_name: gateName ? gateName.value : '',
                 user_email: gateEmail ? gateEmail.value : '',
-                occupation: gateOccupation ? gateOccupation.value : '',
-                nature_of_business: gateBusiness ? gateBusiness.value : '',
+                occupation: occVal,
+                nature_of_business: busVal,
                 life_cover: currentResults.lifeCover ? currentResults.lifeCover.toLocaleString('en-MY') : '0',
                 ci_cover: currentResults.ciCover ? currentResults.ciCover.toLocaleString('en-MY') : '0',
                 annual_income: currentResults.annualIncome ? currentResults.annualIncome.toLocaleString('en-MY') : '0',
-                goal: currentResults.goal || '',
+                goal: currentResults.goal || 'family',
                 years: currentResults.years || 0,
-                gender: genderVal,
+                gender: calcGender,
                 smoker_status: smokerVal,
                 medical_conditions: finalMedicalText,
                 existing_life_cover: finalExistingLifeText,
@@ -215,13 +235,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 contact_preference: contactVal
             };
 
+            // Webhook Stage 2
+            const params = new URLSearchParams();
+            params.append("name", templateParams.user_name);
+            params.append("email", templateParams.user_email);
+            params.append("occupation", occVal);
+            params.append("nature_of_business", busVal);
+            params.append("smoker_status", smokerVal);
+            params.append("medical_conditions", finalMedicalText);
+            params.append("contact_preference", contactVal);
+            params.append("gender", calcGender);
+            
+            fetch(WEBHOOK_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: params
+            }).catch(err => console.error("Webhook Stage 2 error:", err));
+
             emailjs.send('prudential_service', 'quotation_request', templateParams)
                 .then(function() {
                     closeModal();
-                    const mainReqBtn = document.getElementById('request-quote-btn');
-                    const confirmMsg = document.getElementById('quote-confirm');
-                    if (mainReqBtn) mainReqBtn.style.display = 'none';
-                    if (confirmMsg) confirmMsg.style.display = 'block';
+                    openMedicalModal();
                 }, function(error) {
                     submitBtn.disabled = false;
                     submitBtn.innerText = originalBtnText;
@@ -233,7 +267,166 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
         });
     }
+
+    // Setup Medical Modal
+    const medModal = document.getElementById('medical-modal');
+    if (medModal) {
+        const medClose = document.getElementById('medical-modal-close');
+        const medSubmitBtn = document.getElementById('medical-submit-btn');
+        const medCardYes = document.getElementById('med-card-yes');
+        const medCardNo = document.getElementById('med-card-no');
+        const medOptions = document.getElementById('medical-options-container');
+        
+        const closeMedModal = () => medModal.classList.remove('active');
+        if (medClose) medClose.addEventListener('click', closeMedModal);
+        
+        medModal.addEventListener('click', (e) => {
+            if (e.target === medModal) closeMedModal();
+        });
+
+        // Toggle cards
+        [medCardYes, medCardNo].forEach(card => {
+            if (!card) return;
+            card.addEventListener('click', () => {
+                const isYes = card.id === 'med-card-yes';
+                
+                if (medCardYes) medCardYes.classList.toggle('selected', isYes);
+                if (medCardNo) medCardNo.classList.toggle('selected', !isYes);
+                
+                const yesInput = medCardYes.querySelector('input');
+                const noInput = medCardNo.querySelector('input');
+                if (yesInput) yesInput.checked = isYes;
+                if (noInput) noInput.checked = !isYes;
+                
+                if (medOptions) {
+                    medOptions.style.display = isYes ? 'block' : 'none';
+                }
+                
+                validateMedModal();
+            });
+        });
+
+        medModal.addEventListener('change', validateMedModal);
+
+        function validateMedModal() {
+            const medChoiceRaw = document.querySelector('input[name="modal_medical_card"]:checked')?.value;
+            const annLimit = document.getElementById('modal_annual_limit')?.value;
+            const deductible = document.getElementById('modal_deductible')?.value;
+            
+            let isValid = false;
+            if (medChoiceRaw === 'No' || medChoiceRaw === 'Tidak') {
+                isValid = true;
+            } else if ((medChoiceRaw === 'Yes' || medChoiceRaw === 'Ya') && annLimit && deductible) {
+                isValid = true;
+            }
+            
+            if (medSubmitBtn) {
+                medSubmitBtn.disabled = !isValid;
+                medSubmitBtn.style.opacity = isValid ? '1' : '0.5';
+                medSubmitBtn.style.cursor = isValid ? 'pointer' : 'not-allowed';
+            }
+        }
+        
+        if (medSubmitBtn) {
+            medSubmitBtn.addEventListener('click', () => {
+                const medChoiceRaw = document.querySelector('input[name="modal_medical_card"]:checked')?.value;
+                const isMalay = medChoiceRaw === 'Ya' || medChoiceRaw === 'Tidak';
+                const medChoice = (medChoiceRaw === 'Yes' || medChoiceRaw === 'Ya') ? 'Yes' : 'No';
+                
+                const annLimit = (medChoice === 'Yes') ? document.getElementById('modal_annual_limit')?.value : 'N/A';
+                const deductible = (medChoice === 'Yes') ? document.getElementById('modal_deductible')?.value : 'N/A';
+                
+                const originalBtnText = medSubmitBtn.innerText;
+                medSubmitBtn.disabled = true;
+                medSubmitBtn.innerText = isMalay ? 'Menghantar...' : 'Sending...';
+                
+                const gateName = document.getElementById('gate-name');
+                const gateEmail = document.getElementById('gate-email');
+                
+                const templateParams = {
+                    user_name: gateName ? gateName.value : '',
+                    user_email: gateEmail ? gateEmail.value : '',
+                    medical_card: medChoice,
+                    annual_limit: annLimit,
+                    deductible: deductible
+                };
+                
+                // Webhook Stage 3
+                const params = new URLSearchParams();
+                params.append("name", templateParams.user_name);
+                params.append("email", templateParams.user_email);
+                params.append("medical_card", medChoice);
+                params.append("annual_limit", annLimit);
+                params.append("deductible", deductible);
+                
+                fetch(WEBHOOK_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: params
+                }).catch(err => console.error("Webhook Stage 3 error:", err));
+                
+                emailjs.send('prudential_service', 'medical_card_request', templateParams)
+                    .then(() => {
+                        closeMedModal();
+                        showFinalConfirmation();
+                    })
+                    .catch((err) => {
+                        console.error('EmailJS Error:', err);
+                        closeMedModal();
+                        showFinalConfirmation();
+                    });
+            });
+        }
+    }
 });
+
+function openMedicalModal() {
+    const medModal = document.getElementById('medical-modal');
+    if (!medModal) {
+        showFinalConfirmation();
+        return;
+    }
+    
+    // Reset state
+    const radios = medModal.querySelectorAll('input[type="radio"]');
+    radios.forEach(r => r.checked = false);
+    
+    const medCardYes = document.getElementById('med-card-yes');
+    const medCardNo = document.getElementById('med-card-no');
+    if (medCardYes) medCardYes.classList.remove('selected');
+    if (medCardNo) medCardNo.classList.remove('selected');
+    
+    const medOptions = document.getElementById('medical-options-container');
+    if (medOptions) medOptions.style.display = 'none';
+    
+    const limitSelect = document.getElementById('modal_annual_limit');
+    const deductSelect = document.getElementById('modal_deductible');
+    if (limitSelect) limitSelect.value = '';
+    if (deductSelect) deductSelect.value = '';
+    
+    const submitBtn = document.getElementById('medical-submit-btn');
+    if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.5';
+        submitBtn.style.cursor = 'not-allowed';
+    }
+    
+    medModal.classList.add('active');
+}
+
+function showFinalConfirmation() {
+    const mainReqBtn = document.getElementById('request-quote-btn');
+    const confirmMsg = document.getElementById('quote-confirm');
+    
+    if (mainReqBtn) mainReqBtn.style.display = 'none';
+    if (confirmMsg) {
+        const isMalay = document.documentElement.lang === 'ms' || document.title.includes('Kalkulator');
+        confirmMsg.innerHTML = isMalay 
+            ? "✅ Terima kasih! Anna akan mengambil kira pilihan ini dalam sebut harga anda."
+            : "✅ Thanks! Anna will factor this into your quotation.";
+        confirmMsg.style.display = 'block';
+    }
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -259,44 +452,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* =============================================
-       1. Goal Tab Switching
-       ============================================= */
-    const goalTabs      = document.querySelectorAll('.goal-tab');
-    const educationField = document.getElementById('field-education');
-    const parentsField   = document.getElementById('field-parents');
-
-    let currentGoal = 'family';
-
-    goalTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            goalTabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-            currentGoal = tab.dataset.goal;
-            updateConditionalFields();
-        });
-    });
-
-    function updateConditionalFields() {
-        // Hide all conditional fields first
-        if (educationField) educationField.classList.remove('visible');
-        if (parentsField)   parentsField.classList.remove('visible');
-
-        if (currentGoal === 'education' && educationField) {
-            educationField.classList.add('visible');
-        } else if (currentGoal === 'parents' && parentsField) {
-            parentsField.classList.add('visible');
-        } else if (currentGoal === 'family') {
-            // Family = kids education + supporting parents
-            if (educationField) educationField.classList.add('visible');
-            if (parentsField)   parentsField.classList.add('visible');
-        }
-    }
-
-    // Trigger initial state
-    updateConditionalFields();
-
-    /* =============================================
-       2. Years Slider
+       1. Years Slider
        ============================================= */
     const yearsSlider  = document.getElementById('years-slider');
     const yearsDisplay = document.getElementById('years-display');
@@ -318,7 +474,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* =============================================
-       3. Calculate Button → Gate
+       2. Calculate Button → Gate
        ============================================= */
     const calculateBtn  = document.getElementById('calculate-btn');
     const gateOverlay   = document.getElementById('gate-overlay');
@@ -338,7 +494,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* =============================================
-       4. Gate — Consent Checkbox Enables Button
+       3. Gate — Consent Checkbox Enables Button
        ============================================= */
     const consentCheckbox = document.getElementById('consent-checkbox');
     if (consentCheckbox && unlockBtn) {
@@ -350,11 +506,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* =============================================
-       5. Gate — Unlock
+       4. Gate — Unlock
        ============================================= */
     if (unlockBtn) {
         unlockBtn.addEventListener('click', () => {
-            // Gate is disabled when unchecked, but double-check for safety
             if (consentCheckbox && !consentCheckbox.checked) {
                 const consentError = document.getElementById('consent-error');
                 if (consentError) consentError.classList.add('visible');
@@ -363,20 +518,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const nameInput  = document.getElementById('gate-name');
             const emailInput = document.getElementById('gate-email');
-            const occupationInput = document.getElementById('gate-occupation');
-            const businessInput = document.getElementById('gate-business');
             const nameError  = document.getElementById('gate-name-error');
             const emailError = document.getElementById('gate-email-error');
-            const occupationError = document.getElementById('gate-occupation-error');
-            const businessError = document.getElementById('gate-business-error');
+
+            const calcGender = document.querySelector('input[name="calc_gender"]:checked')?.value;
 
             let valid = true;
 
-            // Reset errors
             if (nameError)  nameError.classList.remove('visible');
             if (emailError) emailError.classList.remove('visible');
-            if (occupationError) occupationError.classList.remove('visible');
-            if (businessError) businessError.classList.remove('visible');
+
+            if (!calcGender) {
+                const isMalay = document.documentElement.lang === 'ms' || document.title.includes('Kalkulator');
+                alert(isMalay ? "Sila pilih Jantina anda dalam borang sebelum meneruskan." : "Please select your Gender in the form before proceeding.");
+                valid = false;
+            }
 
             if (!nameInput || nameInput.value.trim() === '') {
                 if (nameError) nameError.classList.add('visible');
@@ -409,18 +565,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            if (!occupationInput || occupationInput.value.trim() === '') {
-                if (occupationError) occupationError.classList.add('visible');
-                if (valid && occupationInput) occupationInput.focus();
-                valid = false;
-            }
-
-            if (!businessInput || businessInput.value.trim() === '') {
-                if (businessError) businessError.classList.add('visible');
-                if (valid && businessInput) businessInput.focus();
-                valid = false;
-            }
-
             if (!valid) {
                 const card = document.querySelector('.gate-card');
                 if (card) {
@@ -431,22 +575,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Store locally and send to webhook
             const nameVal = nameInput.value.trim();
             const emailVal = emailInput.value.trim();
-            const occupationVal = occupationInput ? occupationInput.value.trim() : '';
-            const businessVal = businessInput ? businessInput.value.trim() : '';
             try {
                 localStorage.setItem('calc_lead', JSON.stringify({
                     name:  nameVal,
                     email: emailVal,
-                    occupation: occupationVal,
-                    nature_of_business: businessVal,
                     ts:    new Date().toISOString()
                 }));
-            } catch (e) { /* ignore */ }
+            } catch (e) { }
 
-            sendWebhook(nameVal, emailVal, occupationVal, businessVal);
+            sendWebhookStage1(nameVal, emailVal, calcGender);
 
             gateCleared = true;
             if (gateOverlay) gateOverlay.classList.remove('active');
@@ -454,7 +593,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Close gate on backdrop click
     if (gateOverlay) {
         gateOverlay.addEventListener('click', e => {
             if (e.target === gateOverlay) {
@@ -463,7 +601,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Close gate on Escape key
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape' && gateOverlay && gateOverlay.classList.contains('active')) {
             gateOverlay.classList.remove('active');
@@ -478,21 +615,14 @@ document.addEventListener('DOMContentLoaded', () => {
         return el ? (parseFloat(el.value.replace(/,/g, '')) || 0) : 0;
     }
 
-    function sendWebhook(name, email, occupation, natureOfBusiness) {
-        // Read the three DOB dropdown selects and combine into DD/MM/YYYY
-        const dobDay   = document.getElementById('dob-day');
-        const dobMonth = document.getElementById('dob-month');
-        const dobYear  = document.getElementById('dob-year');
-        const dob = (dobDay && dobDay.value && dobMonth && dobMonth.value && dobYear && dobYear.value)
-            ? dobDay.value + '/' + dobMonth.value + '/' + dobYear.value
-            : '';
+    function sendWebhookStage1(name, email, gender) {
         const annualIncome = getVal('income');
         const housing      = getVal('housing');
         const car          = getVal('car');
         const bills        = getVal('bills');
         const others       = getVal('others');
-        const education    = (currentGoal === 'education' || currentGoal === 'family') ? getVal('education') : 0;
-        const parents      = (currentGoal === 'parents'   || currentGoal === 'family') ? getVal('parents')   : 0;
+        const education    = getVal('education');
+        const parents      = getVal('parents');
         const years        = parseInt(yearsSlider ? yearsSlider.value : 20);
 
         const monthlyCommitments = housing + car + bills + others + education + parents;
@@ -500,15 +630,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const lifeCover = (annualCommitments * years);
         const ciCover = 5 * monthlyCommitments * 12;
 
-        const url = "https://script.google.com/macros/s/AKfycbzjFuplyMFZCEeSqB5HmUz3RQUUbFeSR_3RY4hN4EUfYleERu5YTRAYzfDMmXHb0XLp/exec";
-        
+        const milestoneEl = document.getElementById('goal-milestone');
+        const goalVal = (milestoneEl && milestoneEl.value) ? milestoneEl.value : 'family';
+
         const params = new URLSearchParams();
         params.append("name", name);
         params.append("email", email);
-        params.append("occupation", occupation || '');
-        params.append("nature_of_business", natureOfBusiness || '');
-        params.append("dob", dob);
-        params.append("goal", currentGoal);
+        params.append("gender", gender || '');
+        params.append("goal", goalVal);
         params.append("annual_income", annualIncome);
         params.append("housing", housing);
         params.append("car", car);
@@ -521,11 +650,11 @@ document.addEventListener('DOMContentLoaded', () => {
         params.append("ci_cover", ciCover);
         params.append("source", "Life Cover Calculator");
 
-        fetch(url, {
+        fetch(WEBHOOK_URL, {
             method: 'POST',
             mode: 'no-cors',
             body: params
-        }).catch(err => console.error("Webhook error:", err));
+        }).catch(err => console.error("Webhook Stage 1 error:", err));
     }
 
     function computeAndShowResults() {
@@ -533,34 +662,26 @@ document.addEventListener('DOMContentLoaded', () => {
         const housing      = getVal('housing');
         const car          = getVal('car');
         const bills        = getVal('bills');
-        const others       = getVal('others');  // optional
-        const education    = (currentGoal === 'education' || currentGoal === 'family') ? getVal('education') : 0;
-        const parents      = (currentGoal === 'parents'   || currentGoal === 'family') ? getVal('parents')   : 0;
+        const others       = getVal('others');
+        const education    = getVal('education');
+        const parents      = getVal('parents');
         const years        = parseInt(yearsSlider ? yearsSlider.value : 20);
 
-        // Total monthly commitments (including bills, necessities & optional others)
         const monthlyCommitments = housing + car + bills + others + education + parents;
         const annualCommitments  = monthlyCommitments * 12;
 
-        // Life Cover = annual commitments × years
         const lifeCover = (annualCommitments * years);
-
-        // Critical Illness = 5 × monthly commitments × 12
-        // (covers 3–7 years of recovery, using 5x as mid-point)
         const ciCover = 5 * monthlyCommitments * 12;
 
-        // ---- Update result cards ----
         animateCounter('result-life', lifeCover);
         animateCounter('result-ci',   ciCover);
 
-        // ---- Update breakdown ----
         setBreakdown({
             annualIncome, years, monthlyCommitments,
             annualCommitments, lifeCover, ciCover,
             education, parents, housing, car
         });
 
-        // ---- Show results ----
         if (resultsSection) {
             resultsSection.classList.add('visible');
             setTimeout(() => {
@@ -568,20 +689,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 100);
         }
 
-        // Store results globally for EmailJS quotation request
+        const milestoneEl = document.getElementById('goal-milestone');
+        const goalVal = (milestoneEl && milestoneEl.value) ? milestoneEl.value : 'family';
+
         currentResults = {
             lifeCover: lifeCover,
             ciCover: ciCover,
             annualIncome: annualIncome,
-            goal: currentGoal,
+            goal: goalVal,
             years: years
         };
 
-        // Send EmailJS results automatically
         const gateName = document.getElementById('gate-name');
         const gateEmail = document.getElementById('gate-email');
-        const gateOccupation = document.getElementById('gate-occupation');
-        const gateBusiness = document.getElementById('gate-business');
         if (gateName && gateEmail && gateName.value && gateEmail.value) {
             sendResultsByEmail(gateName.value, gateEmail.value, currentResults);
         }
@@ -617,7 +737,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const steps    = Math.round(duration / (1000 / fps));
         let   step     = 0;
 
-        // Ease-out cubic
         function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
 
         const timer = setInterval(() => {
@@ -632,14 +751,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* =============================================
-       7. Sticky Navbar (reuse from script.js pattern)
+       7. Sticky Navbar
        ============================================= */
     const navbar = document.querySelector('.navbar');
     if (navbar) {
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('scrolled', window.scrollY > 50);
         });
-        // Calculator pages start with scrolled style
         navbar.classList.add('scrolled');
     }
 
@@ -655,9 +773,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     animatedEls.forEach(el => observer.observe(el));
 
-    /* =============================================
-       9. Format inputs as user types (optional UX)
-       ============================================= */
     document.querySelectorAll('.calc-input[type="number"]').forEach(input => {
         input.addEventListener('wheel', e => e.preventDefault(), { passive: false });
     });

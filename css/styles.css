@@ -14,6 +14,7 @@
     --text-main: #2D3748;
     --text-muted: #718096;
     --border-color: #E2E8F0;
+    --text-dark: #2D3748;
 
     --font-main: 'Outfit', sans-serif;
 
@@ -306,13 +307,14 @@ img {
     font-size: 3.5rem;
     margin-bottom: 24px;
     letter-spacing: -1px;
+    text-align: center;
 }
 
 .hero p {
     font-size: 1.125rem;
     color: var(--text-muted);
     margin-bottom: 40px;
-    max-width: 500px;
+    text-align: center;
 }
 
 .hero-actions {
@@ -577,7 +579,7 @@ label {
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 0.95rem;
-    color: var(--border-color);
+    color: rgba(255, 255, 255, 0.85); /* FIXED LABEL CONTRAST */
 }
 
 input[type="text"],
@@ -622,7 +624,7 @@ select option {
     align-items: center;
     cursor: pointer;
     font-weight: 400;
-    color: var(--pure-white);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .radio-label input[type="radio"] {
@@ -1054,4 +1056,18 @@ select option {
     display: flex;
     gap: 15px;
     margin-top: 30px;
+}
+.nav-cta {
+    background-color: var(--primary-red);
+    color: var(--pure-white) !important;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.nav-cta:hover {
+    background-color: var(--hover-red);
+    transform: translateY(-2px);
+    color: var(--pure-white) !important;
+    box-shadow: 0 4px 15px rgba(211, 18, 37, 0.3);
 }

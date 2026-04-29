@@ -47,7 +47,36 @@
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#about">About Me</a></li>
-                <li><a href="products.html">Products</a></li>
+                                <li class="nav-dropdown">
+                    <a href="products.html" class="nav-drop-btn">Products ▾</a>
+                    <div class="dropdown-content">
+                        <div class="drop-col">
+                            <strong>🛡️ Life Insurance</strong>
+                            <a href="pages/pruwith-you-plus.html">PRUWith You Plus</a>
+                            <a href="pages/pruwealth-enrich-2.html">PRUWealth Enrich 2.0</a>
+                            <a href="pages/prulive-well.html">PRULive Well</a>
+                            <a href="pages/pruterm.html">PRUTerm</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>❤️ Critical Illness</strong>
+                            <a href="pages/total-multi-crisis-care.html">Total Multi Crisis Care</a>
+                            <a href="pages/critical-care-plus.html">Critical Care Plus</a>
+                            <a href="pages/critical-care.html">Critical Care</a>
+                            <a href="pages/essential-child-plus.html">Essential Child Plus</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>🏥 Medical Insurance</strong>
+                            <a href="pages/prumillion-med-2.html">PRUMillion Med 2.0</a>
+                            <br>
+                            <strong>👶 Infant & Child</strong>
+                            <a href="pages/prumy-child-plus.html">PRUMy Child Plus</a>
+                            <br>
+                            <strong>💰 Savings & Investment</strong>
+                            <a href="pages/prucash-enrich.html">PRUCash Enrich</a>
+                            <a href="pages/pruelite-flex.html">PRUElite Flex</a>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="calculator.html" class="nav-active">Calculator</a></li>
                 <li><a href="index.html#partners">Partners</a></li>
                 <li class="lang-item">
@@ -103,22 +132,16 @@
         <div class="container">
             <div class="calc-wrapper fade-in active">
 
-                <!-- Step 1: Goal -->
-                <span class="calc-step-label">Step 1 — What are you protecting for?</span>
-                <div class="goal-tabs" role="tablist" aria-label="Protection Goals">
-                    <button class="goal-tab" data-goal="education" role="tab" aria-selected="false" id="tab-education">
-                        <span class="tab-icon">🎓</span> Kids Education
-                    </button>
-                    <button class="goal-tab" data-goal="parents" role="tab" aria-selected="false" id="tab-parents">
-                        <span class="tab-icon">👨‍👩‍👧</span> Supporting Parents
-                    </button>
-                    <button class="goal-tab active" data-goal="family" role="tab" aria-selected="true" id="tab-family">
-                        <span class="tab-icon">👨‍👩‍👧‍👦</span> Family
-                    </button>
-                </div>
+                <!-- Step 1: Years -->
+                <span class="calc-step-label">Step 1 — How many years to achieve this goal?</span>
+                
+                <select id="goal-milestone" class="calc-input" style="width: 100%; margin-bottom: 20px; font-weight: 500;">
+                    <option value="" disabled selected>Select a milestone...</option>
+                    <option value="Children graduating">Children graduating</option>
+                    <option value="Mortgage Fully Paid">Mortgage Fully Paid</option>
+                    <option value="Financial Freedom">Financial Freedom</option>
+                </select>
 
-                <!-- Step 2: Years -->
-                <span class="calc-step-label">Step 2 — How many years to achieve this goal?</span>
                 <div class="years-block">
                     <div class="years-display-row">
                         <div>
@@ -138,10 +161,24 @@
 
                 <div class="calc-divider"></div>
 
-                <!-- Step 3: Financial Inputs -->
-                <span class="calc-step-label">Step 3 — Your monthly financial picture</span>
+                <!-- Step 2: Financial Inputs -->
+                <span class="calc-step-label">Step 2 — Your monthly financial picture</span>
 
                 <div class="calc-inputs">
+                    <!-- Gender -->
+                    <div class="calc-field">
+                        <label>Gender</label>
+                        <div class="gender-toggles" style="display: flex; gap: 10px;">
+                            <label class="gender-card" style="flex: 1; text-align: center; border: 2px solid var(--border-color); border-radius: 12px; padding: 12px; cursor: pointer; transition: all 0.2s;">
+                                <input type="radio" name="calc_gender" value="Male" style="display: none;">
+                                <span style="font-weight: 500; color: var(--text-main);">👨 Male</span>
+                            </label>
+                            <label class="gender-card" style="flex: 1; text-align: center; border: 2px solid var(--border-color); border-radius: 12px; padding: 12px; cursor: pointer; transition: all 0.2s;">
+                                <input type="radio" name="calc_gender" value="Female" style="display: none;">
+                                <span style="font-weight: 500; color: var(--text-main);">👩 Female</span>
+                            </label>
+                        </div>
+                    </div>
                     <!-- DOB -->
                     <div class="calc-field">
                         <label>Date of Birth</label>
@@ -228,8 +265,8 @@
                         <span class="field-hint">Insurance premiums, subscriptions, hobbies, etc.</span>
                     </div>
 
-                    <!-- Kids Education — conditional -->
-                    <div class="calc-field conditional-field" id="field-education">
+                    <!-- Kids Education -->
+                    <div class="calc-field" id="field-education">
                         <label for="education">Kids Education Contribution (RM/mo)</label>
                         <div class="input-prefix-wrap">
                             <span class="prefix-symbol">RM</span>
@@ -239,8 +276,8 @@
                         </div>
                     </div>
 
-                    <!-- Parents Allowance — conditional -->
-                    <div class="calc-field conditional-field" id="field-parents">
+                    <!-- Parents Allowance -->
+                    <div class="calc-field" id="field-parents">
                         <label for="parents">Monthly Allowance for Parents (RM/mo)</label>
                         <div class="input-prefix-wrap">
                             <span class="prefix-symbol">RM</span>
@@ -328,7 +365,7 @@
 
                 <!-- Quotation Request -->
                 <div class="quote-request-block" id="quote-request-block" style="text-align: center; margin: 30px 0; padding: 24px; background: rgba(237, 28, 36, 0.05); border-radius: 16px; border: 1px solid rgba(237, 28, 36, 0.1);">
-                    <p style="font-weight: 500; font-size: 1.1rem; color: var(--text-dark); margin-bottom: 16px;">Want a personalised quotation based on these numbers?</p>
+                    <p style="font-weight: 500; font-size: 1.1rem; color: var(--text-main); margin-bottom: 16px;">Want a personalised quotation based on these numbers?</p>
                     <button class="btn btn-primary" id="request-quote-btn" onclick="requestQuotation()">
                         📋 Request a Quotation
                     </button>
@@ -379,13 +416,7 @@
                     autocomplete="email" aria-label="Your email address">
                 <div id="gate-email-error" class="gate-error">Please enter your email address</div>
 
-                <input type="text" class="gate-input" id="gate-occupation"
-                    placeholder="Occupation (e.g. Engineer, Teacher)" autocomplete="organization-title" aria-label="Your occupation">
-                <div id="gate-occupation-error" class="gate-error">Please enter your occupation</div>
 
-                <input type="text" class="gate-input" id="gate-business"
-                    placeholder="Nature of Business (e.g. Private Sector, Self-Employed)" autocomplete="organization" aria-label="Nature of your business">
-                <div id="gate-business-error" class="gate-error">Please enter your nature of business</div>
             </div>
 
             <!-- PDPA Consent Block -->
@@ -426,9 +457,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-brand">
-                <a href="index.html" class="logo">
-                    <img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo">
-                </a>
+                <a href="index.html" class="logo"><img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo"></a>
                 <p class="mt-2">Providing premium insurance solutions and peace of mind for you and your family.</p>
             </div>
             <div class="footer-links">
@@ -437,6 +466,18 @@
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="products.html">Products</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="index.html#quote">Let's Connect</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: annabelong6997@prupartner.com.my</p>
+                <p>Phone: +60 18-317 6361</p>
+            </div>
+        </div>
+                </li>
                     <li><a href="calculator.html">Calculator</a></li>
                     <li><a href="index.html#partners">Partners</a></li>
                     <li><a href="index.html#quote">Let's Connect</a></li>
@@ -530,6 +571,75 @@
 #modal_medical_desc::placeholder {
     color: #999;
 }
+
+    /* Dropdown CSS */
+    .nav-dropdown {
+        position: relative;
+    }
+    .dropdown-content {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(10px);
+        position: absolute;
+        top: 100%;
+        left: -150px;
+        background-color: var(--pure-white);
+        min-width: 650px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        z-index: 100;
+        border-radius: 16px;
+        padding: 25px;
+        gap: 20px;
+        display: flex;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    .nav-dropdown:hover .dropdown-content {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .drop-col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .drop-col strong {
+        color: var(--dark-bg);
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 5px;
+    }
+    .drop-col a {
+        color: var(--text-main) !important;
+        padding: 8px 0;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.2s;
+    }
+    .drop-col a:hover {
+        color: var(--primary-red) !important;
+        padding-left: 5px;
+    }
+    
+    @media (max-width: 992px) {
+        .dropdown-content {
+            position: static;
+            display: none;
+            min-width: 100%;
+            box-shadow: none;
+            padding: 10px;
+            flex-direction: column;
+        }
+        .nav-dropdown.active .dropdown-content {
+            display: flex;
+        }
+        .drop-col {
+            margin-bottom: 15px;
+        }
+    }
+
 </style>
 
 <div class="quote-modal-overlay" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title">
@@ -538,16 +648,12 @@
         <h3 id="quote-modal-title" style="color: #D31225; margin-bottom: 20px; font-size: 1.5rem;">A Few More Details</h3>
         
         <div class="quote-modal-fields">
-            <!-- Gender -->
-            <label class="modal-field-label" style="margin-top: 0;">Gender</label>
-            <div class="radio-group">
-                <label class="radio-label">
-                    <input type="radio" name="modal_gender" value="Male"> Male
-                </label>
-                <label class="radio-label">
-                    <input type="radio" name="modal_gender" value="Female"> Female
-                </label>
-            </div>
+            <!-- Occupation & Nature of Business -->
+            <label class="modal-field-label" style="margin-top: 0;">Occupation</label>
+            <input type="text" id="modal_occupation" class="gate-input" placeholder="e.g. Engineer, Teacher" style="margin-bottom: 15px; width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px;">
+            
+            <label class="modal-field-label">Nature of Business</label>
+            <input type="text" id="modal_business" class="gate-input" placeholder="e.g. Technology, Education" style="margin-bottom: 15px; width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px;">
 
             <!-- Smoker Status -->
             <label class="modal-field-label">Smoker Status</label>
@@ -629,6 +735,55 @@
                 Submit Request
             </button>
         </div>
+    </div>
+</div>
+
+
+<!-- Medical Card Modal Overlay -->
+<div class="quote-modal-overlay" id="medical-modal" role="dialog" aria-modal="true" aria-labelledby="medical-modal-title">
+    <div class="quote-modal-card">
+        <button class="quote-modal-close" id="medical-modal-close" aria-label="Close modal">&times;</button>
+        <h3 id="medical-modal-title" style="color: #D31225; margin-bottom: 10px; font-size: 1.5rem;">Would you like a Medical Card?</h3>
+        <p style="margin-bottom: 20px; font-size: 0.95rem; color: #666;">A medical card covers your hospitalisation costs. Let Anna know your preference so she can include it in your quote.</p>
+        
+        <div class="contact-cards">
+            <label class="contact-card" id="med-card-yes">
+                <input type="radio" name="modal_medical_card" value="Yes" class="hidden-radio">
+                <div class="card-content">
+                    <strong>✅ Yes, include a medical card</strong>
+                </div>
+            </label>
+            <label class="contact-card" id="med-card-no">
+                <input type="radio" name="modal_medical_card" value="No" class="hidden-radio">
+                <div class="card-content">
+                    <strong>❌ No, life & CI cover only</strong>
+                </div>
+            </label>
+        </div>
+
+        <div id="medical-options-container" style="display: none; margin-top: 15px; padding: 15px; background: #f9f9f9; border-radius: 12px;">
+            <label class="modal-field-label" style="font-size: 0.9rem; margin-top: 0;">Annual Limit</label>
+            <select id="modal_annual_limit" class="calc-input" style="width: 100%; margin-bottom: 15px;">
+                <option value="" disabled selected>Select Annual Limit</option>
+                <option value="RM 2,000,000">RM 2,000,000</option>
+                <option value="RM 5,000,000">RM 5,000,000</option>
+                <option value="RM 8,000,000">RM 8,000,000</option>
+            </select>
+            
+            <label class="modal-field-label" style="font-size: 0.9rem;">Deductible</label>
+            <select id="modal_deductible" class="calc-input" style="width: 100%;">
+                <option value="" disabled selected>Select Deductible</option>
+                <option value="RM 500">RM 500</option>
+                <option value="RM 1,000">RM 1,000</option>
+                <option value="RM 5,000">RM 5,000</option>
+                <option value="RM 10,000">RM 10,000</option>
+            </select>
+        </div>
+        
+        <button class="btn btn-primary btn-block" id="medical-submit-btn" disabled
+            style="font-size: 1rem; padding: 16px 24px; border-radius: 14px; opacity: 0.5; cursor: not-allowed; margin-top: 20px; width: 100%;">
+            Confirm Preference
+        </button>
     </div>
 </div>
 

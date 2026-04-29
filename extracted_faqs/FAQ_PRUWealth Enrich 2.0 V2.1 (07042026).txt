@@ -1,0 +1,3728 @@
+ 
+1 
+ 
+PRUWealth Enrich 2.0   
+V2.0: updated as of 7 Apr 2026 
+ 
+Contents 
+OVERVIEW OF PRUWEALTH ENRICH 2.0 
+7 
+1. 
+What is PRUWealth Enrich 2.0? 
+7 
+2. 
+Who are the target customers? 
+7 
+3. 
+What are the riders available for PRUWealth Enrich 2.0? 
+7 
+4. 
+What are the enhancements in PRUWealth Enrich 2.0 compared to PRUWealth Enrich? 
+9 
+5. 
+What is the structure of PRUWealth Enrich 2.0? 
+9 
+6. 
+Who can purchase PRUWealth Enrich 2.0? 
+10 
+7. 
+What are premium payment terms available? 
+10 
+8. 
+How many types of premiums in PRUWealth Enrich 2.0? 
+10 
+9. 
+What are the premium allocation rates for PRUWealth Enrich 2.0? 
+10 
+10. What is the size of premium? 
+11 
+11. What are the frequency and methods of payment for PRUWealth Enrich 2.0? 
+11 
+12. Is the policy guaranteed to be in force if premium is paid up to date? 
+11 
+13. Is PRUWealth Enrich 2.0’s premium guaranteed? 
+11 
+14. Is advance premium payment allowed for PRUWealth Enrich 2.0? 
+11 
+15. Can customer get back his/her premium paid upon cancellation of policy? 
+11 
+16. What is the minimum/maximum BSA for PRUWealth Enrich 2.0? 
+12 
+17. Is there any large sum assured discount on insurance charge for PRUWealth Enrich 2.0? 
+12 
+PRUALLOCATOR PREMIUM 
+12 
+18. What is PRUAllocator? 
+12 
+19. Under what circumstances will PRUAllocator be attached and why? 
+12 
+TAX EXEMPTION 
+14 
+20. Is PRUWealth Enrich 2.0 subjected to Service Tax? 
+14 
+PRODUCT BENEFITS 
+14 
+21. What are the benefits of PRUWealth Enrich 2.0? 
+14 
+22. Is the benefit payable under PRUWealth Enrich 2.0 subject to juvenile lien? 
+17 
+DEATH BENEFIT 
+17 
+23. Will the policy still be inforce after Death Benefit has been paid out? 
+17 
+24. If the Life Assured died due to an accident, will the Death Benefit still be payable? 
+17 
+TOTAL AND PERMANENT DISABILITY BENEFIT 
+17 
+25. How will the TPD claim be paid out? 
+17 
+26. Will the policy be terminated after the complete payment of TPD claim fully accelerates BSA? 17 
+27. What will happen if the TPD SA paid is less than BSA? 
+18 
+28. Will premium and COI be reduced when the TPD Benefit has expired? 
+19 
+ 
+2 
+ 
+COVER BOOSTER BENEFIT 
+19 
+29. Can customer still claim for the Cover Booster for Death Benefit after claiming for Cover Booster 
+for TPD Benefit? 
+19 
+30. If the customer performed an endorsement to reduce the BSA, what will be the death benefit 
+payable? 
+19 
+31. If the customer performed partial withdrawal to reduce the BSA, what will be the death benefit 
+payable? 
+20 
+32. If the customer is diagnosed with critical illness, and claimed for Crisis Guard, what will be the 
+death benefit payable? 
+20 
+ACCIDENTAL DEATH BENEFIT 
+21 
+33. What incidents are considered as natural disaster? 
+21 
+34. What types of public conveyance are covered under Accidental Death Benefit? 
+22 
+35. What is the maximum amount payable for Accidental Death Benefit? 
+22 
+36. If death of the Life Assured is caused by an accident on a train in Italy, which category of benefit 
+would be payable? 
+24 
+37. If the Life Assured has already made a claim under TPD, upon death of Life Assured due to 
+accident, will the Accidental Death Benefit still be payable? 
+24 
+38. Will premium and COI be reduced when the Accidental Death Benefit expired? 
+24 
+LOYALTY BONUS 
+24 
+39. How will the Loyalty Bonus be paid? 
+25 
+40. If the customer performed an endorsement to reduce the policy term, how will the Loyalty Bonus 
+be paid? (updated as of Oct 2024) 
+25 
+41. If the customer performed an endorsement to reduce the BSA, how will the Loyalty Bonus be 
+paid? 
+26 
+42. If the customer performed an endorsement to increase the policy term, how will the Loyalty 
+Bonus be paid? (updated as of Oct 2024) 
+26 
+43. What is the treatment for Loyalty Bonus if the policy is lapsed and reinstated? 
+27 
+LOYALTY BOOSTER 
+27 
+44. How will the Loyalty Booster be paid? 
+28 
+45. If the customer performed an endorsement to reduce the policy term, when will the Loyalty 
+Booster be credited? (updated as of Oct 2024) 
+29 
+46. If the customer performed an endorsement to reduce the BSA, how will the Loyalty Booster be 
+paid? 
+30 
+47. What would happen if the customer performed partial withdrawal and caused the BSA to be 
+reduced? Will the Loyalty Booster still be payable? 
+30 
+48. What is the treatment for Loyalty Booster if the policy is lapsed and reinstated? 
+30 
+MATURITY BENEFIT 
+30 
+49. How will the maturity benefit be paid if policy mature at ANB 101 on Policy Anniversary (in the 
+event where policy term selected is until the Policy Anniversary of the Life Assured's ANB 101 or 
+extension of coverage term kicks in)? 
+31 
+50. How will the maturity benefit be paid if policy mature before ANB 101 on Policy Anniversary (in 
+the event where policy term selected is less than Policy Anniversary of ANB 101 and customer opt out 
+for extension of coverage term)? 
+31 
+POLICY SUSTAINABILITY & EXTENSION OF COVERAGE TERM 
+31 
+51. What is policy sustainability in PRUWealth Enrich 2.0? (updated as of Oct 2024) 
+31 
+52. What affects the policy sustainability? 
+32 
+ 
+3 
+ 
+53. What can be done for the policy to sustain longer? 
+32 
+54. How do customers know about their policy sustainability? 
+32 
+55. What is Extension of Coverage Term and how does it work? 
+33 
+56. Does Extension of Coverage Term applicable to the basic plan only or including rider(s)? 
+33 
+57. What is the maximum coverage term of benefits referring to? 
+33 
+58. Can customer choose a shorter extension term for the policy instead of auto-extension up to age 
+100? 33 
+59. How much does a customer need to pay to sustain the policy until the end of extended term? 33 
+60. Are the top-up amounts recommended for the policy to sustain until the end of extension period 
+guaranteed? 
+34 
+61. Can customers choose to pay the additional top-up amount before the extended term? 
+34 
+62. What if a customer does not wish to pay the recommended top-up amount? 
+34 
+63. Can a customer choose to disable the Extension of Coverage Term feature? 
+34 
+64. If a customer changes his mind subsequently after disabling the Extension of Coverage Term, can 
+customer re-enable for this feature? 
+34 
+FUNDS 
+34 
+65. What are the funds available for PRUWealth Enrich 2.0? (Updated as of Oct 2024) 
+34 
+66. Can the customer switch funds? 
+35 
+67. If the customer decides to top-up the amount in Investment Unit Account, what is the minimum 
+top up amount and allocation rate? 
+35 
+68. Can policyholders revise his/her premium direction? 
+35 
+POLICY OPTIONS 
+35 
+LEGACY SETTLEMENT OPTION (LSO) 
+35 
+69. Does PRUWealth Enrich 2.0 offer the Legacy Settlement Option? 
+35 
+70. What is the Legacy Settlement Option (LSO)? 
+35 
+71. Is there any cost to apply for LSO? 
+36 
+72. When can the Policyowner apply for LSO? 
+36 
+73. How does the Policyowner apply for LSO? 
+36 
+74. Can Policyowner make changes to the payout structure later? 
+36 
+PAYMENT TO NOMINEE(S) WHO IS COMPETENT TO CONTRACT: 
+36 
+75. What happens if the appointed trustee does not wish to manage the policy payout for an 
+extended period? 
+36 
+76. What does “competent to contract” mean? 
+37 
+77. What are the requirements for this payout option? 
+37 
+78. Will policy moneys automatically be paid to a Nominee who becomes competent to contract? 37 
+79. What if the Nominee does not inform Prudential? 
+37 
+80. How can the Policyowner apply for this option? 
+37 
+81. Is consent from the Appointed Trustee(s) required? 
+38 
+82. Is LSO required to opt for this option (Payment to Nominee(s) Who is Competent to Contract)? 38 
+ENDORSEMENT 
+38 
+83. What are the available endorsement transactions for PRUWealth Enrich 2.0? 
+38 
+84. What are the endorsement rules that are applied? 
+39 
+85. When will the coverage for the endorsement takes effect? 
+39 
+86. Does the endorsement affect the sustainability years of the policy? 
+39 
+ 
+4 
+ 
+87. Am I still allowed to perform endorsement on my policy after I have made a claim on payor rider?
+ 
+39 
+88. Can I have multiple Level SA Rider in my policy 
+39 
+89. Can I increase rider Sum Assured/ coverage term for existing Level SA Rider? 
+39 
+WITHDRAWAL 
+40 
+90. Can customers perform partial withdrawal from the unit accounts? 
+40 
+91. What are the withdrawal rules of PRUWealth Enrich 2.0? 
+40 
+92. Will partial withdrawal affect BSA? 
+40 
+93. Will partial withdrawal impact other benefits? 
+42 
+94. Will top-up help to restore the BSA after withdrawal? 
+42 
+PREMIUM HOLIDAY 
+42 
+95. What happens when a customer stops paying premiums? 
+42 
+LAPSE AND REVIVAL 
+42 
+96. When will the policy lapse? 
+42 
+97. What is No-Lapse Provision? 
+42 
+98. Is there any terms & conditions applicable to No-Lapse Provision? 
+43 
+99. What will happen after No-Lapse Provision period? 
+43 
+100. How can a lapsed policy be revived? 
+43 
+OPTIONAL BENEFITS 
+44 
+LEVEL SA RIDER 
+44 
+101. What is Level SA Rider? 
+44 
+102. What is the benefit term for Level SA Rider? 
+44 
+103. Will premium and COI be reduced when Level SA Rider expired? 
+44 
+TOTAL MULTI CRISIS CARE 
+44 
+104. What is Total Multi Crisis Care? 
+44 
+105. What is the rider term for Total Multi Crisis Care? 
+44 
+106. Is Total Multi Crisis Care available for all payment options under PRUWealth Enrich 2.0? 
+44 
+107. Why is Total Multi Crisis Care not available for 5-pay? 
+44 
+108. What are the benefits does Total Multi Crisis Care offer? 
+44 
+CRITICAL CARE PLUS [UPDATED 07 APRIL 2026] 
+45 
+109. What is Critical Care Plus? 
+45 
+110. What is the rider term for Critical Care Plus? 
+46 
+111. If TPD occurred and claimed before the diagnosis of critical illness, will the Critical Care Plus rider 
+benefit still be payable? 
+46 
+CRITICAL CARE [UPDATED 07 APRIL 2026] 
+46 
+112. What is Critical Care? 
+46 
+113. How does Critical Care work? 
+46 
+114. What is the rider term for Critical Care? 
+47 
+115. Will Critical Care fully accelerate the BSA of PRUWealth Enrich 2.0? 
+47 
+116. What will happen to the policy once Critical Care claim is made? 
+47 
+117. Do customers need to continue paying premium for the remaining BSA? 
+47 
+ESSENTIAL CANCER CARE [UPDATED 07 APRIL 2026] 
+48 
+ 
+5 
+ 
+118. What is Essential Cancer Care? 
+48 
+PAYOR RIDERS 
+48 
+119. What benefit is covered under Payor Basic and Payor Saver? 
+48 
+120. What benefit is covered under Spouse Payor Basic and Spouse Payor Saver? 
+48 
+121. What benefit is covered under Parent Payor Basic and Parent Payor Saver? 
+48 
+122. What benefit is covered under 2Parent Payor Basic and 2Parent Payor Saver? 
+48 
+123. Can Parent Payor riders purchase together with 2Parent Payor riders under the same policy? 
+48 
+124. Will the benefit for payor rider(s) continue after the death of Life Assured? 
+48 
+125. When more than 1 type of payor rider is purchased under the same policy, is multiple claims 
+allowed? 
+49 
+INSURANCE CHARGES 
+49 
+126. How will the insurance charges be deducted? 
+49 
+127. Are the insurance charges guaranteed? 
+49 
+128. What are the insurance charges that will be deducted? 
+49 
+COMMISSION 
+49 
+129. What is the total commission for PRUWealth Enrich 2.0? 
+50 
+UNDERWRITING 
+50 
+130. What is the Non-Medical Limit (NML) for PRUWealth Enrich 2.0? 
+50 
+131. What is the Non-Medical Limit (NML) for Total Multi Crisis Care? 
+51 
+132. What is the non-financial limit (NFL) for PRUWealth Enrich 2.0? 
+51 
+133. What is the non-financial limit (NFL) for non-income group (i.e. juvenile, housewife, and etc.) in 
+PRUWealth Enrich 2.0? 
+52 
+134. What are the minimum and maximum coverage allowed for basic plan and optional riders? 
+52 
+ 
+ 
+ 
+ 
+6 
+ 
+ 
+ 
+ 
+7 
+ 
+OVERVIEW OF PRUWEALTH ENRICH 2.0 
+ 
+1. What is PRUWealth Enrich 2.0?  
+PRUWealth Enrich 2.0 is a regular premium investment-linked insurance plan with flexible premium 
+payment term, and policy term. PRUWealth Enrich 2.0 offers a combination of insurance protection 
+and investment. Customers can purchase PRUWealth Enrich 2.0 as early as 14 days old to age 70 next 
+birthday. PRUWealth Enrich 2.0 provides high basic life coverage on Death, Total and Permanent 
+Disability (TPD) and Accidental Death.  
+ 
+Other than this, PRUWealth Enrich 2.0 also offers Cover Booster, an additional sum assured payable 
+in the event of Death or TPD, with no additional insurance charges. PRUWealth Enrich 2.0 also offers 
+Loyalty Bonus and Loyalty Booster to reward customers with a percentage of sum assured to be 
+credited into Basic Unit Account (BUA), subject to terms and conditions. Other comprehensive 
+coverages are also offered through optional riders that fulfill customer’s needs for both protection and 
+investment. For example, optional riders that provide critical illnesses benefit, additional death benefit, 
+payor benefits and investment opportunities.  
+ 
+PRUWealth Enrich 2.0 further offers the Legacy Settlement Option, allowing you to personalise wealth 
+distribution for your loved ones, and the enhanced Total Multi Crisis Care (TMCC) for comprehensive 
+critical illness protection with multiple claims.   
+  
+2. Who are the target customers?  
+Customers who are looking for legacy insurance plan with high protection with at least Basic Sum 
+Assured (BSA) of RM 300,000 and above. 
+ 
+3. What are the riders available for PRUWealth Enrich 2.0? 
+ 
+Optional Benefits 
+Description 
+Level SA Rider 
+Pays a lump sum of rider sum assured in the event of death of the Life 
+Assured before the rider expires. 
+Crisis Care 
+Pays a lump sum of rider sum assured in the event of diagnosis of one 
+of the 43 types of critical illnesses. 
+Crisis Guard  
+Pays a lump sum of rider sum assured in the event of the diagnosis of 
+one of the 43 types of critical illnesses. Benefit paid will reduce the 
+Basic Sum Assured (BSA) accordingly. 
+Total Multi Crisis Care 
+Allows multiple claims on covered early stage critical illness (consist of 
+early stage and intermediate stage) to late stage critical illnesses for 
+up to 400% of the rider Sum Assured. 
+Payor Basic 
+Pays the Basic Unit Account (BUA) Premium should the Life Assured 
+suffers from TPD before policy anniversary of ANB 71 or is diagnosed 
+with one of the 42 critical illnesses, until the end of the premium 
+payment term. 
+Payor Saver 
+Pays the PRUSaver or PRUSaver Kid premium should the Life Assured 
+suffers from TPD before policy anniversary of ANB 71 or is diagnosed 
+with one of the 42 critical illnesses, until the end of the premium 
+payment term. 
+ 
+Note: The benefit term of this rider must always follow Payor Basic. 
+Spouse Payor Basic 
+Pays the BUA Premium should the spouse of the Life Assured dies, 
+suffers from TPD before policy anniversary of ANB 71, or is diagnosed 
+ 
+8 
+ 
+with one of the 42 critical illnesses, until the end of premium payment 
+term, policy anniversary of Life Assured's ANB 101 or spouse ANB 101, 
+whichever is earlier. 
+Spouse Payor Saver 
+Pays the PRUSaver premium should the spouse of the Life Assured 
+dies, suffers from TPD before policy anniversary of ANB 71, or is 
+diagnosed with one of the 42 critical illnesses, until the end of 
+premium payment term, policy anniversary of Life Assured's ANB 101 
+or spouse ANB 101, whichever is earlier. 
+ 
+Note: The benefit term of this rider must always follow Spouse Payor 
+Basic. 
+Parent Payor Basic 
+Pays the BUA Premium should the covered parent of the Life Assured 
+dies, suffers from TPD before policy anniversary of ANB 71, or is 
+diagnosed with one of the 42 critical illnesses, until the end of 
+premium payment term or policy anniversary of Life Assured's ANB 25, 
+whichever is earlier. 
+Parent Payor Saver 
+Pays the PRUSaver or PRUSaver Kid premium should the covered 
+parent of the Life Assured dies, suffers from TPD before policy 
+anniversary of ANB 71, or is diagnosed with one of the 42 critical 
+illnesses, until the end of premium payment term or policy anniversary 
+of Life Assured's ANB 25, whichever is earlier. 
+ 
+Note: The benefit term of this rider must always follow Parent Payor 
+Basic. 
+2Parent Payor Basic 
+Pays the BUA Premium should the covered parent of the Life Assured 
+dies, suffers from TPD before policy anniversary of ANB 71, or is 
+diagnosed with one of the 42 critical illnesses, until the end of 
+premium payment term or policy anniversary of Life Assured's ANB 25, 
+whichever is earlier. If both parents are suffering from any of the 
+abovementioned unfortunate events, the annual benefit will be 
+doubled.  
+ 
+2Parent Payor Saver 
+Pays the PRUSaver or PRUSaver Kid premium should the covered 
+parent of the Life Assured dies, suffers from TPD before policy 
+anniversary of ANB 71, or is diagnosed with one of the 42 critical 
+illnesses, until the end of premium payment term or policy anniversary 
+of Life Assured's ANB 25, whichever is earlier. If both parents are 
+suffering from any of the abovementioned unfortunate events, the 
+annual benefit will be doubled.  
+ 
+Note: The benefit term of this rider must always follow 2Parent Payor 
+Basic. 
+PRUSaver (PSA) 
+95% of the premium paid under this rider will be allocated into the 
+Investment Unit Account (IUA). 
+PRUSaver Kid 
+95% of the premium paid under this rider will be allocated into the IUA. 
+IUA cash value will be paid out upon the selected payout age.  
+ 
+ 
+ 
+ 
+ 
+ 
+9 
+ 
+ 
+4. What are the enhancements in PRUWealth Enrich 2.0 compared to PRUWealth Enrich? 
+PRUWealth Enrich 2.0 introduces some enhancements: 
+• 
+Legacy Settlement Option: New enhancement which provides flexibility for estate planning by 
+allowing policy proceeds to be settled in a way that supports smooth wealth transfer to 
+nominee(s).  This Legacy Settlement Option is the first of its kind in the market. With this option, 
+the policyholder have the power to personalise his/her legacy to match the needs of nominee(s), 
+whether it’s for immediate financial security, ongoing support, or milestone-based disbursement. 
+• 
+Enhanced Accidental Death Benefit: In addition to existing coverage, PRUWealth Enrich 2.0 adds 
+an extra 400% of Basic Sum Assured (BSA) if accidental death occurs while commuting in a 
+commercial aircraft as a fare-paying passenger. 
+• 
+Total Multi Crisis Care (TMCC): Offers comprehensive protection against multiple critical illness 
+events under one rider, enhancing financial security beyond the base plan. 
+ 
+5. What is the structure of PRUWealth Enrich 2.0? 
+ 
+ 
+10 
+ 
+ 
+ENTRY AGE, PREMIUM, PREMIUM PAYMENT OPTION and SUM ASSURED  
+ 
+6. Who can purchase PRUWealth Enrich 2.0? 
+Customers aged between 14 days old to ANB 70 can purchase the policy. 
+ 
+7. What are premium payment terms available? 
+Customers can choose to pay their premium for 5 years, 10 years, 20 years or full policy term., 
+depending on the BSA.   
+ 
+BSA (RM) 
+Premium Payment Term 
+< 500,000 
+10 / 20 / Full Pay 
+≥ 500,000 
+5 / 10 / 20 / Full Pay 
+Note: Validation on the 5 pay for BSA < 500,000 is during New Business only. Endorsement don’t need 
+to have the validation of premium payment term. 
+ 
+8. How many types of premiums in PRUWealth Enrich 2.0? 
+There are total of 3 types of premium in PRUWealth Enrich 2.0, which is Insurance Premium, 
+PRUAllocator Premium and Investment Premium. Insurance Premium and PRUAllocator Premium are 
+attributed to BUA for insurance coverage while Investment Premium is attributed to IUA for 
+investment purpose. 
+ 
+i. 
+Insurance Premium is the premium for Basic Benefits, Other Benefits and Riders (if any). 
+ii. 
+PRUAllocator Premium is the premium for PRUAllocator (if any) with 95% allocation rate in BUA. 
+This premium may be automatically attached to the policy. It is also optional to increase if 
+customer would like to maximise the PRUAllocator Premium (up to 50% of maximum Insurance 
+Premium), after maximising the Insurance Premium. 
+iii. Investment Premium is the premium for Investment Unit Account Riders (if any) such as PRUSaver 
+or PRUSaver Kid, this is mainly for investment purpose. 
+ 
+9. What are the premium allocation rates for PRUWealth Enrich 2.0? 
+For Insurance Premium, the premium allocation rate complies with the Minimum Allocation Rate 
+(MAR) as prescribed in Life Insurance and Family Takaful Framework requirement as shown in table 
+below: 
+ 
+Policy Year 
+20 Years/ Full Pay 
+10 Years 
+5 Years 
+Y1 
+60% 
+60% 
+70% 
+Y2 
+60% 
+70% 
+80% 
+Y3 
+60% 
+80% 
+100% 
+Y4 
+80% 
+95% 
+100% 
+Y5 
+80% 
+95% 
+100% 
+Y6 
+80% 
+100% 
+- 
+Y7 
+95% 
+100% 
+- 
+Y8 
+100% 
+100% 
+- 
+Y9 
+100% 
+100% 
+- 
+Y10 
+100% 
+100% 
+- 
+Y11 
+100% 
+- 
+- 
+Total 
+915% 
+900% 
+450% 
+ 
+ 
+11 
+ 
+For PRUAllocator Premium (allocated into BUA) and Investment Premium (from PRUSaver / PRUSaver 
+Kid that allocated into IUA), the premium allocation rate is 95% during the premium payment term. 
+ 
+10. What is the size of premium? 
+The size of premium is determined by entry age, gender, smoking status, occupational class, target 
+sustainability option, premium payment term, type of coverage and coverage amount.  
+ 
+Customers can choose the Insurance Premium from a range that lies between the minimum BUA 
+premium required and maximum BUA premium allowed. Minimum BUA Premium and Investment 
+Premium are subjected to the limits as set in the table below, whereas maximum BUA Premium = 
+maximum Insurance Premium + PRUAllocator Premium. Investment Premium refers to the premium 
+of PRUSaver / PRUSaver Kid that customers select. 
+ 
+BUA Premium 
+Minimum:  
+Life Assured ANB 18 and below – RM 1,200 annually 
+Life Assured ANB 19 and above – RM 1,440 annually 
+PRUSaver / PRUSaver Kid (IUA) 
+Minimum: RM 120 annually 
+Maximum: 5 times of Insurance Premium 
+ 
+11. What are the frequency and methods of payment for PRUWealth Enrich 2.0? 
+Premiums can be paid yearly, half-yearly, quarterly, or monthly through direct debit, cash/cheque, or 
+credit/debit card.   
+ 
+12. Is the policy guaranteed to be in force if premium is paid up to date? 
+The policy is guaranteed to be kept inforce for the first 6 policy years (72 months) as long as all 
+premiums due are paid AND no partial withdrawal is made from BUA. 
+ 
+After the 72 months, policy coverage is subject to the policy having sufficient account value to cover 
+all the policy charges such as insurance charges, other fees and charges which are deducted from the 
+account value. Policy will lapse if the policy has insufficient cash value to cover all the policy charges. 
+ 
+13. Is PRUWealth Enrich 2.0’s premium guaranteed?  
+PRUWealth Enrich 2.0 premium is not guaranteed and the company reserves the right to revise the 
+premium by giving 3 months’ written notice prior to the revision to be effective.  
+ 
+14. Is advance premium payment allowed for PRUWealth Enrich 2.0?  
+Yes. Advance premium is acceptable. When advance premium is paid, Next Premium Due Date will be 
+moved forward to a future date depending on customer’s selected premium payment frequency. This 
+amount of premium will be unitized immediately at the next available unit pricing. Therefore, no 
+discount on the advance premium paid. We reserve the right to revise the mechanism and terms and 
+conditions of advance premium payment facility.  
+ 
+Payment of total commission and other compensation (if any) will be payable to agents according to 
+the original scheduled premium due date. 
+ 
+15. Can customer get back his/her premium paid upon cancellation of policy?  
+Customer can cancel the policy within the 15 days free-look period from the date of delivery of the 
+policy and all value of units (if any) at the next valuation date, plus unallocated premiums (if any), plus 
+ 
+12 
+ 
+insurance charges (if any), taxes (if any) and other charges (if any) that have been deducted, less 
+medical expenses which we may have already paid or agreed to pay will be refunded.  
+ 
+For PRUSaver / PRUSaver Kid and/or top-ups, the value of units in IUA at the next valuation date plus 
+5% unallocated premium will be refunded.  
+ 
+If the cancellation is made after 15 days free-look period, it will be considered as surrendering the 
+policy. Only value of units will be payable upon surrendering.  
+16. What is the minimum/maximum BSA for PRUWealth Enrich 2.0? 
+The minimum BSA for PRUWealth Enrich 2.0 is RM300,000, whereas the maximum BSA is subjected to 
+underwriting.  
+17. Is there any large sum assured discount on insurance charge for PRUWealth Enrich 2.0?  
+Yes. There will be a discount on the insurance charge for Basic Benefits (i.e. Death Benefit, TPD Benefit, 
+Accidental Death Benefit) depending on BSA as shown below:  
+ 
+BSA (RM) 
+Discount on the insurance charge 
+500,000 – 799,999 
+10% 
+≥ 800,000 
+20% 
+ 
+BSA shall equal to the latest sum assured (excluding Cover Booster). 
+ 
+PRUALLOCATOR PREMIUM  
+18. What is PRUAllocator? 
+PRUAllocator is a premium with 95% allocation rate into BUA.  
+ 
+19. Under what circumstances will PRUAllocator be attached and why? 
+PRUAllocator may be attached under the 2 scenarios below: 
+ 
+Scenario 1: 
+PRUAllocator will be automatically attached to comply with the Minimum Sum Assured Multiple (SAM) 
+by BNM, if the annual premium required for the BSA exceeds the amount allowed in the guidelines, 
+the excess of annual premium will be allocated into PRUAllocator. This usually happens when shorter 
+premium payment term is selected. The PRUAllocator that is automatically attached cannot be 
+removed or reduced, it may be lower or higher than 50% of maximum Insurance Premium. 
+ 
+If the annual premium does not exceed the amount allowed in the guidelines, PRUAllocator will not 
+be attached. 
+ 
+BNM Minimum Sum Assured Multiple Table 
+Age Next Birthday 
+Minimum SAM 
+1 – 16 
+60x 
+17 – 25 
+55x 
+26 – 35 
+50x 
+36 – 45 
+35x 
+46 – 55 
+25x 
+56 & above 
+15x 
+ 
+ 
+13 
+ 
+ 
+Example 1: 
+A male, non smoker with ANB 30 purchases PRUWealth Enrich 2.0 with BSA RM1mil, Policy Term age 
+101 and 100% PRULink Managed Fund II.   
+ 
+If he chooses to pay premiums for the full policy term, the annual premium is RM 5,640 which is less 
+than the maximum allowable by BNM. Hence all the premiums will be allocated as Insurance Premium 
+and PRUAllocator will not be attached. 
+If he chooses to pay premiums for 5 years, the annual premium is RM 24,900 which is more than the 
+maximum allowable by BNM. Hence, we will allocate the maximum allowable premium (RM 19,992) 
+as Insurance Premium and the balance of RM 4,908 as PRUAllocator Premium. 
+ 
+However, customer has the flexibility to pay more for annual premium, by increasing the PRUAllocator 
+Premium, up to 50% of maximum Insurance Premium (refer to Scenario 2).  
+ 
+Note: The Life Assured’s date of birth is 31 January 1997, with the policy commencement date on 1 
+February 2026.  
+ 
+Example 2: 
+A male, non smoker with ANB 50 purchases PRUWealth Enrich 2.0 with BSA RM1mil, Policy Term age 
+101 and 100% PRULink Bond Fund II.   
+ 
+If he chooses to pay premiums for the full policy term, the annual premium is RM 18,192 which is less 
+than the maximum allowable by BNM. Hence all the premiums will be allocated as Insurance Premium 
+and PRUAllocator will not be attached. 
+If he chooses to pay premiums for 5 years, the annual premium is RM 89,172 which is more than the 
+maximum allowable by BNM. Hence, we will allocate the maximum allowable premium (RM 39,996) 
+as Insurance Premium and the balance of RM 49,176 as PRUAllocator Premium.  
+ 
+Please note that in actual circumstances, the premium allocated as Insurance Premium may be slightly 
+lesser than the maximum allowable by BNM due to rounding in the system. 
+ 
+Note: The Life Assured’s date of birth is on 31 January 1977, with the policy commencement date on 1 
+February 2026.  
+ 
+Scenario 2: 
+PRUAllocator can be optional to increase, if customer would like to maximise the PRUAllocator 
+Premium (up to 50% of maximum Insurance Premium), after maximising the Insurance Premium. 
+ 
+Example 1: 
+A male, non smoker with ANB 40 purchases PRUWealth Enrich 2.0 with BSA RM 500k, Policy Term age 
+80, 100% PRULink Equity Income Fund and full premium payment term. 
+ 
+The maximum Insurance Premium is RM 14,280 
+BUA Premium = Insurance Premium + PRUAllocator Premium 
+However, customer can now adjust BUA Premium up to RM 21,420, with PRUAllocator Premium up to 
+50% of maximum Insurance Premium. 
+ 
+Example 1(a): Customer chooses not to add PRUAllocator Premium 
+BUA Premium = RM 14,280 
+Max Insurance Premium = RM 14,280 
+ 
+14 
+ 
+PRUAllocator Premium = RM 0 
+ 
+Example 1(b): Customer chooses to add PRUAllocator Premium  
+BUA Premium = RM 15,000 
+Max Insurance Premium = RM 14,280 
+PRUAllocator Premium = RM 720 
+ 
+Example 1(c): Customer chooses to maximise PRUAllocator Premium 
+BUA Premium = RM 21,420 
+Max Insurance Premium = RM 14,280 
+PRUAllocator Premium = RM 7,140 (max 50%) 
+ 
+Note: The life assured’s date of birth is 31 January 1987, with the policy commencement date on 1 
+February 2026. 
+ 
+TAX EXEMPTION  
+ 
+20. Is PRUWealth Enrich 2.0 subjected to Service Tax? 
+No, as of time of reference, insurance payouts in Malaysia are generally tax-free. Conditions may vary 
+depending on applicable laws and policy terms. 
+ 
+PRODUCT BENEFITS 
+ 
+21. What are the benefits of PRUWealth Enrich 2.0?  
+Death Benefit 
+(a)   The higher of:  
+• 
+BSA plus Cover Booster; or  
+• 
+value of units in BUA,  
+plus 
+(b)   value of units in IUA (if any). 
+Total and 
+Permanent 
+Disability Benefit 
+(TPD)  
+BSA plus Cover Booster shall be payable upon Life Assured suffering from 
+TPD prior to the Policy Anniversary of ANB 71 or expiry of the policy, 
+whichever is earlier.  
+ 
+Note: Payment of this benefit will reduce the basic sum assured, Crisis 
+Guard sum assured (if applicable), and value of units in BUA will be 
+adjusted accordingly as per stipulated in policy contract. 
+Cover Booster 
+An additional sum assured (SA) in line with the table below will be payable 
+in the event of death or TPD, depending on the policy year when death or 
+TPD occurs, subject to the terms and conditions stipulated in policy 
+contract. There are no additional insurance charges charged for this Cover 
+Booster. 
+ 
+Policy year when 
+death/TPD 
+happened 
+Cover Booster 
+(% of SA) 
+SA < RM 2,000,000 
+SA ≥ RM 2,000,000 
+1 – 4 
+0% 
+0% 
+5 – 8 
+5% 
+5% 
+9 - 12 
+10% 
+10% 
+ 
+15 
+ 
+13 – 16 
+15% 
+15% 
+17 – 20 
+20% 
+20% 
+21 – 24 
+25% 
+25% 
+25 – 28 
+30% 
+30% 
+29 – 32 
+30% 
+35% 
+33 – 36 
+30% 
+40% 
+37 – 40 
+30% 
+45% 
+41 and above 
+30% 
+50% 
+Sum assured used in Cover Booster shall equal to the latest sum assured 
+(excluding Cover Booster). 
+  
+Note: The Cover Booster percentage payable will not be affected by the 
+change in the sum assured due to any prior claims. 
+Accidental Death 
+Benefit 
+ 
+Death Benefit and one of the below shall be payable if the following event 
+happens prior to the Policy Anniversary of Life Assured’s ANB 71 or expiry 
+of the policy, whichever is earlier: 
+i. 
+an additional 100% of sum assured if death is due to accident;  
+ii. 
+an additional 200% of sum assured if death is due to accident from 
+commuting in public conveyance, elevator car, burning of theatre, 
+hotel or other public building;  
+iii. an additional 300% of sum assured if death is due to accident 
+occurring while Life Assured is residing or travelling outside of 
+Malaysia (except Singapore and Brunei) for not more than 90 
+consecutive days, or in Singapore or Brunei for any number of days; 
+iv. an additional 400% of sum assured if death is due to accident 
+occurring while commuting in commercial aircraft as a fare-paying 
+passenger, provided that the life assured is not acting in any capacity 
+as a pilot, co-pilot, crew member, or operator of the private aircraft 
+at the time of the accident; or 
+v. 
+an additional 500% of sum assured if death is due to natural disaster. 
+ 
+Sum assured used in Accidental Death Benefit shall equal to the latest sum 
+assured (excluding Cover Booster). 
+Loyalty Bonus 
+(updated as of Oct 2024) 
+X% of sum assured (SA) shall be credited into BUA by the Policy 
+Anniversary of Life Assured’s ANB 65/75/85 (depending on the entry age) 
+and every 10 years subsequently until end of initial policy term selected, 
+provided the policy is still in force, subject to terms and conditions 
+stipulated in policy contract.  
+ 
+Loyalty Bonus is only applicable if initial policy term selected during new 
+business (NB) is until the Policy Anniversary of the Life Assured’s ANB70/ 
+80 /90 or 101. If initial policy term of 20 years is selected, no Loyalty Bonus 
+will be payable. 
+Entry age 
+Payout Year/  
+Payout Age  
+(Policy Anniversary of) 
+% of SA 
+SA < 
+RM500,000 
+SA ≥ 
+RM500,000 
+ANB ≤ 55 
+ANB 65, and every 10 
+years subsequently 
+2.5% 
+5% 
+ 
+16 
+ 
+ANB 56 - 65 
+ANB 75, and every 10 
+years subsequently 
+(2.5% + 
+2.5%*) 
+ANB ≥66 
+ANB 85, and every 10 
+years subsequently 
+*Note 
+For SA ≥ RM 500,000, the amount credited will be doubled, i.e. 5% (2.5% 
++ 2.5%) of SA, if the policy is in force and premiums are paid up to date. If 
+the conditions are not met, only 2.5% of SA will be credited. 
+ 
+Sum assured used in Loyalty Bonus shall equal to the latest sum assured 
+(excluding Cover Booster). 
+Loyalty Booster 
+(updated as of Oct 2024) 
+X% of sum assured (SA) will be credited into BUA by end of initial policy 
+term selected, provided the policy is still in force, subject to terms and 
+conditions stipulated in policy contract.  
+ 
+If policy term until the Policy Anniversary of the Life Assured’s ANB 90 / 
+101 was selected, Loyalty Booster will also be credited into BUA upon 
+death of Life Assured after Policy Anniversary of Life Assured’s ANB 80. 
+ 
+Loyalty Booster is only applicable if initial policy term selected during new 
+business (NB) is until the Policy Anniversary of the Life Assured’s ANB 70/ 
+80 /90 or 101. If initial policy term of 20 years is selected, no Loyalty 
+Booster will be payable. 
+Policy Term 
+(Policy Anniversary 
+of ANB) 
+Payout Age 
+(Policy Anniversary 
+of ANB) 
+% of SA 
+SA < 
+RM500,000 
+SA ≥ 
+RM500,000 
+70 
+70 
+5% 
+10% 
+(5% + 5%*) 
+80 
+80 
+90 
+90 
+101 
+101 
+*Note 
+For SA ≥ RM 500,000, the amount credited will be doubled, i.e. 10% (5% + 
+5%) of SA, if the policy is in force and premiums are paid up to date. If the 
+conditions are not met, only 5% of SA will be credited. 
+ 
+Sum assured used in Loyalty Booster shall equal to the latest sum assured 
+(excluding Cover Booster). 
+Maturity Benefit 
+If the policy matures before the Life Assured reaches ANB 101 on Policy 
+Anniversary, the value of units in BUA and IUA (if any) shall be payable. 
+ 
+If the policy matures when the Life Assured reaches ANB 101 on Policy 
+Anniversary, the following shall be payable: 
+ 
+(a) The higher of:  
+• 
+BSA; or  
+• 
+value of units in BUA,  
+plus 
+(b) any value of units in IUA. 
+ 
+ 
+17 
+ 
+ 
+ 
+22. Is the benefit payable under PRUWealth Enrich 2.0 subject to juvenile lien? 
+Yes. Juvenile lien shall apply to the benefits relating to death (both accidental and non-accidental 
+causes), TPD and Critical Illness (Except Essential Cancer Care, Critical Care Plus and Total Multi Crisis 
+Care).  
+ 
+The scale of benefit is shown below: 
+ANB of the Life Assured 
+Percentage (%) of Sum Assured 
+1 
+20 
+2 
+40 
+3 
+60 
+4 
+80 
+5 
+100 
+ 
+DEATH BENEFIT 
+ 
+Death Benefit 
+(a)   The higher of:  
+• 
+BSA plus Cover Booster; or  
+• 
+value of units in BUA,  
+plus 
+(b)   value of units in IUA (if any). 
+ 
+23. Will the policy still be inforce after Death Benefit has been paid out? 
+No, the policy will be terminated after Death Benefit has been paid out. 
+ 
+24. If the Life Assured died due to an accident, will the Death Benefit still be payable? 
+Yes. Accidental Death Benefit will be payable on top of the Death Benefit. Refer to question 21 above 
+for total benefit payable due to accidental death.  
+ 
+TOTAL AND PERMANENT DISABILITY BENEFIT 
+ 
+Total and Permanent 
+Disability Benefit 
+(TPD)  
+BSA plus Cover Booster shall be payable upon Life Assured suffering from 
+TPD prior to the Policy Anniversary of ANB 71 or expiry of the policy, 
+whichever is earlier.  
+ 
+Note: Payment of this benefit will reduce the basic sum assured, Crisis 
+Guard sum assured (if applicable), and value of units in BUA will be 
+adjusted accordingly as per stipulated in policy contract. 
+ 
+25. How will the TPD claim be paid out?  
+The first payment for TPD claim is always capped at a maximum of RM 1mil. If TPD Benefit payable is 
+more than RM 1mil, the balance of the benefit payable will be payable on the first anniversary of TPD.  
+   
+26. Will the policy be terminated after the complete payment of TPD claim fully accelerates BSA? 
+Policy will be terminated after payout of TPD Benefit if no rider attached. Remaining BUA and IUA cash 
+value (if any) will be paid.  
+ 
+18 
+ 
+ 
+Policy will not be terminated after payout of TPD Benefit if attached riders. Remaining BUA and IUA 
+cash value will be kept in the policy account. No-Lapse Provision will continue to in force subject to 
+BUA premium payment is up to date. Death Benefit, Accidental Death Benefit, Loyalty Bonus and 
+Loyalty Booster will cease but riders attached will continue to in force subject to sufficiency of cash 
+value. 
+ 
+27. What will happen if the TPD SA paid is less than BSA? 
+BSA will be reduced by the TPD SA paid. Please refer to the example below. 
+ 
+William purchases PRUWealth Enrich 2.0 with BSA of RM 5mil. However, his TPD coverage is limit to 
+RM 4 mil due to underwriting decision. He suffers from TPD due to a serious accident at policy year 
+20. He makes a claim on his PRUWealth Enrich 2.0 insurance policy. Before TPD claim, his policy 
+benefits and value of unit in the accounts are as below: 
+ 
+BSA before TPD claim = RM 5 mil 
+ 
+At the point of claim,  
+Value in BUA = RM 1 mil 
+ 
+Since he only entitles for RM 4 mil TPD coverage due to underwriting decision, the calculation for the 
+remaining sum assured will be as below. 
+ 
+BSA after TPD claim = Original BSA – TPD claim 
+                                     = RM 5 mil – RM 4 mil  
+                                     = RM 1 mil 
+ 
+BUA value will be reduced by the TPD sum at risk: 
+ 
+*Death Sum at Risk = Higher of (Original BSA – Value in BUA) or 0 
+                                   = Higher of (RM 5 mil – RM 1 mil) or 0 
+                                           = RM 4 mil 
+ 
+*TPD Sum at Risk 
+= Higher of ( 
+TPD SA prior to claim 
+X Death sum at risk ) or 0 
+BSA prior to claim 
+ 
+= Higher of ( 
+RM 4mil 
+X RM 4 mil ) or 0 
+ 
+RM 5mil 
+ 
+= RM 3.2 mil 
+ 
+ 
+ 
+Value to be deducted from BUA = TPD SA paid – TPD sum at risk 
+                                                          = RM 4 mil – RM 3.2 mil 
+ 
+ 
+                                  = RM 800k 
+ 
+Cover booster will be payable on top of 4 mil, however, Cover Booster will not reduce BSA.  
+TPD benefit payable = RM 4 mil + (RM 4 mil X 20%) 
+ 
+ 
+             = RM 4 mil + RM 800k 
+                                     = RM 4.8 mil 
+ 
+Balance of BUA = Higher of (BUA CV – Value to be deducted from BUA) or 0 
+ 
+                    = Higher of (RM 1 mil – RM 800k) or 0 
+                                    = RM 200k 
+ 
+19 
+ 
+ 
+28. Will premium and COI be reduced when the TPD Benefit has expired?  
+Premium will remain unchanged and no COI will be charged for TPD Benefit after this benefit expires 
+on the Policy Anniversary of Life Assured’s ANB 71. 
+ 
+COVER BOOSTER BENEFIT 
+ 
+Cover Booster 
+An additional sum assured (SA) in line with the table below will be payable 
+in the event of death or TPD, depending on the policy year when death or 
+TPD occurs, subject to the terms and conditions stipulated in policy 
+contract. There are no additional insurance charges charged for this Cover 
+Booster. 
+ 
+Policy year when 
+death/TPD 
+happened 
+Cover Booster 
+(% of SA) 
+SA < RM 2,000,000 
+SA ≥ RM 2,000,000 
+1 – 4 
+0% 
+0% 
+5 – 8 
+5% 
+5% 
+9 - 12 
+10% 
+10% 
+13 – 16 
+15% 
+15% 
+17 – 20 
+20% 
+20% 
+21 – 24 
+25% 
+25% 
+25 – 28 
+30% 
+30% 
+29 – 32 
+30% 
+35% 
+33 – 36 
+30% 
+40% 
+37 – 40 
+30% 
+45% 
+41 and above 
+30% 
+50% 
+ Sum assured used in Cover Booster shall equal to the latest sum assured 
+(excluding Cover Booster). 
+  
+Note: The Cover Booster percentage payable will not be affected by the 
+change in the sum assured due to any prior claims. 
+ 
+29. Can customer still claim for the Cover Booster for Death Benefit after claiming for Cover Booster for 
+TPD Benefit?  
+Yes. Customer can still claim for Cover Booster for Death Benefit even after claimed for TPD Benefit. 
+The Cover Booster percentage payable will not be affected by the change in the amount of Death 
+Benefit due to any prior claims (Refer to Question 32 for example).  
+ 
+30. If the customer performed an endorsement to reduce the BSA, what will be the death benefit 
+payable? 
+The Cover Booster percentage payable will follow the latest BSA.  
+ 
+Example: 
+Initial BSA = RM 800k, customer reduced BSA to RM 500k at policy year 8.  
+Customer passed away at policy year 11. 
+Assuming value of BUA = RM 350k and no IUA, 
+The death benefit payable is RM 550k based on the calculation below: 
+ 
+ 
+20 
+ 
+ 
+Higher of: 
+• 
+BSA + Cover Booster = RM 500k + (RM500k x 10%) = RM 550k; or 
+• 
+Value of BUA = RM 350k 
+ 
+31. If the customer performed partial withdrawal to reduce the BSA, what will be the death benefit 
+payable? 
+The Cover Booster percentage payable will follow the latest BSA.  
+ 
+Example: 
+Initial Death SA = RM 2 mil, customer performed partial withdrawal of RM 500k at policy year 10.  
+Customer passed away at policy year 29. 
+ 
+Assuming value of BUA = RM 1 mil and no IUA,  
+The death benefit payable is RM 1.95 mil based on the calculation below, where the Cover Booster 
+percentage payable will be based on the lower tier of  SA < RM 2mil.  
+ 
+Higher of: 
+• 
+BSA + Cover Booster = RM 1.5 mil + (RM1.5 mil x 30%) = RM 1.95 mil; or 
+• 
+Value of BUA = RM 1 mil 
+ 
+32. If the customer is diagnosed with critical illness, and claimed for Crisis Guard, what will be the death 
+benefit payable? 
+The Cover Booster percentage payable will follow the BSA before claim.  
+ 
+Example: 
+Initial Death SA = RM 3 mil 
+Crisis Guard SA = RM 2 mil 
+ 
+At policy year 35, customer is diagnosed with critical illness and Crisis Guard is claimed.   
+The Death SA is reduced to RM 1 mil after Crisis Guard is claimed. However, the Cover Booster 
+percentage payable will not be impacted by the change in sum assured due to claims.  
+ 
+Customer passed away at policy year 45.  
+Assuming value of BUA = RM 600,000 and no IUA,  
+The death benefit payable is RM 1.5 mil based on the calculation below, where the Cover Booster 
+percentage payable will be based on the higher tier of SA ≥ RM 2 mil.  
+ 
+Higher of: 
+• 
+BSA + Cover Booster = RM 1 mil + (RM 1 mil x 50%) = RM 1.5 mil; or 
+• 
+Value of BUA = RM 600,000 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+21 
+ 
+ACCIDENTAL DEATH BENEFIT 
+ 
+Accidental 
+Death 
+Benefit 
+Death Benefit and one of the below shall be payable if the following event 
+happens prior to the Policy Anniversary of Life Assured’s ANB 71 or expiry 
+of the policy, whichever is earlier: 
+i. 
+an additional 100% of sum assured if death is due to accident;  
+ii. 
+an additional 200% of sum assured if death is due to accident from 
+commuting in public conveyance, elevator car, burning of theatre, 
+hotel or other public building;  
+iii. an additional 300% of sum assured if death is due to accident 
+occurring while Life Assured is residing or travelling outside of 
+Malaysia (except Singapore and Brunei) for not more than 90 
+consecutive days, or in Singapore or Brunei for any number of days;  
+iv. an additional 400% of sum assured if death is due to accident 
+occurring while commuting in commercial aircraft as a fare-paying 
+passenger, provided that the life assured is not acting in any capacity 
+as a pilot, co-pilot, crew member, or operator of the private aircraft 
+at the time of the accident; or 
+v. 
+an additional 500% of sum assured if death is due to natural disaster. 
+ 
+Sum assured used in Accidental Death Benefit shall equal to the latest sum 
+assured (excluding Cover Booster). 
+ 
+Accidental Death Benefit (ADB) for accidents that occurred outside of Malaysia is subject to the 
+residing period of not more than 90 days consecutively. However, this exclusion is not applicable to 
+accidental death occurs in Singapore and Brunei, as well as for accidental death caused by natural 
+disaster.  
+ 
+90 days Residing Period Rules: 
+Location 
+Malaysia 
+Singapore and Brunei 
+Other country 
+Travel Period 
+<= 90 
+days 
+>90 days 
+<=90 
+days 
+>90 days 
+<=90 
+days 
+>90 days 
+Accident 
++100% 
++100% 
++300% 
++300% 
++300% 
++100% 
+Accidental Death caused 
+by commuting in public 
+conveyance, elevator 
+car, burning of theatre, 
+hotel or other public 
+building 
++200% 
++200% 
++300% 
++300% 
++300% 
++200% 
+Accidental Death caused 
+by commuting in 
+commercial aircraft as a 
+fare-paying passenger 
++400% 
++400% 
++400% 
++400% 
++400% 
++400% 
+Accidental Death caused 
+by natural disaster 
++500% 
++500% 
++500% 
++500% 
++500% 
++500% 
+ 
+33. What incidents are considered as natural disaster? 
+Storm (wind, rain, snow, sleet, hail, lightning, dust or sand), earthquake, flood, volcanic eruption, 
+wildfire or other similar event that is due to natural causes and results in such severe and widespread 
+ 
+22 
+ 
+damage that the area of damage is officially declared a disaster area by a state or federal government 
+if the event occurs in Malaysia, or by a corresponding authority if the event occurs outside of Malaysia. 
+ 
+34. What types of public conveyance are covered under Accidental Death Benefit? 
+A mode of licensed transport available to the general public that serves to carry its fare paying 
+passengers from one place to another on scheduled trips over established routes as its primary 
+purpose.  
+ 
+For example, public conveyance includes any public bus, taxi, airport limousine, train, monorail, 
+commercial aircraft, ferry and e-hailing services, such as Grab, provided the service is used to transport 
+fare paying passengers. 
+ 
+With the exception of cruise liners, this definition does not include private flights and other 
+transportation used for leisure and entertainment. 
+ 
+35. What is the maximum amount payable for Accidental Death Benefit?  
+Max limit for adult: RM 25 mil 
+Max limit for juvenile: RM 5 mil 
+ 
+The examples below are assuming accidental death occurred before policy year 5, where the Cover 
+Booster percentage payable is 0%. 
+Death Benefit = Max (Death SA + Cover Booster, BUA) + Value of IUA  
+Accidental Death Benefit = Min (% of ADB SA, RM 25 mil) 
+Total payout = Death Benefit + Accidental Death Benefit  
+ 
+Example 1:  if Life Assured is adult (SA = RM 500k) 
+LA: ANB 19 
+Death SA / ADB SA: RM 500,000  
+Value of BUA: RM 50,000  
+Value of IUA: RM 10,000  
+                             
+a. If the accident due to car happens in Malaysia, the amount payable would be: 
+= Death Benefit + Accidental Death Benefit 
+= [Max(RM 500,000 + RM 0, RM 50,000) + RM 10,000]  + Min(100% of ADB SA, RM 25 mil) 
+= [Max(RM 500,000, RM 50,000) + RM 10,000] + Min(RM 500,000, RM 25 mil) 
+= RM 510,000 + RM 500,000 
+= RM 1.01 mil 
+ 
+b. If the accident due to commuting in public transport happens in Singapore/ Brunei even though 
+the Life Assured has stayed in that country for more than 90 days, the amount payable would be: 
+= Death Benefit + Accidental Death Benefit 
+= [Max(RM 500,000 + RM 0, RM 50,000) + RM 10,000] + Min(300% of ADB SA, RM 25 mil) 
+= [Max(RM 500,000, RM 50,000) + RM 10,000] + Min(RM 1.5 mil, RM 25 mil) 
+= RM 510,000 + RM 1.5 mil 
+= RM 2.01 mil 
+ 
+c. 
+If the accident happens while the Life Assured is commuting in a commercial aircraft as a fare-
+paying passenger, provided that the life assured is not acting in any capacity as a pilot, co-pilot, 
+crew member, or operator of the private aircraft at the time of the accident: 
+= Death Benefit + Accidental Death Benefit 
+= [Max(RM 500,000 + RM 0, RM 50,000) + RM 10,000] + Min(400% of ADB SA, RM 25 mil) 
+ 
+23 
+ 
+= [Max(RM 500,000, RM 50,000) + RM 10,000] + Min(RM 2 mil, RM 25 mil) 
+= RM510,000 + RM 2 mil 
+= RM 2.51 mil 
+ 
+d. If the accident happens while the Life Assured resides or travels outside of Malaysia, Singapore 
+and Brunei for not more than 90 days, the amount payable would be: 
+= Death Benefit + Accidental Death Benefit 
+= [Max(RM 500,000 + RM 0, RM 50,000) + RM 10,000] + Min(300% of ADB SA, RM 25 mil) 
+= [Max(RM 500,000, RM 50,000) + RM 10,000] + Min(RM 1.5 mil, RM 25 mil) 
+= RM510,000 + RM 1.5 mil 
+= RM 2.01 mil 
+ 
+Example 2: if Life Assured is adult (SA = RM 6 mil) 
+LA age: ANB 19 
+Death SA / ADB SA: RM 6 mil  
+Value of BUA: RM 500,000  
+Value of IUA: RM 100,000  
+ 
+If the accident happens due to flood (which meets the definition for natural disaster in Q32) while the 
+Life Assured resides or travels outside of Malaysia, Singapore and Brunei for not more than 90 days, 
+the amount payable would be: 
+= Death Benefit + Accidental Death Benefit 
+= [Max(RM 6 mil + RM 0, RM 500,000) + RM 100,000] + Min(500% of ADB SA, RM 25 mil) 
+= [Max(RM 6 mil, RM 500,000) + RM 100,000] + Min(RM 30 mil, RM 25 mil)  
+= RM 6.1 mil + RM 25 mil 
+= RM 31.1 mil 
+ 
+ 
+Example 3: if Life Assured is juvenile 
+LA age: 4 ANB  
+Death SA / ADB SA: RM 2.5 mil 
+Value of BUA: RM 500,000  
+Value of IUA: RM 100,000 
+ 
+Assuming death happened at Policy Year 4, SA after Juvenile Lien 
+= RM 2.5 mil x 80% 
+= RM 2 mil 
+ 
+a. Total amount payable If the accident happens in Malaysia: 
+= Death Benefit + Accidental Death Benefit 
+= [Max(RM 2 mil + RM 0, RM 500,000) + RM 100,000] + Min(100% of ADB SA, RM 5 mil) 
+= [Max(RM 2 mil, RM 500,000) + RM 100,000] + Min(RM 2 mil, RM 5 mil) 
+= RM2.1 mil + RM 2 mil 
+= RM4.1 mil 
+  
+b. The amount payable if the accident happens in Singapore/ Brunei provided Life Assured has stayed 
+in that country for not more than 90 days: 
+= Death Benefit + Accidental Death Benefit 
+= [Max(RM 2 mil + RM 0, RM 500,000) + RM 100,000] + Min(300% of ADB SA, RM 5 mil) 
+= [Max(RM 2 mil, RM 500,000) + RM 100,000] + Min(RM 6 mil, RM 5 mil)  
+= RM 2.1 mil + RM 5 mil 
+ 
+24 
+ 
+= RM 7.1 mil 
+ 
+36. If death of the Life Assured is caused by an accident on a train in Italy, which category of benefit 
+would be payable? 
+If an accidental event qualifies for more than one accidental category of payout, whichever higher will 
+be payable. In this case, the Accidental Death Benefit payout will be 300% of ADB SA since the accident 
+happened in overseas, provided that the Life Assured stays outside of Malaysia (excluding Singapore 
+and Brunei) for not more than 90 days. Otherwise, 200% of ADB SA shall be payable.  
+ 
+37. If the Life Assured has already made a claim under TPD, upon death of Life Assured due to accident, 
+will the Accidental Death Benefit still be payable? 
+If BSA is fully reduced to zero after the payout for TPD claim, no more Accidental Death Benefit will be 
+payable since all basic benefits will be ceased.  
+ 
+However, if BSA was reduced to an amount that is not equal to zero after TPD claim, Accidental Death 
+Benefit will be still payable based on reduced sum assured. 
+ 
+38. Will premium and COI be reduced when the Accidental Death Benefit expired?  
+Premium will remain unchanged and no COI will be charged for Accidental Death Benefit after this 
+benefit expires on the Policy Anniversary of Life Assured’s ANB 71. 
+ 
+LOYALTY BONUS 
+ 
+Loyalty Bonus 
+(updated as of Oct 2024) 
+X% of sum assured (SA) shall be credited into BUA by the Policy 
+Anniversary of Life Assured’s ANB 65/75/85 (depending on the entry 
+age) and every 10 years subsequently until end of initial policy term 
+selected, provided the policy is still in force, subject to terms and 
+conditions stipulated in policy contract.  
+ 
+Loyalty Bonus is only applicable if initial policy term selected during new 
+business (NB) is until the Policy Anniversary of the Life Assured’s ANB70/ 
+80 /90 or 101. If initial policy term of 20 years is selected, no Loyalty 
+Bonus will be payable. 
+Entry age 
+Payout Year/  
+Payout Age  
+(Policy Anniversary of) 
+% of SA 
+SA < 
+RM500,000 
+SA ≥ 
+RM500,000 
+ANB ≤ 55 
+ANB 65, and every 10 
+years subsequently 
+2.5% 
+5% 
+(2.5% + 
+2.5%*) 
+ANB 56 - 65 
+ANB 75, and every 10 
+years subsequently 
+ANB ≥66 
+ANB 85, and every 10 
+years subsequently 
+*Note 
+For SA ≥ RM 500,000, the amount credited will be doubled, i.e. 5% (2.5% 
++ 2.5%) of SA, if the policy is in force and premiums are paid up to date. 
+If the conditions are not met, only 2.5% of SA will be credited. 
+ 
+Sum assured used in Loyalty Bonus shall equal to the latest sum assured 
+(excluding Cover Booster). 
+ Note: Loyalty Bonus is not applicable after the payout of Loyalty Booster.   
+ 
+25 
+ 
+39. How will the Loyalty Bonus be paid?  
+Example: 
+LA age: ANB 35   
+BSA: RM 800,000 
+Policy term: until the Policy Anniversary of the Life Assured’s ANB 80 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+*5% of BSA will be credited into BUA subject to policy is in force and premiums are paid up to date. 
+Else, only 2.5% of BSA will be credited.  
+40. If the customer performed an endorsement to reduce the policy term, how will the Loyalty Bonus 
+be paid? (updated as of Oct 2024) 
+Loyalty Bonus will be credited into BUA by the Policy Anniversary of Life Assured’s ANB 65/75/85 
+(depending on the entry age) and every 10 years subsequently until end of initial policy term selected. 
+ 
+Example 1: Reduce policy term from Policy Anniversary of ANB 101 to ANB 90 
+LA age: ANB 60 
+BSA: RM 2 mil  
+Initial policy term: until the Policy Anniversary of the Life Assured’s ANB 101 
+At age 80, customer reduced policy term to until the Policy Anniversary of the Life Assured’s ANB 90.  
+However, Loyalty Bonus will be credited at Policy Anniversary of ANB 75 and every 10 years 
+subsequently until Policy Anniversary of ANB 101.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+*5% of BSA will be credited into BUA subject to policy is in force and premiums are paid up to date. 
+Else, only 2.5% of BSA will be credited.  
+ 
+Example 2: Reduce policy term from Policy Anniversary of ANB 90 to 20 years 
+LA age: ANB 50 
+BSA: RM 2 mil  
+Initial policy term: until the Policy Anniversary of the Life Assured’s ANB 90 
+At age 60, customer reduced policy term to 20 years.  
+At age 60 
+Policy 
+commences with 
+BSA RM 2mil 
+At Policy 
+Anniversary of 
+age 75 
+Loyalty Bonus of 
+5%* (RM 100k)  
+At Policy 
+Anniversary of 
+age 85 
+Loyalty Bonus of 
+5%* (RM 100k)  
+At age 35 
+Policy 
+commences with 
+BSA RM 800k 
+At Policy 
+Anniversary of 
+age 65 
+Loyalty Bonus of 
+5%* (RM 40k)  
+At Policy 
+Anniversary of 
+age 75 
+Loyalty Bonus of 
+5%* (RM 40k)  
+At Policy 
+anniversary of 
+age 80 
+Loyalty Booster  
+Every 10 
+years after 
+At age 80 
+Endorsement 
+to reduce policy 
+term to age 90.  
+At Policy 
+Anniversary of 
+age 101 
+Loyalty Booster   
+At Policy 
+Anniversary of 
+age 95 
+Loyalty Bonus of 
+5%* (RM 100k)  
+Every 10 
+years after 
+Every 10 
+years after 
+ Loyalty Bonus is 
+not applicable 
+after the payout of 
+Loyalty Booster 
+ 
+26 
+ 
+However, Loyalty Bonus will be credited at Policy Anniversary of ANB 65 and every 10 years 
+subsequently until age 90.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+*5% of BSA will be credited into BUA subject to policy is in force and premiums are paid up to date. 
+Else, only 2.5% of BSA will be credited. 
+ 
+41. If the customer performed an endorsement to reduce the BSA, how will the Loyalty Bonus be paid?  
+If customer reduces the BSA, Loyalty Bonus will be credited into BUA based on the reduced BSA.  
+ 
+Example:  
+LA age: ANB 60 
+BSA: RM 800,000 
+Initial policy term: until the Policy Anniversary of the Life Assured’s ANB 101 
+At age 80, customer reduced the BSA to RM400,000.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+*5% of BSA will be credited into BUA subject to policy is in force and premiums are paid up to date. 
+Else, only 2.5% of BSA will be credited.  
+42. If the customer performed an endorsement to increase the policy term, how will the Loyalty Bonus 
+be paid? (updated as of Oct 2024) 
+ 
+Example 1: Increase policy term from Policy Anniversary of ANB 80 to ANB 101 
+LA age: ANB 50 
+BSA: RM 2 mil  
+Initial policy term: until the Policy Anniversary of the Life Assured’s ANB 80 
+At age 70, customer increased policy term to until the Policy Anniversary of the Life Assured’s ANB 
+101.  
+At age 60 
+Policy 
+commences with 
+BSA RM 800k 
+At Policy 
+Anniversary of 
+age 75 
+Loyalty Bonus of 
+5%* (RM 40k)  
+At Policy 
+Anniversary of 
+age 85 
+Loyalty Bonus of 
+2.5% (RM 10k)  
+At Policy 
+Anniversary of 
+age 95 
+Loyalty Bonus of 
+2.5% (RM 10k)  
+At age 80 
+Endorsement 
+BSA reduced 
+to RM 400k 
+At Policy 
+Anniversary of 
+age 101 
+Loyalty Booster   
+Loyalty Bonus credited is 
+based on reduced BSA where 
+the % of Loyalty Bonus will be 
+based on the lower tier of BSA 
+< RM 500k.  
+Every 10 
+years after 
+Every 10 
+years after 
+At age 50 
+Policy 
+commences with 
+BSA RM 2mil 
+At Policy 
+Anniversary of 
+age 65 
+Loyalty Bonus of 
+5%* (RM 100k)  
+At Policy 
+Anniversary of 
+age 75 
+Loyalty Bonus of 
+5%* (RM 100k)  
+At age 60 
+Endorsement 
+to reduce policy 
+term to 20 years.  
+At Policy 
+Anniversary of 
+age 90 
+Loyalty Booster   
+At Policy 
+Anniversary of 
+age 85 
+Loyalty Bonus of 
+5%* (RM 100k)  
+Every 10 
+years after 
+Every 10 
+years after 
+ 
+27 
+ 
+However, Loyalty Bonus will be credited at age 65 and every 10 years subsequently until age 80.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+*5% of BSA will be credited into BUA subject to policy is in force and premiums are paid up to date. 
+Else, only 2.5% of BSA will be credited.  
+ 
+Example 2: Increase policy term from 20 years to until the Policy Anniversary of ANB 101 
+LA age: ANB 50 
+BSA: RM 2 mil  
+Initial policy term: 20 years 
+At age 60, customer increased policy term to until the Policy Anniversary of ANB 101.  
+ 
+However, no Loyalty Bonus and Loyalty Booster will be credited if initial policy term of 20 years is 
+selected.  
+43. What is the treatment for Loyalty Bonus if the policy is lapsed and reinstated? 
+Any Loyalty Bonus payout missed due to policy lapse will be credited immediately once policy is 
+successfully revived. Prior to crediting any payout that is missed due to policy lapse into BUA after 
+revival, revival charge (refer to Lapse and Revival section) will be deducted from the payout amount, 
+and the remaining/balance of this payout shall be credited into BUA. In the event that the revival 
+charge is greater than the amount of this payout missed due to policy lapse, the outstanding/balance 
+of the revival charge will be stored and deducted from future payout amount. No prorating of this 
+payout if policy is surrendered/has lapsed prior to the crediting date. 
+ 
+LOYALTY BOOSTER 
+ 
+Loyalty Booster 
+(updated as of Oct 2024) 
+X% of sum assured (SA) will be credited into BUA by end of initial policy 
+term selected, provided the policy is still in force, subject to terms and 
+conditions stipulated in policy contract.  
+ 
+If policy term until the Policy Anniversary of the Life Assured’s ANB 90 / 
+101 was selected, Loyalty Booster will also be credited into BUA upon 
+death of Life Assured after Policy Anniversary of Life Assured’s ANB 80. 
+ 
+Loyalty Booster is only applicable if initial policy term selected during 
+new business (NB) is until the Policy Anniversary of the Life Assured’s 
+ANB70/ 80 /90 or 101. If initial policy term of 20 years is selected, no 
+Loyalty Booster will be payable. 
+Policy Term 
+% of SA 
+At age 50 
+Policy 
+commences with 
+BSA RM 2mil 
+At Policy 
+Anniversary of 
+age 65 
+Loyalty Bonus of 
+5%* (RM 100k)  
+At Policy 
+Anniversary of 
+age 75 
+Loyalty Bonus of 
+5%* (RM 100k)  
+At age 70 
+Endorsement 
+to increase policy 
+term to age 100.  
+At Policy 
+Anniversary of 
+age 80 
+Loyalty Booster 
+Every 10 
+years after 
+ 
+28 
+ 
+(Policy Anniversary 
+of ANB) 
+Payout Age 
+(Policy Anniversary 
+of ANB) 
+SA < 
+RM500,000 
+SA ≥ 
+RM500,000 
+70 
+70 
+5% 
+10% 
+(5% + 5%*) 
+80 
+80 
+90 
+90 
+101 
+101 
+*Note 
+For SA ≥ RM 500,000, the amount credited will be doubled, i.e. 10% (5% 
++ 5%) of SA, if the policy is in force and premiums are paid up to date. If 
+the conditions are not met, only 5% of SA will be credited. 
+ 
+Sum assured used in Loyalty Booster shall equal to the latest sum 
+assured (excluding Cover Booster). 
+ 
+ 
+ 
+44. How will the Loyalty Booster be paid?  
+Example 1: Loyalty Booster at Policy Anniversary  
+LA age: ANB 35   
+BSA: RM 2 mil 
+Policy term: until the Policy Anniversary of ANB 90 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+*10% of BSA will be credited into BUA subject to policy is in force and premiums are paid up to date. 
+Else, only 5% of BSA will be credited.  
+ 
+Example 2: Loyalty Booster if customer unfortunately passed away  
+LA age: ANB 35   
+BSA: RM2 mil 
+Policy term: until the Policy Anniversary of ANB 90 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+At age 35 
+Policy 
+commences with 
+BSA RM 2mil 
+At Policy 
+Anniversary of 
+age 90 
+Loyalty Booster of 
+10%* (RM 200k) 
+At Policy 
+Anniversary of 
+age 65 
+Loyalty Bonus 
+At Policy 
+Anniversary of 
+age 75 
+Loyalty Bonus 
+At Policy 
+Anniversary of 
+age 85 
+Loyalty Bonus 
+At age 35 
+Policy 
+commences with 
+BSA RM 2mil 
+At age 80 
+Customer passed away 
+Loyalty Booster of 10%* 
+(RM 200k) will be credited into 
+BUA in the event of death.  
+At Policy 
+Anniversary of 
+age 65 
+Loyalty Bonus 
+At Policy 
+Anniversary of 
+age 75 
+Loyalty Bonus 
+At Policy 
+Anniversary of 
+age 90 
+Loyalty Booster 
+ Loyalty Bonus is 
+not applicable 
+after the payout of 
+Loyalty Booster 
+ 
+29 
+ 
+ 
+ 
+*10% of BSA will be credited into BUA subject to policy is in force and premiums are paid up to date. 
+Else, only 5% of BSA will be credited.  
+45. If the customer performed an endorsement to reduce the policy term, when will the Loyalty Booster 
+be credited? (updated as of Oct 2024) 
+Loyalty Booster will be credited based on the initial policy term selected.  
+ 
+Example 1: 
+LA age: ANB 60 
+BSA: RM 2 mil  
+initial policy term: until the Policy Anniversary of ANB 101 
+At age 80, customer reduced policy term to age 90.  
+However, Loyalty Booster payout will follow initial policy term selected, which is Policy Anniversary of 
+ANB 101.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+*10% of BSA will be credited into BUA subject to policy is in force and premiums are paid up to date. 
+Else, only 5% of BSA will be credited.  
+ 
+Example 2: 
+LA age: ANB 40 
+BSA: RM 2 mil  
+initial policy term: until the Policy Anniversary of ANB 101 
+At age 60, customer reduced policy term to 20 years.  
+However, Loyalty Booster payout will follow initial policy term selected, which is Policy Anniversary of 
+ANB 101.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+At age 60 
+Policy 
+commences with 
+BSA RM 2mil 
+At Policy 
+Anniversary of 
+age 101 
+Loyalty Booster of 
+10%* (RM 200k) 
+At age 80 
+Endorsement 
+to reduce policy 
+term to age 90.  
+At Policy 
+Anniversary of 
+age 75 
+Loyalty Bonus 
+At Policy 
+Anniversary of 
+age 85 
+Loyalty Bonus 
+At Policy 
+Anniversary of 
+age 90 
+Loyalty Booster 
+will not pay out  
+At Policy 
+Anniversary of 
+age 95 
+Loyalty Bonus 
+At age 40 
+Policy 
+commences with 
+BSA RM 2mil 
+At Policy 
+Anniversary of 
+age 101 
+Loyalty Booster of 
+10%* (RM 200k) 
+At age 60 
+Endorsement 
+to reduce policy 
+term to 20 years.  
+At Policy 
+Anniversary of 
+age 75 
+Loyalty Bonus 
+At Policy 
+Anniversary of 
+age 85 
+Loyalty Bonus 
+At Policy 
+Anniversary of 
+age 95 
+Loyalty Bonus 
+ 
+30 
+ 
+ 
+*10% of BSA will be credited into BUA subject to policy is in force and premiums are paid up to date. 
+Else, only 5% of BSA will be credited.  
+46. If the customer performed an endorsement to reduce the BSA, how will the Loyalty Booster be paid? 
+If the customer reduced the BSA, Loyalty Booster will be credited into BUA based on the reduced BSA.  
+ 
+Example: 
+LA age: ANB 60   
+BSA: RM 800,000 
+Policy term: until the Policy Anniversary of ANB 90 
+At age 80, customer reduced the BSA to RM 400,000.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+47. What would happen if the customer performed partial withdrawal and caused the BSA to be 
+reduced? Will the Loyalty Booster still be payable? 
+Yes, if customer performed partial withdrawal, Loyalty Booster will be credited into BUA based on the 
+reduced BSA. The Loyalty Booster payout will be similar to the scenario where customer performed 
+endorsement to reduce the BSA (refer to Q46 for example).  
+ 
+48. What is the treatment for Loyalty Booster if the policy is lapsed and reinstated? 
+Any Loyalty Booster payout missed due to policy lapse will be credited immediately once policy is 
+successfully revived. Prior to crediting any payout that is missed due to policy lapse into BUA after 
+revival, revival charge (refer to Lapse and Revival section) will be deducted from the payout amount, 
+and the remaining/balance of this payout shall be credited into BUA. In the event that the revival 
+charge is greater than the amount of this payout missed due to policy lapse, the outstanding/balance 
+of the revival charge will be stored and deducted from future payout amount. No prorating of this 
+payout if policy is surrendered/has lapsed prior to the crediting date. 
+ 
+MATURITY BENEFIT 
+ 
+Maturity 
+If the policy matures before the Life Assured reaches ANB 101 on Policy 
+Anniversary, the value of units in BUA and IUA (if any) shall be payable. 
+ 
+If the policy matures when the Life Assured reaches ANB 101 on Policy 
+Anniversary, the following shall be payable: 
+ 
+At age 60 
+Policy 
+commences with 
+BSA RM 800k 
+At age 80 
+Endorsement 
+BSA reduced 
+to RM 400k 
+Loyalty Booster credited is 
+based on reduced BSA 
+where the % of Loyalty 
+Booster will be based on the 
+lower tier of BSA < RM 500k.  
+At Policy 
+Anniversary of 
+age 75 
+Loyalty Bonus 
+At Policy 
+Anniversary of 
+age 85 
+Loyalty Bonus 
+At Policy 
+Anniversary of 
+age 90 
+Loyalty Booster 
+of 5% (RM 20k) 
+ Loyalty Bonus is 
+not applicable after 
+the payout of 
+Loyalty Booster 
+ 
+31 
+ 
+(a) The higher of:  
+• 
+BSA; or  
+• 
+value of units in BUA,  
+plus 
+(b) any value of units in IUA.   
+ 
+49. How will the maturity benefit be paid if policy mature at ANB 101 on Policy Anniversary (in the event 
+where policy term selected is until the Policy Anniversary of the Life Assured's ANB 101 or extension 
+of coverage term kicks in)?  
+The higher of BSA or value on units in BUA, plus any value of units in IUA will be payable.  
+ 
+Example: 
+BSA = RM 2mil 
+BUA = RM 1.5mil 
+IUA = RM 500k  
+ 
+Maturity benefit payable is RM2.5 mil based on the calculation below: 
+The higher of:  
+i. BSA = RM 2 mil; or 
+ii. BUA = RM 1.5 mil 
+ 
+plus IUA = RM 500k 
+ 
+thus, the maturity benefit is RM 2 mil + RM 500k = RM 2.5 mil 
+50. How will the maturity benefit be paid if policy mature before ANB 101 on Policy Anniversary (in the 
+event where policy term selected is less than Policy Anniversary of ANB 101 and customer opt out 
+for extension of coverage term)?  
+Value on units in BUA plus any value of units in IUA will be payable. 
+ 
+Example: 
+BSA = RM 2 mil 
+BUA = RM 1.5 mil 
+IUA = RM 500k  
+ 
+Maturity benefit payable is RM2 mil based on the calculation below: 
+BUA + IUA = RM 1.5 mil + RM 500k = RM 2 mil 
+ 
+POLICY SUSTAINABILITY & EXTENSION OF COVERAGE TERM 
+51. What is policy sustainability in PRUWealth Enrich 2.0? (updated as of Oct 2024) 
+Investment-linked products are insurance products with sustainability concept where the continuity 
+of the insurance coverage is dependent on the sufficiency of cash value to deduct future fees and 
+charges. The objective of implementation of guideline related to sustainability is to safeguard and 
+ensure policyholders continue to be covered/protected in the long run. 
+ 
+Target sustainability option (TSO) is the choice given to policyholders to choose their policy term based 
+on their affordability. Minimum and maximum premium of the policy will be determined by the TSO 
+ 
+32 
+ 
+selected. The premiums set are expected to be sustainable until the end of contractual term in line 
+with the guidelines related to sustainability. 
+ 
+TSO available for PRUWealth Enrich 2.0 varies depending on entry age. 
+Entry Age 
+TSO/Policy Term 
+1-18 
+Age 70 
+Age 80* 
+Age 90 
+Age 100** 
+19 - 35 
+20 years 
+Age 70 
+Age 80* 
+Age 90 
+Age 100** 
+36 - 44 
+20 years 
+Age 80* 
+Age 90 
+Age 100** 
+45 - 50 
+20 years 
+Age 80 
+Age 90* 
+Age 100** 
+51 - 69 
+20 years 
+Age 90* 
+Age 100** 
+70 
+Age 90* 
+Age 100** 
+Notes:           
+* Default option set in PRUWay Plus/SQS Online. 
+**Age 100 refers to Policy Anniversary on the year when Life Assured attained age 101 next birthday 
+ 
+52. What affects the policy sustainability? 
+Cash value in BUA and IUA (if any) determines the policy sustainability. Hence, premium amount, 
+regularity of premium payment, insurance charges, fund performance, partial withdrawal (if any) and 
+all other charges applicable to the policy will also affect policy sustainability. 
+53. What can be done for the policy to sustain longer? 
+Customers may improve their policy sustainability by paying higher BUA Premium, by increasing 
+PRUAllocator up to maximum allowable, after maximising the Insurance Premium. Customers may also 
+consider including regular Investment Premium via PRUSaver / PRUSaver Kid or by performing ad-hoc 
+top-up. 
+54. How do customers know about their policy sustainability? 
+At the point of sales, customers will be informed about the projected policy sustainability through PDS 
+PI in paragraph below:  
+ 
+Example: Only show this when full pay (premium payment term) is selected: 
+ 
+ 
+ 
+With the selected coverage and by paying the above <PaymentFreq> Total Premium for selected 
+coverage, your policy is projected to sustain for:  
+• 
+<uu> years to your ANB <vv> under the expected investment return of the company;  
+• 
+<bb> years to your ANB <cc> under Projected Investment Return (X%);  
+• 
+<dd> years to your ANB <ee> under Projected Investment Return (Y%).  
+This assumes that your policy will be auto extended after the selected policy term. 
+ 
+33 
+ 
+ 
+ 
+ 
+After No-Lapse Provision period, if the cash value in the policy is insufficient for the next two months’ 
+charges, a pre-lapse notice will be given to customers (in forms of SMS and letter).  
+ 
+After sales service, an annual sustainability test will be performed and communicated to customer 
+about the projected policy sustainability as well as the recommended top-up premium to restore the 
+policy term.  
+ 
+55. What is Extension of Coverage Term and how does it work?  
+With this feature, the coverage shall be automatically extended to the Policy Anniversary of Life 
+Assured's age 101 next birthday or the maximum coverage term of the benefits (whichever is earlier), 
+as long as it has sufficient value of units to be deducted to pay for the relevant charges, fees and taxes 
+during the extended term.   
+ 
+Additional premium may be required to ensure the sufficiency of cash value for the deduction and all 
+the terms and conditions of the policy shall continue to apply during the extended term. 
+ 
+56. Does Extension of Coverage Term applicable to the basic plan only or including rider(s)? 
+The Extension of Coverage Term will extend the term of basic plan and attached riders up to the Policy 
+Anniversary of the Life Assured’s age 101 next birthday or the maximum coverage term of the benefits, 
+whichever is earlier, as long as there is sufficient cash value. 
+ 
+57. What is the maximum coverage term of benefits referring to? 
+Please refer to the marketing materials or policy document for the maximum coverage term for the 
+respective benefits. For example, Total and Permanent Disability (TPD) benefit is covered up to Policy 
+Anniversary of Life Assured’s age 71 next birthday. In this case, TPD benefit shall end at age 71 instead 
+of 101 during the extended term. 
+ 
+58. Can customer choose a shorter extension term for the policy instead of auto-extension up to age 
+100? 
+No. Once the Extension of Coverage Term takes effect, the coverage will continue up to the Policy 
+Anniversary of Life Assured's age 101 next birthday or the maximum coverage term of the benefits, 
+whichever is earlier. 
+ 
+However, the customer can choose to surrender the policy at any time based on their protection 
+needs. Upon surrender, the cash value (if any) in the policy shall be payable. 
+ 
+59. How much does a customer need to pay to sustain the policy until the end of extended term? 
+Customer is advised to monitor the policy from time to time. The recommended top-up amount to 
+sustain up to the end of the extended term is advised in Annual Statement, as well as in the Policy 
+Alteration Sustainability Statement (PASS) whenever an alteration is made. 
+ 
+We will advise the additional premium amount required to sustain up to the end of extended term at 
+least 90 days before the start of the extended term. Without customer’s agreement to pay the new 
+premium amount, the existing premium payment amount will remain. If the cash value is no longer 
+enough to cover any further deductions, the policy shall lapse, and coverage will end. 
+ 
+ 
+34 
+ 
+60. Are the top-up amounts recommended for the policy to sustain until the end of extension period 
+guaranteed? 
+The recommended top-up amounts shown in the Product Disclosure Sheet (PDS), PASS or Annual 
+Statement are not guaranteed.. Customer may refer to the Annual Statement for the recommended 
+top-up amount every year to understand the sustainability evaluation of the policy and how much to 
+top-up in order to improve policy sustainability up to the extended term. 
+ 
+61. Can customers choose to pay the additional top-up amount before the extended term? 
+Yes. Customers can pay the additional top-up amount at any time. It is also encouraged to pay the 
+regular premium top-up amount in earlier years or from time to time to improve the policy 
+sustainability. 
+ 
+62. What if a customer does not wish to pay the recommended top-up amount? 
+While it is encouraged to perform premium top-up, it is still entirely optional. However, please note 
+that the additional top-up amount is recommended to improve the policy sustainability. Performing 
+top-up from time to time will help to ensure sufficient cash value for the deduction of the relevant 
+charges, fees and taxes. The policy might lapse earlier than expected if there is insufficient cash value 
+to bear the cost for any further deduction.   
+ 
+63. Can a customer choose to disable the Extension of Coverage Term feature?  
+Yes. Customer can request to disable at any time after the policy is issued and prior to the Extension 
+of Coverage Term, at no additional charges, by submitting the following documents which could be 
+obtained from the sales representatives or any Prudential branches: 
+• 
+A completed Supplementary Proposal Form (SPF) when perform positive endorsement or 
+Alteration Request Form (ARF) when perform negative endorsement 
+• 
+Acknowledged Policy Alteration Sustainability Statement (PASS) 
+• 
+Quotation Slip 
+In such cases, the coverage will end at the original expiry date of the policy without the extension. 
+ 
+64. If a customer changes his mind subsequently after disabling the Extension of Coverage Term, can 
+customer re-enable for this feature?  
+Yes. Customer can re-enable this feature prior to the Extension of Coverage Term by submitting the 
+same set of documents as described in Q60. 
+ 
+This application will be subject to the conditions set out in the policy which includes the requirement 
+for re-underwriting. For example, the insured life must be in good health, and within the allowable age 
+limit, otherwise this may result in higher insurance charges and/or premium required or the 
+application may be rejected. 
+ 
+FUNDS 
+65. What are the funds available for PRUWealth Enrich 2.0? (Updated as of Oct 2024) 
+Customers can choose from a range of different funds as below: 
+ 
+PRULink Funds 
+PRULink Equity Income Fund 
+PRULink Dana Unggul 
+PRULink Equity Focus Fund 
+PRULink Dana Urus II 
+PRULink Bond Fund II 
+PRULink Money Market Fund * 
+PRULink Managed Fund II 
+ 
+ 
+35 
+ 
+PRULink Global Funds 
+PRULink Global Market Navigator Fund 
+PRULink Asia Local Bond Fund 
+PRULink Dragon Peacock Fund 
+PRULink Asia Managed Fund  
+PRULink Asia Equity Fund 
+PRULink Global Strategic Fund (with Hedging) 
+PRULink Local and Global Funds 
+PRULink Equity Plus Fund 
+PRULink Managed Plus Fund 
+* PRULink Money Market Fund is only available for fund switching, premium re-direction and single 
+premium top up after policy inception.  
+   
+66. Can the customer switch funds? 
+Yes. Fund switching is allowed, subject to a minimum switching out amount of RM1,000.  
+ 
+Fund switching charge will be waived until e-transaction is available. When e-transaction is available, 
+manual request for fund switching is subject to the charge stated below: 
+ 
+Four free switches per year. The charge is 1.00% of the switched amount and subject to a maximum 
+amount of RM 50 per switch. This charge may be reviewed from time to time at our discretion. 
+ 
+67. If the customer decides to top-up the amount in Investment Unit Account, what is the minimum top 
+up amount and allocation rate? 
+Yes. Top-up is allowed subject to a minimum top-up amount of RM100. Top-up amount will be 
+allocated into Investment Unit Account with the allocation rate of 95%. 
+ 
+Top-up fee will be waived until e-transaction is available. When e-transaction is available, manual 
+request for top up is subject to RM25. This charge may be reviewed from time to time at our discretion.   
+ 
+68. Can policyholders revise his/her premium direction? 
+Yes. Policyholders can revise the direction of premium (in multiples of 5%) and the choice of funds 
+available for PRUWealth Enrich 2.0 policy. 
+ 
+POLICY OPTIONS  
+ 
+LEGACY SETTLEMENT OPTION (LSO) 
+(For full details on LSO features and rules, please refer to the separate Legacy Settlement Option FAQ) 
+69. Does PRUWealth Enrich 2.0 offer the Legacy Settlement Option? 
+Yes. LSO is available for PRUWealth Enrich 2.0 policies with a Basic Sum Assured of RM1 million and 
+above. 
+ 
+70. 
+What is the Legacy Settlement Option (LSO)?  
+Legacy Settlement Option is a facility that gives you (as a Policyowner) the flexibility to structure how 
+(amount, timing, method) the benefit payout to nominees upon death of Life Assured, whether as a 
+lump sum, regular instalments (up to 35 years), or milestone-based payouts.  
+ 
+This option helps ensure your loved ones receive support in a way that aligns with your wishes, creating 
+a purpose-driven legacy and meaningful wealth distribution. 
+ 
+ 
+36 
+ 
+71. 
+Is there any cost to apply for LSO? 
+No, there is no additional cost to apply for the LSO. It is offered as a value-added facility to help you 
+plan a meaningful and structured legacy for your loved ones. 
+ 
+72. 
+When can the Policyowner apply for LSO? 
+You can apply for the LSO at the point of policy purchase or anytime during the policy term, as long 
+as the eligibility criteria are met. 
+ 
+This gives you flexibility to plan your legacy when it matters most. 
+ 
+73. 
+How does the Policyowner apply for LSO? 
+• 
+New Business Submission 
+Complete the Legacy Settlement Option section in the proposal form under PRUWay Plus (PWP). 
+ 
+ 
+• 
+Policy Servicing 
+Fill up and submit the “Trust and Nomination / Legacy Settlement Option Form”, will be available 
+on our corporate website and RAISe 
+Trust and Nomination / Legacy Settlement Option Form 
+ 
+74. 
+Can Policyowner make changes to the payout structure later? 
+Yes, Policyowner can revise or remove the payout structure after opting for LSO, provided the request 
+is made during the policy term and while the Life Assured Life Assured (also the Policyowner)  is still 
+alive, by submitting the “Trust and Nomination / Legacy Settlement Option Form”. 
+ 
+This ensures your legacy plan stays aligned with your evolving wishes. 
+PAYMENT TO NOMINEE(S) WHO IS COMPETENT TO CONTRACT:  
+75. What happens if the appointed trustee does not wish to manage the policy payout for an extended 
+period? 
+To address this situation, we offer the “Payment to Nominee(s) Who is Competent to Contract” option. 
+This allows policy moneys to be paid directly to a nominee once they become legally competent to 
+contract (for example, upon reaching age 18 and being of sound mind), instead of continuing under 
+Appointed Trustee’s management. 
+ 
+37 
+ 
+ 
+ 
+76. What does “competent to contract” mean?  
+As defined under the Financial Services Act 2013, a Nominee is competent to contract if he/she: 
+• 
+has attained age 18; and 
+• 
+is of sound mind at the time of payment. 
+ 
+77. What are the requirements for this payout option? 
+• 
+All Nominees are under age 18 at the point of nomination. 
+• 
+Trustee(s) is/are appointed. 
+• 
+Each Nominee’s relationship to the Policyowner is child. 
+ 
+78. Will policy moneys automatically be paid to a Nominee who becomes competent to contract? 
+No. The Trustee and/or Nominee must submit a request to Prudential, together with the Nominee’s 
+identity document (IC or passport) and a declaration confirming sound mind at the time of payment. 
+ 
+79. What if the Nominee does not inform Prudential? 
+Policy moneys will be paid to the Appointed Trustee(s). 
+The receipt of a trustee shall discharge the insurer from all liability for the policy moneys paid to the 
+trustee. 
+ 
+80. How can the Policyowner apply for this option? 
+New Business 
+Tick the “PAYMENT TO NOMINEE(S) WHO IS COMPETENT TO CONTRACT” option under E-Signature in 
+the proposal form and submit via PRUWay Plus (PWP). 
+ 
+Policy Servicing 
+Tick and submit the same option in the Trust and Nomination / Legacy Settlement Option Form (before 
+the Trustee signature section). Form will be available on the corporate website.. 
+ 
+ 
+38 
+ 
+ 
+ 
+81. Is consent from the Appointed Trustee(s) required? 
+Yes. Both the Appointed Trustee(s) and the Policyowner must agree to this payout option before 
+ticking consent. 
+ 
+82. Is LSO required to opt for this option (Payment to Nominee(s) Who is Competent to Contract)? 
+No. LSO is not compulsory for this option. The “Payment to Nominee(s) Who is Competent to Contract” 
+feature can be selected independently, even if the Policyowner does not opt for LSO. 
+ 
+ENDORSEMENT 
+ 
+83. What are the available endorsement transactions for PRUWealth Enrich 2.0? 
+i) 
+Change in Sum Assured for basic plan and riders (only allow for reduction of BSA for basic plan) 
+ii) 
+Change in rider attachment 
+iii) 
+Change of BUA Premium and Investment Premium  
+iv) 
+Change of Extension of Coverage Term Option 
+v) 
+Change of Life Assured/ Assured Details 
+vi) 
+Change in PRUSaver Kid payout age 
+ 
+kindly refer to the table summary below for more information 
+PRUWealth Enrich 2.0 
+Include 
+Cancel 
+Increase 
+Reduce 
+BSA 
+N/A 
+N/A 
+N/A 
+√ 
+Level SA Rider 
+√ 
+√ 
+N/A 
+√ 
+Total Multi Crisis Care 
+√ 
+√ 
+√ 
+√ 
+Crisis Care 
+√ 
+√ 
+√ 
+√ 
+Crisis Guard 
+√ 
+√ 
+√ 
+√ 
+Payor Basic* 
+√ 
+√ 
+√ 
+√ 
+Payor Saver* 
+√ 
+√ 
+√ 
+√ 
+Spouse Payor Basic* 
+√ 
+√ 
+√ 
+√ 
+Spouse Payor Saver* 
+√ 
+√ 
+√ 
+√ 
+Parent Payor Basic* 
+√ 
+√ 
+√ 
+√ 
+ 
+39 
+ 
+Parent Payor Saver* 
+√ 
+√ 
+√ 
+√ 
+2Parent Payor Basic* 
+√ 
+√ 
+√ 
+√ 
+2Parent Payor Saver* 
+√ 
+√ 
+√ 
+√ 
+PRUSaver 
+√ 
+√ 
+√ 
+√ 
+PRUSaver Kid 
+√ 
+√ 
+√ 
+√ 
+*if the endorsement transactions lead to any increase or decrease in BUA premium or Investment 
+Premium, payor sum assured will be changed automatically subject to underwriting.  
+ 
+84.  What are the endorsement rules that are applied?  
+Endorsement to include and increase benefits/rider is not available for policies with remaining 
+premium payment term less than 12 months. 
+ 
+85. When will the coverage for the endorsement takes effect?  
+Inclusion/Increase of coverages/ benefits  
+It takes effect immediately upon the endorsement issued. The increase in insurance charges and 
+premiums will start from the following monthly anniversary. 
+ 
+Cancellation/Reduction of coverages/ benefits 
+It takes effect on the following monthly anniversary from the date of endorsement issued. 
+ 
+86. Does the endorsement affect the sustainability years of the policy? 
+Yes, performing an endorsement might affect the target sustainability years of the policy. You may 
+refer to the Policy Alteration Sustainability Statement (upon endorsement quotation stage) or 
+endorsement slip (upon endorsement issuance) for the projected policy sustainability.  
+ 
+87. Am I still allowed to perform endorsement on my policy after I have made a claim on payor rider?             
+Endorsement transaction is only limited to the following transactions: 
+• 
+Change in PRUSaver (Inclusion/ Cancellation/ Increase/ Reduction). 
+• 
+Change in PRUSaver Kid payout age. 
+ 
+88. Can I have multiple Level SA Rider in my policy 
+Yes, multiple Level SA Rider with same/ different rider terms and rider Sum Assured is allowed.  
+ 
+89. Can I increase rider Sum Assured/ coverage term for existing Level SA Rider? 
+No, increase in rider Sum Assured and coverage term for the same Level SA Rider is NOT allowed. 
+However, customers can include a new tranche of Level SA Rider to their policy through endorsement.  
+For example: 
+ 
+ 
+Total coverage of Level SA Riders: 
+End of  
+Policy Year 
+Level SA Rider Coverage 
+1st Tranche 
+2nd Tranche 
+Total 
+At the end of Policy Year 2, customer submits an endorsement 
+request to include a new RM300k Level SA Rider for 10 years.  
+ 
+40 
+ 
+1 
+RM 100k 
+- 
+RM 100k 
+2 - 5 
+RM 100k 
+RM 300k 
+RM 400k 
+6 - 12 
+Expired 
+RM 300k 
+RM 300k 
+13 onwards 
+Expired 
+Expired 
+- 
+ 
+WITHDRAWAL 
+90. Can customers perform partial withdrawal from the unit accounts? 
+Yes. partial withdrawal is allowed. Partial withdrawal fees will be waived until e-transaction is 
+available. When e-transaction is available, manual request for partial withdrawal is subject to RM25. 
+This charge may be reviewed from time to time at our discretion.   
+ 
+91. What are the withdrawal rules of PRUWealth Enrich 2.0? 
+• 
+Minimum transaction for partial withdrawal is RM 1,000 per transaction. 
+• 
+After withdrawal, the policy must have a total value of units of RM 5,000 in BUA. 
+• 
+Complete withdrawal from BUA is not allowed unless in the event of full termination of policy.  
+ 
+92. Will partial withdrawal affect BSA? 
+• 
+Full / Partial withdrawal from IUA will NOT affect the BSA. 
+• 
+Partial withdrawal from BUA may REDUCE the BSA to maintain Sum at Risk of the policy.  
+• 
+If the partial withdrawal results in a reduction in BSA, premium will remain.  
+ 
+Scenario 1: 
+Full / Partial withdrawal from IUA will NOT affect the BSA since the cash value in IUA is not taken into 
+the calculation of Sum at Risk.  
+ 
+Example:  
+BSA = RM 1 mil 
+IUA cash value (before partial withdrawal) = RM 300k  
+BUA cash value (before partial withdrawal) = RM 800k   
+Partial withdrawal = RM 300k 
+ 
+ 
+Before Withdrawal 
+ 
+After Withdrawal 
+BSA 
+RM 1 mil 
+BSA 
+RM 1 mil 
+BUA cash value (CV) 
+RM 800k 
+BUA CV 
+RM 800k 
+IUA CV 
+RM 300k 
+Reduce IUA CV 
+0 
+SAR 
+(IUA 
+is 
+not 
+included) 
+Max (BSA-BUA,0) 
+RM 200k  
+SAR 
+remained 
+unchanged 
+RM 200k 
+ 
+BSA will not reduce if there is no withdrawal from BUA.  
+ 
+Scenario 2: 
+Partial withdrawal from BUA may REDUCE the BSA, as further explained below. This is to maintain Sum 
+at Risk of the policy.  
+ 
+ 
+41 
+ 
+When the cash value in the BUA is more than the BSA: 
+Policyholder may withdraw the difference between BUA cash value and BSA. By doing so, BSA will not 
+be reduced.  
+ 
+Example:  
+BSA = RM 1 mil 
+Cash value in BUA (before partial withdrawal) = RM 1.5 mil 
+Partial withdrawal = RM 500k 
+ 
+ 
+Before Withdrawal 
+ 
+After Withdrawal 
+BSA 
+RM 1 mil 
+Reduced BSA 
+RM 1 mil 
+BUA (CV) 
+RM 1.5 mil 
+Reduced 
+BUA Cash 
+Value 
+RM 1 mil 
+SAR 
+0 
+Always maintain SAR 
+(work backward to get 
+reduced BSA) 
+0 
+ 
+Cash value in BUA after withdrawal = RM 1.5 mil - RM 500k = RM 1 mil 
+BSA after withdrawal = RM 1 mil (no change) 
+ 
+Scenario 3: 
+When the cash value in BUA is more than the BSA: 
+If the withdrawal amount from BUA is more than the difference between the BUA cash value and BSA, 
+the BSA will be reduced by the amount withdrawn in the excess of the difference between BUA cash 
+value and BSA. 
+ 
+Example: 
+BSA= RM 1 mil 
+Cash value in BUA (before partial withdrawal) = RM 1.5 mil  
+Partial withdrawal = RM 800k 
+ 
+ 
+Before Withdrawal 
+ 
+After Withdrawal 
+Basic SA 
+RM 1 mil 
+Reduced BSA 
+RM 700k 
+BUA CV 
+RM 1.5mil 
+Reduced 
+BUA 
+Cash 
+Value 
+RM 700k 
+SAR 
+0 
+Always maintain SAR 
+0 
+ 
+Cash value in BUA after withdrawal = RM 1.5 mil - RM 800k = RM 700k 
+Difference between BUA and BSA = RM 1.5 mil – RM1 mil = RM500k  
+Partial withdrawal amount exceeding the difference = RM 800k – RM 500k = RM 300k  
+BSA after withdrawal = RM 1 mil – RM 300k = RM 700k  
+ 
+In other words, the first RM 500k can be withdrawn without affecting the BSA, and the balance of RM 
+300k will reduce the BSA by the same amount.  
+ 
+Scenario 4: 
+When the cash value in BUA is less than BSA: 
+Any partial withdrawal will reduce the BSA by the same amount.  
+ 
+Example:  
+ 
+42 
+ 
+BSA = RM 1 mil 
+Cash value in BUA = RM 500k  
+Partial withdrawal = RM 200k  
+ 
+ 
+Before Withdrawal 
+ 
+After Withdrawal 
+BSA 
+RM 1 mil 
+Reduced BSA 
+RM 800k 
+BUA CV 
+RM 500k 
+Reduced 
+BUA Cash 
+Value 
+RM 300k 
+SAR 
+RM 500k 
+Always maintain SAR 
+RM 500k 
+ 
+Cash value in BUA after withdrawal = RM 500k – RM 200k = RM 300k  
+BSA after withdrawal = RM1 mil – RM 200k = RM 800k 
+ 
+93. Will partial withdrawal impact other benefits? 
+Yes. Partial withdrawal from BUA can bring the following impacts to the policy: 
+• 
+No-Lapse Provision (NLP) will be revoked and reinstatement of the NLP is not allowed. 
+• 
+Reduction of BSA will affect the amount of Cover Booster, Loyalty Bonus and Loyalty Booster, 
+which is in line with the eligible tier that is varied by sum assured.  
+• 
+Discount on the insurance charges of the basic benefits, which the discount is in line with the 
+eligible tier that is varied by sum assured. 
+• 
+TPD and Accidental Death Benefit may be reduced. 
+• 
+Crisis Guard Sum Assured will be reduced accordingly. 
+• 
+Policy may lapse earlier than expected due to the reduction in cash value. 
+ 
+Any withdrawal from IUA will not affect the policy benefits but will impact the policy sustainability.  
+ 
+94. Will top-up help to restore the BSA after withdrawal? 
+No, BSA cannot be restored via top-up premium. Once a partial withdrawal is performed, the BSA is 
+permanently reduced. Customers are not allowed to perform endorsement to increase the BSA.  
+ 
+PREMIUM HOLIDAY 
+95. What happens when a customer stops paying premiums? 
+Customer may stop paying regular premium for as long as there is sufficient cash value in the policy 
+for all charges deduction. During premium holiday, No-Lapse Provision will be revoked, and this might 
+result in early policy lapsation.  
+ 
+LAPSE AND REVIVAL 
+96. When will the policy lapse? 
+The policy will not lapse if the No-Lapse Provision is still in force. Otherwise, the policy will lapse when 
+there is insufficient cash value in the policy accounts to cover for all charges. However, the policy, will 
+be automatically revived if premium is received within 7 days from the lapsed date. 
+ 
+97. What is No-Lapse Provision?  
+The policy is guaranteed to in force within the first 6 years (72 months) of the policy regardless of the 
+cash values in the policy, provided all premiums due are paid and no withdrawal from BUA is 
+performed.  
+ 
+ 
+43 
+ 
+Any unpaid charges during the period when No-Lapse Provision is in effect (“Outstanding Charges”) 
+are regarded as monies owing to us. We shall deduct the Outstanding Charges or part of the 
+Outstanding Charges: 
+i. by canceling units in the accounts at the unit price at the time of such cancellation when there are 
+available units in the policy; 
+ii. from any benefits or monies payable under the policy; 
+iii. from any surrender value payable under this policy; or 
+iv. from any amount payable as a result of redemption of units from the accounts of the policy. 
+ 
+98. Is there any terms & conditions applicable to No-Lapse Provision? 
+No-Lapse provision will be revoked if: 
+(a) Premium is not paid up to date; or 
+(b) Withdrawal has been made from the BUA. 
+Subsequently, the policy shall lapse if there are insufficient cash value to cover for charges. 
+ 
+No-Lapse Provision can only be reinstated upon application if the No-Lapse Provision is revoked due 
+to premium not paid up to date provided that : 
+(a) Customer has paid all premium due when policy is still in force  
+(b) Policy is revived and customer has paid all premium due if policy has already lapsed.  
+ 
+99. What will happen after No-Lapse Provision period?  
+If the total cash value in BUA and IUA (if any) falls below zero after the 6th policy years (or the 73rd 
+month and onwards), the policy will lapse. 
+ 
+100. How can a lapsed policy be revived? 
+At any time no later than 3 years after the policy lapses, we may reinstate the policy subject to 
+satisfactory evidence of health free of expense to us, and the payment of at least 3 months premium 
+with a revival application form. We also require customers to pay any amount owed to us at the time 
+the benefit concerned has lapsed. 
+ 
+Please refer to table below for better clarity. 
+ 
+Payment mode 
+Premiums required to revive 
+Monthly 
+3 x monthly premium 
+Quarterly 
+1 x quarterly premium 
+Half-yearly 
+1 x half-yearly premium 
+ 
+The Life Assured must not have attained the ANB 80 at the time of the revival. Insurance charges due 
+during the lapse period will be back-charged upon revival. 
+ 
+The company reserves the right to back-charged the insurance charges owed to the company when 
+deemed necessary. 
+ 
+ 
+44 
+ 
+OPTIONAL BENEFITS 
+LEVEL SA RIDER 
+101. What is Level SA Rider?  
+Level SA Rider is an optional unit deducting rider that is designed to provide a defined term additional 
+lump sum benefit upon death of the Life Assured before the expiry of the rider. It will not accelerate 
+the BSA. This rider doesn’t cover TPD and Accidental Death Benefit (ADB). 
+ 
+ 
+102. What is the benefit term for Level SA Rider?  
+Customer can choose to have additional death benefit coverage for 5,10,20 or 30 years. The rider term 
+cannot be longer than the policy term. 
+ 
+103. Will premium and COI be reduced when Level SA Rider expired?  
+Premium will remain unchanged and no COI will be charged for Level SA Rider after the rider expires. 
+TOTAL MULTI CRISIS CARE 
+104. What is Total Multi Crisis Care?  
+Total Multi Crisis Care is a comprehensive critical illness rider. It allows multiple claims on covered 
+early stage critical illness (consist of early stage and intermediate stage) to late stage critical illnesses 
+for up to 400% of the rider Sum Assured. 
+ 
+ 
+105. What is the rider term for Total Multi Crisis Care?  
+Rider term of Total Multi Crisis Care will follow the policy term. 
+ 
+106. Is Total Multi Crisis Care available for all payment options under PRUWealth Enrich 2.0?  
+No. Total Multi Crisis Care is only available for 10-pay, 20-pay, and full-pay options. It is not available 
+for 5-pay. 
+ 
+107. Why is Total Multi Crisis Care not available for 5-pay? 
+• 
+Premium Consideration: Attaching Total Multi Crisis Care with 5-pay structure would make 
+premiums significantly higher. 
+• 
+Risk Management: Early critical illness coverage carries higher risk. Limiting to longer premium 
+payment terms helps prevent situations where additional premiums might need to be charged 
+after the 5-year payment term ends. 
+• 
+Customer experience: Avoids unexpected premium adjustments after the 5-year term, which 
+could lead to dissatisfaction or lapses. 
+ 
+108. What are the benefits does Total Multi Crisis Care offer?  
+Early Critical Illness Coverage 
+Early detection and diagnosis of critical illnesses improve the chances of successful treatment. Total 
+Multi Crisis Care provides coverage on 101 early critical illness conditions (covers both early stage & 
+intermediate stage) that pays 50% of the rider Sum Assured upon diagnosis of the covered condition. 
+ 
+Critical Illness Coverage 
+When someone is diagnosed with a life-threatening illness, the financial needs are greater than just 
+the usual treatment cost. 100% of the rider Sum Assured will be payable upon diagnosis of the covered 
+late stage critical illness. 
+ 
+45 
+ 
+ 
+Multiple Claims up to 400% of the Rider Sum Assured 
+Multiple claims are allowed on different stages (if applicable to the rider) of the critical illness category 
+with maximum of 100% of the rider Sum Assured for each critical illness category except for Cancer, 
+Heart Attack, and Stroke which can be claimed twice. Maximum of 4 early critical illness claims are 
+allowed subject to RM350,000 per claim limit. 
+ 
+Re-diagnosis of Cancer, Heart Attack and Stroke Coverage 
+Cancer, Heart Attack and Stroke are the most prevalent critical illnesses in Malaysia. The rider also 
+pays benefit when one is diagnosed with subsequent Cancer, Heart Attack and Stroke before age 85, 
+when it is unrelated to the first diagnosis. This means that rider covers up to 200% of the rider Sum 
+Assured for critical illness category of Cancer, Heart Attack and Stroke. 
+ 
+Additional Coverage for Special Benefit 
+20% of the rider Sum Assured is payable upon diagnosis of any one of the covered Diabetic Related 
+Conditions and Joint Related Conditions. This Special Benefit is payable once and will not reduce the 
+rider Sum Assured. 
+ 
+For more details on Total Multi Crisis Care, please refer to the separate FAQ for Total Multi Crisis Care. 
+CRITICAL CARE PLUS [UPDATED 07 APRIL 2026] 
+109. What is Critical Care Plus?  
+Critical Care Plus is an additional critical illness unit deducting rider. It provides coverage for 80 critical 
+illnesses with other benefits including ICU Shield Benefit, Reconstructive Care Benefit, Wellness Bonus, 
+Assurance Upgrade Privilege and value added service. 100% of the rider sum assured will be payable 
+upon diagnosis of the covered critical illness conditions. it also pays 10% of the rider sum assured 
+subject to a maximum of RM 25,000 for claims on angioplasty prior to a major critical illness claim. For 
+Full-Blown AIDS, 50% of the rider sum assured is payable. Please refer to appendix for the conditions 
+covered for respective riders. 
+ 
+Assurance Upgrade Privilege 
+ 
+Upon the occurrence of a Life Milestone Event, policyholders are allowed to increase the rider sum 
+assured within 180 days from the date of the Life Milestone Event of the Life Assured, without further 
+underwriting. This privilege may be exercised once per policy during the first 10 rider years, before 
+ANB 50, up to 50% of the rider sum assured, capped at RM300,000 per life. 
+Life Milestone events:  
+- 
+Child Birth 
+- 
+Mariage 
+- 
+Doubling of Income 
+- 
+Buying a Property valued at RM500,000 and above 
+- 
+Child’s Enrolment in Primary, Secondary, or tertiary Education 
+ 
+Other Benefits 
+i. 
+ICU Shield Benefit: 10% of rider sum assured is payable if Life Assured is admitted into ICU for 3 
+days continuously in one hospital admission, and requires at least one of the listed Essential Life 
+Support. This benefit is capped at RM 250,000 per life, payable once and will not reduce rider sum 
+assured. Please refer to Appendix: Essential Life Support.  
+ 
+ 
+46 
+ 
+This benefit applies to admission in hospitals in Malaysia only (including Singapore and Brunei). For 
+Overseas hospitalisation, this benefit will only be payable if the Life Assured remains outside of 
+Malaysia for less than ninety (90) days on each trip. 
+ii. 
+Reconstructive Care Benefit: 20% of the rider sum assured is payable if Life Assured undergoes: 
+a. 
+Breast reconstructive surgery following a Mastectomy; 
+b. 
+Facial reconstructive surgery due to cancer; or 
+c. 
+Skin grafting due to third degree burn or skin cancer. 
+The surgery must be Medically Necessary. This benefit is capped at RM 100,000 per life, payable 
+once and will not reduce rider sum assured. 
+iii. Wellness Bonus 
+This benefit is applicable for Life Assured with entry age ANB 50 and below only. If there is no 
+claim for Critical Care Plus and policy remain in force upon policy anniversary of Life Assured’s 
+ANB 75, 20% of the rider sum assured is payable and shall be credited into BUA at the unit price 
+on the next pricing date. 
+ 
+Value-Added Service 
+This is applicable for Critical Care Plus/ Total Multi Crisis Care with rider sum assured equal to or more 
+than RM 250,000 only. 
+i. 
+Homecare Program 
+Services including Caregiving, Medical Escort, Home Assessment and Caregiver training are 
+provided by third party service provider.  
+ii. 
+Case Management 
+Expert Medical Opinion, Medical Concierge, Monitoring, On-going support upon diagnosis and 
+recovery of critical illnesses will be provided by third party service provider, Teladoc Health.  
+ 
+The value-added service are non-contractual benefits and subject to change. Please refer to the 
+corporate website of PAMB for the eligible plan(s) and their details, information relating to the Service 
+Provider and the types of services provided, as well as the Frequently Asked Questions and terms and 
+conditions governing the Homecare Program and Case Management. 
+110. What is the rider term for Critical Care Plus?  
+Rider term of Critical Care Plus will follow the policy term. 
+ 
+111. If TPD occurred and claimed before the diagnosis of critical illness, will the Critical Care Plus rider 
+benefit still be payable? 
+Yes. Critical Care Plus rider will only be terminated upon full payment of 100% of the rider sum assured 
+or termination of the policy. 
+ 
+CRITICAL CARE [UPDATED 07 APRIL 2026] 
+112. What is Critical Care? 
+Critical Care (CC) is an accelerated critical illness unit deducting rider. It provides coverage for up to  
+80 critical illnesses. 100% of the rider sum assured will be payable upon diagnosis of the covered critical 
+illness conditions. It also pays 10% of the rider sum assured subject to a maximum of RM 25,000 for 
+claims on angioplasty prior to a major critical illness claim. For Full-Blown AIDS, 50% of the rider sum 
+assured is payable. Please refer to appendix for the conditions covered for respective riders.  
+ 
+113. How does Critical Care work?  
+The Sum at Risk of Critical Care is referring to the Aggregated Amount of Benefit Critical Care. The 
+Aggregated Amount of Benefit of Critical Care is calculated as the lower amount of the:  
+ 
+ 
+47 
+ 
+a) Critical Care Sum Assured less any Crisis Guard benefit payable due to prior approval of claim under 
+Critical Care; or 
+ 
+b) Proportioned Critical Care Sum Assured, which the Proportioned Critical Care Sum Assured is 
+determined in the following manner: 
+ 
+Proportioned 
+Critical 
+Care Sum Assured 
+= 
+Critical Care Sum Assured 
+X 
+Death Sum Assured 
+Initial Death Sum Assured 
+ 
+Example: 
+BSA: RM 2 mil 
+Critical Care Sum Assured: RM 500,000. 
+TPD coverage: limit to RM 1 mil due to underwriting decision.  
+Customer suffers from TPD from a serious accident a month ago and makes a claim on his PRUWealth 
+Enrich 2.0 insurance policy. How much is the BSA and Critical Care SA after the TPD claim?  
+ 
+TPD claim = RM 1 mil 
+Remaining BSA = RM 2 mil - RM 1 mil = RM 1 mil  
+ 
+Assuming there’s no Critical Care benefit payable due to prior claim, 
+Critical Care Sum Assured payable will be RM 250,000 based on calculation below : 
+ 
+The lower amount of :  
+a) Critical Care Sum Assured = RM 500,000  
+b) Proportioned Critical Care Sum Assured = (RM 500,000 / RM 2 mil) X RM 1 mil 
+                                                                             = RM 250,000  
+ 
+114. What is the rider term for Critical Care?  
+The rider term of Critical Care will follow the policy term.  
+ 
+115. Will Critical Care fully accelerate the BSA of PRUWealth Enrich 2.0? 
+It depends.  
+• 
+If the Critical Care Sum Assured is equal to the BSA, the BSA will be fully accelerated.  
+• 
+If the Critical Care Sum Assured is lower than the BSA, the BSA will be accelerated partially by the 
+Aggregated Amount of Benefit of Crisis Guard.  
+ 
+116. What will happen to the policy once Critical Care claim is made? 
+Critical Care will terminate if the rider sum assured amount is fully paid out. If BSA is fully accelerated 
+and there is no rider attached to the policy, the policy will be terminated. Any remaining BUA and IUA 
+(if any) will be paid back to the customer.  
+ 
+Otherwise, the policy will remain in force.  
+ 
+117. Do customers need to continue paying premium for the remaining BSA? 
+Yes. premium will remain unchanged unless customers perform endorsement to reduce the premium.  
+ 
+ 
+48 
+ 
+ESSENTIAL CANCER CARE [UPDATED 07 APRIL 2026] 
+118. What is Essential Cancer Care? 
+Essential Cancer Care is an additional critical illness unit deducting rider. It provides coverage for 
+Cancer and Cerebral Metastasis. 
+ 
+For more information, please refer to the Critical Care Plus, Critical Care and Essential Cancer Care FAQ. 
+ 
+PAYOR RIDERS 
+ 
+119. What benefit is covered under Payor Basic and Payor Saver? 
+If the Life Assured suffers from TPD before the policy anniversary of ANB 71, or is diagnosed with any 
+one of the 42 covered critical illness, Payor Basic shall pay the Insurance Premium and PRUAllocator 
+Premium, whereas Payor Saver pays the premium for PRUSaver/ PRUSaver Kid for the remaining 
+premium payment term.  
+ 
+120. What benefit is covered under Spouse Payor Basic and Spouse Payor Saver? 
+If the spouse suffers from TPD before the policy anniversary of ANB 71, diagnosed with any one of the 
+42 covered critical illness or dies, Spouse Payor Basic shall pay the Insurance Premium and 
+PRUAllocator Premium, whereas Spouse Payor Saver pays the premium for PRUSaver for the 
+remaining premium payment term, until the policy anniversary of Life Assured's ANB 101 or spouse 
+ANB 101, whichever is earlier. 
+ 
+121. What benefit is covered under Parent Payor Basic and Parent Payor Saver? 
+If the covered parent suffers from TPD before the policy anniversary of ANB 71, diagnosed with any 
+one of the 42 covered critical illness or dies, Parent Payor Basic shall pay the Insurance Premium and 
+PRUAllocator Premium, whereas Parent Payor Saver pays the premium for PRUSaver/ PRUSaver Kid 
+for the remaining premium payment term or until the policy anniversary when the Life Assured 
+attained ANB 25, whichever is earlier. 
+ 
+122. What benefit is covered under 2Parent Payor Basic and 2Parent Payor Saver? 
+If any of the parents suffers from TPD before the policy anniversary of age 71 next birthday or expiry of 
+the policy (whichever is earlier), or is diagnosed with any one of the 42 covered critical illness or dies, 
+2Parent Payor Basic shall pay the Insurance Premium and PRUAllocator Premium, whereas 2Parent 
+Payor Saver pays the premium for PRUSaver/ PRUSaver Kid for the remaining premium payment term 
+or until the policy anniversary when the Life Assured attained age 25 next birthday. If both parents are 
+suffering from any of the abovementioned unfortunate events, the annual benefit will be doubled.  
+ 
+123. Can Parent Payor riders purchase together with 2Parent Payor riders under the same policy? 
+No. Parent Payor riders and 2Parent Payor riders cannot coexist under the same policy. 
+124. Will the benefit for payor rider(s) continue after the death of Life Assured? 
+No, the benefits for payor rider(s) will cease as the policy will be terminated upon death of the Life 
+Assured. 
+ 
+Note: To ensure continuous coverage up to the Policy Anniversary of the Life Assured's ANB 101, 
+additional premium may be required even after premium of the policy is paid by payor riders. This is 
+to ensure the policy having sufficient cash value for all charges. 
+ 
+49 
+ 
+125. When more than 1 type of payor rider is purchased under the same policy, is multiple claims 
+allowed? 
+Yes. Please refer to the example below to better understand how multiple claims work. 
+ 
+Life Assured (Child): Age 5 
+Father: Age 40 
+ (Payor Basic and Parent Payor Basic riders are attached to the policy) 
+ 
+Scenario: 
+▪ Father passed away in policy year 2 (age 42). 
+▪ Child diagnosed with critical illness in policy year 5 (age 10). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INSURANCE CHARGES 
+ 
+126. How will the insurance charges be deducted? 
+Insurance charges for basic plan and riders will be deducted from BUA. When BUA does not have 
+sufficient cash value for charges, the cash value in IUA will be utilized only when No-Lapse Provision is 
+NOT in effect. 
+ 
+127. Are the insurance charges guaranteed?  
+Insurance charges for basic plan and riders are NOT guaranteed. We reserve the right to revise the 
+non-guaranteed insurance charges from time to time by giving customers written notice. In the event 
+of increase in the non-guaranteed insurance charges, policyholder may need to increase the premium 
+to ensure the policy sustainability.  
+ 
+128. What are the insurance charges that will be deducted? 
+Insurance charges for basic plan and riders are calculated based on Sum at Risk (SAR).  
+Death SAR = max (BSA – BUA cash value, 0) 
+TPD SAR = (TPD SA/ BSA) x Death SAR 
+Accidental Death SAR = Accidental Death SA 
+Rider SAR = Amount of Benefit for respective rider 
+ 
+COMMISSION 
+ 
+Charge COI 
+Y 5 
+Y 8 
+Y 10 
+Stop when 
+the child is 
+age 25 
+Y 1 
+Y 2 
+Y 3 
+(Age 41) 
+(Age 42) (Age 43) (Age 45) 
+(Age 10) 
+(Age 25) 
+Payor Basic pays Insurance Premium and  
+PRUAllocator Premium (if any) 
+Premium Allocation: 100% regardless of policy year 
+Y 20 
+Parent Payor Basic pays Insurance Premium and  
+PRUAllocator Premium (if any) 
+Premium Allocation: % follow policy year 
+ 
+50 
+ 
+129. What is the total commission for PRUWealth Enrich 2.0? 
+• 
+For Balanced Scorecard agents, kindly refer to the commission table (Schedule A: Table 5D) as per 
+the Agency Instruction No. I2018-01 dated 17 Jan 2018.  
+• 
+For Non-Balanced Scorecard agents, kindly refer to the commission table as per your respective 
+agency agreements (Schedule A: Table 5D) 
+• 
+Premiums paid for PRUSaver, PRUSaver Kid and single premium top up is not subjected to BSC 
+and will be entitled for 3.00% on basic commission and 0.75% on overriding commission. 
+ 
+Agency Development Incentive (ADI), High Production Fringe Benefit (HPFB), Retirement Gratuity 
+Benefit (RGB) and Persistency Bonus (for Non-Balanced Scorecard agents) are also provided. 
+Note: Balanced Scorecard Agents - agents with tenure from 3rd calendar years onwards 
+ 
+UNDERWRITING 
+130. What is the Non-Medical Limit (NML) for PRUWealth Enrich 2.0? 
+NML table  
+TRSA (RM) 
+Age Next Birthday (ANB) at entry 
+1 - 15 
+16 - 18 
+19 - 50 
+51 - 60 
+61 - 70 
+300,000 - 600,000 
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+61 - 70 
+600,001 – 1,000,000   
+  
+ 
+ 
+ME, URINE, RECG, 
+PRULP, PRUDM 
+1 - 15 
+  
+NML 
+ 
+1,000,001 - 2,000,000 
+ 
+**PAED/Child 
+ME 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+16 - 18 
+ 
+2,000,001 - 2,500,000 
+ME, URINE, 
+PRUMSA, PRULP, 
+PRUDM  
+ 
+ 
+ 
+ 
+2,500,001 - 3,000,000 
+ 
+ME, URINE, 
+PRULAP 
+ 
+ 
+ 
+51-60 
+3,000,001 - 4,000,000 
+ 
+ 
+ 
+ 
+19-50 
+ME, URINE, SECG, PRULAP, USG 
+Ab_Pelvis*, PSA* 
+> 4,000,000 
+N/A 
+ 
+**Paed Report for child below attained 3 months old. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Key 
+ 
+ME 
+Medical Examination 
+URINE 
+Urine FEME 
+SECG 
+Stress ECG 
+PRULP 
+Prudential's Lipid Profile 
+PRULAP 
+Prudential's Large Amount Profile 
+PRUDM 
+Prudential's Diabetes Mellitus 
+PRUMSA 
+Prudential's Moderate Sum Assured 
+ 
+51 
+ 
+131. What is the Non-Medical Limit (NML) for Total Multi Crisis Care? 
+The TRSA of Total Multi Crisis Care (TMCC) is calculated as 1.5x sum assured of the rider. 
+(Same treatment as Multi Crisis Care and Total Multi Crisis Care in PRUWith You Plus) 
+ 
+Adult 
+ 
+ 
+Juvenile 
+ 
+132. What is the non-financial limit (NFL) for PRUWealth Enrich 2.0? 
+NFL table 
+TSAR (RM) 
+Segmented Underwriting (Mass Segment - by All Agents / Customers) 
+Personal Cover 
+Business Cover 
+0 - 1,500,000 
+N/A 
+II or documented proof of II 
+1,500,001 - 4,000,000 
+Financial Questionnaire, Business Cover 
+4,000,001 - 5,000,000 
+Financial Questionnaire, Business Cover, 
+Audited RA 
+ 
+52 
+ 
+5,000,001 - 7,000,000 
+Financial Questionnaire, Personal Cover 
+7,000,001 and above 
+Financial Questionnaire, Personal Cover 
+Include proof on income 
+(eg: income tax statement for current 
+and previous 2 years and/or Audited RA) 
+133. What is the non-financial limit (NFL) for non-income group (i.e. juvenile, housewife, and etc.) in 
+PRUWealth Enrich 2.0? 
+NFL for non-income group is up to RM 750k.  
+ 
+For juvenile Life Assured, parent and LA siblings’ coverage will not be queried in coverage offering if 
+the TSAR does not exceed RM750k. Otherwise, parent and LA sibling’s coverage will be considered as 
+part of the underwriting assessment. 
+ 
+For housewife, spouse’s coverage will not be queried in coverage offering if the TSAR does not exceed 
+RM750k. Otherwise, spouse’s coverage will be considered as part of the underwriting assessment. 
+ 
+Note: 
+Other financial underwriting assessments are still required as usual, such as checks on 
+• 
+Other aspects of financial assessment, e.g. Premium to Assured’s Income Ratio 
+• 
+Anti-money laundering assessment 
+ 
+NOTE: Company reserves the right to call for financial information as and when deemed necessary. Sum 
+assured eligibility will still be dependent on customer’s income / financial situation. 
+ 
+ 
+134. What are the minimum and maximum coverage allowed for basic plan and optional riders? 
+Benefit Name 
+Entry Age 
+Coverage Term 
+Size of Benefits 
+PRUWealth Enrich 2.0 
+(basic plan) 
+Min: 14 days old 
+Max: ANB 70 
+ 
+• Death: Up to ANB 101 or 
+policy 
+expiry 
+date 
+(whichever is earlier) 
+• TPD, ADB: Up to ANB 71 
+or policy expiry date 
+(whichever is earlier) 
+ 
+Juvenile (up to age 18) 
+• Min: RM 300,000 
+• Max: RM 4mil 
+ 
+Adult (19 and above) 
+• Min: RM300,000 
+• Max: 
+Subject 
+to 
+underwriting 
+ 
+Underwriting Note: 
+For Juvenile, max limit of 
+RM 4mil is the aggregated 
+Death coverage per life.  
+ 
+ 
+53 
+ 
+Level SA Rider 
+Min: 14 days old 
+Max: ANB 70 
+ 
+5, 10, 20, or 30 years. 
+Rider’s term cannot be 
+longer than policy term 
+Juvenile (up to age 18) 
+• Min: RM 100,000 
+• Max: BSA + Level SA 
+Rider is capped at RM 
+4mil 
+ 
+Adult (19 and above) 
+• Min: RM100,000 
+• Max: 
+Subject 
+to 
+underwriting 
+Total Multi Crisis Care 
+ 
+Min: 14 days old 
+Max: ANB 70 
+ 
+Up to ANB 101 or policy 
+expiry date (whichever 
+earlier) 
+• Min: RM 10,000 
+• Max: RM 2,000,000 or 
+maximum CI coverage 
+allowed 
+ 
+TSAR: Total Sum at Risk per 
+life for 1.5x Total Multi 
+Crisi Care, Crisis Care and 
+Crisis Guard is limited to: 
+Juvenile & Adult: RM 4 mil  
+Critical Care Plus 
+ 
+Min: 14 days old 
+Max: ANB 70 
+ 
+Up to ANB 101 or policy 
+expiry date (whichever 
+earlier) 
+• Min: RM 10,000 
+• Max: 
+Subject 
+to 
+Underwriting 
+ 
+ 
+Critical Care 
+Min: 14 days old 
+Max: ANB 70 
+ 
+Up to ANB 101 or policy 
+expiry date (whichever 
+earlier) 
+• Min: RM10,000 
+• Max: 
+Subject 
+to 
+Underwriting 
+Essential Cancer Care 
+Min: 14 days old 
+Max: ANB 70 
+Up to ANB 101 or policy 
+expiry date (whichever 
+earlier) 
+• Min: RM50,000 
+• Max: 
+Subject 
+to 
+Underwriting 
+Payor Basic  
+Min: 14 days old 
+Max: ANB 70 
+ 
+Until the end of the 
+premium payment term 
+Annual benefit is equal to 
+the total BUA premium 
+Payor Saver 
+Min: 14 days old 
+Max: ANB 70 
+ 
+Until the end of the 
+premium payment term 
+Equal to the Investment 
+premium 
+Spouse Payor Basic 
+Min: ANB 19 
+Max: ANB 70 
+ 
+Until the end of premium 
+payment 
+term, 
+policy 
+anniversary 
+of 
+Life 
+Assured’s ANB 101 or 
+spouse 
+ANB 
+101, 
+whichever is earlier 
+Annual benefit is equal to 
+the total BUA premium 
+Spouse Payor Saver 
+Min: ANB 19 
+Max: ANB 70 
+ 
+Until the end of premium 
+payment 
+term, 
+policy 
+anniversary 
+of 
+Life 
+Assured’s ANB 101 or 
+Equal to the Investment 
+premium 
+ 
+54 
+ 
+spouse 
+ANB 
+101, 
+whichever is earlier 
+Parent Payor Basic 
+Min: ANB 19 
+Max: ANB 70 
+ 
+Until the end of premium 
+payment term or the child 
+aged 25, whichever is 
+earlier 
+Annual benefit is equal to 
+the total BUA premium 
+Parent Payor Saver 
+Min:  ANB 19 
+Max: ANB 70 
+ 
+Until the end of premium 
+payment term or the child 
+aged 25, whichever is 
+earlier 
+Equal to the Investment 
+premium 
+2Parent Payor Basic 
+Min:  ANB 19 
+Max: ANB 70 
+ 
+Until the end of premium 
+payment term or the child 
+aged 25, whichever is 
+earlier 
+Annual benefit is equal to 
+the total BUA premium 
+2Parent Payor Saver 
+Min:  ANB 19 
+Max: ANB 70 
+ 
+Until the end of premium 
+payment term or the child 
+aged 25, whichever is 
+earlier 
+Equal to the Investment 
+premium 
+PRUSaver 
+Min: 14 days old 
+Max: ANB 70 
+ 
+Premium Payment Term 
+ 
+Min: RM 120 p.a. 
+Max: Subject to max of 5 
+times Insurance Premium 
+PRUSaver Kid 
+• Min: 14 days old 
+• Max: ANB 18 
+ 
+Opt from ANB 18 until ANB 
+25 or Premium Payment 
+Term (whichever earlier) 
+(It will be converted to 
+PRUSaver thereafter) 
+Min: RM 120 p.a. 
+Max: Subject to max of 5 
+times Insurance Premium 
+ 
+ 

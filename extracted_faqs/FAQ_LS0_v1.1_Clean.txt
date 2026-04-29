@@ -1,0 +1,746 @@
+ 
+1 
+ 
+LEGACY SETTLEMENT OPTION   
+V1.1: updated as of 1 Feb 2026 
+ 
+Contents 
+OVERVIEW OF LEGACY SETTLEMENT OPTION (LSO) 
+3 
+1. 
+What is the Legacy Settlement Option (LSO)? 
+3 
+2. 
+What are the options available under LSO? 
+3 
+3. 
+Which Prudential products are eligible for the LSO? 
+3 
+4. 
+What are the eligibility criteria to apply for LSO? 
+4 
+5. 
+What is the minimum setting for the Payout Options under LSO 
+4 
+6. 
+When can the Policyowner apply for LSO? 
+4 
+7. 
+How does the Policyowner apply for LSO? 
+4 
+8. 
+Can Policyowner make changes to the payout structure later? 
+4 
+9. 
+Can Nominee(s) make changes to the payout structure later? 
+4 
+10. Is trustee consent required for changes to the Legacy Settlement Option (LSO) arrangement? 
+5 
+11. What happens if the policy moneysi payable at the point of death claim vary (higher or lower) 
+from the original amount approved under LSO? 
+5 
+12. Is there any cost to apply for LSO? 
+6 
+13. How will Nominee(s) be notified about the arrangement made by the Policyowner through LSO? 6 
+14. What would cause the Payout Options under LSO be void from the date of approval of the 
+application? 
+6 
+15. What happens if the Nominee passes away? 
+7 
+16. What happens if the Trustee passes away? 
+8 
+17. What would cause the Payout Options under LSO be void from the date of approval of the 
+application? 
+8 
+STRUCTURED INSTALMENT PAYOUT: 
+9 
+18. What instalment Payout Frequency are available? 
+9 
+19. What is the duration for instalment payouts? 
+9 
+20. Can the Policyowner set different Payout Frequency and/or Payout Terms for different 
+Nominees? 
+9 
+21. What is the minimum instalment payout amount? 
+9 
+22. Can the Policyholder update the Structured Instalment Payout (e.g. change instalment amount or 
+Payout Term)? 
+9 
+23. Can the Nominee update the Structured Instalment Payout (e.g. change instalment amount or 
+Payout Term)? 
+9 
+24. How will the Policyowner and Agent/ Bank Representative be notified after an update request is 
+approved? 
+9 
+25. Can the Policyowner leave a customised message for Nominee(s) with instalment payout? 
+9 
+26. How can the Nominee claim for the instalment payout? 
+10 
+27. How will Nominee(s) be notified about the instalment amount set by the Policyowner? 
+10 
+28. What happens if the policy moneys payable upon death are higher than the original amount 
+approved under LSO? 
+10 
+29. What happens if the policy moneys payable upon death are lower than the original amount 
+approved under LSO? 
+10 
+ 
+2 
+ 
+MILESTONE-BASED PAYOUT: 
+10 
+30. How many life event can Policyowner set? 
+10 
+31. What life events can be selected? 
+10 
+32. What is “Golden Card” as mentioned in Q31? 
+10 
+33. How can the Nominee claim for a life event? 
+10 
+34. What is the duration for Nominee to complete the Life Event(s)? 
+11 
+35. Can the Payout Term be different from the Structured Instalment Payout’s? 
+11 
+36. Can the Policyowner update (change, remove, add) life events later? 
+11 
+37. Can the Nominee update (change, remove, add) life events later? 
+11 
+38. How will the Policyowner and Agent/ Bank Representative be notified after an update request is 
+approved? 
+11 
+39. Can the Policyowner leave a customised message for Nominee(s) upon achieving a Life Event? 11 
+40. How the customised message sent to Nominee(s) 
+11 
+41. How will Nominee(s) be notified about the Life Events set by the Policyowner? 
+11 
+42. What happens if the policy moneys payable upon death vary (higher or lower) from the original 
+amount approved under LSO? 
+11 
+43. What if the Nominee achieved a Life Event prior to the Policyowner passes away? 
+12 
+44. What if the Nominee is unable to achieve the Life Event(s) set by the Policyowner? 
+12 
+NON-GUARANTEED INTEREST: 
+12 
+45. What is the non‑guaranteed interest under LSO? 
+12 
+46. When does the Non‑Guaranteed Interest start to apply? 
+12 
+47. Is interest applied to the remaining (unpaid) policy moneys? 
+12 
+48. What is the interest rate? 
+12 
+49. Is the interest rate guaranteed? 
+12 
+50. On what basis will the interest rate change? 
+12 
+51. Where can customers check the applicable or historical interest rates? 
+12 
+52. How and when will the interest accrued be payable? 
+12 
+53. Will the non‑guaranteed interest be illustrated in the Product Illustration and Product Disclosure 
+Sheet (PIPDS)? 
+13 
+PAYMENT TO NOMINEE(S) WHO IS COMPETENT TO CONTRACT: 
+13 
+54. What happens if the appointed trustee does not wish to manage the policy payout for an 
+extended period? 
+13 
+55. What does “competent to contract” mean? 
+13 
+56. What are the requirements for this payout option? 
+13 
+57. Will policy moneys automatically be paid to a Nominee who becomes competent to contract? 13 
+58. What if the Nominee does not inform Prudential? 
+13 
+59. How can the Policyowner apply for this option? 
+14 
+60. Is consent from the Appointed Trustee(s) required? 
+14 
+61. Is LSO required to opt for this option (Payment to Nominee(s) Who is Competent to Contract)? 14 
+ 
+ 
+ 
+ 
+ 
+ 
+3 
+ 
+OVERVIEW OF LEGACY SETTLEMENT OPTION (LSO) 
+ 
+1. What is the Legacy Settlement Option (LSO)?  
+Legacy Settlement Option is a facility that gives you (as a Policyowner) the flexibility to structure how 
+(amount, timing, method) the benefit payout to nominees upon death of Life Assured, whether as a 
+lump sum, regular instalments (up to 35 years), or milestone-based payouts.  
+ 
+This option helps ensure your loved ones receive support in a way that aligns with your wishes, creating 
+a purpose-driven legacy and meaningful wealth distribution. 
+ 
+2. What are the options available under LSO? 
+The Policyowner (also knowns as the Assured) can customise the death benefit payout with the options 
+below:  
+Payout Options 
+Description 
+Immediate Lum 
+Sum Payout 
+Upon death of the Life Assured (also the Policyowner), the moneys payable 
+under this Policy will be payable in a lump sum to the nominee(s) in the 
+respective proportions based on the nomination made by the Policyowner. 
+Structured 
+Instalment 
+Payout 
+Upon death of the Life Assured (also the Policyowner), the moneys payable 
+under this Policy will be payable to the nominee(s) in the respective 
+proportions based on the nomination made by the Assured/Policyowner, in 
+monthly or yearly instalments, ranging from a minimum of 5 years to a 
+maximum of 35 years.  
+Milestone-
+based Payout 
+Upon death of the Life Assured, the moneys payable under this Policy will 
+be payable to the nominee(s) in the respective proportions based on the 
+nomination made by the Policyowner, when the nominee(s) completes the 
+life event(s) as determined by the Policyowner. 
+ 
+Policyowner may choose up to three (3) life events out of the life events 
+for each nominee as may be set by PAMB in the application form. 
+• 
+Life events:  
+1. University/College Graduation 
+2. Marriage 
+3. Attained a designated age (can select up to 3 times) 
+4. Having a child (can select up to 3 times) 
+5. Owned a property 
+6. Started a business 
+7. Golden Card 
+• 
+Payout term:  
+Min: 5 years; Max: 35 years (same as Structured Instalment Payout’s) 
+Notes:  
+• 
+The Policyowner may select any one (1) or a combination of two (2) to three (3) of the Payout 
+Options.  
+• 
+Regardless of the selection of the Payout Options, the combined total of the selected Payout 
+Options shall be equivalent to 100 percent (%). 
+ 
+3. Which Prudential products are eligible for the LSO? 
+Currently, the LSO is available for: 
+ 
+4 
+ 
+• 
+Agency: PRUWealth Enrich 2.0 
+• 
+SCB: PRUSignature Prestige. 
+ 
+4. What are the eligibility criteria to apply for LSO? 
+To apply for the LSO, these conditions must be met: 
+• 
+The policy must be first-party policies (Policyowner and Life Assured are the same person) are 
+eligible. 
+• 
+There must be valid nomination in place. 
+• 
+Basic Sum Assured is at least RM1 million. 
+• 
+The policy must not have any prior assignment. 
+ 
+5. What is the minimum setting for the Payout Options under LSO 
+• 
+Allocations must be entered in percentages (%), not amounts.  
+• 
+Each allocation should be in whole-percent increments (multiples of 1%).  
+• 
+The total allocation across all selected options for all Nominee(s) must sum to 100%. 
+ 
+6. When can the Policyowner apply for LSO? 
+You can apply for the LSO at the point of policy purchase or anytime during the policy term, as long 
+as the eligibility criteria are met. 
+ 
+This gives you flexibility to plan your legacy when it matters most. 
+ 
+7. How does the Policyowner apply for LSO? 
+• 
+New Business Submission 
+Complete the Legacy Settlement Option section in the proposal form under PRUWay Plus (PWP). 
+ 
+ 
+• 
+Policy Servicing 
+Fill up and submit the “Trust and Nomination / Legacy Settlement Option Form”, will be available 
+on our corporate website and RAISe. 
+Trust and Nomination / Legacy Settlement Option Form 
+ 
+8. Can Policyowner make changes to the payout structure later? 
+Yes, Policyowner can revise or remove the payout structure after opting for LSO, provided the request 
+is made during the policy term and while the Life Assured Life Assured (also the Policyowner)  is still 
+alive, by submitting the “Trust and Nomination / Legacy Settlement Option Form”. 
+ 
+This ensures your legacy plan stays aligned with your evolving wishes. 
+ 
+9. Can Nominee(s) make changes to the payout structure later? 
+No. Only the Policyowner can make changes to the LSO arrangement. 
+ 
+ 
+5 
+ 
+10. Is trustee consent required for changes to the Legacy Settlement Option (LSO) arrangement? 
+Yes. Similar to the current practice for updating nominations, any change to the LSO arrangement—
+such as adjusting proportions, payout options, payout term, or milestone events—requires trustee 
+consent.  
+  
+However, changing the personalized message for milestone-based payouts does not require trustee 
+consent. 
+Reference: Financial Service Act 2013, Schedule 10 
+Subparagraph 5(5) 
+ 
+ 
+11. What happens if the policy moneysi payable at the point of death claim vary (higher or lower) from 
+the original amount approved under LSO? 
+Adjustments will be based on the final total policy moneysi payable at death claim and will follow the 
+percentage allocations set under LSO. 
+Payout Options 
+Payout Adjustment At The Point of Death Claim 
+Immediate Lum 
+Sum Payout 
+The lump sum payout amount will be adjusted proportionately using the 
+percentage allocations set under LSO, calculated against the final total policy 
+moneysi payable at death claim. 
+Structured 
+Instalment 
+Payout 
+If Higher 
+Instalment amounts will be increased proportionately based on the 
+percentage allocations set under LSO, calculated against the final total policy 
+moneysi payable. 
+ 
+If Lower 
+Instalment amounts will be adjusted to meet the minimum payout threshold 
+(see Q21). If needed, the Payout Term will be revised accordingly. 
+Milestone-
+based Payout 
+Each Life Event allocation will be adjusted proportionately using the 
+percentage allocations set under LSO, calculated against the final total policy 
+moneysi payable at death claim 
+ 
+Example 
+ 
+6 
+ 
+ 
+Note: 
+If the final total policy moneys payable at death claim is below RM500,000, the LSO will be void from 
+the date of approval of the death claim, and the policy moneys will be paid in a lump sum to the 
+Nominees in the respective proportions based on the Policyowner’s nomination. 
+ 
+iPolicy moneys include, but are not limited to, the Death Benefit, Cover Booster, Accidental Death 
+Benefit, Level SA Rider, and any other applicable benefits. 
+ 
+12. Is there any cost to apply for LSO? 
+No, there is no additional cost to apply for the LSO. It is a value-added facility to help you plan a 
+meaningful and structured legacy for your loved ones. 
+ 
+13. How will Nominee(s) be notified about the arrangement made by the Policyowner through LSO? 
+Without Appointed Trustee 
+• 
+After the death claim is confirmed, each Nominee receives a separate Death Claim Letter detailing 
+their own payout arrangement under LSO, together with any customised message under 
+Milestone-based Payout. (see Q39)  
+• 
+Each Nominee is only informed of their own portion. 
+ 
+With Appointed Trustee 
+• 
+After the death claim is confirmed, a Death Claim Letter is sent to the Appointed Trustee, detailing 
+payout arrangement for the Nominee(s) under LSO, together with any customised message under 
+Milestone-based Payout. (see Q39) 
+• 
+The Trustee will manage and distribute payouts according to the LSO instructions for all Nominees. 
+ 
+14. What would cause the Payout Options under LSO be void from the date of approval of the 
+application?  
+(a) If the policy moneys payable under the policy with LSO is below Ringgit Malaysia Five Hundred 
+Thousand (RM500,000.00) upon the death of the Life Assured; 
+(b) A new Trust & Nomination Form is submitted to us and approved by us;  
+(c) There is any change in nomination for this Policy and LSO was not selected for the updated 
+nomination; 
+(d) This Policy is assigned or novated; 
+(e) There is false information provided or false declaration made during the application for LSO; or 
+(f) The policy with LSO is terminated, avoided or cancelled. 
+ 
+If any of the clause 11(a) to 11(e) happens, the moneys payable under this policy shall be payable in a 
+lump sum to the nominee(s) in the respective proportions based on the nomination made by the 
+Policyowner. 
+ 
+ 
+7 
+ 
+15. What happens if the Nominee passes away? 
+Similar to current practice without LSO arrangement: 
+Before the death of the Life Assured (also the Policyowner) 
+• 
+Single Nominee:  
+The nomination lapses, The Policyowner must make a new nomination; otherwise the policy 
+moneys (proceeds) will go to the Policyowner’s estate. 
+ 
+• 
+Multiple Nominees:  
+• 
+Statutory Trust Nomination 
+The portion allocated to the deceased Statutory Trust Nominee shall be shared among the 
+remaining Statutory Trust Nominee(s) if no new nomination is appointed. 
+Reference: Financial Service Act 2013, Schedule 10 
+Subparagraph 3(3) 
+ 
+Subparagraph 5(1) 
+• 
+Non-Statutory Trust Nomination1 
+The portion allocated to the deceased Non-Statutory Trust Nominee shall form part of the 
+estate of the deceased Policyowner. 
+Reference: Financial Service Act 2013, Schedule 10 
+Subparagraph 6(1) 
+ 
+1 Nominee other than a nominee under Financial Service Act 2013, subparagraph 5(1) 
+ 
+After the death of the Life Assured (also the Policyowner) 
+Any remaining policy money under the Legacy Settlement Option shall be payable in a lump sum. 
+ 
+ 
+• 
+Statutory Trust Nomination 
+The portion allocated to the deceased Statutory Trust Nominee shall form part of the estate of the 
+deceased Statutory Trust Nominee. 
+• 
+Non-Statutory Trust Nomination1  
+ 
+8 
+ 
+The portion allocated to the deceased Non-Statutory Trust Nominee shall form part of the estate 
+of the deceased Policyowner.  
+Reference: Financial Service Act 2013, Schedule 10 
+Subparagraph 4(4) 
+ 
+Subparagraph 6(1) 
+ 
+ 
+Under LSO, any remaining unpaid policy money associated with the deceased Nominee will follow the 
+same treatment as above (i.e., paid to the relevant estate), while administration of the schedule 
+continues per policy terms. 
+ 
+16. What happens if the Trustee passes away? 
+One (1) Trustee is appointed 
+If the appointed/presumed/auto Trustee dies or cannot act, and no replacement is appointed, the 
+policy money (proceeds) will be payable in the following sequence: 
+(a) Nominee who is competent to contract; or 
+(b) Parent of the incompetent Nominee; or 
+(c) Public Trustee 
+Reference: Financial Service Act 2013, Schedule 10 
+Subparagraph 5(3) 
+ 
+ 
+ 
+Multiple Trustees are appointed 
+The surviving Appointed Trustee(s) will continue as the sole Trustee and upon death of Life Assured, 
+will receive the claim notification and administer/distribute the policy moneys (proceed) to the 
+respective Nominee(s) according to the nomination (and LSO, if any). 
+ 
+17. What would cause the Payout Options under LSO be void from the date of approval of the 
+application?  
+In Malaysia a valid insurance trust nomination is generally not contestable unless it is proved that the 
+policy was affected and premiums paid with intent to defraud a creditor of the policy owner. 
+ 
+ 
+ 
+9 
+ 
+STRUCTURED INSTALMENT PAYOUT:  
+ 
+18. What instalment Payout Frequency are available? 
+The Policyowner may choose monthly or yearly instalments. 
+ 
+19. What is the duration for instalment payouts? 
+The Policyowner may select a “Payout Term” from 5 years up to 35 years. 
+Note: If both Structured Instalment Payout and Milestone-based Payout are chosen, the Payout Term 
+will be the same for both options. 
+ 
+20. Can the Policyowner set different Payout Frequency and/or Payout Terms for different Nominees?  
+No. The Payout Frequency (monthly or yearly) and Payout Term (5 – 35 years) chosen by the 
+Policyowner will apply uniformly to all Nominees. 
+ 
+21. What is the minimum instalment payout amount? 
+The minimum instalment payout is RM2,000 per month or RM24,000 per year. 
+ 
+22. Can the Policyholder update the Structured Instalment Payout (e.g. change instalment amount or 
+Payout Term)? 
+Yes. The Policyowner can make changes during the policy term and while alive. (See Q8)  
+ 
+23. Can the Nominee update the Structured Instalment Payout (e.g. change instalment amount or 
+Payout Term)? 
+No. Only the Policyowner can make changes. (See Q9) 
+ 
+24. How will the Policyowner and Agent/ Bank Representative be notified after an update request is 
+approved? 
+Policyowner 
+• 
+For new business, the Annexure LSO will be attached to the policy document. 
+• 
+For policy servicing, the Annexure LSO will be attached to the confirmation letter. 
+ 
+ 
+Agent/ Bank Representative  
+Can view customer’s LSO selection from RAISe. 
+ 
+25. Can the Policyowner leave a customised message for Nominee(s) with instalment payout? 
+No. Currently, customised messages are only available for Life Events.  
+ 
+ 
+10 
+ 
+26. How can the Nominee claim for the instalment payout? 
+Instalments start after the death claim is approved and follow the event date monthiversary (monthly) 
+or anniversary (yearly). 
+ 
+27. How will Nominee(s) be notified about the instalment amount set by the Policyowner? 
+See Q13  
+ 
+28. What happens if the policy moneys payable upon death are higher than the original amount 
+approved under LSO? 
+See Q11 
+ 
+29. What happens if the policy moneys payable upon death are lower than the original amount 
+approved under LSO? 
+See Q11  
+MILESTONE-BASED PAYOUT:  
+ 
+30. How many life event can Policyowner set? 
+The Policyowner can set up to 3 life events for each Nominee. 
+• 
+Example: 1 Nominee → up to 3 life events 
+• 
+Example: 3 Nominees → up to 9 life events (each Nominee capped at 3 life events) 
+ 
+31. What life events can be selected? 
+The Policyowner may choose from the following: 
+• 
+University or College Graduation 
+• 
+Marriage 
+• 
+Attaining a designated age (up to 3 times, each time counts as 1 life event) 
+• 
+Having a child (up to 3 children, each child counts as 1 life event) 
+• 
+Owning a property 
+• 
+Starting a business 
+• 
+Golden Card 
+ 
+32. What is “Golden Card” as mentioned in Q31? 
+Golden Card is a special life event that does not require the Nominee to provide any supporting 
+documents during the claim process. It can serve as an emergency fund, giving flexibility for immediate 
+financial needs without waiting for documentation. 
+ 
+33. How can the Nominee claim for a life event? 
+To claim for a life event, the Nominee must submit a claim form together with the relevant supporting 
+document. 
+ 
+Example of supporting documents: 
+Life Event 
+Supporting Documents 
+University or College Graduation 
+Diploma, Degree Certificate, or Letter of Completion 
+Marriage 
+Marriage Certificate 
+Attaining a designated age  
+Identity Card (IC) or Passport 
+Having a child  
+Birth Certificate or Adoption Certificate 
+Owning a property 
+• 
+Sale and Purchase Agreement (SPA) 
+• 
+Land Title / Title Deed  
+ 
+11 
+ 
+• 
+Certified True Copy (CTC) of Land Title 
+• 
+Registered Memorandum of Transfer (MOT) 
+• 
+Registered Deed of Transfer 
+Starting a business 
+Business Registration Certificate or equivalent official 
+document 
+Golden Card 
+No proof required 
+ 
+34. What is the duration for Nominee to complete the Life Event(s)? 
+See Q19 (same Payout term applies)  
+ 
+35. Can the Payout Term be different from the Structured Instalment Payout’s? 
+No. If both options are selected, the Payout Term will be the same for both. 
+ 
+36. Can the Policyowner update (change, remove, add) life events later? 
+Yes. The Policyowner can update life events by submitting the “Trust and Nomination / Legacy 
+Settlement Option Form.” (See Q8) 
+ 
+37. Can the Nominee update (change, remove, add) life events later? 
+No. Only the Policyowner can make changes. (See Q9) 
+ 
+38. How will the Policyowner and Agent/ Bank Representative be notified after an update request is 
+approved? 
+See Q24  
+ 
+39. Can the Policyowner leave a customised message for Nominee(s) upon achieving a Life Event? 
+Yes. The Policyowner can leave a heartfelt message for each Life Event to encourage, support, and 
+celebrate the Nominee’s achievement. 
+• 
+Limit: 300 characters per message 
+• 
+Allowed: letters, numbers, spaces, periods (.), commas (,) 
+• 
+Not allowed: special characters like @, #, $, %, & 
+ 
+Example tone: 
+"Congratulations on this milestone! I am so proud of you, keep chasing your dreams and making an 
+impact." 
+ 
+“I know it wasn’t easy, but I hope that you know I am always with you.” 
+ 
+40. How the customised message sent to Nominee(s) 
+See Q13 
+ 
+41. How will Nominee(s) be notified about the Life Events set by the Policyowner? 
+See Q13 
+ 
+42. What happens if the policy moneys payable upon death vary (higher or lower) from the original 
+amount approved under LSO? 
+See Q11  
+ 
+ 
+12 
+ 
+43. What if the Nominee achieved a Life Event prior to the Policyowner passes away? 
+• 
+If Policyowner updates LSO: Achieved Life Event can be removed or adjusted. (See Q8)  
+• 
+If no update: Original arrangement stays. Nominee can claim for the achieved Life Event(s) when 
+LSO activates (upon death of Life Assured). 
+ 
+44. What if the Nominee is unable to achieve the Life Event(s) set by the Policyowner? 
+At the end of the payout term, any portion of the policy moneys (proceed) allocated to unachieved 
+Life Event(s) will be paid together as part of the final payout, which includes: 
+• 
+The final installment, if any 
+• 
+Total interest accrued, if any (see Q52)  
+NON-GUARANTEED INTEREST:  
+ 
+45. What is the non‑guaranteed interest under LSO? 
+The non‑guaranteed interest refers to interest that may be accrued on the remaining (unpaid) balance 
+of policy moneys after a death claim has been approved by Prudential, where the policy money is paid 
+out progressively under the LSO. 
+ 
+46. When does the Non‑Guaranteed Interest start to apply? 
+The non‑guaranteed interest applies only after the death claim has been approved by Prudential and 
+only if there is an remaining (unpaid) balance of policy moneys under LSO. 
+ 
+47. Is interest applied to the remaining (unpaid) policy moneys?  
+Yes, interest may be accrued on the unpaid balance of policy moneys and compounded on a monthly 
+basis, in accordance with the prevailing non-guaranteed interest rate.  
+ 
+48. What is the interest rate? 
+The interest rate is non-guaranteed, compounded monthly, and currently 3% p.a., effective from 11 
+January 2026 until further notice. (The rate is determined by us and may vary from time to time) 
+ 
+49. Is the interest rate guaranteed? 
+No. The interest rate is non‑guaranteed. 
+ 
+50. On what basis will the interest rate change? 
+The rate is reviewed periodically based on overall investment performance of underlying assets, 
+primarily fixed‑income instruments (e.g., bonds). Returns generally align with market interest rates 
+(e.g., Overnight Policy Rate) with smoothing techniques to help minimize short‑term fluctuations.  
+ 
+51. Where can customers check the applicable or historical interest rates? 
+Historical interest rates will be published on our corporate website under the Legacy Settlement 
+Option page. 
+ 
+52. How and when will the interest accrued be payable?  
+Any interest accrued under LSO will be paid together with the final payout to each Nominee.  
+ 
+ 
+13 
+ 
+53. Will the non‑guaranteed interest be illustrated in the Product Illustration and Product Disclosure 
+Sheet (PIPDS)?  
+No, The non‑guaranteed interest under LSO will not be illustrated in the PIPDS because the interest 
+amount is contingent on several post‑death factors that cannot be determined at the point of sale, 
+including but not limited to: 
+• 
+The timing of the death claim approval and settlement; 
+• 
+The LSO payout structure and allocation; 
+• 
+The unpaid balance of the death benefit when LSO commences; 
+• 
+The timing of life event completion; 
+• 
+The instalment payouts term and frequency; and/or 
+• 
+The prevailing non-guaranteed interest rate at the relevant time. 
+PAYMENT TO NOMINEE(S) WHO IS COMPETENT TO CONTRACT:  
+54. What happens if the appointed trustee does not wish to manage the policy payout for an extended 
+period? 
+To address this situation, we offer the “Payment to Nominee(s) Who is Competent to Contract” option. 
+This allows policy money to be paid directly to a nominee once they become legally competent to 
+contract (for example, upon reaching age 18 and being of sound mind), instead of continuing under 
+Appointed Trustee’s management. 
+ 
+ 
+55. What does “competent to contract” mean?  
+As defined under the Financial Services Act 2013, a Nominee is competent to contract if he/she: 
+• 
+has attained age 18; and 
+• 
+is of sound mind at the time of payment. 
+ 
+56. What are the requirements for this payout option? 
+• 
+All Nominees are under age 18 at the point of nomination. 
+• 
+Trustee(s) is/are appointed. 
+• 
+Each Nominee’s relationship to the Policyowner is child. 
+ 
+57. Will policy moneys automatically be paid to a Nominee who becomes competent to contract? 
+No. The Trustee and/or Nominee must submit a request to Prudential, together with the Nominee’s 
+identity document (IC or passport) and a declaration confirming sound mind at the time of payment. 
+ 
+58. What if the Nominee does not inform Prudential? 
+Policy money will be paid to the Appointed Trustee(s). 
+The receipt of a trustee shall discharge the insurer from all liability for the policy money paid to the 
+trustee. 
+ 
+ 
+14 
+ 
+59. How can the Policyowner apply for this option? 
+New Business 
+Tick the “PAYMENT TO NOMINEE(S) WHO IS COMPETENT TO CONTRACT” option under E-Signature in 
+the proposal form and submit via PRUWay Plus (PWP). 
+ 
+Policy Servicing 
+Tick and submit the same option in the Trust and Nomination / Legacy Settlement Option Form (before 
+the Trustee signature section). Form will be available on the corporate website and RAISe. 
+ 
+ 
+ 
+60. Is consent from the Appointed Trustee(s) required? 
+Yes. Both the Appointed Trustee(s) and the Policyowner must agree to this payout option before 
+ticking consent. 
+ 
+61. Is LSO required to opt for this option (Payment to Nominee(s) Who is Competent to Contract)? 
+No. LSO is not compulsory for this option. The “Payment to Nominee(s) Who is Competent to Contract” 
+feature can be selected independently, even if the Policyowner does not opt for LSO. 
