@@ -10,7 +10,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
 
@@ -31,20 +32,27 @@
             max-width: 540px;
             width: 100%;
             text-align: center;
-            box-shadow: 0 10px 50px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
             border: 1px solid var(--border-color);
             animation: fadeUp 0.5s ease both;
         }
 
         @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to   { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .confirm-icon {
             width: 80px;
             height: 80px;
-            background: rgba(211,18,37,0.07);
+            background: rgba(211, 18, 37, 0.07);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -68,7 +76,7 @@
         }
 
         .confirm-highlight {
-            background: rgba(211,18,37,0.05);
+            background: rgba(211, 18, 37, 0.05);
             border-left: 4px solid #D31225;
             border-radius: 8px;
             padding: 16px 20px;
@@ -112,85 +120,115 @@
             transition: opacity 0.2s;
         }
 
-        .confirm-actions a:hover { opacity: 0.85; }
-        .btn-red { background: #D31225; color: #fff; }
-        .btn-outline-red { background: #fff; color: #D31225; border: 2px solid #D31225; }
-        .btn-ghost { background: none; color: #999; font-size: 0.9rem; font-weight: 400; padding: 8px; }
+        .confirm-actions a:hover {
+            opacity: 0.85;
+        }
+
+        .btn-red {
+            background: #D31225;
+            color: #fff;
+        }
+
+        .btn-outline-red {
+            background: #fff;
+            color: #D31225;
+            border: 2px solid #D31225;
+        }
+
+        .btn-ghost {
+            background: none;
+            color: #999;
+            font-size: 0.9rem;
+            font-weight: 400;
+            padding: 8px;
+        }
 
         @media (max-width: 480px) {
-            .confirm-card { padding: 40px 24px; }
-            .confirm-card h1 { font-size: 1.6rem; }
+            .confirm-card {
+                padding: 40px 24px;
+            }
+
+            .confirm-card h1 {
+                font-size: 1.6rem;
+            }
         }
-    
-    /* Dropdown CSS */
-    .nav-dropdown {
-        position: relative;
-    }
-    .dropdown-content {
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(10px);
-        position: absolute;
-        top: 100%;
-        left: -150px;
-        background-color: var(--pure-white);
-        min-width: 650px;
-        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-        z-index: 100;
-        border-radius: 16px;
-        padding: 25px;
-        gap: 20px;
-        display: flex;
-        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        border: 1px solid rgba(0,0,0,0.05);
-    }
-    .nav-dropdown:hover .dropdown-content {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .drop-col {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
-    .drop-col strong {
-        color: var(--dark-bg);
-        margin-bottom: 10px;
-        font-size: 0.9rem;
-        border-bottom: 1px solid var(--border-color);
-        padding-bottom: 5px;
-    }
-    .drop-col a {
-        color: var(--text-main) !important;
-        padding: 8px 0;
-        text-decoration: none;
-        font-size: 0.9rem;
-        transition: color 0.2s;
-    }
-    .drop-col a:hover {
-        color: var(--primary-red) !important;
-        padding-left: 5px;
-    }
-    
-    @media (max-width: 992px) {
+
+        /* Dropdown CSS */
+        .nav-dropdown {
+            position: relative;
+        }
+
         .dropdown-content {
-            position: static;
-            display: none;
-            min-width: 100%;
-            box-shadow: none;
-            padding: 10px;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            position: absolute;
+            top: 100%;
+            left: -150px;
+            background-color: var(--pure-white);
+            min-width: 650px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            z-index: 100;
+            border-radius: 16px;
+            padding: 25px;
+            gap: 20px;
+            display: flex;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-dropdown:hover .dropdown-content {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .drop-col {
+            flex: 1;
+            display: flex;
             flex-direction: column;
         }
-        .nav-dropdown.active .dropdown-content {
-            display: flex;
-        }
-        .drop-col {
-            margin-bottom: 15px;
-        }
-    }
 
-</style>
+        .drop-col strong {
+            color: var(--dark-bg);
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        .drop-col a {
+            color: var(--text-main) !important;
+            padding: 8px 0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .drop-col a:hover {
+            color: var(--primary-red) !important;
+            padding-left: 5px;
+        }
+
+        @media (max-width: 992px) {
+            .dropdown-content {
+                position: static;
+                display: none;
+                min-width: 100%;
+                box-shadow: none;
+                padding: 10px;
+                flex-direction: column;
+            }
+
+            .nav-dropdown.active .dropdown-content {
+                display: flex;
+            }
+
+            .drop-col {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -209,7 +247,7 @@
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#about">About Me</a></li>
-                                <li class="nav-dropdown">
+                <li class="nav-dropdown">
                     <a href="products.html" class="nav-drop-btn">Products ▾</a>
                     <div class="dropdown-content">
                         <div class="drop-col">
@@ -253,12 +291,15 @@
             <h1>Request <span class="text-red">Received!</span></h1>
             <p class="confirm-name" id="greeting">Thank you for reaching out.</p>
             <div class="confirm-highlight">
-                <p>Anna will personally prepare a <strong>personalised quotation</strong> based on your coverage estimate and be in touch within <strong>24 hours</strong>.</p>
+                <p>Anna will personally prepare a <strong>personalised quotation</strong> based on your coverage
+                    estimate and be in touch within <strong>24 hours</strong>.</p>
             </div>
-            <p class="confirm-sub">Need something sooner? You can book a free consultation or WhatsApp Anna directly.</p>
+            <p class="confirm-sub">Need something sooner? You can book a free consultation or WhatsApp Anna directly.
+            </p>
             <div class="confirm-actions">
                 <a href="https://wa.me/60183176361" target="_blank" class="btn-red">📱 WhatsApp Anna</a>
-                <a href="https://calendly.com/axeannaxx/30min" target="_blank" class="btn-outline-red">📅 Book a Free Consultation</a>
+                <a href="https://calendly.com/axeannaxx/30min" target="_blank" class="btn-outline-red">📅 Book a Free
+                    Consultation</a>
                 <a href="index.html" class="btn-ghost">← Back to Home</a>
             </div>
         </div>
@@ -288,18 +329,6 @@
                 <p>Phone: +60 18-317 6361</p>
             </div>
         </div>
-                </li>
-                    <li><a href="calculator.html">Calculator</a></li>
-                    <li><a href="index.html#partners">Partners</a></li>
-                    <li><a href="index.html#quote">Let's Connect</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h3>Contact</h3>
-                <p>Email: annabelong6997@prupartner.com.my</p>
-                <p>Phone: +60 18-317 6361</p>
-            </div>
-        </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Prudential. All Rights Reserved.</p>
         </div>
@@ -316,4 +345,5 @@
     </script>
 
 </body>
+
 </html>

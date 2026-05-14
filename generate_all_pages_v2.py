@@ -243,18 +243,18 @@ def generate_page(slug, title, badge, desc, benefits, who, ms_flag=False):
             
             <div style="margin-bottom: 60px;">
                 <h2 style="color: var(--dark-bg); text-align: center; margin-bottom: 40px; font-size: 2.2rem;">{why_title}</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
 {benefits_html}
                 </div>
             </div>
 
             <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 60px;">
-                <div style="flex: 1; min-width: 300px; background: var(--pure-white); padding: 40px; border-radius: 16px; box-shadow: var(--shadow-sm);">
+                <div style="flex: 1; min-width: 250px; background: var(--pure-white); padding: 40px; border-radius: 16px; box-shadow: var(--shadow-sm);">
                     <h3 style="color: var(--dark-bg); margin-bottom: 20px; font-size: 1.5rem;">{highlight_title}</h3>
 {highlights_html}
 {extra_note}
                 </div>
-                <div style="flex: 1; min-width: 300px;">
+                <div style="flex: 1; min-width: 250px;">
                     <h3 style="color: var(--dark-bg); margin-bottom: 20px; font-size: 1.5rem;">{who_title}</h3>
 {who_html}
                 </div>

@@ -30,23 +30,43 @@
         /* Dropdown CSS - UPDATED TO ANIMATED VERSION */
         .nav-dropdown { position: relative; }
         .dropdown-content {
-            visibility: hidden; opacity: 0; transform: translateY(10px);
-            position: absolute; top: 100%; left: -150px;
-            background-color: var(--pure-white); min-width: 650px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15); z-index: 100;
-            border-radius: 16px; padding: 25px; gap: 20px; display: flex;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            position: absolute;
+            top: 100%;
+            left: -150px;
+            background-color: var(--pure-white);
+            min-width: 650px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            z-index: 100;
+            border-radius: 16px;
+            padding: 25px;
+            gap: 20px;
+            display: flex;
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
             border: 1px solid rgba(0,0,0,0.05);
         }
-        .nav-dropdown:hover .dropdown-content { visibility: visible; opacity: 1; transform: translateY(0); }
+        .nav-dropdown:hover .dropdown-content {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
         .drop-col { flex: 1; display: flex; flex-direction: column; }
         .drop-col strong { color: var(--dark-bg); margin-bottom: 10px; font-size: 0.9rem; border-bottom: 1px solid var(--border-color); padding-bottom: 5px; }
+        /* FIXED --text-dark to --text-main */
         .drop-col a { color: var(--text-main) !important; padding: 8px 0; text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
         .drop-col a:hover { color: var(--primary-red) !important; padding-left: 5px; }
+        
         @media (max-width: 992px) {
-            .dropdown-content { position: static; display: none; min-width: 100%; box-shadow: none; padding: 10px; flex-direction: column; }
-            .nav-dropdown.active .dropdown-content { display: flex; }
-        }
+            .dropdown-content {
+                position: static;
+                display: none;
+                min-width: 100%;
+                box-shadow: none;
+                padding: 10px;
+                flex-direction: column;
+            }
             .nav-dropdown.active .dropdown-content {
                 display: flex;
             }
@@ -131,7 +151,7 @@
             
             <div style="margin-bottom: 60px;">
                 <h2 style="color: var(--dark-bg); text-align: center; margin-bottom: 40px; font-size: 2.2rem;">Why This Plan?</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
 
                 <div class="benefit-card glass" style="background: var(--pure-white); padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); border-left: 4px solid var(--primary-red);">
                     <div style="font-size: 2.5rem; margin-bottom: 15px;">📈</div>
@@ -152,7 +172,7 @@
             </div>
 
             <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 60px;">
-                <div style="flex: 1; min-width: 300px; background: var(--pure-white); padding: 40px; border-radius: 16px; box-shadow: var(--shadow-sm);">
+                <div style="flex: 1; min-width: 250px; background: var(--pure-white); padding: 40px; border-radius: 16px; box-shadow: var(--shadow-sm);">
                     <h3 style="color: var(--dark-bg); margin-bottom: 20px; font-size: 1.5rem;">Plan Highlights</h3>
 <ul>
                     <li style='margin-bottom: 10px; font-size: 1.05rem; display: flex; align-items: flex-start; gap: 10px;'><span style='color: var(--primary-red);'>✓</span> <span>Grows 1% per year up to 50% BSA</span></li>
@@ -161,7 +181,7 @@
                 </ul>
 
                 </div>
-                <div style="flex: 1; min-width: 300px;">
+                <div style="flex: 1; min-width: 250px;">
                     <h3 style="color: var(--dark-bg); margin-bottom: 20px; font-size: 1.5rem;">Who Is This For?</h3>
 
                 <div style="background: var(--off-white); padding: 20px; border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--border-color);">

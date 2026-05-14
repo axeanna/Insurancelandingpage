@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,83 +32,106 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-<style>
-    /* Dropdown CSS */
-    .nav-dropdown {
-        position: relative;
-    }
-    .dropdown-content {
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(10px);
-        position: absolute;
-        top: 100%;
-        left: -150px;
-        background-color: var(--pure-white);
-        min-width: 650px;
-        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-        z-index: 100;
-        border-radius: 16px;
-        padding: 25px;
-        gap: 20px;
-        display: flex;
-        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        border: 1px solid rgba(0,0,0,0.05);
-    }
-    .nav-dropdown:hover .dropdown-content {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .drop-col {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
-    .drop-col strong {
-        color: var(--dark-bg);
-        margin-bottom: 10px;
-        font-size: 0.9rem;
-        border-bottom: 1px solid var(--border-color);
-        padding-bottom: 5px;
-    }
-    .drop-col a {
-        color: var(--text-main) !important;
-        padding: 8px 0;
-        text-decoration: none;
-        font-size: 0.9rem;
-        transition: color 0.2s;
-    }
-    .drop-col a:hover {
-        color: var(--primary-red) !important;
-        padding-left: 5px;
-    }
-    
-    @media (max-width: 992px) {
+    <style>
+        /* Dropdown CSS */
+        .nav-dropdown {
+            position: relative;
+        }
+
         .dropdown-content {
-            position: static;
-            display: none;
-            min-width: 100%;
-            box-shadow: none;
-            padding: 10px;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            position: absolute;
+            top: 100%;
+            left: -150px;
+            background-color: var(--pure-white);
+            min-width: 650px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            z-index: 100;
+            border-radius: 16px;
+            padding: 25px;
+            gap: 20px;
+            display: flex;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-dropdown:hover .dropdown-content {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .drop-col {
+            flex: 1;
+            display: flex;
             flex-direction: column;
         }
-        .nav-dropdown.active .dropdown-content {
-            display: flex;
+
+        .drop-col strong {
+            color: var(--dark-bg);
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
         }
-        .drop-col {
-            margin-bottom: 15px;
+
+        .drop-col a {
+            color: var(--text-main) !important;
+            padding: 8px 0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
         }
-    }
-    
-    /* Force navbar items to be white over the dark hero image until scrolled */
-    .navbar:not(.scrolled) .nav-links a { color: var(--pure-white); }
-    .navbar:not(.scrolled) .logo { color: var(--pure-white); }
-    .navbar:not(.scrolled) .nav-drop-btn { color: var(--pure-white); }
-    .navbar:not(.scrolled) .bar { background-color: var(--pure-white); }
-    .navbar:not(.scrolled) .lang-btn { border-color: rgba(255,255,255,0.5); }
-</style>
+
+        .drop-col a:hover {
+            color: var(--primary-red) !important;
+            padding-left: 5px;
+        }
+
+        @media (max-width: 992px) {
+            .dropdown-content {
+                position: static;
+                display: none;
+                min-width: 100%;
+                box-shadow: none;
+                padding: 10px;
+                flex-direction: column;
+            }
+
+            .nav-dropdown.active .dropdown-content {
+                display: flex;
+            }
+
+            .drop-col {
+                margin-bottom: 15px;
+            }
+        }
+
+        /* Force navbar items to be white over the dark hero image until scrolled */
+        .navbar:not(.scrolled) .nav-links a {
+            color: var(--pure-white);
+        }
+
+        .navbar:not(.scrolled) .logo {
+            color: var(--pure-white);
+        }
+
+        .navbar:not(.scrolled) .nav-drop-btn {
+            color: var(--pure-white);
+        }
+
+        .navbar:not(.scrolled) .bar {
+            background-color: var(--pure-white);
+        }
+
+        .navbar:not(.scrolled) .lang-btn {
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="container nav-container">
@@ -122,7 +146,7 @@
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#about">About Me</a></li>
-                                <li class="nav-dropdown">
+                <li class="nav-dropdown">
                     <a href="products.html" class="nav-drop-btn">Products ▾</a>
                     <div class="dropdown-content">
                         <div class="drop-col">
@@ -172,68 +196,121 @@
             </ul>
         </div>
     </nav>
-    
-    <header class="product-hero" style="background: linear-gradient(135deg, var(--dark-bg) 0%, #1a1a1a 100%); color: var(--pure-white); padding: 180px 20px 120px; text-align: center;">
+
+    <header class="product-hero"
+        style="background: linear-gradient(135deg, var(--dark-bg) 0%, #1a1a1a 100%); color: var(--pure-white); padding: 180px 20px 120px; text-align: center;">
         <div class="container fade-in active" style="max-width: 800px; margin: 0 auto;">
             <h1 style="font-size: 3.5rem; margin-bottom: 20px;">Backed by World-Class Institutions</h1>
-            <p style="font-size: 1.2rem; opacity: 0.9; line-height: 1.6;">We partner with industry leaders to provide you with secure, innovative, and reliable financial solutions.</p>
+            <p style="font-size: 1.2rem; opacity: 0.9; line-height: 1.6;">We partner with industry leaders to provide
+                you with secure, innovative, and reliable financial solutions.</p>
         </div>
     </header>
 
     <section class="bg-light" style="padding: 100px 0;">
         <div class="container" style="max-width: 1000px;">
-            
-            <div class="partner-card" style="display: flex; flex-wrap: wrap; background: var(--pure-white); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-lg); margin-bottom: 50px; border: 1px solid var(--border-color);">
-                <div class="card-left" style="flex: 1; min-width: 300px; padding: 50px; display: flex; align-items: center; justify-content: center; background: var(--off-white); border-right: 1px solid var(--border-color);">
-                    <img src="assets/prudential-1.png" alt="Prudential Malaysia Logo" style="max-width: 80%; max-height: 200px; object-fit: contain;">
+
+            <div class="partner-card"
+                style="display: flex; flex-wrap: wrap; background: var(--pure-white); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-lg); margin-bottom: 50px; border: 1px solid var(--border-color);">
+                <div class="card-left"
+                    style="flex: 1; min-width: 300px; padding: 50px; display: flex; align-items: center; justify-content: center; background: var(--off-white); border-right: 1px solid var(--border-color);">
+                    <img src="assets/prudential-1.png" alt="Prudential Malaysia Logo"
+                        style="max-width: 80%; max-height: 200px; object-fit: contain;">
                 </div>
                 <div class="card-right" style="flex: 2; min-width: 300px; padding: 50px;">
-                    <span style="display: inline-block; padding: 6px 14px; background: var(--dark-bg); color: var(--pure-white); border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 15px;">Life & Medical Insurance</span>
-                    <h2 style="font-size: 2.2rem; color: var(--primary-red); margin-bottom: 20px;">Prudential Malaysia</h2>
-                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.7;">Prudential has been providing financial protection and peace of mind to Malaysians for over a century.</p>
-                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 30px; line-height: 1.7;">With a strong focus on healthcare, wealth creation, and digital innovation, we empower individuals to live healthier and get the most out of life.</p>
+                    <span
+                        style="display: inline-block; padding: 6px 14px; background: var(--dark-bg); color: var(--pure-white); border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 15px;">Life
+                        & Medical Insurance</span>
+                    <h2 style="font-size: 2.2rem; color: var(--primary-red); margin-bottom: 20px;">Prudential Malaysia
+                    </h2>
+                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.7;">
+                        Prudential has been providing financial protection and peace of mind to Malaysians for over a
+                        century.</p>
+                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 30px; line-height: 1.7;">With
+                        a strong focus on healthcare, wealth creation, and digital innovation, we empower individuals to
+                        live healthier and get the most out of life.</p>
                     <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 35px;">
-                        <span style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">100+ Years in Asia</span><span style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Top Insurer in Malaysia</span><span style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Millions of Lives Covered</span>
+                        <span
+                            style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">100+
+                            Years in Asia</span><span
+                            style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Top
+                            Insurer in Malaysia</span><span
+                            style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Millions
+                            of Lives Covered</span>
                     </div>
-                    <a href="https://www.prudential.com.my/" target="_blank" class="btn btn-secondary" style="border-radius: 50px; font-weight: 600; padding: 12px 28px;">Visit Website ↗</a>
+                    <a href="https://www.prudential.com.my/" target="_blank" class="btn btn-secondary"
+                        style="border-radius: 50px; font-weight: 600; padding: 12px 28px;">Visit Website ↗</a>
                 </div>
             </div>
-        
-            <div class="partner-card" style="display: flex; flex-wrap: wrap; background: var(--pure-white); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-lg); margin-bottom: 50px; border: 1px solid var(--border-color);">
-                <div class="card-left" style="flex: 1; min-width: 300px; padding: 50px; display: flex; align-items: center; justify-content: center; background: var(--off-white); border-right: 1px solid var(--border-color);">
-                    <img src="assets/eastspring investment(1).png" alt="Eastspring Investments Logo" style="max-width: 80%; max-height: 200px; object-fit: contain;">
+
+            <div class="partner-card"
+                style="display: flex; flex-wrap: wrap; background: var(--pure-white); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-lg); margin-bottom: 50px; border: 1px solid var(--border-color);">
+                <div class="card-left"
+                    style="flex: 1; min-width: 300px; padding: 50px; display: flex; align-items: center; justify-content: center; background: var(--off-white); border-right: 1px solid var(--border-color);">
+                    <img src="assets/eastspring investment(1).png" alt="Eastspring Investments Logo"
+                        style="max-width: 80%; max-height: 200px; object-fit: contain;">
                 </div>
                 <div class="card-right" style="flex: 2; min-width: 300px; padding: 50px;">
-                    <span style="display: inline-block; padding: 6px 14px; background: var(--dark-bg); color: var(--pure-white); border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 15px;">Asset Management</span>
-                    <h2 style="font-size: 2.2rem; color: var(--primary-red); margin-bottom: 20px;">Eastspring Investments</h2>
-                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.7;">As the asset management arm of Prudential plc, Eastspring Investments manages investments for retail and institutional clients across Asia.</p>
-                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 30px; line-height: 1.7;">Our deep-rooted expertise ensures your policy investments grow steadily and are safeguarded through our expert portfolio management.</p>
+                    <span
+                        style="display: inline-block; padding: 6px 14px; background: var(--dark-bg); color: var(--pure-white); border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 15px;">Asset
+                        Management</span>
+                    <h2 style="font-size: 2.2rem; color: var(--primary-red); margin-bottom: 20px;">Eastspring
+                        Investments</h2>
+                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.7;">As
+                        the asset management arm of Prudential plc, Eastspring Investments manages investments for
+                        retail and institutional clients across Asia.</p>
+                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 30px; line-height: 1.7;">Our
+                        deep-rooted expertise ensures your policy investments grow steadily and are safeguarded through
+                        our expert portfolio management.</p>
                     <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 35px;">
-                        <span style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">$220+ Billion AUM</span><span style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Asia-Focused Experts</span><span style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Award-Winning Funds</span>
+                        <span
+                            style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">$220+
+                            Billion AUM</span><span
+                            style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Asia-Focused
+                            Experts</span><span
+                            style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Award-Winning
+                            Funds</span>
                     </div>
-                    <a href="https://www.eastspring.com/my/" target="_blank" class="btn btn-secondary" style="border-radius: 50px; font-weight: 600; padding: 12px 28px;">Visit Website ↗</a>
+                    <a href="https://www.eastspring.com/my/" target="_blank" class="btn btn-secondary"
+                        style="border-radius: 50px; font-weight: 600; padding: 12px 28px;">Visit Website ↗</a>
                 </div>
             </div>
-        
-            <div class="partner-card" style="display: flex; flex-wrap: wrap; background: var(--pure-white); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-lg); margin-bottom: 50px; border: 1px solid var(--border-color);">
-                <div class="card-left" style="flex: 1; min-width: 300px; padding: 50px; display: flex; align-items: center; justify-content: center; background: var(--off-white); border-right: 1px solid var(--border-color);">
-                    <img src="assets/GEM Final New.png" alt="GEM Agency Logo" style="max-width: 80%; max-height: 200px; object-fit: contain;">
+
+            <div class="partner-card"
+                style="display: flex; flex-wrap: wrap; background: var(--pure-white); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-lg); margin-bottom: 50px; border: 1px solid var(--border-color);">
+                <div class="card-left"
+                    style="flex: 1; min-width: 300px; padding: 50px; display: flex; align-items: center; justify-content: center; background: var(--off-white); border-right: 1px solid var(--border-color);">
+                    <img src="assets/GEM Final New.png" alt="GEM Agency Logo"
+                        style="max-width: 80%; max-height: 200px; object-fit: contain;">
                 </div>
                 <div class="card-right" style="flex: 2; min-width: 300px; padding: 50px;">
-                    <span style="display: inline-block; padding: 6px 14px; background: var(--dark-bg); color: var(--pure-white); border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 15px;">Premier Agency</span>
+                    <span
+                        style="display: inline-block; padding: 6px 14px; background: var(--dark-bg); color: var(--pure-white); border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 15px;">Premier
+                        Agency</span>
                     <h2 style="font-size: 2.2rem; color: var(--primary-red); margin-bottom: 20px;">GEM Agency</h2>
-                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.7;">GEM Agency is one of the premier agency groups representing Prudential, known for elite professional consultation and exceptional client service.</p>
-                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 30px; line-height: 1.7;">Our dedicated team of advisors, including Annabel Ong, are rigorously trained to guide you through the complexities of personal financial planning and risk management.</p>
+                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.7;">GEM
+                        Agency is one of the premier agency groups representing Prudential, known for elite professional
+                        consultation and exceptional client service.</p>
+                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 30px; line-height: 1.7;">Our
+                        dedicated team of advisors, including Annabel Ong, are rigorously trained to guide you through
+                        the complexities of personal financial planning and risk management.</p>
                     <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 35px;">
-                        <span style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Elite Wealth Planners</span><span style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Dedicated Claims Support</span><span style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Personalized Service</span>
+                        <span
+                            style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Elite
+                            Wealth Planners</span><span
+                            style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Dedicated
+                            Claims Support</span><span
+                            style="background: rgba(211, 18, 37, 0.1); color: var(--primary-red); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap;">Personalized
+                            Service</span>
                     </div>
-                    <a href="https://prugem.com/" target="_blank" class="btn btn-secondary" style="border-radius: 50px; font-weight: 600; padding: 12px 28px;">Visit Website ↗</a>
+                    <a href="https://prugem.com/" target="_blank" class="btn btn-secondary"
+                        style="border-radius: 50px; font-weight: 600; padding: 12px 28px;">Visit Website ↗</a>
                 </div>
             </div>
-        
+
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-brand">
@@ -257,18 +334,6 @@
                 <p>Phone: +60 18-317 6361</p>
             </div>
         </div>
-                </li>
-                    <li><a href="calculator.html">Calculator</a></li>
-                    <li><a href="partners.html">Partners</a></li>
-                    <li><a href="#quote">Let's Connect</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h3>Contact</h3>
-                <p>Email: annabelong6997@prupartner.com.my</p>
-                <p>Phone: +60 18-317 6361</p>
-            </div>
-        </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Prudential. All Rights Reserved.</p>
         </div>
@@ -276,4 +341,5 @@
 
     <script src="js/script.js?v=9"></script>
 </body>
+
 </html>

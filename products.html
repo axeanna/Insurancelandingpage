@@ -88,76 +88,83 @@
             color: var(--text-muted);
             margin-bottom: 25px;
         }
-    
-    /* Dropdown CSS */
-    .nav-dropdown {
-        position: relative;
-    }
-    .dropdown-content {
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(10px);
-        position: absolute;
-        top: 100%;
-        left: -150px;
-        background-color: var(--pure-white);
-        min-width: 650px;
-        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-        z-index: 100;
-        border-radius: 16px;
-        padding: 25px;
-        gap: 20px;
-        display: flex;
-        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        border: 1px solid rgba(0,0,0,0.05);
-    }
-    .nav-dropdown:hover .dropdown-content {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .drop-col {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
-    .drop-col strong {
-        color: var(--dark-bg);
-        margin-bottom: 10px;
-        font-size: 0.9rem;
-        border-bottom: 1px solid var(--border-color);
-        padding-bottom: 5px;
-    }
-    .drop-col a {
-        color: var(--text-main) !important;
-        padding: 8px 0;
-        text-decoration: none;
-        font-size: 0.9rem;
-        transition: color 0.2s;
-    }
-    .drop-col a:hover {
-        color: var(--primary-red) !important;
-        padding-left: 5px;
-    }
-    
-    @media (max-width: 992px) {
+
+        /* Dropdown CSS */
+        .nav-dropdown {
+            position: relative;
+        }
+
         .dropdown-content {
-            position: static;
-            display: none;
-            min-width: 100%;
-            box-shadow: none;
-            padding: 10px;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            position: absolute;
+            top: 100%;
+            left: -150px;
+            background-color: var(--pure-white);
+            min-width: 650px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            z-index: 100;
+            border-radius: 16px;
+            padding: 25px;
+            gap: 20px;
+            display: flex;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-dropdown:hover .dropdown-content {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .drop-col {
+            flex: 1;
+            display: flex;
             flex-direction: column;
         }
-        .nav-dropdown.active .dropdown-content {
-            display: flex;
-        }
-        .drop-col {
-            margin-bottom: 15px;
-        }
-    }
 
-</style>
+        .drop-col strong {
+            color: var(--dark-bg);
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        .drop-col a {
+            color: var(--text-main) !important;
+            padding: 8px 0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .drop-col a:hover {
+            color: var(--primary-red) !important;
+            padding-left: 5px;
+        }
+
+        @media (max-width: 992px) {
+            .dropdown-content {
+                position: static;
+                display: none;
+                min-width: 100%;
+                box-shadow: none;
+                padding: 10px;
+                flex-direction: column;
+            }
+
+            .nav-dropdown.active .dropdown-content {
+                display: flex;
+            }
+
+            .drop-col {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -176,7 +183,7 @@
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#about">About Me</a></li>
-                                <li class="nav-dropdown">
+                <li class="nav-dropdown">
                     <a href="products.html" class="nav-drop-btn">Products ▾</a>
                     <div class="dropdown-content">
                         <div class="drop-col">
@@ -238,24 +245,121 @@
 
     <!-- Products Accordion Section -->
     <style>
-        .accordion-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-        .accordion-item { background: var(--pure-white); border-radius: 12px; margin-bottom: 20px; box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); overflow: hidden; }
-        .accordion-header { padding: 20px 25px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; background: var(--pure-white); transition: background 0.3s; }
-        .accordion-header:hover { background: var(--off-white); }
-        .accordion-title { font-size: 1.25rem; font-weight: 600; color: var(--dark-bg); display: flex; align-items: center; gap: 15px; margin: 0; }
-        .accordion-icon { font-size: 1.5rem; }
-        .accordion-arrow { transition: transform 0.3s; color: var(--primary-red); font-size: 1.2rem; }
-        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; background: var(--off-white); }
-        .accordion-content-inner { padding: 20px 25px; display: flex; flex-direction: column; gap: 10px; }
-        .product-link { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background: var(--pure-white); border-radius: 8px; text-decoration: none; color: var(--text-main); border: 1px solid var(--border-color); transition: all 0.2s; }
-        .product-link:hover { border-color: var(--primary-red); transform: translateX(5px); box-shadow: var(--shadow-sm); color: var(--primary-red); }
-        .product-link strong { font-size: 1.1rem; }
-        .accordion-item.active .accordion-arrow { transform: rotate(180deg); }
-        .accordion-item.active .accordion-content { max-height: 1000px; }
+        .accordion-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .accordion-item {
+            background: var(--pure-white);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            padding: 20px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            background: var(--pure-white);
+            transition: background 0.3s;
+        }
+
+        .accordion-header:hover {
+            background: var(--off-white);
+        }
+
+        .accordion-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--dark-bg);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 0;
+        }
+
+        .accordion-icon {
+            font-size: 1.5rem;
+        }
+
+        .accordion-arrow {
+            transition: transform 0.3s;
+            color: var(--primary-red);
+            font-size: 1.2rem;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            background: var(--off-white);
+        }
+
+        .accordion-content-inner {
+            padding: 20px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .product-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: var(--pure-white);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+            transition: all 0.2s;
+        }
+
+        .product-link:hover {
+            border-color: var(--primary-red);
+            transform: translateX(5px);
+            box-shadow: var(--shadow-sm);
+            color: var(--primary-red);
+        }
+
+        .product-link strong {
+            font-size: 1.1rem;
+        }
+
+        .accordion-item.active .accordion-arrow {
+            transform: rotate(180deg);
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 1000px;
+        }
+
+        @media (max-width: 768px) {
+            .accordion-header {
+                padding: 15px 20px;
+            }
+            .accordion-title {
+                font-size: 1.1rem;
+            }
+            .product-link {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .product-link span {
+                font-size: 0.9rem;
+            }
+        }
     </style>
     <section class="products-list bg-light">
         <div class="container accordion-container fade-in active">
-            
+
             <div class="accordion-item active">
                 <div class="accordion-header" onclick="this.parentElement.classList.toggle('active')">
                     <h3 class="accordion-title"><span class="accordion-icon">🛡️</span> Life Insurance</h3>
@@ -263,9 +367,12 @@
                 </div>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
-                        <a href="pages/pruwith-you-plus.html" class="product-link"><strong>PRUWith You Plus</strong> <span>View Details →</span></a>
-                        <a href="pages/prulive-well.html" class="product-link"><strong>PRULive Well</strong> <span>View Details →</span></a>
-                        <a href="pages/pruterm.html" class="product-link"><strong>PRUTerm</strong> <span>View Details →</span></a>
+                        <a href="pages/pruwith-you-plus.html" class="product-link"><strong>PRUWith You Plus</strong>
+                            <span>View Details →</span></a>
+                        <a href="pages/prulive-well.html" class="product-link"><strong>PRULive Well</strong> <span>View
+                                Details →</span></a>
+                        <a href="pages/pruterm.html" class="product-link"><strong>PRUTerm</strong> <span>View Details
+                                →</span></a>
                     </div>
                 </div>
             </div>
@@ -277,11 +384,16 @@
                 </div>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
-                        <a href="pages/prumy-critical-care.html" class="product-link"><strong>PRUMy Critical Care</strong> <span>View Details →</span></a>
-                        <a href="pages/total-multi-crisis-care.html" class="product-link"><strong>Total Multi Crisis Care</strong> <span>View Details →</span></a>
-                        <a href="pages/critical-care-plus.html" class="product-link"><strong>Critical Care Plus</strong> <span>View Details →</span></a>
-                        <a href="pages/critical-care.html" class="product-link"><strong>Critical Care</strong> <span>View Details →</span></a>
-                        <a href="pages/essential-child-plus.html" class="product-link"><strong>Essential Child Plus</strong> <span>View Details →</span></a>
+                        <a href="pages/prumy-critical-care.html" class="product-link"><strong>PRUMy Critical
+                                Care</strong> <span>View Details →</span></a>
+                        <a href="pages/total-multi-crisis-care.html" class="product-link"><strong>Total Multi Crisis
+                                Care</strong> <span>View Details →</span></a>
+                        <a href="pages/critical-care-plus.html" class="product-link"><strong>Critical Care Plus</strong>
+                            <span>View Details →</span></a>
+                        <a href="pages/critical-care.html" class="product-link"><strong>Critical Care</strong>
+                            <span>View Details →</span></a>
+                        <a href="pages/essential-child-plus.html" class="product-link"><strong>Essential Child
+                                Plus</strong> <span>View Details →</span></a>
                     </div>
                 </div>
             </div>
@@ -293,7 +405,8 @@
                 </div>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
-                        <a href="pages/prumillion-med-2.html" class="product-link"><strong>PRUMillion Med 2.0</strong> <span>View Details →</span></a>
+                        <a href="pages/prumillion-med-2.html" class="product-link"><strong>PRUMillion Med 2.0</strong>
+                            <span>View Details →</span></a>
                     </div>
                 </div>
             </div>
@@ -305,7 +418,8 @@
                 </div>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
-                        <a href="pages/prumy-child-plus.html" class="product-link"><strong>PRUMy Child Plus</strong> <span>View Details →</span></a>
+                        <a href="pages/prumy-child-plus.html" class="product-link"><strong>PRUMy Child Plus</strong>
+                            <span>View Details →</span></a>
                     </div>
                 </div>
             </div>
@@ -317,9 +431,12 @@
                 </div>
                 <div class="accordion-content">
                     <div class="accordion-content-inner">
-                        <a href="pages/prucash-enrich.html" class="product-link"><strong>PRUCash Enrich</strong> <span>View Details →</span></a>
-                        <a href="pages/pruelite-flex.html" class="product-link"><strong>PRUElite Flex</strong> <span>View Details →</span></a>
-                        <a href="pages/pruwealth-enrich-2.html" class="product-link"><strong>PRUWealth Enrich 2.0</strong> <span>View Details →</span></a>
+                        <a href="pages/prucash-enrich.html" class="product-link"><strong>PRUCash Enrich</strong>
+                            <span>View Details →</span></a>
+                        <a href="pages/pruelite-flex.html" class="product-link"><strong>PRUElite Flex</strong>
+                            <span>View Details →</span></a>
+                        <a href="pages/pruwealth-enrich-2.html" class="product-link"><strong>PRUWealth Enrich
+                                2.0</strong> <span>View Details →</span></a>
                     </div>
                 </div>
             </div>
@@ -343,18 +460,6 @@
                     <li><a href="calculator.html">Calculator</a></li>
                     <li><a href="partners.html">Partners</a></li>
                     <li><a href="index.html#quote">Let's Connect</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h3>Contact</h3>
-                <p>Email: annabelong6997@prupartner.com.my</p>
-                <p>Phone: +60 18-317 6361</p>
-            </div>
-        </div>
-                </li>
-                    <li><a href="calculator.html">Calculator</a></li>
-                    <li><a href="index.html#partners">Partners</a></li>
-                    <li><a href="index.html#quote">Get Connected</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
