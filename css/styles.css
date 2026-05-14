@@ -822,6 +822,16 @@ select option {
         right: 0;
     }
 
+    .nav-links a,
+    .nav-links .nav-drop-btn,
+    .nav-links .lang-btn {
+        color: var(--dark-bg) !important;
+    }
+    
+    .nav-links .lang-btn {
+        border-color: var(--border-color) !important;
+    }
+
     .mobile-toggle.active .bar:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
     }

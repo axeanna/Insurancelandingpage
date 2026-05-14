@@ -98,7 +98,7 @@ def generate_page(slug, title, badge, desc, benefits, who, ms_flag=False):
     <title>{title} | Prudential</title>
     <link rel="icon" type="image/png" href="../assets/prudential-1.png">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css?v=10">
     <style>
         .product-hero {{
             background: linear-gradient(135deg, var(--dark-bg) 0%, #1a1a1a 100%);
