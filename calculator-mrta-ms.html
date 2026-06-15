@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gunakan simulator MRTA dan MLTA kami untuk memahami pilihan insurans gadai janji dan mencari perlindungan hartanah terbaik untuk anda.">
+    <title>Simulator Gadai Janji | Prudential Insurance</title>
+    <link rel="icon" type="image/png" href="assets/prudential-1.png">
+    <link rel="canonical" href="https://annaprudential.com/calculator-mrta-ms.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css?v=11">
+    <link rel="stylesheet" href="css/calculator.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        /* Dropdown Nav Styles */
+        .nav-dropdown { position: relative; }
+        .dropdown-content {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            position: absolute;
+            top: 100%;
+            left: -150px;
+            background-color: var(--pure-white);
+            min-width: 650px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            z-index: 100;
+            border-radius: 16px;
+            padding: 25px;
+            gap: 20px;
+            display: flex;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .nav-dropdown:hover .dropdown-content {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .drop-col { flex: 1; display: flex; flex-direction: column; }
+        .drop-col strong { color: var(--dark-bg); margin-bottom: 10px; font-size: 0.9rem; border-bottom: 1px solid var(--border-color); padding-bottom: 5px; }
+        .drop-col a { color: var(--text-main) !important; padding: 8px 0; text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+        .drop-col a:hover { color: var(--primary-red) !important; padding-left: 5px; }
+        @media (max-width: 992px) {
+            .dropdown-content { position: static; display: none; min-width: 100%; box-shadow: none; padding: 10px; flex-direction: column; }
+            .nav-dropdown.active .dropdown-content { display: flex; }
+        }
+
+        .simulator-section { padding: 48px 0 100px; background: var(--off-white); }
+        .sim-block { max-width: 860px; margin: 0 auto 50px; background: white; border-radius: 24px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); padding: 40px; }
+        .sim-block h2 { font-size: 1.4rem; color: var(--dark-bg); margin-bottom: 6px; }
+        .sim-block .sim-desc { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 28px; line-height: 1.5; }
+        .sim-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 28px; }
+        .sim-control-group { display: flex; flex-direction: column; gap: 8px; }
+        .sim-control-group label { font-size: 0.85rem; font-weight: 600; color: var(--text-main); }
+        .sim-control-group label span { color: var(--primary-red); font-weight: 700; }
+        .sim-control-group label.rate-actual span { color: #dc2626; }
+        .sim-control-group label.rate-surplus span { color: #166534; }
+        input[type="range"].sim-slider { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 100px; background: #e2e8f0; outline: none; cursor: pointer; accent-color: var(--primary-red); }
+        input[type="range"].sim-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; background: white; border: 3px solid var(--primary-red); border-radius: 50%; cursor: pointer; box-shadow: 0 2px 8px rgba(211,18,37,0.25); transition: transform 0.15s ease; }
+        input[type="range"].sim-slider::-webkit-slider-thumb:hover { transform: scale(1.2); }
+        input[type="range"].sim-slider::-moz-range-thumb { width: 22px; height: 22px; background: white; border: 3px solid var(--primary-red); border-radius: 50%; cursor: pointer; }
+        .sim-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 28px; }
+        .sim-card { padding: 18px 16px; border-radius: 14px; text-align: center; }
+        .sim-card-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; font-weight: 700; opacity: 0.75; margin-bottom: 8px; }
+        .sim-card-value { font-size: 1.2rem; font-weight: 800; }
+        .sim-card.blue { background: #e0e7ff; color: #3730a3; }
+        .sim-card.red  { background: #fee2e2; color: #991b1b; }
+        .sim-card.green { background: #dcfce7; color: #166534; border: 2px solid #22c55e; }
+        .mrta-gate-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 9999; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; }
+        .mrta-gate-overlay.active { opacity: 1; visibility: visible; }
+        .mrta-gate-card { background: white; border-radius: 28px; padding: 44px 40px 40px; max-width: 440px; width: 100%; text-align: center; box-shadow: 0 40px 80px rgba(0,0,0,0.2); transform: translateY(30px); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .mrta-gate-overlay.active .mrta-gate-card { transform: translateY(0); }
+        .mrta-gate-card .gate-emoji { font-size: 3rem; display: block; margin-bottom: 12px; }
+        .mrta-gate-card h3 { font-size: 1.5rem; color: var(--dark-bg); margin-bottom: 10px; }
+        .mrta-gate-card .gate-sub { font-size: 0.92rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 24px; }
+        .mrta-gate-fields { display: flex; flex-direction: column; gap: 12px; margin-bottom: 18px; text-align: left; }
+        .mrta-gate-input { width: 100%; padding: 15px 18px; border: 2px solid #e2e8f0; border-radius: 14px; font-size: 1rem; font-family: inherit; color: #1a1a1a; background: #f8fafc; outline: none; transition: border-color 0.2s, box-shadow 0.2s; }
+        .mrta-gate-input:focus { border-color: var(--primary-red); background: white; box-shadow: 0 0 0 3px rgba(211,18,37,0.1); }
+        .mrta-gate-input::placeholder { color: #b0b8c4; }
+        .mrta-gate-err { font-size: 0.8rem; color: var(--primary-red); margin-top: -6px; display: none; }
+        .mrta-gate-err.visible { display: block; }
+        @media (max-width: 768px) {
+            .sim-block { padding: 24px 18px; border-radius: 16px; }
+            .sim-controls { grid-template-columns: 1fr; gap: 18px; }
+            .sim-cards { grid-template-columns: 1fr; }
+            .sim-card-value { font-size: 1.4rem; }
+            .mrta-gate-card { padding: 32px 24px 28px; }
+            .mrta-gate-card h3 { font-size: 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index-ms.html" class="logo">
+                <img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo">
+            </a>
+            <button class="mobile-toggle" aria-label="Togol Navigasi">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index-ms.html#home">Utama</a></li>
+                <li><a href="index-ms.html#about">Tentang Saya</a></li>
+                <li class="nav-dropdown">
+                    <a href="products-ms.html" class="nav-drop-btn">Produk ▾</a>
+                    <div class="dropdown-content">
+                        <div class="drop-col">
+                            <strong>🛡️ Insurans Hayat</strong>
+                            <a href="pages/pruwith-you-plus-ms.html">PRUWith You Plus</a>
+                            <a href="pages/pruwealth-enrich-2-ms.html">PRUWealth Enrich 2.0</a>
+                            <a href="pages/prulive-well-ms.html">PRULive Well</a>
+                            <a href="pages/pruterm-ms.html">PRUTerm</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>❤️ Penyakit Kritikal</strong>
+                            <a href="pages/total-multi-crisis-care-ms.html">Total Multi Crisis Care</a>
+                            <a href="pages/critical-care-plus-ms.html">Critical Care Plus</a>
+                            <a href="pages/critical-care-ms.html">Critical Care</a>
+                            <a href="pages/essential-child-plus-ms.html">Essential Child Plus</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>🏥 Insurans Perubatan</strong>
+                            <a href="pages/prumillion-med-2-ms.html">PRUMillion Med 2.0</a>
+                            <br><strong>👶 Bayi & Kanak-kanak</strong>
+                            <a href="pages/prumy-child-plus-ms.html">PRUMy Child Plus</a>
+                            <br><strong>💰 Simpanan & Pelaburan</strong>
+                            <a href="pages/prucash-enrich-ms.html">PRUCash Enrich</a>
+                            <a href="pages/pruelite-flex-ms.html">PRUElite Flex</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="calculator-ms.html" class="nav-active">Kalkulator</a></li>
+                <li><a href="index-ms.html#partners">Rakan Kongsi</a></li>
+                <li class="lang-item">
+                    <a href="calculator-mrta.html" class="lang-btn" aria-label="Tukar Bahasa" title="Tukar Bahasa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="globe-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span>MS | EN</span>
+                    </a>
+                </li>
+                <li><a href="index-ms.html#quote" class="nav-cta">Hubungi Saya</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="page-hero">
+        <div class="container fade-in active">
+            <span class="badge">Hartanah & Kekayaan</span>
+            <h1>Simulator <span class="text-red">Gadai Janji</span></h1>
+            <p>Bandingkan MRTA vs MLTA dan lihat pelan perlindungan gadai janji mana yang sesuai dengan pelaburan hartanah anda.</p>
+        </div>
+    </header>
+
+    <!-- Kad Nav Kalkulator -->
+    <section class="calc-nav-section">
+        <div class="container">
+            <div class="calc-nav-cards fade-in active">
+                <a href="calculator-ms.html" class="calc-nav-card">
+                    <span class="card-icon">🛡️</span>
+                    <div class="card-text">
+                        <h3>Hayat &amp; Penyakit Kritikal</h3>
+                        <p>Anggarkan keperluan perlindungan hayat dan PK berdasarkan matlamat dan komitmen bulanan anda.</p>
+                    </div>
+                </a>
+                <a href="calculator-medical-ms.html" class="calc-nav-card">
+                    <span class="card-icon">📈</span>
+                    <div class="card-text">
+                        <h3>Tren Inflasi Perubatan</h3>
+                        <p>Lihat bagaimana inflasi perubatan 15–16% setahun mempengaruhi kos penjagaan kesihatan masa depan.</p>
+                    </div>
+                </a>
+                <div class="calc-nav-card active">
+                    <span class="card-icon">🏠</span>
+                    <div class="card-text">
+                        <h3>Simulator Gadai Janji <span class="active-badge">Di Sini</span></h3>
+                        <p>Bandingkan MRTA vs MLTA untuk perlindungan gadai janji yang paling sesuai dengan matlamat hartanah anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulator -->
+    <section class="simulator-section">
+        <div class="container">
+
+            <!-- MRTA -->
+            <div class="sim-block" id="mrta-sim">
+                <h2>Simulator MRTA vs Baki Pinjaman</h2>
+                <p class="sim-desc">Perhatikan jurang merah muncul apabila kadar faedah sebenar melebihi kadar asas MRTA — ini adalah <strong>risiko kurang dilindungi</strong> anda.</p>
+
+                <div class="sim-controls">
+                    <div class="sim-control-group">
+                        <label>Nilai Hartanah / Pinjaman: <span id="loanVal">RM 500,000</span></label>
+                        <input type="range" class="sim-slider" id="principal" min="300000" max="1500000" step="50000" value="500000">
+                    </div>
+                    <div class="sim-control-group">
+                        <label>Tempoh Pinjaman: <span id="tenureVal">30 Tahun</span></label>
+                        <input type="range" class="sim-slider" id="tenure" min="15" max="35" step="1" value="30">
+                    </div>
+                    <div class="sim-control-group">
+                        <label>Kadar Asas MRTA (Dikunci): <span id="baseRateVal">4.0%</span></label>
+                        <input type="range" class="sim-slider" id="baseRate" min="3.0" max="7.0" step="0.25" value="4.0">
+                    </div>
+                    <div class="sim-control-group">
+                        <label class="rate-actual">Kadar Gadai Janji Sebenar (Kenaikan OPR): <span id="actualRateVal">6.0%</span></label>
+                        <input type="range" class="sim-slider" id="actualRate" min="3.0" max="8.0" step="0.25" value="6.0">
+                    </div>
+                </div>
+                <canvas id="mrtaChart"></canvas>
+            </div>
+
+            <!-- MLTA -->
+            <div class="sim-block" id="mlta-sim">
+                <h2>Simulator MLTA &amp; Hibah</h2>
+                <p class="sim-desc">Gerakkan peluncur garis masa untuk melihat berapa <strong>lebihan tunai (Hibah)</strong> yang diterima keluarga anda pada bila-bila masa sepanjang pinjaman.</p>
+
+                <div class="sim-controls">
+                    <div class="sim-control-group">
+                        <label>Nilai Hartanah: <span id="mlta-loanVal">RM 1,000,000</span></label>
+                        <input type="range" class="sim-slider" id="mlta-principal" min="700000" max="1500000" step="50000" value="1000000">
+                    </div>
+                    <div class="sim-control-group">
+                        <label>Tempoh Pinjaman: <span id="mlta-tenureVal">30 Tahun</span></label>
+                        <input type="range" class="sim-slider" id="mlta-tenure" min="15" max="35" step="1" value="30">
+                    </div>
+                    <div class="sim-control-group">
+                        <label>Kadar Faedah: <span id="mlta-rateVal">4.25%</span></label>
+                        <input type="range" class="sim-slider" id="mlta-rate" min="3.0" max="7.0" step="0.25" value="4.25">
+                    </div>
+                    <div class="sim-control-group">
+                        <label class="rate-surplus">Garis Masa: <span id="mlta-yearVal">Tahun 15</span></label>
+                        <input type="range" class="sim-slider" id="mlta-currentYear" min="0" max="30" step="1" value="15">
+                    </div>
+                </div>
+
+                <div class="sim-cards">
+                    <div class="sim-card blue">
+                        <div class="sim-card-title">Pembayaran MLTA Tetap</div>
+                        <div class="sim-card-value" id="disp-mlta">RM 1,000,000</div>
+                    </div>
+                    <div class="sim-card red">
+                        <div class="sim-card-title">Baki Hutang Bank</div>
+                        <div class="sim-card-value" id="disp-debt">RM 650,000</div>
+                    </div>
+                    <div class="sim-card green">
+                        <div class="sim-card-title">💚 Lebihan Tunai Keluarga (Hibah)</div>
+                        <div class="sim-card-value" id="disp-surplus">RM 350,000</div>
+                    </div>
+                </div>
+
+                <canvas id="mltaChart"></canvas>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pop-up Lead Gate -->
+    <div class="mrta-gate-overlay" id="mrta-gate" role="dialog" aria-modal="true">
+        <div class="mrta-gate-card">
+            <span class="gate-emoji">🏠</span>
+            <h3>Akan membeli rumah tidak lama lagi?</h3>
+            <p class="gate-sub">Rujuk Perunding Kekayaan kami untuk mengetahui pelan insurans mana yang lebih sesuai untuk pelaburan hartanah anda.</p>
+
+            <div class="mrta-gate-fields">
+                <input type="text"  class="mrta-gate-input" id="gate-name"  placeholder="Nama Penuh Anda"      autocomplete="name">
+                <div class="mrta-gate-err" id="gate-name-error">Sila masukkan nama anda</div>
+
+                <input type="email" class="mrta-gate-input" id="gate-email" placeholder="Alamat E-mel"          autocomplete="email">
+                <div class="mrta-gate-err" id="gate-email-error">Sila masukkan alamat e-mel anda</div>
+
+                <input type="tel"   class="mrta-gate-input" id="gate-phone" placeholder="Nombor WhatsApp"       autocomplete="tel">
+                <div class="mrta-gate-err" id="gate-phone-error">Sila masukkan nombor WhatsApp anda</div>
+            </div>
+
+            <button class="btn btn-primary btn-block" id="mrta-submit-btn"
+                style="width:100%; padding:16px; font-size:1rem; border-radius:14px; margin-bottom:12px;">
+                Bercakap dengan Perunding →
+            </button>
+            <p id="mrta-gate-success" style="color:#10B981; font-weight:600; margin-top:10px; display:none;">
+                ✅ Terima kasih! Anna akan menghubungi anda sebentar lagi.
+            </p>
+            <p style="font-size:0.75rem; color:#9ca3af; margin-top:10px; line-height:1.5;">
+                Data anda adalah peribadi dan hanya akan digunakan untuk menghubungi anda berhubung pertanyaan ini.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index-ms.html" class="logo"><img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo"></a>
+                <p class="mt-2">Menyediakan penyelesaian insurans premium dan ketenangan fikiran untuk anda dan keluarga.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Pautan Pantas</h3>
+                <ul>
+                    <li><a href="index-ms.html#home">Utama</a></li>
+                    <li><a href="index-ms.html#about">Tentang</a></li>
+                    <li><a href="products-ms.html">Produk</a></li>
+                    <li><a href="calculator-ms.html">Kalkulator</a></li>
+                    <li><a href="partners-ms.html">Rakan Kongsi</a></li>
+                    <li><a href="index-ms.html#quote">Hubungi Saya</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p>Emel: annabelong6997@prupartner.com.my</p>
+                <p>Telefon: +60 18-317 6361</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Prudential. Hak Cipta Terpelihara.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js?v=11"></script>
+    <script src="js/mrta.js"></script>
+</body>
+</html>

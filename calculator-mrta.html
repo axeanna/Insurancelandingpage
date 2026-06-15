@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use our MRTA and MLTA simulators to understand mortgage insurance options and find the best property coverage for you.">
+    <meta name="keywords" content="MRTA, MLTA, Mortgage Insurance, Property Insurance, Malaysia, Prudential">
+    <meta name="author" content="Anna Prudential">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mortgage Simulator | Prudential Insurance">
+    <meta property="og:description" content="Compare MRTA vs MLTA to see which mortgage protection plan is right for your property.">
+    <title>Mortgage Simulator | Prudential Insurance</title>
+    <link rel="icon" type="image/png" href="assets/prudential-1.png">
+    <link rel="canonical" href="https://annaprudential.com/calculator-mrta.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css?v=11">
+    <link rel="stylesheet" href="css/calculator.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        /* ── Dropdown Nav Styles ── */
+        .nav-dropdown { position: relative; }
+        .dropdown-content {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            position: absolute;
+            top: 100%;
+            left: -150px;
+            background-color: var(--pure-white);
+            min-width: 650px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            z-index: 100;
+            border-radius: 16px;
+            padding: 25px;
+            gap: 20px;
+            display: flex;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .nav-dropdown:hover .dropdown-content {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .drop-col { flex: 1; display: flex; flex-direction: column; }
+        .drop-col strong { color: var(--dark-bg); margin-bottom: 10px; font-size: 0.9rem; border-bottom: 1px solid var(--border-color); padding-bottom: 5px; }
+        .drop-col a { color: var(--text-main) !important; padding: 8px 0; text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+        .drop-col a:hover { color: var(--primary-red) !important; padding-left: 5px; }
+        
+        @media (max-width: 992px) {
+            .dropdown-content {
+                position: static;
+                display: none;
+                min-width: 100%;
+                box-shadow: none;
+                padding: 10px;
+                flex-direction: column;
+            }
+            .nav-dropdown.active .dropdown-content {
+                display: flex;
+            }
+        }
+
+        /* ── Simulator Section ── */
+        .simulator-section {
+            padding: 48px 0 100px;
+            background: var(--off-white);
+        }
+
+        .sim-block {
+            max-width: 860px;
+            margin: 0 auto 50px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            padding: 40px;
+        }
+
+        .sim-block h2 {
+            font-size: 1.4rem;
+            color: var(--dark-bg);
+            margin-bottom: 6px;
+        }
+
+        .sim-block .sim-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+            line-height: 1.5;
+        }
+
+        /* ── Slider Controls ── */
+        .sim-controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 28px;
+        }
+
+        .sim-control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .sim-control-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .sim-control-group label span {
+            color: var(--primary-red);
+            font-weight: 700;
+        }
+
+        .sim-control-group label.rate-actual span {
+            color: #dc2626;
+        }
+
+        .sim-control-group label.rate-surplus span {
+            color: #166534;
+        }
+
+        input[type="range"].sim-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 6px;
+            border-radius: 100px;
+            background: #e2e8f0;
+            outline: none;
+            cursor: pointer;
+            accent-color: var(--primary-red);
+        }
+
+        input[type="range"].sim-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 22px;
+            height: 22px;
+            background: white;
+            border: 3px solid var(--primary-red);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(211,18,37,0.25);
+            transition: transform 0.15s ease;
+        }
+
+        input[type="range"].sim-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        input[type="range"].sim-slider::-moz-range-thumb {
+            width: 22px;
+            height: 22px;
+            background: white;
+            border: 3px solid var(--primary-red);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(211,18,37,0.25);
+        }
+
+        /* ── MLTA Summary Cards ── */
+        .sim-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-bottom: 28px;
+        }
+
+        .sim-card {
+            padding: 18px 16px;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .sim-card-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            font-weight: 700;
+            opacity: 0.75;
+            margin-bottom: 8px;
+        }
+
+        .sim-card-value {
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+
+        .sim-card.blue   { background: #e0e7ff; color: #3730a3; }
+        .sim-card.red    { background: #fee2e2; color: #991b1b; }
+        .sim-card.green  { background: #dcfce7; color: #166534; border: 2px solid #22c55e; }
+
+        /* ── Gate Modal ── */
+        .mrta-gate-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.75);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .mrta-gate-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mrta-gate-card {
+            background: white;
+            border-radius: 28px;
+            padding: 44px 40px 40px;
+            max-width: 440px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.2);
+            transform: translateY(30px);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .mrta-gate-overlay.active .mrta-gate-card {
+            transform: translateY(0);
+        }
+
+        .mrta-gate-card .gate-emoji {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .mrta-gate-card h3 {
+            font-size: 1.5rem;
+            color: var(--dark-bg);
+            margin-bottom: 10px;
+        }
+
+        .mrta-gate-card .gate-sub {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .mrta-gate-fields {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 18px;
+            text-align: left;
+        }
+
+        .mrta-gate-input {
+            width: 100%;
+            padding: 15px 18px;
+            border: 2px solid #e2e8f0;
+            border-radius: 14px;
+            font-size: 1rem;
+            font-family: inherit;
+            color: #1a1a1a;
+            background: #f8fafc;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .mrta-gate-input:focus {
+            border-color: var(--primary-red);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(211,18,37,0.1);
+        }
+
+        .mrta-gate-input::placeholder { color: #b0b8c4; }
+
+        .mrta-gate-err {
+            font-size: 0.8rem;
+            color: var(--primary-red);
+            margin-top: -6px;
+            display: none;
+        }
+
+        .mrta-gate-err.visible { display: block; }
+
+        /* ── Mobile ── */
+        @media (max-width: 768px) {
+            .sim-block {
+                padding: 24px 18px;
+                border-radius: 16px;
+            }
+
+            .sim-controls {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .sim-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .sim-card-value {
+                font-size: 1.4rem;
+            }
+
+            .mrta-gate-card {
+                padding: 32px 24px 28px;
+            }
+
+            .mrta-gate-card h3 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo">
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+                <li class="nav-dropdown">
+                    <a href="products.html" class="nav-drop-btn">Products ▾</a>
+                    <div class="dropdown-content">
+                        <div class="drop-col">
+                            <strong>🛡️ Life Insurance</strong>
+                            <a href="pages/pruwith-you-plus.html">PRUWith You Plus</a>
+                            <a href="pages/pruwealth-enrich-2.html">PRUWealth Enrich 2.0</a>
+                            <a href="pages/prulive-well.html">PRULive Well</a>
+                            <a href="pages/pruterm.html">PRUTerm</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>❤️ Critical Illness</strong>
+                            <a href="pages/total-multi-crisis-care.html">Total Multi Crisis Care</a>
+                            <a href="pages/critical-care-plus.html">Critical Care Plus</a>
+                            <a href="pages/critical-care.html">Critical Care</a>
+                            <a href="pages/essential-child-plus.html">Essential Child Plus</a>
+                        </div>
+                        <div class="drop-col">
+                            <strong>🏥 Medical Insurance</strong>
+                            <a href="pages/prumillion-med-2.html">PRUMillion Med 2.0</a>
+                            <br>
+                            <strong>👶 Infant & Child</strong>
+                            <a href="pages/prumy-child-plus.html">PRUMy Child Plus</a>
+                            <br>
+                            <strong>💰 Savings & Investment</strong>
+                            <a href="pages/prucash-enrich.html">PRUCash Enrich</a>
+                            <a href="pages/pruelite-flex.html">PRUElite Flex</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="calculator.html" class="nav-active">Calculator</a></li>
+                <li><a href="index.html#partners">Partners</a></li>
+                <li class="lang-item">
+                    <a href="calculator-mrta-ms.html" class="lang-btn" aria-label="Toggle Language" title="Toggle Language">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="globe-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span>EN | MS</span>
+                    </a>
+                </li>
+                <li><a href="index.html#quote" class="nav-cta">Let's Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="container fade-in active">
+            <span class="badge">Property & Wealth</span>
+            <h1>Mortgage <span class="text-red">Simulator</span></h1>
+            <p>Compare MRTA vs MLTA and see which mortgage protection plan is right for your property investment.</p>
+        </div>
+    </header>
+
+    <!-- Calculator Type Nav Cards -->
+    <section class="calc-nav-section">
+        <div class="container">
+            <div class="calc-nav-cards fade-in active">
+                <a href="calculator.html" class="calc-nav-card">
+                    <span class="card-icon">🛡️</span>
+                    <div class="card-text">
+                        <h3>Life &amp; Critical Illness</h3>
+                        <p>Estimate your life cover and CI needs based on your goals and monthly commitments.</p>
+                    </div>
+                </a>
+                <a href="calculator-medical.html" class="calc-nav-card">
+                    <span class="card-icon">📈</span>
+                    <div class="card-text">
+                        <h3>Medical Inflation Trend</h3>
+                        <p>See how Malaysia's 15–16% annual medical inflation affects future healthcare costs.</p>
+                    </div>
+                </a>
+                <div class="calc-nav-card active">
+                    <span class="card-icon">🏠</span>
+                    <div class="card-text">
+                        <h3>Mortgage Simulator <span class="active-badge">Here</span></h3>
+                        <p>Compare MRTA vs MLTA to find the best mortgage protection for your property goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulators -->
+    <section class="simulator-section">
+        <div class="container">
+
+            <!-- ── MRTA Simulator ── -->
+            <div class="sim-block" id="mrta-sim">
+                <h2>MRTA vs Loan Balance Simulator</h2>
+                <p class="sim-desc">Watch the red gap appear when the actual interest rate exceeds the MRTA locked base rate — this is your <strong>underinsurance risk</strong>.</p>
+
+                <div class="sim-controls">
+                    <div class="sim-control-group">
+                        <label>Property Value / Loan: <span id="loanVal">RM 500,000</span></label>
+                        <input type="range" class="sim-slider" id="principal" min="300000" max="1500000" step="50000" value="500000">
+                    </div>
+                    <div class="sim-control-group">
+                        <label>Loan Tenure: <span id="tenureVal">30 Years</span></label>
+                        <input type="range" class="sim-slider" id="tenure" min="15" max="35" step="1" value="30">
+                    </div>
+                    <div class="sim-control-group">
+                        <label>MRTA Base Rate (Locked at Inception): <span id="baseRateVal">4.0%</span></label>
+                        <input type="range" class="sim-slider" id="baseRate" min="3.0" max="7.0" step="0.25" value="4.0">
+                    </div>
+                    <div class="sim-control-group">
+                        <label class="rate-actual">Actual Mortgage Rate (OPR Hikes): <span id="actualRateVal">6.0%</span></label>
+                        <input type="range" class="sim-slider" id="actualRate" min="3.0" max="8.0" step="0.25" value="6.0">
+                    </div>
+                </div>
+
+                <canvas id="mrtaChart"></canvas>
+            </div>
+
+            <!-- ── MLTA Simulator ── -->
+            <div class="sim-block" id="mlta-sim">
+                <h2>MLTA &amp; Hibah Simulator</h2>
+                <p class="sim-desc">Move the timeline slider to see how much <strong>cash surplus (Hibah)</strong> your family receives at any point during the loan.</p>
+
+                <div class="sim-controls">
+                    <div class="sim-control-group">
+                        <label>Property Value: <span id="mlta-loanVal">RM 1,000,000</span></label>
+                        <input type="range" class="sim-slider" id="mlta-principal" min="700000" max="1500000" step="50000" value="1000000">
+                    </div>
+                    <div class="sim-control-group">
+                        <label>Loan Tenure: <span id="mlta-tenureVal">30 Years</span></label>
+                        <input type="range" class="sim-slider" id="mlta-tenure" min="15" max="35" step="1" value="30">
+                    </div>
+                    <div class="sim-control-group">
+                        <label>Interest Rate: <span id="mlta-rateVal">4.25%</span></label>
+                        <input type="range" class="sim-slider" id="mlta-rate" min="3.0" max="7.0" step="0.25" value="4.25">
+                    </div>
+                    <div class="sim-control-group">
+                        <label class="rate-surplus">Timeline: <span id="mlta-yearVal">Year 15</span></label>
+                        <input type="range" class="sim-slider" id="mlta-currentYear" min="0" max="30" step="1" value="15">
+                    </div>
+                </div>
+
+                <div class="sim-cards">
+                    <div class="sim-card blue">
+                        <div class="sim-card-title">Fixed MLTA Payout</div>
+                        <div class="sim-card-value" id="disp-mlta">RM 1,000,000</div>
+                    </div>
+                    <div class="sim-card red">
+                        <div class="sim-card-title">Outstanding Bank Debt</div>
+                        <div class="sim-card-value" id="disp-debt">RM 650,000</div>
+                    </div>
+                    <div class="sim-card green">
+                        <div class="sim-card-title">💚 Family Cash Surplus (Hibah)</div>
+                        <div class="sim-card-value" id="disp-surplus">RM 350,000</div>
+                    </div>
+                </div>
+
+                <canvas id="mltaChart"></canvas>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lead Gate Overlay -->
+    <div class="mrta-gate-overlay" id="mrta-gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+        <div class="mrta-gate-card">
+            <span class="gate-emoji">🏠</span>
+            <h3 id="gate-title">Buying a home soon?</h3>
+            <p class="gate-sub">Consult our Wealth Planner to know which insurance plan is more suitable for your property investment.</p>
+
+            <div class="mrta-gate-fields">
+                <input type="text"  class="mrta-gate-input" id="gate-name"  placeholder="Your Full Name"      autocomplete="name">
+                <div class="mrta-gate-err" id="gate-name-error">Please enter your name</div>
+
+                <input type="email" class="mrta-gate-input" id="gate-email" placeholder="Email Address"        autocomplete="email">
+                <div class="mrta-gate-err" id="gate-email-error">Please enter your email address</div>
+
+                <input type="tel"   class="mrta-gate-input" id="gate-phone" placeholder="WhatsApp Number"      autocomplete="tel">
+                <div class="mrta-gate-err" id="gate-phone-error">Please enter your WhatsApp number</div>
+            </div>
+
+            <button class="btn btn-primary btn-block" id="mrta-submit-btn"
+                style="width:100%; padding:16px; font-size:1rem; border-radius:14px; margin-bottom:12px;">
+                Talk to a Wealth Planner →
+            </button>
+            <p id="mrta-gate-success" style="color:#10B981; font-weight:600; margin-top:10px; display:none;">
+                ✅ Thank you! Anna will reach out to you shortly.
+            </p>
+            <p style="font-size:0.75rem; color:#9ca3af; margin-top:10px; line-height:1.5;">
+                Your data is kept private and will only be used to contact you about this enquiry.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><img src="assets/prudential-1.png" alt="Prudential Logo" class="brand-logo"></a>
+                <p class="mt-2">Providing premium insurance solutions and peace of mind for you and your family.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="index.html#quote">Let's Connect</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: annabelong6997@prupartner.com.my</p>
+                <p>Phone: +60 18-317 6361</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Prudential. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js?v=11"></script>
+    <script src="js/mrta.js"></script>
+</body>
+</html>

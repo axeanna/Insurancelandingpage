@@ -6,7 +6,7 @@
     <title>Critical Care Plus | Prudential</title>
     <link rel="icon" type="image/png" href="../assets/prudential-1.png">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css?v=10">
+    <link rel="stylesheet" href="../css/styles.css?v=11">
     <style>
         .product-hero {
             background: linear-gradient(135deg, var(--dark-bg) 0%, #1a1a1a 100%);
@@ -30,43 +30,23 @@
         /* Dropdown CSS - UPDATED TO ANIMATED VERSION */
         .nav-dropdown { position: relative; }
         .dropdown-content {
-            visibility: hidden;
-            opacity: 0;
-            transform: translateY(10px);
-            position: absolute;
-            top: 100%;
-            left: -150px;
-            background-color: var(--pure-white);
-            min-width: 650px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-            z-index: 100;
-            border-radius: 16px;
-            padding: 25px;
-            gap: 20px;
-            display: flex;
+            visibility: hidden; opacity: 0; transform: translateY(10px);
+            position: absolute; top: 100%; left: -150px;
+            background-color: var(--pure-white); min-width: 650px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15); z-index: 100;
+            border-radius: 16px; padding: 25px; gap: 20px; display: flex;
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
             border: 1px solid rgba(0,0,0,0.05);
         }
-        .nav-dropdown:hover .dropdown-content {
-            visibility: visible;
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .nav-dropdown:hover .dropdown-content { visibility: visible; opacity: 1; transform: translateY(0); }
         .drop-col { flex: 1; display: flex; flex-direction: column; }
         .drop-col strong { color: var(--dark-bg); margin-bottom: 10px; font-size: 0.9rem; border-bottom: 1px solid var(--border-color); padding-bottom: 5px; }
-        /* FIXED --text-dark to --text-main */
         .drop-col a { color: var(--text-main) !important; padding: 8px 0; text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
         .drop-col a:hover { color: var(--primary-red) !important; padding-left: 5px; }
-        
         @media (max-width: 992px) {
-            .dropdown-content {
-                position: static;
-                display: none;
-                min-width: 100%;
-                box-shadow: none;
-                padding: 10px;
-                flex-direction: column;
-            }
+            .dropdown-content { position: static; display: none; min-width: 100%; box-shadow: none; padding: 10px; flex-direction: column; }
+            .nav-dropdown.active .dropdown-content { display: flex; }
+        }
             .nav-dropdown.active .dropdown-content {
                 display: flex;
             }
@@ -242,8 +222,11 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
                     <li><a href="../products.html">Products</a></li>
                     <li><a href="../calculator.html">Calculator</a></li>
+                    <li><a href="../partners.html">Partners</a></li>
+                    <li><a href="../index.html#quote">Let's Connect</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -257,6 +240,6 @@
         </div>
     </footer>
     <!-- Add JS script to make toggle work -->
-    <script src="../js/script.js?v=9"></script>
+    <script src="../js/script.js?v=11"></script>
 </body>
 </html>

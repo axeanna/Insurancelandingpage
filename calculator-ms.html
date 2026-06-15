@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css?v=10">
+    <link rel="stylesheet" href="css/styles.css?v=11">
     <link rel="stylesheet" href="css/calculator.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
@@ -121,6 +121,13 @@
                     <div class="card-text">
                         <h3>Tren Inflasi Perubatan</h3>
                         <p>Lihat bagaimana inflasi perubatan Malaysia 15–16% setahun mempengaruhi kos penjagaan kesihatan masa depan.</p>
+                    </div>
+                </a>
+                <a href="calculator-mrta-ms.html" class="calc-nav-card">
+                    <span class="card-icon">🏠</span>
+                    <div class="card-text">
+                        <h3>Simulator Gadai Janji</h3>
+                        <p>Bandingkan MRTA vs MLTA untuk melihat pelan perlindungan mana yang paling sesuai dengan matlamat hartanah anda.</p>
                     </div>
                 </a>
             </div>
@@ -412,9 +419,14 @@
                 <div id="gate-name-error" class="gate-error">Sila masukkan nama anda</div>
 
                 <input type="email" class="gate-input" id="gate-email"
-                    placeholder="Alamat e-mel anda"
-                    autocomplete="email" aria-label="Alamat e-mel anda">
+                    placeholder="Alamat E-mel (cth: anda@contoh.com)"
+                    autocomplete="email" aria-label="Alamat E-mel anda">
                 <div id="gate-email-error" class="gate-error">Sila masukkan alamat e-mel anda</div>
+
+                <input type="tel" class="gate-input" id="gate-phone"
+                    placeholder="Nombor WhatsApp (cth: 012-345 6789)"
+                    autocomplete="tel" aria-label="Nombor WhatsApp anda">
+                <div id="gate-phone-error" class="gate-error">Sila masukkan nombor WhatsApp anda</div>
 
 
             </div>
@@ -494,7 +506,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js?v=9"></script>
+    <script src="js/script.js?v=11"></script>
     <script src="js/calculator.js"></script>
 
 <!-- Quotation Modal Overlay (MS) -->
@@ -676,6 +688,7 @@
                     <input type="radio" name="modal_medical" value="Ya"> Ya, saya mempunyai keadaan perubatan sedia ada
                 </label>
             </div>
+
             
             <div id="medical-desc-container" style="display: none; margin-bottom: 15px;">
                 <label class="modal-field-label" style="font-size: 0.9rem;">Sila huraikan keadaan anda secara ringkas</label>

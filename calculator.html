@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css?v=10">
+    <link rel="stylesheet" href="css/styles.css?v=11">
     <link rel="stylesheet" href="css/calculator.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
@@ -121,6 +121,13 @@
                     <div class="card-text">
                         <h3>Medical Inflation Trend</h3>
                         <p>See how Malaysia's 15–16% annual medical inflation affects future healthcare costs.</p>
+                    </div>
+                </a>
+                <a href="calculator-mrta.html" class="calc-nav-card">
+                    <span class="card-icon">🏠</span>
+                    <div class="card-text">
+                        <h3>Mortgage Simulator</h3>
+                        <p>Compare MRTA vs MLTA to see which protection plan best suits your property goals.</p>
                     </div>
                 </a>
             </div>
@@ -416,6 +423,11 @@
                     autocomplete="email" aria-label="Your email address">
                 <div id="gate-email-error" class="gate-error">Please enter your email address</div>
 
+                <input type="tel" class="gate-input" id="gate-phone"
+                    placeholder="WhatsApp Number (e.g. 012-345 6789)"
+                    autocomplete="tel" aria-label="Your WhatsApp number">
+                <div id="gate-phone-error" class="gate-error">Please enter your WhatsApp number</div>
+
 
             </div>
 
@@ -494,11 +506,12 @@
         </div>
     </footer>
 
-    <script src="js/script.js?v=9"></script>
+    <script src="js/script.js?v=11"></script>
     <script src="js/calculator.js"></script>
 
 <!-- Quotation Modal Overlay (EN) -->
 <style>
+
 .quote-modal-overlay {
     position: fixed; top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(0,0,0,0.6);

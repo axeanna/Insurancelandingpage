@@ -202,10 +202,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const gateName = document.getElementById('gate-name');
             const gateEmail = document.getElementById('gate-email');
+            const gatePhone = document.getElementById('gate-phone');
 
             const templateParams = {
                 user_name: gateName ? gateName.value : '',
                 user_email: gateEmail ? gateEmail.value : '',
+                user_phone: gatePhone ? gatePhone.value : '',
                 occupation: occVal,
                 nature_of_business: busVal,
                 life_cover: currentResults.lifeCover ? currentResults.lifeCover.toLocaleString('en-MY') : '0',
@@ -225,6 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const params = new URLSearchParams();
             params.append("name", templateParams.user_name);
             params.append("email", templateParams.user_email);
+            params.append("phone", templateParams.user_phone);
             params.append("occupation", occVal);
             params.append("nature_of_business", busVal);
             params.append("smoker_status", smokerVal);
@@ -301,15 +304,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultsSection = document.getElementById('results-section');
     const consentCheckbox = document.getElementById('consent-checkbox');
 
-    let gateCleared = false;
-
     if (calculateBtn) {
         calculateBtn.addEventListener('click', () => {
-            if (gateCleared) {
-                computeAndShowResults();
-            } else {
-                if (gateOverlay) gateOverlay.classList.add('active');
-            }
+            if (gateOverlay) gateOverlay.classList.add('active');
         });
     }
 
@@ -327,13 +324,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const nameInput = document.getElementById('gate-name');
             const emailInput = document.getElementById('gate-email');
+            const phoneInput = document.getElementById('gate-phone');
             const nameError = document.getElementById('gate-name-error');
             const emailError = document.getElementById('gate-email-error');
+            const phoneError = document.getElementById('gate-phone-error');
             const calcGender = document.querySelector('input[name="calc_gender"]:checked')?.value;
 
             let valid = true;
             if (nameError) nameError.classList.remove('visible');
             if (emailError) emailError.classList.remove('visible');
+            if (phoneError) phoneError.classList.remove('visible');
 
             if (!calcGender) {
                 alert("Please select your Gender in the form before proceeding.");
@@ -350,14 +350,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 valid = false;
             }
 
+            if (!phoneInput || phoneInput.value.trim() === '') {
+                if (phoneError) phoneError.classList.add('visible');
+                valid = false;
+            }
+
             if (!valid) return;
 
             const nameVal = nameInput.value.trim();
             const emailVal = emailInput.value.trim();
+            const phoneVal = phoneInput.value.trim();
 
-            sendWebhookStage1(nameVal, emailVal, calcGender);
+            sendWebhookStage1(nameVal, emailVal, phoneVal, calcGender);
 
-            gateCleared = true;
             if (gateOverlay) gateOverlay.classList.remove('active');
             computeAndShowResults();
         });
@@ -370,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return el ? (parseFloat(el.value.replace(/,/g, '')) || 0) : 0;
     }
 
-    function sendWebhookStage1(name, email, gender) {
+    function sendWebhookStage1(name, email, phone, gender) {
         const annualIncome = getVal('income');
         const housing = getVal('housing');
         const car = getVal('car');
@@ -388,6 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const params = new URLSearchParams();
         params.append("name", name);
         params.append("email", email);
+        params.append("phone", phone);
         params.append("gender", gender || '');
         params.append("life_cover", lifeCover);
         params.append("ci_cover", ciCover);
