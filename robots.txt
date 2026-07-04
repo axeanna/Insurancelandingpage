@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://annaprudential.com/sitemap.xml

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life Coverage Calculator | Annabel Ong · Prudential</title>
+<meta name="description" content="Calculate how much life insurance you need with a proper needs-based analysis: income replacement, debts, education and final expenses.">
+<meta name="author" content="Annabel Ong">
+<meta property="og:title" content="Life Coverage Calculator | Annabel Ong · Prudential">
+<meta property="og:description" content="Calculate how much life insurance you need with a proper needs-based analysis: income replacement, debts, education and final expenses.">
+<meta property="og:image" content="https://annaprudential.com/assets/hero_bg.webp">
+<link rel="icon" type="image/png" href="../../assets/prudential-1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/site.css">
+
+</head>
+<body>
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="../../" class="nav-logo"><img src="../../assets/prudential-1.png" alt="Prudential"></a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="../../">Home</a></li>
+      <li class="nav-drop">
+        <a href="../../products/">Products</a>
+        <div class="drop-panel">
+          <div class="drop-group">
+            <strong>Life &amp; Protection</strong>
+            <a href="../../products/with-you-plus/">PRUWith You Plus</a>
+            <a href="../../products/live-well/">PRULive Well</a>
+            <a href="../../products/wealth-enrich/">PRUWealth Enrich 2.0</a>
+            <a href="../../products/term/">PRUTerm</a>
+          </div>
+          <div class="drop-group">
+            <strong>Critical Illness</strong>
+            <a href="../../products/my-critical-care/">PRUMy Critical Care</a>
+            <a href="../../products/multi-crisis-care/">Total Multi Crisis Care</a>
+            <a href="../../products/critical-care-plus/">Critical Care Plus</a>
+            <a href="../../products/man-and-lady/">PRUMan &amp; PRULady</a>
+          </div>
+          <div class="drop-group">
+            <strong>Medical &amp; More</strong>
+            <a href="../../products/million-med/">PRUMillion Med 2.0</a>
+            <a href="../../products/value-med/">PRUValue Med</a>
+            <a href="../../products/my-child-plus/">PRUMy Child Plus</a>
+            <a href="../../products/" class="drop-all">View all products →</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="../../calculators/" class="active">Calculators</a></li>
+      <li><a href="../../partners/">Partners</a></li>
+      <li><a href="../../#connect" class="nav-cta">Let's Connect</a></li>
+    </ul>
+  </div>
+</nav>
+<header class="page-hero">
+  <div class="container">
+    <span class="chip">Calculator</span>
+    <h1>Life Coverage Calculator</h1>
+    <p>A proper needs-based analysis — the same method professional financial planners use.</p>
+  </div>
+</header>
+<section class="section">
+  <div class="container calc-layout">
+    <div class="calc-panel">
+      <h3>Your situation</h3>
+      <div class="field"><label for="income">Monthly income</label><div class="input-rm"><input type="text" id="income" inputmode="numeric" placeholder="e.g. 5,000"></div></div>
+      <p class="err" id="income-error">Please enter your monthly income.</p>
+      <div class="field">
+        <label for="years-slider">Years your family needs support <span class="hint">until children are independent / retirement</span></label>
+        <div class="range-row">
+          <input type="range" id="years-slider" min="5" max="30" value="20" step="1">
+          <span class="range-value" id="years-display">20 years</span>
+        </div>
+      </div>
+      <div class="field"><label for="mortgage">Outstanding home loan <span class="hint">balance remaining</span></label><div class="input-rm"><input type="text" id="mortgage" inputmode="numeric" placeholder="e.g. 300,000"></div></div>
+      <div class="field"><label for="debts">Other debts <span class="hint">car, personal loans, cards</span></label><div class="input-rm"><input type="text" id="debts" inputmode="numeric" placeholder="e.g. 50,000"></div></div>
+      <div class="field"><label for="education">Children's education fund <span class="hint">roughly RM150k–500k per child</span></label><div class="input-rm"><input type="text" id="education" inputmode="numeric" placeholder="e.g. 200,000"></div></div>
+      <div class="field"><label for="final-expenses">Final expenses <span class="hint">funeral & estate costs</span></label><div class="input-rm"><input type="text" id="final-expenses" inputmode="numeric" placeholder="e.g. 25,000" value="25,000"></div></div>
+      <h3 class="mt-4">What you already have</h3>
+      <div class="field"><label for="existing-cover">Existing life insurance</label><div class="input-rm"><input type="text" id="existing-cover" inputmode="numeric" placeholder="e.g. 100,000"></div></div>
+      <div class="field"><label for="savings">Savings & investments <span class="hint">EPF, cash, unit trusts</span></label><div class="input-rm"><input type="text" id="savings" inputmode="numeric" placeholder="e.g. 80,000"></div></div>
+      <button class="btn btn-primary mt-2" id="calculate-btn" style="width:100%;">Calculate My Coverage</button>
+    </div>
+    <div>
+      <div class="calc-panel" id="results" style="display:none;">
+        <div class="result-big">
+          <div class="label">Recommended life coverage</div>
+          <div class="value" id="result-life">RM 0</div>
+        </div>
+        <div class="breakdown">
+          <div class="row"><span>Income replacement (<span id="bd-income-note"></span>)</span><span id="bd-income-replacement"></span></div>
+          <div class="row"><span>Outstanding home loan</span><span id="bd-mortgage"></span></div>
+          <div class="row"><span>Other debts</span><span id="bd-debts"></span></div>
+          <div class="row"><span>Education fund</span><span id="bd-education"></span></div>
+          <div class="row"><span>Final expenses</span><span id="bd-final"></span></div>
+          <div class="row total"><span>Total needs</span><span id="bd-needs"></span></div>
+          <div class="row"><span>Existing life insurance</span><span id="bd-existing"></span></div>
+          <div class="row"><span>Savings &amp; investments</span><span id="bd-savings"></span></div>
+          <div class="row total"><span>Coverage gap</span><span id="bd-total"></span></div>
+        </div>
+        <div class="mt-3" style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="https://wa.me/60183176361?text=Hi%20Annabel%2C%20I%20just%20used%20your%20life%20coverage%20calculator%20and%20would%20like%20a%20quote." target="_blank" rel="noopener" class="btn btn-whatsapp" style="flex:1;">Get a Quote on WhatsApp</a>
+          <a href="../../#connect" class="btn btn-outline" style="flex:1;">Book a Free Session</a>
+        </div>
+        <p class="assumption">Method: needs-based analysis (income replacement + debts + education + final expenses − existing resources). This is an estimate for discussion, not financial advice — your actual needs depend on your full financial picture.</p>
+      </div>
+      <div class="calc-panel" id="results-placeholder">
+        <h3>How this works</h3>
+        <p>We use the standard <strong>needs-based method</strong>:</p>
+        <ul class="check-list mt-2">
+          <li>Replace your income for the years your family depends on it</li>
+          <li>Clear every debt so nothing is passed on</li>
+          <li>Fund your children's education</li>
+          <li>Cover final expenses</li>
+          <li>Then subtract what you already have</li>
+        </ul>
+        <p class="mt-2 muted small">Fill in the form and press Calculate — your personalised breakdown appears here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="modal" id="gate-modal">
+  <div class="modal-box">
+    <button class="modal-close" id="gate-close" aria-label="Close">✕</button>
+    <h3>Almost there!</h3>
+    <p class="sub">Enter your details to unlock your personalised results.</p>
+    <div class="field"><label for="gate-name">Full Name</label><input type="text" id="gate-name" placeholder="Your name" autocomplete="name"><p class="err" id="gate-name-error">Please enter your name.</p></div>
+    <div class="field"><label for="gate-email">Email</label><input type="email" id="gate-email" placeholder="you@email.com" autocomplete="email"><p class="err" id="gate-email-error">Please enter a valid email.</p></div>
+    <div class="field"><label for="gate-phone">Phone (WhatsApp)</label><input type="tel" id="gate-phone" placeholder="+60 12-345 6789" autocomplete="tel"><p class="err" id="gate-phone-error">Please enter your phone number.</p></div>
+    <label class="consent"><input type="checkbox" id="consent"><span>I consent to being contacted by Annabel regarding my results and suitable protection options, in line with the PDPA.</span></label>
+    <button class="btn btn-primary" id="unlock-btn" disabled style="width:100%;">Show My Results</button>
+    
+  </div>
+</div>
+<section class="section">
+  <div class="container">
+    <div class="cta-band fade-in">
+      <h2>Ready to secure your future?</h2>
+      <p>Get a personalised recommendation — no pressure, no jargon. Annabel will walk you through exactly what fits your life and budget.</p>
+      <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+        <a href="../../#connect" class="btn btn-primary">Book a Free Consultation</a>
+        <a href="https://wa.me/60183176361" target="_blank" rel="noopener" class="btn btn-ghost-light">WhatsApp Annabel</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="f-logo"><img src="../../assets/prudential-1.png" alt="Prudential"></div>
+        <p>Annabel Ong · Prudential Wealth Planner<br>LIAM No: 00702610</p>
+        <p class="mt-2 small">Securing your future with trusted life, health and wealth protection plans from Prudential Malaysia.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../products/">Products</a></li>
+          <li><a href="../../calculators/">Calculators</a></li>
+          <li><a href="../../partners/">Partners</a></li>
+          <li><a href="../../#connect">Let's Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:annabelong6997@prupartner.com.my">annabelong6997@prupartner.com.my</a></li>
+          <li><a href="tel:+60183176361">+60 18-317 6361</a></li>
+          <li><a href="https://wa.me/60183176361" target="_blank" rel="noopener">WhatsApp Annabel</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container">© 2026 Annabel Ong · Prudential Wealth Planner. All rights reserved.</div></div>
+</footer>
+<a href="https://wa.me/60183176361" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp Annabel">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.63-.93-2.23-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.85 9.85 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 9.88 9.9c0 5.45-4.44 9.87-9.89 9.87zm8.4-18.28A11.82 11.82 0 0 0 12.04 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.6 5.95L.05 24l6.3-1.65a11.87 11.87 0 0 0 5.7 1.45h.01c6.54 0 11.88-5.34 11.88-11.9 0-3.18-1.24-6.16-3.49-8.4z"/></svg>
+</a>
+<script src="../../js/main.js"></script>
+
+<script src="../../js/calc-life.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var r = document.getElementById('results');
+  var ph = document.getElementById('results-placeholder');
+  var obs = new MutationObserver(function() {
+    if (r.style.display !== 'none') ph.style.display = 'none';
+  });
+  obs.observe(r, { attributes: true, attributeFilter: ['style'] });
+});
+</script>
+</body>
+</html>
