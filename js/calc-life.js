@@ -134,7 +134,6 @@
       sendLead({
         name: capturedName,
         email: capturedEmail,
-        phone: 'N/A',
         life_cover: Math.round(r.lifeCover),
         housing_loan: Math.round(r.housing),
         car_loan: Math.round(r.car),
@@ -172,7 +171,6 @@
       sendLead({
         name: capturedName,
         email: capturedEmail,
-        phone: 'N/A',
         source: 'Life Coverage Calculator (Started)'
       });
 
