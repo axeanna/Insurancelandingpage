@@ -1,4 +1,4 @@
-/* main.js — nav, animations, FAQ, shared lead helpers */
+/* main.js — nav, animations, FAQ, modals, shared lead helpers */
 (function () {
   'use strict';
 
@@ -11,7 +11,6 @@
       links.classList.toggle('open');
       document.body.style.overflow = links.classList.contains('open') ? 'hidden' : '';
     });
-    // Mobile: tap a dropdown parent to expand instead of navigating
     document.querySelectorAll('.nav-drop > a').forEach(function (a) {
       a.addEventListener('click', function (e) {
         if (window.innerWidth <= 992) {
@@ -35,6 +34,18 @@
     btn.addEventListener('click', function () {
       btn.parentElement.classList.toggle('open');
     });
+  });
+
+  // Modals: click backdrop or press Esc to dismiss
+  document.querySelectorAll('.modal').forEach(function (modal) {
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) modal.classList.remove('active');
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal.active').forEach(function (m) { m.classList.remove('active'); });
+    }
   });
 
   // Range slider fill sync
