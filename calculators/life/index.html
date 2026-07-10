@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Life Coverage Calculator | Annabel Ong · Prudential</title>
-<meta name="description" content="Calculate how much life insurance you need with a proper needs-based analysis: income replacement, debts, education and final expenses.">
+<meta name="description" content="Calculate how much life insurance you need with a proper needs-based analysis: loan balances, living costs, education and final expenses.">
 <meta name="author" content="Annabel Ong">
 <meta property="og:title" content="Life Coverage Calculator | Annabel Ong · Prudential">
-<meta property="og:description" content="Calculate how much life insurance you need with a proper needs-based analysis: income replacement, debts, education and final expenses.">
+<meta property="og:description" content="Calculate how much life insurance you need with a proper needs-based analysis: loan balances, living costs, education and final expenses.">
 <meta property="og:image" content="https://annaprudential.com/assets/hero_bg.webp">
 <link rel="icon" type="image/png" href="../../assets/prudential-1.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,21 +65,47 @@
 <section class="section">
   <div class="container calc-layout">
     <div class="calc-panel">
-      <h3>Your situation</h3>
-      <div class="field"><label for="income">Monthly income</label><div class="input-rm"><input type="text" id="income" inputmode="numeric" placeholder="e.g. 5,000"></div></div>
-      <p class="err" id="income-error">Please enter your monthly income.</p>
+      <h3>1 · Loans &amp; debts</h3>
+      <p class="small muted" style="margin-bottom:16px;">Enter your monthly instalments — we work out the outstanding balances for you.</p>
+      <div style="background:var(--bg-soft); border-radius:12px; padding:16px 18px; margin-bottom:16px;">
+        <strong style="color:var(--ink); font-size:.95rem;">🏠 Housing loan</strong>
+        <div class="grid-3 mt-1" style="gap:12px;">
+          <div class="field"><label for="housing-instalment">Instalment /mo</label><div class="input-rm"><input type="text" id="housing-instalment" inputmode="numeric" placeholder="e.g. 1,800"></div></div>
+          <div class="field"><label for="housing-years">Years left</label><input type="number" id="housing-years" min="0" step="any" placeholder="e.g. 25"></div>
+          <div class="field"><label for="housing-rate">Rate %</label><input type="number" id="housing-rate" min="0" step="any" placeholder="4.5" value="4.5"></div>
+        </div>
+        <p class="small" style="color:var(--red); font-weight:600; margin:0;" id="housing-balance-display"></p>
+      </div>
+      <div style="background:var(--bg-soft); border-radius:12px; padding:16px 18px; margin-bottom:16px;">
+        <strong style="color:var(--ink); font-size:.95rem;">🚗 Car loan</strong>
+        <div class="grid-2 mt-1" style="gap:12px;">
+          <div class="field"><label for="car-instalment">Instalment /mo</label><div class="input-rm"><input type="text" id="car-instalment" inputmode="numeric" placeholder="e.g. 800"></div></div>
+          <div class="field"><label for="car-years">Years left</label><input type="number" id="car-years" min="0" step="any" placeholder="e.g. 5"></div>
+        </div>
+        <p class="small" style="color:var(--red); font-weight:600; margin:0;" id="car-balance-display"></p>
+      </div>
+      <div class="field"><label for="personal-loan">Personal loan / PTPTN outstanding</label><div class="input-rm"><input type="text" id="personal-loan" inputmode="numeric" placeholder="e.g. 20,000"></div></div>
+      <div class="field"><label for="credit-card">Credit card balance</label><div class="input-rm"><input type="text" id="credit-card" inputmode="numeric" placeholder="e.g. 5,000"></div></div>
+
+      <h3 class="mt-4">2 · Monthly living costs</h3>
+      <p class="small muted" style="margin-bottom:16px;">What your family spends each month — we replace this for the years they need support.</p>
+      <div class="field"><label for="bills">Bills & utilities /mo <span class="hint">electricity, water, internet, phone</span></label><div class="input-rm"><input type="text" id="bills" inputmode="numeric" placeholder="e.g. 400"></div></div>
+      <div class="field"><label for="food">Food & groceries /mo <span class="hint">including dining out</span></label><div class="input-rm"><input type="text" id="food" inputmode="numeric" placeholder="e.g. 1,200"></div></div>
+      <div class="field"><label for="transport">Transport /mo <span class="hint">fuel, tolls, parking, maintenance</span></label><div class="input-rm"><input type="text" id="transport" inputmode="numeric" placeholder="e.g. 500"></div></div>
+      <div class="field"><label for="family">Kids & parents' allowance /mo <span class="hint">childcare, school, support for parents</span></label><div class="input-rm"><input type="text" id="family" inputmode="numeric" placeholder="e.g. 800"></div></div>
       <div class="field">
-        <label for="years-slider">Years your family needs support <span class="hint">until children are independent / retirement</span></label>
+        <label for="years-slider">Years your family needs support <span class="hint">until children are independent</span></label>
         <div class="range-row">
           <input type="range" id="years-slider" min="5" max="30" value="20" step="1">
           <span class="range-value" id="years-display">20 years</span>
         </div>
       </div>
-      <div class="field"><label for="mortgage">Outstanding home loan <span class="hint">balance remaining</span></label><div class="input-rm"><input type="text" id="mortgage" inputmode="numeric" placeholder="e.g. 300,000"></div></div>
-      <div class="field"><label for="debts">Other debts <span class="hint">car, personal loans, cards</span></label><div class="input-rm"><input type="text" id="debts" inputmode="numeric" placeholder="e.g. 50,000"></div></div>
+
+      <h3 class="mt-4">3 · Future lump sums</h3>
       <div class="field"><label for="education">Children's education fund <span class="hint">roughly RM150k–500k per child</span></label><div class="input-rm"><input type="text" id="education" inputmode="numeric" placeholder="e.g. 200,000"></div></div>
       <div class="field"><label for="final-expenses">Final expenses <span class="hint">funeral & estate costs</span></label><div class="input-rm"><input type="text" id="final-expenses" inputmode="numeric" placeholder="e.g. 25,000" value="25,000"></div></div>
-      <h3 class="mt-4">What you already have</h3>
+
+      <h3 class="mt-4">4 · What you already have</h3>
       <div class="field"><label for="existing-cover">Existing life insurance</label><div class="input-rm"><input type="text" id="existing-cover" inputmode="numeric" placeholder="e.g. 100,000"></div></div>
       <div class="field"><label for="savings">Savings & investments <span class="hint">EPF, cash, unit trusts</span></label><div class="input-rm"><input type="text" id="savings" inputmode="numeric" placeholder="e.g. 80,000"></div></div>
       <button class="btn btn-primary mt-2" id="calculate-btn" style="width:100%;">Calculate My Coverage</button>
@@ -91,9 +117,11 @@
           <div class="value" id="result-life">RM 0</div>
         </div>
         <div class="breakdown">
-          <div class="row"><span>Income replacement (<span id="bd-income-note"></span>)</span><span id="bd-income-replacement"></span></div>
-          <div class="row"><span>Outstanding home loan</span><span id="bd-mortgage"></span></div>
-          <div class="row"><span>Other debts</span><span id="bd-debts"></span></div>
+          <div class="row"><span>Housing loan balance</span><span id="bd-housing"></span></div>
+          <div class="row"><span>Car loan balance</span><span id="bd-car"></span></div>
+          <div class="row"><span>Personal loan / PTPTN</span><span id="bd-personal"></span></div>
+          <div class="row"><span>Credit card</span><span id="bd-cc"></span></div>
+          <div class="row"><span>Living costs (<span id="bd-expenses-note"></span>)</span><span id="bd-expenses"></span></div>
           <div class="row"><span>Education fund</span><span id="bd-education"></span></div>
           <div class="row"><span>Final expenses</span><span id="bd-final"></span></div>
           <div class="row total"><span>Total needs</span><span id="bd-needs"></span></div>
@@ -105,19 +133,18 @@
           <a href="https://wa.me/60183176361?text=Hi%20Annabel%2C%20I%20just%20used%20your%20life%20coverage%20calculator%20and%20would%20like%20a%20quote." target="_blank" rel="noopener" class="btn btn-whatsapp" style="flex:1;">Get a Quote on WhatsApp</a>
           <a href="../../#connect" class="btn btn-outline" style="flex:1;">Book a Free Session</a>
         </div>
-        <p class="assumption">Method: needs-based analysis (income replacement + debts + education + final expenses − existing resources). This is an estimate for discussion, not financial advice — your actual needs depend on your full financial picture.</p>
+        <p class="assumption">Method: needs-based analysis. Housing balance = present value of remaining instalments (reducing balance); car balance = instalment × months left (flat-rate hire purchase). Living-cost categories follow EPF's Belanjawanku expenditure guide. This is an estimate for discussion, not financial advice.</p>
       </div>
       <div class="calc-panel" id="results-placeholder">
         <h3>How this works</h3>
         <p>We use the standard <strong>needs-based method</strong>:</p>
         <ul class="check-list mt-2">
-          <li>Replace your income for the years your family depends on it</li>
-          <li>Clear every debt so nothing is passed on</li>
-          <li>Fund your children's education</li>
-          <li>Cover final expenses</li>
-          <li>Then subtract what you already have</li>
+          <li>Settle every loan — computed from your instalments, so you don't need to know your balances</li>
+          <li>Replace your family's monthly living costs for the years they depend on you</li>
+          <li>Fund your children's education and final expenses</li>
+          <li>Then subtract insurance and savings you already have</li>
         </ul>
-        <p class="mt-2 muted small">Fill in the form and press Calculate — your personalised breakdown appears here.</p>
+        <p class="mt-2 muted small">Categories based on EPF's Belanjawanku guide and DOSM's Household Expenditure Survey. Fill in what applies to you — skip anything that doesn't.</p>
       </div>
     </div>
   </div>
@@ -129,9 +156,9 @@
     <p class="sub">Enter your details to unlock your personalised results.</p>
     <div class="field"><label for="gate-name">Full Name</label><input type="text" id="gate-name" placeholder="Your name" autocomplete="name"><p class="err" id="gate-name-error">Please enter your name.</p></div>
     <div class="field"><label for="gate-email">Email</label><input type="email" id="gate-email" placeholder="you@email.com" autocomplete="email"><p class="err" id="gate-email-error">Please enter a valid email.</p></div>
-    <div class="field"><label for="gate-phone">Phone (WhatsApp)</label><input type="tel" id="gate-phone" placeholder="+60 12-345 6789" autocomplete="tel"><p class="err" id="gate-phone-error">Please enter your phone number.</p></div>
+    
     <label class="consent"><input type="checkbox" id="consent"><span>I consent to being contacted by Annabel regarding my results and suitable protection options, in line with the PDPA.</span></label>
-    <button class="btn btn-primary" id="unlock-btn" disabled style="width:100%;">Show My Results</button>
+    <button class="btn btn-primary" id="unlock-btn" disabled style="width:100%;">Start Calculating</button>
     
   </div>
 </div>
