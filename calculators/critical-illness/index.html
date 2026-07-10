@@ -69,10 +69,10 @@
       <div class="field"><label for="income">Monthly income</label><div class="input-rm"><input type="text" id="income" inputmode="numeric" placeholder="e.g. 5,000"></div></div>
       <p class="err" id="income-error">Please enter your monthly income.</p>
       <div class="field">
-        <label for="recovery-slider">Recovery period to cover <span class="hint">treatment + recovery typically takes 2–5 years</span></label>
+        <label for="recovery-slider">Recovery period to cover <span class="hint">we recommend 6 years — see why on the right</span></label>
         <div class="range-row">
-          <input type="range" id="recovery-slider" min="1" max="5" value="3" step="1">
-          <span class="range-value" id="recovery-display">3 years</span>
+          <input type="range" id="recovery-slider" min="2" max="8" value="6" step="1">
+          <span class="range-value" id="recovery-display">6 years</span>
         </div>
       </div>
       <div class="field"><label for="treatment-buffer">Treatment & recovery buffer <span class="hint">out-of-pocket costs, alternative treatment, caregiving</span></label><div class="input-rm"><input type="text" id="treatment-buffer" inputmode="numeric" placeholder="e.g. 150,000" value="150,000"></div></div>
@@ -96,16 +96,20 @@
           <a href="https://wa.me/60183176361?text=Hi%20Annabel%2C%20I%20just%20used%20your%20critical%20illness%20calculator%20and%20would%20like%20a%20quote." target="_blank" rel="noopener" class="btn btn-whatsapp" style="flex:1;">Get a Quote on WhatsApp</a>
           <a href="../../products/my-critical-care/" class="btn btn-outline" style="flex:1;">See CI Plans</a>
         </div>
-        <p class="assumption">Method: annual income × recovery years + treatment buffer − existing coverage. Industry guidance typically suggests 3–5× annual income. This is an estimate for discussion, not financial advice.</p>
+        <p class="assumption">Method: annual income × recovery years + treatment buffer − existing coverage. We recommend covering 6 years: 2 years for additional treatments and medications, 2 years for recovery, and 2 years to prepare for returning to the workforce. This is an estimate for discussion, not financial advice.</p>
       </div>
       <div class="calc-panel" id="results-placeholder">
-        <h3>Why this matters</h3>
+        <h3>Why we recommend 6 years</h3>
+        <div style="display:flex; flex-direction:column; gap:12px; margin:18px 0;">
+          <div style="background:var(--bg-soft); border-left:4px solid var(--red); border-radius:10px; padding:14px 18px;"><strong style="color:var(--ink);">Years 1–2 · Treatment</strong><p class="small" style="margin:4px 0 0;">Additional treatments, follow-ups and medications beyond what medical insurance pays.</p></div>
+          <div style="background:var(--bg-soft); border-left:4px solid var(--red); border-radius:10px; padding:14px 18px;"><strong style="color:var(--ink);">Years 3–4 · Recovery</strong><p class="small" style="margin:4px 0 0;">Rest and rehabilitation while your household expenses continue as normal.</p></div>
+          <div style="background:var(--bg-soft); border-left:4px solid var(--red); border-radius:10px; padding:14px 18px;"><strong style="color:var(--ink);">Years 5–6 · Back to work</strong><p class="small" style="margin:4px 0 0;">Time to rebuild your career or business without financial pressure forcing you back too early.</p></div>
+        </div>
         <ul class="check-list mt-2">
           <li>30% of cancer patients in Malaysia were forced to quit their jobs during treatment</li>
           <li>91% relied on salaries and savings for out-of-pocket expenses</li>
-          <li>Recovery often takes years — your bills don't pause</li>
         </ul>
-        <p class="mt-2 muted small">Standard guidance: cover 3–5 years of income plus a treatment buffer. Fill in the form to see your number.</p>
+        <p class="mt-2 muted small">Fill in the form to see your number.</p>
       </div>
     </div>
   </div>
