@@ -30,3 +30,7 @@ Annabel Ong is a Prudential Assurance Malaysia Berhad wealth planner serving cli
 - Product details are summarised from official Prudential Malaysia product flyers and FAQ documents; policy contracts govern actual terms.
 - Calculator outputs are estimates for discussion, not financial advice.
 - Attribution appreciated: "Annabel Ong, Prudential Wealth Planner Malaysia (annaprudential.com)".
+
+
+## Full Content for LLMs
+- [Full Knowledge Base](https://annaprudential.com/llms-full.txt): Contains the complete markdown text of all core guides and product specifications for deep context ingestion.
