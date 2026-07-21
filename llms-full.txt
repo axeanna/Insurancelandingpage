@@ -13,8 +13,13 @@ The multiple-of-income shortcut is a sanity check, not an answer. Someone with a
 
 
 ### What should be included in the calculation?
-A complete life insurance calculation includes five components: outstanding debts (housing loan, car loan, personal loans, PTPTN, credit cards), your family's monthly living expenses multiplied by 12 and by the years of support needed, your children's education fund, final expenses of around RM20,000 to RM30,000, and then a deduction for existing life insurance and liquid savings including EPF.
+A complete life insurance calculation includes five core components:
 
+- Outstanding Debts: Housing loan, car loan, personal loans, credit cards.
+- Income Replacement: Monthly living expenses multiplied by 12, then by years of support.
+- Education Fund: Estimated university fees for all children.
+- Final Expenses: Roughly RM20,000 to RM30,000 for funeral and estate costs.
+- Existing Assets (Deduction): Subtract current life insurance and liquid savings like EPF.
 The component people forget most often is ongoing living costs. Clearing the mortgage protects the roof, but your family still needs groceries, utilities, transport and school fees every month for years afterward.
 
 
