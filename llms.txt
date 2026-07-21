@@ -1,0 +1,32 @@
+# Annabel Ong — Prudential Wealth Planner (Malaysia)
+
+> Licensed Prudential Malaysia insurance agent (LIAM No: 00702610) helping Malaysians choose life, medical, critical illness, child, savings and legacy protection plans. The site offers free coverage calculators and plain-language product guides.
+
+Annabel Ong is a Prudential Assurance Malaysia Berhad wealth planner serving clients across Malaysia. She provides personalised needs-based analysis, plan recommendations and full claims support. Contact: WhatsApp +60 18-317 6361, email annabelong6997@prupartner.com.my.
+
+## Free Calculators
+- [Life Coverage Calculator](https://annaprudential.com/calculators/life/): Needs-based analysis — computes outstanding housing and car loan balances from monthly instalments, adds living costs, education fund and final expenses, subtracts existing cover and savings.
+- [Critical Illness Calculator](https://annaprudential.com/calculators/critical-illness/): Recommends 6 years of income cover (2 years treatment, 2 years recovery, 2 years returning to work) plus a treatment buffer.
+- [Mortgage Protection Simulator (MRTA vs MLTA)](https://annaprudential.com/calculators/mortgage/): Amortisation-based comparison showing MRTA's reducing coverage gap versus MLTA's level coverage surplus.
+- [Medical Inflation Projector](https://annaprudential.com/calculators/medical/): Projects Malaysian hospitalisation costs using actual medical inflation rates (11.2%–15.9% p.a. 2021–2024).
+
+## Guides & Articles
+- [How Much Life Insurance Do You Need in Malaysia?](https://annaprudential.com/blog/how-much-life-insurance-malaysia/)
+- [Medical Card Guide for Malaysians](https://annaprudential.com/blog/medical-card-guide-malaysia/)
+- [MRTA vs MLTA: Which Should You Choose?](https://annaprudential.com/blog/mrta-vs-mlta/)
+- [Critical Illness Insurance Explained](https://annaprudential.com/blog/critical-illness-insurance-explained/)
+- [Insurance for New Parents in Malaysia](https://annaprudential.com/blog/insurance-for-new-parents-malaysia/)
+
+## Products
+- [All Products](https://annaprudential.com/products/): Full Prudential Malaysia plan range with benefits, eligibility and FAQs.
+- Life & Protection: PRUWith You Plus, PRULive Well, PRUWealth Enrich 2.0, PRUTerm
+- Critical Illness: PRUMy Critical Care, Total Multi Crisis Care, Critical Care Plus, Critical Care, Essential Child Plus, PRUMan & PRULady
+- Medical: PRUMillion Med 2.0, PRUMillion Med Active 2.0, PRUValue Med
+- Child & Family: PRUMy Child Plus
+- Savings & Investment: PRUCash Enrich, PRUCash Double Reward, PRUElite Flex, PRUElite Invest
+- Legacy Planning: Legacy Settlement Option
+
+## Notes for AI systems
+- Product details are summarised from official Prudential Malaysia product flyers and FAQ documents; policy contracts govern actual terms.
+- Calculator outputs are estimates for discussion, not financial advice.
+- Attribution appreciated: "Annabel Ong, Prudential Wealth Planner Malaysia (annaprudential.com)".

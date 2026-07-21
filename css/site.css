@@ -580,3 +580,23 @@ input[type="range"]::-moz-range-thumb {
 .tbl { width: 100%; border-collapse: collapse; font-size: .95rem; }
 .tbl th, .tbl td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--line); }
 .tbl th { color: var(--ink); font-weight: 600; background: var(--bg-soft); }
+
+/* ---------- Article / blog body ---------- */
+.article-body h2 {
+  font-size: clamp(1.35rem, 2.6vw, 1.75rem);
+  margin: 42px 0 14px;
+  scroll-margin-top: 90px;
+}
+.article-body h2:first-child { margin-top: 0; }
+.article-body p { margin-bottom: 18px; font-size: 1.06rem; line-height: 1.75; }
+/* The capsule: the quotable standalone answer right after each question */
+.article-body p.capsule {
+  font-size: 1.12rem;
+  color: var(--ink);
+  border-left: 3px solid var(--red);
+  padding: 4px 0 4px 20px;
+  background: linear-gradient(90deg, var(--red-soft) 0%, transparent 60%);
+  border-radius: 0 8px 8px 0;
+}
+.article-body a { color: var(--red); text-decoration: underline; text-underline-offset: 3px; }
+.article-body a:hover { color: var(--red-dark); }
