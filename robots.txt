@@ -1,50 +1,95 @@
 # robots.txt — annaprudential.com
+# Managed by seo-tool. Everything is intentionally open: this is a lead-gen
+# site, so being read by every search and answer engine is the whole point.
 
-# Traditional search engines
 User-agent: *
 Allow: /
 
-# AI answer engines & LLM crawlers — explicitly welcomed (GEO)
+# Search & AI answer engines, listed explicitly. An explicit Allow is a
+# stronger, less ambiguous signal than relying on the wildcard above.
+
+# OpenAI — ChatGPT training corpus
 User-agent: GPTBot
 Allow: /
 
+# OpenAI — ChatGPT Search index
 User-agent: OAI-SearchBot
 Allow: /
 
+# OpenAI — live browsing on user request
 User-agent: ChatGPT-User
 Allow: /
 
+# Anthropic — Claude
 User-agent: ClaudeBot
 Allow: /
 
+# Anthropic — Claude browsing
 User-agent: Claude-Web
 Allow: /
 
+# Anthropic — legacy agent
 User-agent: anthropic-ai
 Allow: /
 
+# Perplexity — index
 User-agent: PerplexityBot
 Allow: /
 
+# Perplexity — live fetch
 User-agent: Perplexity-User
 Allow: /
 
+# Google — Gemini grounding & AI Overviews
 User-agent: Google-Extended
 Allow: /
 
-User-agent: Applebot
+# Google Search
+User-agent: Googlebot
 Allow: /
 
-User-agent: Applebot-Extended
-Allow: /
-
+# Bing — also feeds Copilot
 User-agent: Bingbot
 Allow: /
 
+# Apple — Siri & Spotlight
+User-agent: Applebot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon — Alexa
+User-agent: Amazonbot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Common Crawl — feeds most open LLM datasets
 User-agent: CCBot
 Allow: /
 
-User-agent: Meta-ExternalAgent
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# ByteDance / Doubao
+User-agent: Bytespider
+Allow: /
+
+# Diffbot knowledge graph
+User-agent: Diffbot
+Allow: /
+
+# Webz.io dataset
+User-agent: omgili
 Allow: /
 
 Sitemap: https://annaprudential.com/sitemap.xml

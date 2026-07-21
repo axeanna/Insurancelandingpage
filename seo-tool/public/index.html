@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO / AEO / GEO Dashboard — annaprudential.com</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="dot" aria-hidden="true"></span>
+    <div>
+      <h1>SEO · AEO · GEO Dashboard</h1>
+      <p class="sub">annaprudential.com — local control panel</p>
+    </div>
+  </div>
+  <div class="topactions">
+    <button id="runAudit" class="btn primary">Run full audit</button>
+    <span id="status" class="status" role="status" aria-live="polite"></span>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Dashboard sections">
+  <button role="tab" aria-selected="true" aria-controls="panel-overview" id="tab-overview">Overview</button>
+  <button role="tab" aria-selected="false" aria-controls="panel-findings" id="tab-findings">Findings</button>
+  <button role="tab" aria-selected="false" aria-controls="panel-pages" id="tab-pages">Pages</button>
+  <button role="tab" aria-selected="false" aria-controls="panel-live" id="tab-live">Live &amp; Indexing</button>
+  <button role="tab" aria-selected="false" aria-controls="panel-optimise" id="tab-optimise">Auto-optimise</button>
+  <button role="tab" aria-selected="false" aria-controls="panel-growth" id="tab-growth">Free traffic plan</button>
+</nav>
+
+<main>
+
+<section id="panel-overview" role="tabpanel" aria-labelledby="tab-overview">
+  <div id="scores" class="scoregrid"></div>
+
+  <div class="card callout">
+    <h2>Why you aren't showing up yet</h2>
+    <p>Your code is not the bottleneck. The audit below will confirm the on-page work is in good shape — structured data, metadata, <code>llms.txt</code> and AI-crawler permissions are all already in place.</p>
+    <p><strong>The actual blocker is that annaprudential.com is a new domain with no inbound links.</strong> Google will not rank a site it has barely crawled, and ChatGPT, Gemini and Perplexity can only cite pages that are already indexed <em>and</em> corroborated somewhere else on the web. That is a distribution problem, and no amount of meta-tag tuning solves it.</p>
+    <p>So use this dashboard in two halves: <strong>Auto-optimise</strong> keeps the code perfect on its own, and the <strong>Free traffic plan</strong> tab is the part that actually moves the needle. Start there.</p>
+  </div>
+
+  <div class="two">
+    <div class="card">
+      <h2>Score history</h2>
+      <div id="history"></div>
+    </div>
+    <div class="card">
+      <h2>What each score means</h2>
+      <dl class="defs">
+        <dt>SEO</dt><dd>Classic search. Can Google crawl, understand and index every page?</dd>
+        <dt>AEO</dt><dd>Answer engines. Can a machine lift a direct answer off the page — question-shaped headings, FAQ schema, definitional openings?</dd>
+        <dt>GEO</dt><dd>Generative engines. Is the page quotable and attributable — named author, dates, concrete figures, outbound citations, clear entity?</dd>
+        <dt>A11y</dt><dd>Accessibility. Alt text, heading order, meaningful link labels. Genuinely helps real users, and every one of these is also a ranking signal.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="panel-findings" role="tabpanel" aria-labelledby="tab-findings" hidden>
+  <div class="card">
+    <div class="filters">
+      <label>Lens
+        <select id="filterCat">
+          <option value="">All</option>
+          <option value="seo">SEO</option>
+          <option value="aeo">AEO</option>
+          <option value="geo">GEO</option>
+          <option value="a11y">Accessibility</option>
+        </select>
+      </label>
+      <label>Severity
+        <select id="filterSev">
+          <option value="">All</option>
+          <option value="critical">Critical</option>
+          <option value="warn">Warning</option>
+          <option value="info">Info</option>
+        </select>
+      </label>
+      <label class="check"><input type="checkbox" id="filterFixable"> Auto-fixable only</label>
+      <span id="findingCount" class="muted"></span>
+    </div>
+    <div id="findings"></div>
+  </div>
+</section>
+
+<section id="panel-pages" role="tabpanel" aria-labelledby="tab-pages" hidden>
+  <div class="card">
+    <h2>Every page</h2>
+    <div id="pages" class="tablewrap"></div>
+  </div>
+</section>
+
+<section id="panel-live" role="tabpanel" aria-labelledby="tab-live" hidden>
+  <div class="card">
+    <h2>Live site check</h2>
+    <p class="muted">Fetches the real annaprudential.com, so this reports what crawlers actually receive — not what your local files claim.</p>
+    <button id="runLive" class="btn primary">Check live site</button>
+  </div>
+  <div class="card">
+    <h2>AI &amp; search crawler access</h2>
+    <p class="muted">Hosts and CDNs often block AI user-agents at the edge by default. When that happens you are invisible to ChatGPT and Perplexity regardless of what robots.txt says, so we test each bot for real.</p>
+    <div id="bots"></div>
+  </div>
+  <div class="card">
+    <h2>Essential files</h2>
+    <div id="files"></div>
+  </div>
+  <div class="card">
+    <h2>Submit to search engines (IndexNow)</h2>
+    <p class="muted">Free and instant. Notifies Bing, Yandex, Seznam and Naver. Google does not participate — but Bing is the index behind Copilot and part of ChatGPT's search layer, so this is the fastest route into an AI answer.</p>
+    <p class="muted">Key file: <code id="inKey">—</code> — this must be committed and deployed to your site root before submitting.</p>
+    <button id="runIndexNow" class="btn">Submit all URLs</button>
+    <div id="indexnowResult"></div>
+  </div>
+  <div class="card">
+    <h2>Live URL status</h2>
+    <div id="liveUrls" class="tablewrap"></div>
+  </div>
+</section>
+
+<section id="panel-optimise" role="tabpanel" aria-labelledby="tab-optimise" hidden>
+  <div class="card">
+    <h2>Auto-optimise</h2>
+    <p>This rewrites your HTML to fix everything that can be fixed deterministically: missing canonicals, social meta, viewport, lazy-loading, breadcrumb schema, FAQ schema built from Q&amp;A already on the page, plus a full regeneration of <code>robots.txt</code> and <code>sitemap.xml</code>.</p>
+    <p class="warnbox"><strong>What it will never do:</strong> invent content. No fabricated descriptions of things not on the page, no made-up statistics, no fake reviews or dates. On a licensed insurance site that is a compliance risk, and search engines penalise it anyway. Findings that need real writing stay in the report for you.</p>
+    <p class="muted">Always preview first. Everything is under git, so <code>git diff</code> shows exactly what changed and <code>git checkout .</code> undoes all of it.</p>
+    <div class="btnrow">
+      <button id="previewFix" class="btn">Preview changes (safe)</button>
+      <button id="applyFix" class="btn primary" disabled>Apply changes</button>
+    </div>
+    <div id="fixResult"></div>
+  </div>
+</section>
+
+<section id="panel-growth" role="tabpanel" aria-labelledby="tab-growth" hidden>
+  <div class="card callout">
+    <h2>This is the tab that actually matters</h2>
+    <p>Ordered by impact per hour, all free. Work top to bottom. The first three get you indexed at all; the rest build the authority that makes Google rank you and makes LLMs willing to cite you.</p>
+    <div id="growthProgress"></div>
+  </div>
+  <div id="growth"></div>
+</section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
