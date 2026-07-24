@@ -101,24 +101,23 @@ function validMalaysianPhone(raw) {
   return /^01\d{8,9}$/.test(d) ? d : null;
 }
 
-/* Replaces a results container with an honest confirmation. Shown instead of
- * on-screen results: the numbers land in the lead sheet, and Annabel sends the
- * personalised version herself. Wording is a promise about what happens next —
- * never claim an email was already sent, because nothing sends one automatically. */
+/* Replaces a results container with the sent-confirmation. The results email is
+ * sent automatically and immediately by the Google Apps Script webhook (from
+ * annacakapinsurans@gmail.com via a verified alias), so "sent to your inbox" is
+ * a true statement by the time this shows, not a promise. Numbers still land in
+ * the lead sheet regardless. */
 function showLeadConfirmation(sectionId, name, email, phone) {
   var section = document.getElementById(sectionId);
   if (!section) return;
   section.innerHTML =
     '<div class="card" style="text-align:center; padding:36px 28px;">' +
-      '<div style="font-size:2.2rem;">✅</div>' +
-      '<h3 style="margin:10px 0 6px;">Thank you, ' + escapeHtml(name) + '!</h3>' +
-      '<p style="margin:0 0 6px;">Your inputs have been received. Annabel is preparing your personalised results and will send them to <strong>' + escapeHtml(email) + '</strong>' +
-      (phone ? ' or WhatsApp you at <strong>' + escapeHtml(phone) + '</strong>' : '') + ' shortly.' +
-      '</p>' +
-      '<p class="sub" style="margin:0 0 18px;">Want them right now? Message Annabel directly and mention this calculator.</p>' +
+      '<div style="font-size:2.2rem;">📩</div>' +
+      '<h3 style="margin:10px 0 6px;">Your results have been sent to your inbox!</h3>' +
+      '<p style="margin:0 0 6px;">Thank you, ' + escapeHtml(name) + '. Your personalised results are on their way to <strong>' + escapeHtml(email) + '</strong> — take a look at your inbox now.</p>' +
+      '<p class="sub" style="margin:0 0 18px;">Can’t find it? Check your spam or promotions folder, or message Annabel and she’ll resend it.</p>' +
       '<a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/60183176361?text=' +
         encodeURIComponent('Hi Annabel, I just used the calculator on annaprudential.com — can you send me my results?') +
-      '">WhatsApp Annabel now</a>' +
+      '">WhatsApp Annabel</a>' +
     '</div>';
   section.style.display = 'block';
   setTimeout(function () { section.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
