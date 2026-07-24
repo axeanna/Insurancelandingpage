@@ -18,6 +18,7 @@
 
   var capturedName = '';
   var capturedEmail = '';
+  var capturedPhone = '';
   var hasCapturedLead = false;
 
   function housingBalance(instalment, yearsLeft, annualRate) {
@@ -118,14 +119,13 @@
     var gate = document.getElementById('gate-modal');
     var unlockBtn = document.getElementById('unlock-btn');
     var consent = document.getElementById('consent');
-    var closeBtn = document.getElementById('gate-close');
-
-    // 15-second auto-popup
-    setTimeout(function () {
-      if (!hasCapturedLead && gate) gate.classList.add('active');
-    }, 15000);
 
     calcBtn.addEventListener('click', function () {
+      // Demo mode: no gate, no lead — results render on screen.
+      if (isDemoMode()) {
+        showResults(calculate());
+        return;
+      }
       if (!hasCapturedLead) {
         gate.classList.add('active');
         return;
@@ -134,6 +134,7 @@
       sendLead({
         name: capturedName,
         email: capturedEmail,
+        phone: capturedPhone,
         life_cover: Math.round(r.lifeCover),
         housing_loan: Math.round(r.housing),
         car_loan: Math.round(r.car),
@@ -142,10 +143,8 @@
         years: r.years,
         source: 'Life Coverage Calculator (Completed)'
       });
-      showResults(r);
+      showLeadConfirmation('results', capturedName, capturedEmail, capturedPhone);
     });
-
-    if (closeBtn) closeBtn.addEventListener('click', function () { gate.classList.remove('active'); });
 
     consent.addEventListener('change', function () {
       unlockBtn.disabled = !consent.checked;
@@ -154,23 +153,29 @@
     unlockBtn.addEventListener('click', function () {
       var name = document.getElementById('gate-name');
       var email = document.getElementById('gate-email');
+      var phone = document.getElementById('gate-phone');
+      var normalisedPhone = phone ? validMalaysianPhone(phone.value) : null;
       var ok = true;
-      [['gate-name', name], ['gate-email', email]].forEach(function (pair) {
+      [['gate-name', name], ['gate-email', email], ['gate-phone', phone]].forEach(function (pair) {
+        if (!pair[1]) return;
         var err = document.getElementById(pair[0] + '-error');
         var bad = !pair[1].value.trim();
         if (pair[0] === 'gate-email' && !bad) bad = !/^\S+@\S+\.\S+$/.test(pair[1].value.trim());
-        err.classList.toggle('visible', bad);
+        if (pair[0] === 'gate-phone' && !bad) bad = !normalisedPhone;
+        if (err) err.classList.toggle('visible', bad);
         if (bad) ok = false;
       });
       if (!ok) return;
 
       capturedName = name.value.trim();
       capturedEmail = email.value.trim();
+      capturedPhone = normalisedPhone || '';
       hasCapturedLead = true;
 
       sendLead({
         name: capturedName,
         email: capturedEmail,
+        phone: capturedPhone,
         source: 'Life Coverage Calculator (Started)'
       });
 

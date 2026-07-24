@@ -60,7 +60,6 @@
     var gate = document.getElementById('gate-modal');
     var unlockBtn = document.getElementById('unlock-btn');
     var consent = document.getElementById('consent');
-    var closeBtn = document.getElementById('gate-close');
 
     calcBtn.addEventListener('click', function () {
       if (getNum('income') <= 0) {
@@ -69,10 +68,13 @@
         return;
       }
       document.getElementById('income-error').classList.remove('visible');
+      // Demo mode: no gate, no lead — results render on screen.
+      if (isDemoMode()) {
+        showResults(calculate());
+        return;
+      }
       gate.classList.add('active');
     });
-
-    if (closeBtn) closeBtn.addEventListener('click', function () { gate.classList.remove('active'); });
 
     consent.addEventListener('change', function () {
       unlockBtn.disabled = !consent.checked;
@@ -82,11 +84,13 @@
       var name = document.getElementById('gate-name');
       var email = document.getElementById('gate-email');
       var phone = document.getElementById('gate-phone');
+      var normalisedPhone = validMalaysianPhone(phone.value);
       var ok = true;
       [['gate-name', name], ['gate-email', email], ['gate-phone', phone]].forEach(function (pair) {
         var err = document.getElementById(pair[0] + '-error');
         var bad = !pair[1].value.trim();
         if (pair[0] === 'gate-email' && !bad) bad = !/^\S+@\S+\.\S+$/.test(pair[1].value.trim());
+        if (pair[0] === 'gate-phone' && !bad) bad = !normalisedPhone;
         err.classList.toggle('visible', bad);
         if (bad) ok = false;
       });
@@ -96,14 +100,14 @@
       sendLead({
         name: name.value.trim(),
         email: email.value.trim(),
-        phone: phone.value.trim(),
+        phone: normalisedPhone,
         ci_cover: Math.round(r.ciCover),
         monthly_income: Math.round(r.monthlyIncome),
         recovery_years: r.years,
         source: 'Critical Illness Calculator'
       });
       gate.classList.remove('active');
-      showResults(r);
+      showLeadConfirmation('results', name.value.trim(), email.value.trim(), normalisedPhone);
     });
   });
 })();

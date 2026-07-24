@@ -128,12 +128,21 @@
       updateMLTA();
     }
 
-    /* ── Lead gate (appears after 15s) ────── */
+    /* ── Lead gate ──────────────────────────
+     * Opens the first time the visitor adjusts either simulator (the moment
+     * of intent), not on a timer — a timed popup that cannot be dismissed
+     * would trap people who are just reading the page. Demo mode skips it. */
     var gate = document.getElementById('gate-modal');
     var unlockBtn = document.getElementById('unlock-btn');
     var consent = document.getElementById('consent');
+    var unlocked = false;
     if (gate && unlockBtn) {
-      setTimeout(function () { gate.classList.add('active'); }, 15000);
+      ['principal', 'tenure', 'baseRate', 'actualRate', 'mlta-principal', 'mlta-tenure', 'mlta-rate', 'mlta-currentYear'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.addEventListener('input', function () {
+          if (!unlocked && !isDemoMode()) gate.classList.add('active');
+        });
+      });
 
       consent.addEventListener('change', function () { unlockBtn.disabled = !consent.checked; });
 
@@ -141,11 +150,13 @@
         var name = document.getElementById('gate-name');
         var email = document.getElementById('gate-email');
         var phone = document.getElementById('gate-phone');
+        var normalisedPhone = validMalaysianPhone(phone.value);
         var ok = true;
         [['gate-name', name], ['gate-email', email], ['gate-phone', phone]].forEach(function (pair) {
           var err = document.getElementById(pair[0] + '-error');
           var bad = !pair[1].value.trim();
           if (pair[0] === 'gate-email' && !bad) bad = !/^\S+@\S+\.\S+$/.test(pair[1].value.trim());
+          if (pair[0] === 'gate-phone' && !bad) bad = !normalisedPhone;
           err.classList.toggle('visible', bad);
           if (bad) ok = false;
         });
@@ -156,9 +167,12 @@
         sendLead({
           name: name.value.trim(),
           email: email.value.trim(),
-          phone: phone.value.trim(),
+          phone: normalisedPhone,
+          loan_amount: Math.round(parseFloat(document.getElementById('principal').value) || 0),
+          tenure_years: parseInt(document.getElementById('tenure').value, 10) || 0,
           source: 'MRTA/MLTA Simulator'
         }).then(function () {
+          unlocked = true;
           var success = document.getElementById('gate-success');
           if (success) success.style.display = 'block';
           setTimeout(function () { gate.classList.remove('active'); }, 1500);

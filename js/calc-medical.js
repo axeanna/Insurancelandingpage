@@ -130,5 +130,53 @@
       slider.addEventListener('input', function () { updateAll(parseInt(slider.value, 10)); });
       updateAll(selectedYear);
     }
+
+    /* ── Lead gate ──────────────────────────
+     * This projector previously captured nothing — the only calculator whose
+     * visitors were never recorded. Same pattern as the others: the gate opens
+     * on first interaction, closes only on valid details, demo mode skips it. */
+    var gate = document.getElementById('gate-modal');
+    var unlockBtn = document.getElementById('unlock-btn');
+    var consent = document.getElementById('consent');
+    var unlocked = false;
+    if (gate && unlockBtn && slider) {
+      slider.addEventListener('input', function () {
+        if (!unlocked && !isDemoMode()) gate.classList.add('active');
+      });
+
+      consent.addEventListener('change', function () { unlockBtn.disabled = !consent.checked; });
+
+      unlockBtn.addEventListener('click', function () {
+        var name = document.getElementById('gate-name');
+        var email = document.getElementById('gate-email');
+        var phone = document.getElementById('gate-phone');
+        var normalisedPhone = validMalaysianPhone(phone.value);
+        var ok = true;
+        [['gate-name', name], ['gate-email', email], ['gate-phone', phone]].forEach(function (pair) {
+          var err = document.getElementById(pair[0] + '-error');
+          var bad = !pair[1].value.trim();
+          if (pair[0] === 'gate-email' && !bad) bad = !/^\S+@\S+\.\S+$/.test(pair[1].value.trim());
+          if (pair[0] === 'gate-phone' && !bad) bad = !normalisedPhone;
+          err.classList.toggle('visible', bad);
+          if (bad) ok = false;
+        });
+        if (!ok) return;
+
+        unlockBtn.textContent = 'Sending…';
+        unlockBtn.disabled = true;
+        sendLead({
+          name: name.value.trim(),
+          email: email.value.trim(),
+          phone: normalisedPhone,
+          projection_year: parseInt(slider.value, 10),
+          source: 'Medical Inflation Projector'
+        }).then(function () {
+          unlocked = true;
+          var success = document.getElementById('gate-success');
+          if (success) success.style.display = 'block';
+          setTimeout(function () { gate.classList.remove('active'); }, 1500);
+        });
+      });
+    }
   });
 })();

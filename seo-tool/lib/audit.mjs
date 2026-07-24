@@ -295,7 +295,11 @@ export async function auditSite(root, pages) {
       let href = l.href.replace(SITE, '').split('#')[0].split('?')[0];
       if (!href) continue;
       if (!href.startsWith('/')) {
-        href = path.posix.normalize(path.posix.join(path.posix.dirname(p.url), href));
+        // A directory URL (/blog/) is its own base; dirname() would wrongly
+        // resolve relative links against the parent, flagging linked pages
+        // as orphans.
+        const base = p.url.endsWith('/') ? p.url : path.posix.dirname(p.url) + '/';
+        href = path.posix.normalize(path.posix.join(base, href));
       }
       href = href.replace(/index\.html$/, '');
       linked.add(href.endsWith('/') || href.includes('.') ? href : href + '/');

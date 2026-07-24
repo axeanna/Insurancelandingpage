@@ -59,7 +59,7 @@
   "name": "Life Insurance Calculator Malaysia — How Much Cover Do You Need?",
   "inLanguage": "en-MY",
   "datePublished": "2026-07-04T11:14:24+08:00",
-  "dateModified": "2026-07-21T19:32:42+08:00",
+  "dateModified": "2026-07-24T00:00:00+08:00",
   "isPartOf": {
     "@id": "https://annaprudential.com/#website"
   },
@@ -75,7 +75,7 @@
 <body>
 <nav class="navbar">
   <div class="container nav-inner">
-    <a href="../../" class="nav-logo"><img src="../../assets/prudential-1.png" alt="Prudential"></a>
+    <a href="../../" class="nav-logo"><img width="512" height="512" src="../../assets/prudential-1.png" alt="Prudential"></a>
     <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="../../">Home</a></li>
@@ -206,13 +206,13 @@
     </div>
   </div>
 </section>
-<div class="modal" id="gate-modal">
+<div class="modal modal-locked" id="gate-modal" role="dialog" aria-modal="true" aria-labelledby="gate-title">
   <div class="modal-box">
-    <button class="modal-close" id="gate-close" aria-label="Close">✕</button>
-    <h3>Almost there!</h3>
+    <h3 id="gate-title">Almost there!</h3>
     <p class="sub">Enter your details to unlock your personalised results.</p>
     <div class="field"><label for="gate-name">Full Name</label><input type="text" id="gate-name" placeholder="Your name" autocomplete="name"><p class="err" id="gate-name-error">Please enter your name.</p></div>
     <div class="field"><label for="gate-email">Email</label><input type="email" id="gate-email" placeholder="you@email.com" autocomplete="email"><p class="err" id="gate-email-error">Please enter a valid email.</p></div>
+    <div class="field"><label for="gate-phone">Phone (WhatsApp)</label><input type="tel" id="gate-phone" placeholder="012-345 6789" autocomplete="tel"><p class="err" id="gate-phone-error">Please enter a valid Malaysian mobile number.</p></div>
     
     <label class="consent"><input type="checkbox" id="consent"><span>I consent to being contacted by Annabel regarding my results and suitable protection options, in line with the PDPA.</span></label>
     <button class="btn btn-primary" id="unlock-btn" disabled style="width:100%;">Start Calculating</button>
@@ -235,7 +235,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="f-logo"><img loading="lazy" decoding="async" src="../../assets/prudential-1.png" alt="Prudential"></div>
+        <div class="f-logo"><img width="512" height="512" loading="lazy" decoding="async" src="../../assets/prudential-1.png" alt="Prudential"></div>
         <p>Annabel Ong · Prudential Wealth Planner<br>LIAM No: 00702610</p>
         <p class="mt-2 small">Securing your future with trusted life, health and wealth protection plans from Prudential Malaysia.</p>
       </div>
