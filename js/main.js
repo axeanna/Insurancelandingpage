@@ -2,35 +2,43 @@
 (function () {
   'use strict';
 
-  // Mobile nav
+  // Mobile nav.
+  // Uses one delegated click handler on the menu container. The previous version
+  // relied on the selector `.nav-links a:not(.nav-drop > a)`, whose child
+  // combinator inside :not() is invalid in some mobile browsers — querySelectorAll
+  // then throws, aborting the whole script (which is why the Products sub-menu,
+  // and other scripted features, could silently stop working).
   var toggle = document.querySelector('.nav-toggle');
   var links = document.querySelector('.nav-links');
   if (toggle && links) {
     function closeMenu() {
       toggle.classList.remove('open');
       links.classList.remove('open');
+      var open = links.querySelectorAll('.nav-drop.open');
+      for (var i = 0; i < open.length; i++) open[i].classList.remove('open');
       document.body.style.overflow = '';
     }
     toggle.addEventListener('click', function (e) {
       e.preventDefault();
-      toggle.classList.toggle('open');
-      links.classList.toggle('open');
-      document.body.style.overflow = links.classList.contains('open') ? 'hidden' : '';
+      var willOpen = !links.classList.contains('open');
+      toggle.classList.toggle('open', willOpen);
+      links.classList.toggle('open', willOpen);
+      document.body.style.overflow = willOpen ? 'hidden' : '';
     });
-    document.querySelectorAll('.nav-drop > a').forEach(function (a) {
-      a.addEventListener('click', function (e) {
-        if (window.innerWidth <= 992) {
-          e.preventDefault();
-          a.parentElement.classList.toggle('open');
-        }
-      });
-    });
-    document.querySelectorAll('.nav-links a:not(.nav-drop > a)').forEach(function (a) {
-      a.addEventListener('click', function () {
-        if (window.innerWidth <= 992) {
-          closeMenu();
-        }
-      });
+    links.addEventListener('click', function (e) {
+      if (window.innerWidth > 992) return;
+      var link = e.target.closest ? e.target.closest('a') : null;
+      if (!link) return;
+      var drop = link.parentElement;
+      // A section header that owns a sub-panel (Products, etc.): toggle the
+      // panel open instead of navigating away.
+      if (drop && drop.classList.contains('nav-drop') && link === drop.querySelector('a')) {
+        e.preventDefault();
+        drop.classList.toggle('open');
+        return;
+      }
+      // Any real link: let it navigate and close the menu behind it.
+      closeMenu();
     });
   }
 
