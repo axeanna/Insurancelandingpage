@@ -186,6 +186,10 @@ h3 { font-size: 1.25rem; }
 
 @media (max-width: 992px) {
   .nav-toggle { display: block; }
+  /* backdrop-filter makes .navbar the containing block for its position:fixed
+     children, which collapsed the slide-in menu to the navbar's height (~36px)
+     so nothing showed. Drop it on mobile so the menu sizes to the viewport. */
+  .navbar { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--white); }
   .nav-links {
     position: fixed;
     top: 72px;
