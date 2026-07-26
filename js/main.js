@@ -6,6 +6,11 @@
   var toggle = document.querySelector('.nav-toggle');
   var links = document.querySelector('.nav-links');
   if (toggle && links) {
+    function closeMenu() {
+      toggle.classList.remove('open');
+      links.classList.remove('open');
+      document.body.style.overflow = '';
+    }
     toggle.addEventListener('click', function () {
       toggle.classList.toggle('open');
       links.classList.toggle('open');
@@ -16,6 +21,13 @@
         if (window.innerWidth <= 992) {
           e.preventDefault();
           a.parentElement.classList.toggle('open');
+        }
+      });
+    });
+    document.querySelectorAll('.nav-links a:not(.nav-drop > a)').forEach(function (a) {
+      a.addEventListener('click', function () {
+        if (window.innerWidth <= 992) {
+          closeMenu();
         }
       });
     });
