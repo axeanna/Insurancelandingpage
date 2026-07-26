@@ -11,7 +11,8 @@
       links.classList.remove('open');
       document.body.style.overflow = '';
     }
-    toggle.addEventListener('click', function () {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
       toggle.classList.toggle('open');
       links.classList.toggle('open');
       document.body.style.overflow = links.classList.contains('open') ? 'hidden' : '';
