@@ -1,0 +1,104 @@
+{
+  "redirects": [
+    {
+      "source": "/pages/critical-care-plus-ms.html",
+      "destination": "/products/critical-care-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/critical-care-ms.html",
+      "destination": "/products/critical-care/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/essential-child-plus-ms.html",
+      "destination": "/products/essential-child-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/legacy-settlement-option-ms.html",
+      "destination": "/products/legacy-settlement/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/prucash-double-reward-ms.html",
+      "destination": "/products/cash-double-reward/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/prucash-enrich-ms.html",
+      "destination": "/products/cash-enrich/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/pruelite-flex-ms.html",
+      "destination": "/products/elite-flex/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/pruelite-invest-ms.html",
+      "destination": "/products/elite-invest/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/prulive-well-ms.html",
+      "destination": "/products/live-well/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/pruman-and-prulady-ms.html",
+      "destination": "/products/man-and-lady/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/prumillion-med-2-ms.html",
+      "destination": "/products/million-med/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/prumillion-med-active-2-ms.html",
+      "destination": "/products/million-med-active/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/prumy-child-plus-ms.html",
+      "destination": "/products/my-child-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/prumy-critical-care-ms.html",
+      "destination": "/products/my-critical-care/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/pruterm-ms.html",
+      "destination": "/products/term/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/pruvalue-med-ms.html",
+      "destination": "/products/value-med/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/pruwealth-enrich-2-ms.html",
+      "destination": "/products/wealth-enrich/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/pruwith-you-plus-ms.html",
+      "destination": "/products/with-you-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/total-multi-crisis-care-ms.html",
+      "destination": "/products/multi-crisis-care/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/:slug-ms.html",
+      "destination": "/products/",
+      "permanent": true
+    }
+  ]
+}
