@@ -605,3 +605,35 @@ input[type="range"]::-moz-range-thumb {
 }
 .article-body a { color: var(--red); text-decoration: underline; text-underline-offset: 3px; }
 .article-body a:hover { color: var(--red-dark); }
+
+/* ---------- Inline "get a quote" CTA between guide paragraphs ---------- */
+.quote-cta { margin: 4px 0 26px; }
+.quote-cta a {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 9px 18px; border-radius: 999px;
+  background: var(--red-soft, #fde8ea); color: var(--red);
+  border: 1px solid rgba(237, 27, 46, .28);
+  font-weight: 600; font-size: .92rem; text-decoration: none;
+  transition: background .18s, color .18s;
+}
+.quote-cta a:hover { background: var(--red); color: #fff; }
+
+/* ---------- Sticky mobile CTA bar (product detail pages) ---------- */
+.mobile-cta-bar { display: none; }
+@media (max-width: 992px) {
+  .mobile-cta-bar {
+    display: flex; gap: 10px;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 950;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px));
+    background: rgba(255, 255, 255, .97);
+    border-top: 1px solid var(--line);
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, .09);
+  }
+  .mobile-cta-bar a {
+    flex: 1; text-align: center; padding: 13px 10px; border-radius: 999px;
+    font-weight: 600; font-size: .98rem; text-decoration: none;
+  }
+  .mobile-cta-bar .mcta-book { background: var(--red); color: #fff; }
+  .mobile-cta-bar .mcta-wa { background: var(--red-soft, #fde8ea); color: var(--red); border: 1px solid var(--red); }
+  body.has-mobile-cta { padding-bottom: 78px; }
+}

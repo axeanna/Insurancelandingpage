@@ -42,6 +42,19 @@
     });
   }
 
+  // Sticky mobile CTA on product detail pages (/products/<slug>/) so phone
+  // visitors always have Book / WhatsApp one tap away — they often don't scroll
+  // far enough to reach the in-page CTA band.
+  if (/^\/products\/[^\/]+\/?$/.test(location.pathname)) {
+    var mbar = document.createElement('div');
+    mbar.className = 'mobile-cta-bar';
+    mbar.innerHTML =
+      '<a class="mcta-book" href="/#connect">Book Consultation</a>' +
+      '<a class="mcta-wa" href="https://wa.me/60183176361" target="_blank" rel="noopener">WhatsApp</a>';
+    document.body.appendChild(mbar);
+    document.body.classList.add('has-mobile-cta');
+  }
+
   // Scroll-in animations
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (en) {
