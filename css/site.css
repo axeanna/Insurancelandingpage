@@ -534,7 +534,7 @@ input[type="range"]::-moz-range-thumb {
 .footer ul li { margin-bottom: 10px; }
 .footer a { color: rgba(255, 255, 255, .68); text-decoration: none; transition: color .15s; }
 .footer a:hover { color: var(--white); }
-.footer .f-logo img { height: 32px; margin-bottom: 16px; }
+.footer .f-logo img { height: 32px; width: auto; margin-bottom: 16px; }
 .footer-bottom { border-top: 1px solid rgba(255, 255, 255, .1); padding: 22px 0; font-size: .85rem; text-align: center; }
 
 /* ---------- WhatsApp float ---------- */
