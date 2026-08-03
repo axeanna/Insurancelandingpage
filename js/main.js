@@ -188,11 +188,18 @@ function animateValue(id, target, prefix) {
   requestAnimationFrame(frame);
 }
 
-/* Timed lead-capture popup.
+/* Timed lead-capture popup — "second opinion" offer.
  * Appears once per session, 10s after the page loads, on content pages
  * (skipped on /calculators/*, which already have their own lead gate, and in
  * demo mode). Collects name + email + explicit consent, records to the lead
- * sheet via sendLead — including the page it fired on. Fully dismissable. */
+ * sheet via sendLead — including the page it fired on. Fully dismissable.
+ *
+ * The copy offers something before asking for anything, which converts better
+ * than scarcity alone. Note what it deliberately does NOT claim: not that
+ * Annabel pays claims (Prudential does), and not how fast a payout arrives —
+ * there is a survival period and a claims assessment, both documented on
+ * /faq/. The contrast being drawn is the payout TRIGGER (late stage vs early
+ * stage), which is accurate and is the actual argument. Keep it that way. */
 (function () {
   if (typeof isDemoMode === 'function' && isDemoMode()) return;
   if (/^\/calculators\//.test(location.pathname)) return;
@@ -210,13 +217,13 @@ function animateValue(id, target, prefix) {
     modal.innerHTML =
       '<div class="modal-box">' +
         '<button class="modal-close" id="lp-close" aria-label="Close">\u2715</button>' +
-        '<h3>Before you go \u2014 let\u2019s stay in touch</h3>' +
-        '<p class="sub">Leave your details and Annabel will follow up with guidance tailored to you. No pressure, no spam.</p>' +
+        '<h3>Already have critical illness cover?</h3>' +
+        '<p class="sub">Most policies written before 2015 only pay once an illness reaches late stage \u2014 so you could be diagnosed and still wait years for a payout. Modern plans can pay from early stage, much closer to diagnosis. Leave your email and I\u2019ll tell you what to check in yours.</p>' +
         '<div class="field"><label for="lp-name">Full Name</label><input type="text" id="lp-name" placeholder="Your name" autocomplete="name"><p class="err" id="lp-name-err">Please enter your name.</p></div>' +
         '<div class="field"><label for="lp-email">Email</label><input type="email" id="lp-email" placeholder="you@email.com" autocomplete="email"><p class="err" id="lp-email-err">Please enter a valid email.</p></div>' +
         '<label class="consent"><input type="checkbox" id="lp-consent"><span>I consent to sharing my data with annaprudential.com.</span></label>' +
-        '<button class="btn btn-primary" id="lp-submit" disabled style="width:100%;">Send to Annabel</button>' +
-        '<p id="lp-success" style="display:none; color:#23A455; font-weight:600; margin-top:12px; text-align:center;">\u2713 Thank you! Annabel will be in touch soon.</p>' +
+        '<button class="btn btn-primary" id="lp-submit" disabled style="width:100%;">Get my second opinion</button>' +
+        '<p id="lp-success" style="display:none; color:#23A455; font-weight:600; margin-top:12px; text-align:center;">\u2713 On its way. I\u2019ll be in touch with what to look for.</p>' +
       '</div>';
     document.body.appendChild(modal);
     modal.classList.add('active');
@@ -251,7 +258,8 @@ function animateValue(id, target, prefix) {
         email: email.value.trim(),
         consent: 'Yes',
         page: window.location.href,
-        source: 'Timed Popup'
+        // Tagged by variant so the sheet shows which popup copy actually converts.
+        source: 'Timed Popup — Second Opinion'
       });
       try { localStorage.setItem('anna_lead_captured', '1'); } catch (e) {}
       document.getElementById('lp-success').style.display = 'block';
