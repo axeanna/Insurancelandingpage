@@ -203,6 +203,9 @@ function animateValue(id, target, prefix) {
 (function () {
   if (typeof isDemoMode === 'function' && isDemoMode()) return;
   if (/^\/calculators\//.test(location.pathname)) return;
+  // Not on /reviews/ — interrupting someone mid-review to ask for their email
+  // is the fastest way to lose the review.
+  if (/^\/reviews\//.test(location.pathname)) return;
   try {
     if (localStorage.getItem('anna_lead_captured') === '1') return;
     if (sessionStorage.getItem('anna_popup_seen') === '1') return;
