@@ -22,6 +22,15 @@
   --shadow-md: 0 6px 24px rgba(20, 21, 29, .10);
   --shadow-lg: 0 20px 50px rgba(20, 21, 29, .16);
   --font: 'Outfit', system-ui, -apple-system, sans-serif;
+
+  /* Aliases. Inline styles across the pages reach for these friendlier names;
+     without the definitions those declarations were invalid and the colour
+     silently fell back to whatever was inherited. Map them, don't rename 38
+     call sites. */
+  --text-main: var(--ink);
+  --text-light: var(--ink-3);
+  --surface-100: var(--bg-soft);
+  --primary: var(--red);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -285,7 +294,9 @@ h3 { font-size: 1.25rem; }
 
 @media (max-width: 900px) {
   .hero { min-height: 0; padding: 120px 0 70px; }
-  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+  .hero p.lead { margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; }
 }
 
 /* ---------- Cards & grids ---------- */
@@ -637,3 +648,77 @@ input[type="range"]::-moz-range-thumb {
   .mobile-cta-bar .mcta-wa { background: var(--red-soft, #fde8ea); color: var(--red); border: 1px solid var(--red); }
   body.has-mobile-cta { padding-bottom: 78px; }
 }
+
+/* ---------- FAQ hub (/faq/) ---------- */
+/* A jump bar so a 40-question page stays navigable, plus deep-linkable
+   category anchors — each one is a URL an answer engine can cite directly. */
+.faq-jump {
+  display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+  margin: 0 auto 48px; max-width: 780px;
+}
+.faq-jump a {
+  padding: 9px 18px; border-radius: 999px; text-decoration: none;
+  background: var(--white); border: 1px solid var(--line);
+  color: var(--ink-2); font-weight: 600; font-size: .92rem;
+  transition: background .18s, color .18s, border-color .18s;
+}
+.faq-jump a:hover { background: var(--red); border-color: var(--red); color: var(--white); }
+
+.faq-category {
+  scroll-margin-top: 96px;      /* clears the fixed navbar on anchor jumps */
+  margin: 56px 0 22px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--line);
+  font-size: 1.45rem;
+}
+.faq-category:first-of-type { margin-top: 0; }
+.faq-category .count { color: var(--ink-3); font-weight: 500; font-size: .95rem; margin-left: 8px; }
+
+/* The lead sentence of every answer is the quotable one — mark it so it reads
+   as the answer even when the rest is skimmed. */
+.faq-a .lede { color: var(--ink-2); font-weight: 600; display: block; margin-bottom: 8px; }
+.faq-a p { margin-bottom: 10px; }
+.faq-a p:last-child { margin-bottom: 0; }
+.faq-a a { color: var(--red); font-weight: 600; }
+
+.faq-note {
+  margin-top: 48px; padding: 18px 22px;
+  background: var(--bg-soft); border-left: 4px solid var(--red);
+  border-radius: 10px; font-size: .92rem; color: var(--ink-3);
+}
+
+/* ---------- Timeline (CI review schedule, coverage history) ---------- */
+.timeline {
+  position: relative; margin: 36px 0 8px;
+  padding-left: 30px; border-left: 3px solid var(--red-soft);
+}
+.timeline-item { position: relative; margin-bottom: 34px; }
+.timeline-item:last-child { margin-bottom: 0; }
+.timeline-item::before {
+  content: ""; position: absolute; left: -38px; top: 6px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--red); box-shadow: 0 0 0 4px var(--white);
+}
+.timeline-date {
+  display: inline-block; margin-bottom: 6px;
+  font-weight: 700; color: var(--red); font-size: 1.05rem;
+}
+.timeline-title { font-size: 1.2rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+.timeline-content { color: var(--ink-2); line-height: 1.65; }
+.timeline-content p:last-child { margin-bottom: 0; }
+.faq-a .timeline { margin: 18px 0 6px; padding-left: 24px; }
+.faq-a .timeline-item::before { left: -32px; }
+.faq-a .timeline-date { font-size: .98rem; }
+.faq-a .timeline-title { font-size: 1.02rem; }
+
+/* ---------- Stat cards ---------- */
+.stats-grid {
+  display: grid; gap: 24px; margin: 30px 0;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.stat-card {
+  background: var(--bg-soft); padding: 24px;
+  border-radius: var(--radius); border-left: 4px solid var(--red);
+}
+.stat-card h4 { margin-bottom: 8px; font-size: 1.1rem; }
+.stat-card p { margin: 0; font-size: .95rem; color: var(--ink-2); }
