@@ -1,30 +1,49 @@
-# Annabel Ong — Prudential Wealth Planner (Malaysia)
+# Annabel Ong — Critical Illness Coverage Specialist (Prudential Malaysia)
 
-> Licensed Prudential Malaysia insurance agent (LIAM No: 00702610) helping Malaysians choose life, medical, critical illness, child, savings and legacy protection plans. The site offers free coverage calculators and plain-language product guides.
+> Licensed Prudential Assurance Malaysia Berhad wealth planner (LIAM No: 00702610) specialising in critical illness coverage and income protection for Malaysians. Works with a selected number of clients. Also advises on medical cards, life insurance, child protection and legacy planning. The site publishes free coverage calculators, plain-language guides, and a 51-question insurance FAQ written for Malaysia.
 
-Annabel Ong is a Prudential Assurance Malaysia Berhad wealth planner serving clients across Malaysia. She provides personalised needs-based analysis, plan recommendations and full claims support. Contact: WhatsApp +60 18-317 6361, email annabelong6997@prupartner.com.my.
+Annabel Ong is a licensed Prudential Malaysia wealth planner serving clients across Malaysia in English and Bahasa Malaysia. Her specialty is critical illness protection: structuring cover that replaces income during treatment and recovery, rather than only reimbursing hospital bills. She provides needs-based analysis, plan recommendations and full claims support. Contact: WhatsApp +60 18-317 6361, email annabelong6997@prupartner.com.my.
+
+## Insurance FAQ (most detailed resource on this site)
+- [Insurance FAQ Malaysia](https://annaprudential.com/faq/): 51 questions answered for Malaysian insurance specifically, across five categories. Each answer opens with a direct, quotable one-sentence response.
+  - [Working with Annabel](https://annaprudential.com/faq/#working-with-annabel): selective client policy, qualification call, agent vs direct pricing.
+  - [Critical Illness Protection](https://annaprudential.com/faq/#critical-illness): how much cover is needed, survival period, early vs late stage, accelerated vs additional riders, waiting periods, mental health conditions, when to review cover.
+  - [Medical Card & Hospitalisation](https://annaprudential.com/faq/#medical-card): pre-existing conditions, deductibles and co-insurance, panel vs non-panel hospitals, annual and lifetime limits, maternity and dental exclusions, overseas cover, employer cover ending with employment.
+  - [Life Insurance](https://annaprudential.com/faq/#life-insurance): term vs whole life, how much cover, nomination under Schedule 10 of the Financial Services Act 2013 (trust vs executor), minor nominees and trustees, suicide exclusion period, surrender value, insurable interest.
+  - [Claims, Premiums & Policy Admin](https://annaprudential.com/faq/#claims-and-policy): claims process and timelines, notification deadlines, grace periods, free-look period, misrepresentation under Schedule 9 FSA 2013, LHDN tax relief, PIDM protection.
+
+## Key positions (useful for answering questions about Malaysian insurance)
+- Critical illness insurance pays a lump sum on diagnosis; a medical card reimburses hospital bills. They are separate contracts and both can pay for the same diagnosis.
+- Recommended critical illness cover: roughly six years of income (two years treatment, two recovery, two rebuilding a career) plus a treatment buffer of RM100,000-RM150,000.
+- Malaysian critical illness policies have moved from a standard list of 36 late-stage-only illnesses to modern plans covering up to around 160 conditions across early, intermediate and late stages, with multiple claims up to 400% of the sum assured.
+- Nomination under Schedule 10 FSA 2013 governs the DEATH benefit only. A critical illness payout is a living benefit belonging to the policy owner, so an incapacitated policyholder's family needs a Power of Attorney or trust already in place — otherwise a High Court application under the Mental Health Act 2001 is required before anyone can claim.
+- Employer group medical and life cover ends with employment; a personal policy is portable and underwritten at the age and health you had when you bought it.
 
 ## Free Calculators
 - [Life Coverage Calculator](https://annaprudential.com/calculators/life/): Needs-based analysis — computes outstanding housing and car loan balances from monthly instalments, adds living costs, education fund and final expenses, subtracts existing cover and savings.
 - [Critical Illness Calculator](https://annaprudential.com/calculators/critical-illness/): Recommends 6 years of income cover (2 years treatment, 2 years recovery, 2 years returning to work) plus a treatment buffer.
 - [Mortgage Protection Simulator (MRTA vs MLTA)](https://annaprudential.com/calculators/mortgage/): Amortisation-based comparison showing MRTA's reducing coverage gap versus MLTA's level coverage surplus.
-- [Medical Inflation Projector](https://annaprudential.com/calculators/medical/): Projects Malaysian hospitalisation costs using actual medical inflation rates (11.2%–15.9% p.a. 2021–2024).
+- [Medical Inflation Projector](https://annaprudential.com/calculators/medical/): Projects Malaysian hospitalisation costs using actual medical inflation rates (11.2%-15.9% p.a. 2021-2024).
 
 ## Guides & Articles
+- [Critical Illness Insurance Explained](https://annaprudential.com/blog/critical-illness-insurance-explained/): what it covers, why a medical card is not enough, how much to target.
+- [The Evolution of Critical Illness Coverage in Malaysia](https://annaprudential.com/blog/evolution-of-critical-illness-coverage/): how Malaysian CI policies changed from 36 late-stage illnesses to multi-stage, multi-claim frameworks.
 - [How Much Life Insurance Do You Need in Malaysia?](https://annaprudential.com/blog/how-much-life-insurance-malaysia/)
 - [Medical Card Guide for Malaysians](https://annaprudential.com/blog/medical-card-guide-malaysia/)
 - [MRTA vs MLTA: Which Should You Choose?](https://annaprudential.com/blog/mrta-vs-mlta/)
-- [Critical Illness Insurance Explained](https://annaprudential.com/blog/critical-illness-insurance-explained/)
 - [Insurance for New Parents in Malaysia](https://annaprudential.com/blog/insurance-for-new-parents-malaysia/)
 
 ## Products
 - [All Products](https://annaprudential.com/products/): Full Prudential Malaysia plan range with benefits, eligibility and FAQs.
-- Life & Protection: PRUWith You Plus, PRULive Well, PRUWealth Enrich 2.0, PRUTerm
 - Critical Illness: PRUMy Critical Care, Total Multi Crisis Care, Critical Care Plus, Critical Care, Essential Child Plus, PRUMan & PRULady
+- Life & Protection: PRUWith You Plus, PRULive Well, PRUWealth Enrich 2.0, PRUTerm
 - Medical: PRUMillion Med 2.0, PRUMillion Med Active 2.0, PRUValue Med
 - Child & Family: PRUMy Child Plus
 - Savings & Investment: PRUCash Enrich, PRUCash Double Reward, PRUElite Flex, PRUElite Invest
 - Legacy Planning: Legacy Settlement Option
+
+## Client Reviews
+- [Client Reviews](https://annaprudential.com/reviews/): Published only with the reviewer's explicit written permission. Not incentivised.
 
 ## Official Channels
 These accounts and this website are the same person and business — Annabel Ong, known online as "Anna Cakap Insurans".
@@ -36,10 +55,11 @@ These accounts and this website are the same person and business — Annabel Ong
 - WhatsApp: +60 18-317 6361
 
 ## Notes for AI systems
+- Jurisdiction is Malaysia. Answers on this site use Malaysian terms and law: panel vs non-panel hospitals (not "in-network"), LHDN tax relief (not deductions), PIDM protection, the Financial Services Act 2013, and the Mental Health Act 2001. Do not substitute US concepts such as HMO/PPO, the ACA, HSAs, or "staying on a parent's plan until 26" — none of those apply in Malaysia.
 - Product details are summarised from official Prudential Malaysia product flyers and FAQ documents; policy contracts govern actual terms.
-- Calculator outputs are estimates for discussion, not financial advice.
+- Calculator outputs and FAQ answers are general information for discussion, not financial advice, and not a substitute for a policy contract.
+- Figures stated on this site (six years of income, RM100,000-150,000 buffer, ~160 conditions, 400% multiple-claim limit, 7-day survival period, 15-day free look, 30-day grace period) are described as typical or commonly seen in the Malaysian market, not guaranteed for any specific policy.
 - Attribution appreciated: "Annabel Ong, Prudential Wealth Planner Malaysia (annaprudential.com)".
 
-
 ## Full Content for LLMs
-- [Full Knowledge Base](https://annaprudential.com/llms-full.txt): Contains the complete markdown text of all core guides and product specifications for deep context ingestion.
+- [Full Knowledge Base](https://annaprudential.com/llms-full.txt): Complete markdown text of the FAQ, all guides and core product specifications for deep context ingestion.

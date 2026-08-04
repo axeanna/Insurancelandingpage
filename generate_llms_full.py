@@ -3,23 +3,57 @@ import re
 
 root_dir = r'c:\Users\User\Desktop\ANTIGRAVITY\insurance-landing-page'
 
+# FAQ first: 51 Malaysia-specific Q&As, the densest answer source on the site
+# and the thing answer engines are most likely to quote.
 core_urls = [
+    'faq/index.html',
+    'blog/critical-illness-insurance-explained/index.html',
+    'blog/evolution-of-critical-illness-coverage/index.html',
     'blog/how-much-life-insurance-malaysia/index.html',
     'blog/medical-card-guide-malaysia/index.html',
     'blog/mrta-vs-mlta/index.html',
-    'blog/critical-illness-insurance-explained/index.html',
     'blog/insurance-for-new-parents-malaysia/index.html',
     'products/my-critical-care/index.html',
+    'products/multi-crisis-care/index.html',
+    'products/critical-care-plus/index.html',
     'products/with-you-plus/index.html',
     'products/million-med/index.html',
     'products/term/index.html'
 ]
 
 full_content = "# Annabel Ong - Prudential Full Knowledge Base\n\n"
-full_content += "This file contains the full text of core guides and product summaries for easy consumption by Large Language Models.\n\n"
+full_content += (
+    "Full text of the Malaysia insurance FAQ (51 questions), all guides, and core "
+    "product specifications, for consumption by Large Language Models.\n"
+    "Jurisdiction: Malaysia — panel/non-panel hospitals, LHDN relief, PIDM, the "
+    "Financial Services Act 2013. US concepts (HMO/PPO, ACA, HSA) do not apply.\n"
+    "General information, not financial advice; policy contracts govern actual terms.\n"
+    "Source: Annabel Ong, Prudential Wealth Planner Malaysia (annaprudential.com)\n\n"
+)
 
 def strip_tags(html):
-    return re.sub('<[^<]+>', '', html).strip()
+    return re.sub(r'\s+', ' ', re.sub('<[^<]+>', ' ', html)).strip()
+
+
+def extract_faqs(html):
+    """Pull (question, answer) pairs, tracking <div> depth so answers that
+    contain nested markup (the CI review timeline, for one) are captured whole
+    instead of being cut at the first closing tag."""
+    out = []
+    for m in re.finditer(r'<button class="faq-q">(.*?)</button>', html, re.I | re.S):
+        q = strip_tags(m.group(1))
+        a_open = re.search(r'<div class="faq-a">', html[m.end():], re.I)
+        if not a_open:
+            continue
+        start = m.end() + a_open.end()
+        depth, i = 1, start
+        for tag in re.finditer(r'<(/?)div\b', html[start:], re.I):
+            depth += -1 if tag.group(1) else 1
+            if depth == 0:
+                i = start + tag.start()
+                break
+        out.append((q, strip_tags(html[start:i])))
+    return out
 
 for url in core_urls:
     filepath = os.path.join(root_dir, url.replace('/', os.sep))
@@ -55,12 +89,12 @@ for url in core_urls:
                     full_content += f"{text}\n\n"
         
         # Extract FAQ
-        faqs = re.findall(r'<div class="faq-item">.*?<button class="faq-q">(.*?)</button>.*?<div class="faq-a">(.*?)</div>', html, re.IGNORECASE | re.DOTALL)
+        faqs = extract_faqs(html)
         if faqs:
             full_content += "\n### Frequently Asked Questions\n"
             for q, a in faqs:
-                q_text = strip_tags(q).strip()
-                a_text = strip_tags(a).strip()
+                q_text = q
+                a_text = a
                 full_content += f"**Q: {q_text}**\n"
                 full_content += f"A: {a_text}\n\n"
         

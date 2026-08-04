@@ -30,8 +30,25 @@
       "name": "Client Reviews | Annabel Ong — Prudential Wealth Planner Malaysia",
       "description": "What clients say about working with Annabel Ong, a Prudential Malaysia critical illness coverage specialist.",
       "inLanguage": "en-MY",
+      "datePublished": "2026-08-03",
+      "dateModified": "2026-08-04",
       "isPartOf": { "@id": "https://annaprudential.com/#website" },
       "about": { "@id": "https://annaprudential.com/#agency" }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://annaprudential.com/reviews/#review-eugenie-y",
+      "itemReviewed": { "@id": "https://annaprudential.com/#agency" },
+      "author": { "@type": "Person", "name": "Eugenie Y." },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 5,
+        "bestRating": 5,
+        "worstRating": 1
+      },
+      "reviewBody": "Annabel is very helpful, she understands what I need and propose the best insurance plan for me.",
+      "datePublished": "2026-08-04",
+      "publisher": { "@id": "https://annaprudential.com/#agency" }
     },
     {
       "@type": "BreadcrumbList",
@@ -44,15 +61,18 @@
 }
 </script>
 <!--
-  NOTE ON REVIEW SCHEMA — read before adding it.
-  There is deliberately no Review or AggregateRating markup here yet.
-  1. It must never describe a review that does not exist. Invented review
-     markup is a structured-data violation and earns a manual penalty.
-  2. Google does not show star ratings for "self-serving" reviews (a business
-     reviewing itself on its own site), so markup here will not produce stars
-     regardless. Stars come from the Google Business Profile.
-  Once real approved reviews are on the page, Review markup is still worth
-  adding — answer engines read it even when Search shows no stars.
+  NOTE ON REVIEW SCHEMA — read before changing it.
+  Every Review entry above must correspond to a real review visible on this
+  page, submitted with publish consent on record in the leads sheet. Markup
+  describing a review that does not exist is a structured-data violation and
+  earns a manual penalty.
+
+  There is deliberately NO AggregateRating. With one review it would be a
+  thin signal, and Google does not show stars for "self-serving" reviews (a
+  business reviewing itself on its own site) in any case — stars come from
+  the Google Business Profile. The Review markup is here because answer
+  engines read it even when Search shows no stars. Add AggregateRating only
+  once there are several genuine reviews, and make the count match exactly.
 -->
 </head>
 <body>
