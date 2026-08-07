@@ -1,4 +1,14 @@
 /* main.js — nav, animations, FAQ, modals, shared lead helpers */
+
+/* Which language edition is this page? The Malay edition lives under /ms/ and
+ * carries lang="ms". Scripted chrome (sticky CTA, lead popup) is injected from
+ * JS, so without this it would render English copy — and link to English
+ * anchors — on top of a Malay page. */
+function isMalay() {
+  return document.documentElement.lang === 'ms' ||
+         /^\/ms(\/|$)/.test(location.pathname);
+}
+
 (function () {
   'use strict';
 
@@ -42,14 +52,18 @@
     });
   }
 
-  // Sticky mobile CTA on product detail pages (/products/<slug>/) so phone
-  // visitors always have Book / WhatsApp one tap away — they often don't scroll
-  // far enough to reach the in-page CTA band.
-  if (/^\/products\/[^\/]+\/?$/.test(location.pathname)) {
+  // Sticky mobile CTA on product detail pages so phone visitors always have
+  // Book / WhatsApp one tap away — they often don't scroll far enough to reach
+  // the in-page CTA band. Covers both editions: /products/<slug>/ and its Malay
+  // twin /ms/produk/<slug>/.
+  if (/^\/products\/[^\/]+\/?$/.test(location.pathname) ||
+      /^\/ms\/produk\/[^\/]+\/?$/.test(location.pathname)) {
+    var ms = isMalay();
     var mbar = document.createElement('div');
     mbar.className = 'mobile-cta-bar';
     mbar.innerHTML =
-      '<a class="mcta-book" href="/#connect">Book Consultation</a>' +
+      '<a class="mcta-book" href="' + (ms ? '/ms/#hubungi' : '/#connect') + '">' +
+        (ms ? 'Tempah Perundingan' : 'Book Consultation') + '</a>' +
       '<a class="mcta-wa" href="https://wa.me/60183176361" target="_blank" rel="noopener">WhatsApp</a>';
     document.body.appendChild(mbar);
     document.body.classList.add('has-mobile-cta');
@@ -214,19 +228,42 @@ function animateValue(id, target, prefix) {
   setTimeout(function () {
     try { sessionStorage.setItem('anna_popup_seen', '1'); } catch (e) {}
 
+    // Malay wording keeps the same claim boundaries as the English copy: the
+    // contrast drawn is the payout TRIGGER (late stage vs early stage), not who
+    // pays or how fast. Do not let a translation drift into promising either.
+    var t = isMalay() ? {
+      h: 'Sudah ada perlindungan penyakit kritikal?',
+      sub: 'Kebanyakan polisi yang ditulis sebelum 2015 hanya membayar apabila penyakit sampai ke peringkat akhir \u2014 jadi anda boleh didiagnosis dan masih menunggu bertahun-tahun untuk pembayaran. Pelan moden boleh membayar dari peringkat awal, jauh lebih dekat dengan diagnosis. Tinggalkan email anda dan saya akan beritahu apa yang perlu anda semak dalam polisi anda.',
+      name: 'Nama Penuh', namePh: 'Nama anda', nameErr: 'Sila masukkan nama anda.',
+      email: 'Email', emailErr: 'Sila masukkan email yang sah.',
+      consent: 'Saya bersetuju untuk berkongsi data saya dengan annaprudential.com.',
+      submit: 'Dapatkan pendapat kedua saya',
+      ok: '\u2713 Diterima. Saya akan hubungi anda dengan apa yang perlu disemak.',
+      sent: 'Dihantar', close: 'Tutup'
+    } : {
+      h: 'Already have critical illness cover?',
+      sub: 'Most policies written before 2015 only pay once an illness reaches late stage \u2014 so you could be diagnosed and still wait years for a payout. Modern plans can pay from early stage, much closer to diagnosis. Leave your email and I\u2019ll tell you what to check in yours.',
+      name: 'Full Name', namePh: 'Your name', nameErr: 'Please enter your name.',
+      email: 'Email', emailErr: 'Please enter a valid email.',
+      consent: 'I consent to sharing my data with annaprudential.com.',
+      submit: 'Get my second opinion',
+      ok: '\u2713 On its way. I\u2019ll be in touch with what to look for.',
+      sent: 'Sent', close: 'Close'
+    };
+
     var modal = document.createElement('div');
     modal.className = 'modal';
     modal.id = 'lead-popup';
     modal.innerHTML =
       '<div class="modal-box">' +
-        '<button class="modal-close" id="lp-close" aria-label="Close">\u2715</button>' +
-        '<h3>Already have critical illness cover?</h3>' +
-        '<p class="sub">Most policies written before 2015 only pay once an illness reaches late stage \u2014 so you could be diagnosed and still wait years for a payout. Modern plans can pay from early stage, much closer to diagnosis. Leave your email and I\u2019ll tell you what to check in yours.</p>' +
-        '<div class="field"><label for="lp-name">Full Name</label><input type="text" id="lp-name" placeholder="Your name" autocomplete="name"><p class="err" id="lp-name-err">Please enter your name.</p></div>' +
-        '<div class="field"><label for="lp-email">Email</label><input type="email" id="lp-email" placeholder="you@email.com" autocomplete="email"><p class="err" id="lp-email-err">Please enter a valid email.</p></div>' +
-        '<label class="consent"><input type="checkbox" id="lp-consent"><span>I consent to sharing my data with annaprudential.com.</span></label>' +
-        '<button class="btn btn-primary" id="lp-submit" disabled style="width:100%;">Get my second opinion</button>' +
-        '<p id="lp-success" style="display:none; color:#23A455; font-weight:600; margin-top:12px; text-align:center;">\u2713 On its way. I\u2019ll be in touch with what to look for.</p>' +
+        '<button class="modal-close" id="lp-close" aria-label="' + t.close + '">\u2715</button>' +
+        '<h3>' + t.h + '</h3>' +
+        '<p class="sub">' + t.sub + '</p>' +
+        '<div class="field"><label for="lp-name">' + t.name + '</label><input type="text" id="lp-name" placeholder="' + t.namePh + '" autocomplete="name"><p class="err" id="lp-name-err">' + t.nameErr + '</p></div>' +
+        '<div class="field"><label for="lp-email">' + t.email + '</label><input type="email" id="lp-email" placeholder="you@email.com" autocomplete="email"><p class="err" id="lp-email-err">' + t.emailErr + '</p></div>' +
+        '<label class="consent"><input type="checkbox" id="lp-consent"><span>' + t.consent + '</span></label>' +
+        '<button class="btn btn-primary" id="lp-submit" disabled style="width:100%;">' + t.submit + '</button>' +
+        '<p id="lp-success" style="display:none; color:#23A455; font-weight:600; margin-top:12px; text-align:center;">' + t.ok + '</p>' +
       '</div>';
     document.body.appendChild(modal);
     modal.classList.add('active');
@@ -267,7 +304,7 @@ function animateValue(id, target, prefix) {
       try { localStorage.setItem('anna_lead_captured', '1'); } catch (e) {}
       document.getElementById('lp-success').style.display = 'block';
       submit.disabled = true;
-      submit.textContent = 'Sent';
+      submit.textContent = t.sent;
       setTimeout(close, 1600);
     });
   }, 10000);
