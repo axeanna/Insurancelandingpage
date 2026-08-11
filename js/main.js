@@ -36,7 +36,9 @@ function isMalay() {
       document.body.style.overflow = willOpen ? 'hidden' : '';
     });
     links.addEventListener('click', function (e) {
-      if (window.innerWidth > 992) return;
+      // Matches the 1100px nav breakpoint in site.css — above it the bar is a
+      // normal horizontal menu and these handlers must not intercept clicks.
+      if (window.innerWidth > 1100) return;
       var link = e.target.closest ? e.target.closest('a') : null;
       if (!link) return;
       var drop = link.parentElement;
@@ -52,19 +54,27 @@ function isMalay() {
     });
   }
 
-  // Sticky mobile CTA on product detail pages so phone visitors always have
-  // Book / WhatsApp one tap away — they often don't scroll far enough to reach
-  // the in-page CTA band. Covers both editions: /products/<slug>/ and its Malay
-  // twin /ms/produk/<slug>/.
-  if (/^\/products\/[^\/]+\/?$/.test(location.pathname) ||
-      /^\/ms\/produk\/[^\/]+\/?$/.test(location.pathname)) {
+  // Sticky mobile CTA on every page so phone visitors — the majority — always
+  // have Book / WhatsApp one tap away. They frequently never scroll far enough
+  // to reach the in-page CTA band, and on a long page like /faq/ that band is
+  // thousands of pixels down. Both editions get it; the labels follow the page
+  // language via isMalay().
+  //
+  // Skipped on the calculators: those pages run their own lead gate and a
+  // second fixed bar would sit on top of the results panel and the gate modal's
+  // submit button on short viewports.
+  if (!/^\/calculators\//.test(location.pathname)) {
     var ms = isMalay();
+    var waText = ms
+      ? 'Hi Annabel, saya jumpa website anda dan nak tanya pasal perlindungan.'
+      : 'Hi Annabel, I found your website and I’d like to ask about coverage.';
     var mbar = document.createElement('div');
     mbar.className = 'mobile-cta-bar';
     mbar.innerHTML =
       '<a class="mcta-book" href="' + (ms ? '/ms/#hubungi' : '/#connect') + '">' +
-        (ms ? 'Tempah Perundingan' : 'Book Consultation') + '</a>' +
-      '<a class="mcta-wa" href="https://wa.me/60183176361" target="_blank" rel="noopener">WhatsApp</a>';
+        (ms ? 'Tempah Temu Janji' : 'Book Appointment') + '</a>' +
+      '<a class="mcta-wa" href="https://wa.me/60183176361?text=' + encodeURIComponent(waText) +
+        '" target="_blank" rel="noopener">WhatsApp</a>';
     document.body.appendChild(mbar);
     document.body.classList.add('has-mobile-cta');
   }

@@ -5,7 +5,7 @@ Jurisdiction: Malaysia — panel/non-panel hospitals, LHDN relief, PIDM, the Fin
 General information, not financial advice; policy contracts govern actual terms.
 Source: Annabel Ong, Prudential Wealth Planner Malaysia (annaprudential.com)
 
-## Insurance FAQ Malaysia — Critical Illness, Medical Card &amp; Claims | Annabel Ong
+## Insurance FAQ Malaysia — Critical Illness, Medical Card & Claims | Annabel Ong
 Source URL: https://annaprudential.com/faq/
 
 
@@ -63,7 +63,7 @@ A diagnosis inside that window is generally not payable. This is one reason buyi
 Coverage is condition-specific and requires a specialist diagnosis meeting the policy definition. It is one of the clearest reasons to check which generation your existing policy belongs to — this is a benefit that simply did not exist when many in-force policies were written.
 
 
-### Medical Card &amp; Hospitalisation 12 questions
+### Medical Card & Hospitalisation 12 questions
 Insurers typically respond in one of three ways: accept you with the condition permanently excluded, accept you with a higher premium (a loading), or decline. Declare it honestly regardless — a policy issued on incomplete information is the one most likely to fail at claim time, which is the worst possible moment to discover a problem.
 
 A plan with a deductible is cheaper because it assumes your employer coverage or savings absorb the smaller bills. Both are normally paid directly to the hospital on discharge. The trap is taking a deductible sized against employer coverage you might not still have in five years.
@@ -123,7 +123,7 @@ For investment-linked policies that rising cost is often absorbed by the fund va
 The person being insured must consent, sign the application and complete their own health declaration. You cannot insure someone without their knowledge, and an application that works around this is void.
 
 
-### Claims, Premiums &amp; Policy Admin 10 questions
+### Claims, Premiums & Policy Admin 10 questions
 Claims slow down for one reason above all others: missing or incomplete medical documentation from the treating specialist. For my clients I handle the paperwork end to end, because the weeks after a diagnosis are the worst possible time to be chasing forms.
 
 Supporting documents can follow afterwards. Late notification does not automatically void a valid claim, but it hands the insurer a reason to question it, so treat the deadline as firm.
@@ -337,7 +337,7 @@ Comprehensive Malaysian riders now cover up to 160 conditions across all stages,
 Compare multi-stage coverage plans →
 
 
-### What does &#x27;accelerated&#x27; versus &#x27;additional&#x27; mean?
+### What does 'accelerated' versus 'additional' mean?
 An accelerated critical illness rider reduces your life insurance sum assured when it pays out, so claiming RM100,000 for cancer leaves your death benefit RM100,000 lower. An additional rider pays on top and leaves your life coverage completely intact.
 
 Accelerated riders cost less and suit tight budgets. Additional riders cost more but mean surviving a critical illness doesn't quietly strip your family's death protection at the moment your health has made you uninsurable elsewhere.
@@ -355,7 +355,7 @@ Get covered while you're still healthy →
 
 ### Frequently Asked Questions
 **Q: How much critical illness coverage do I need in Malaysia?**
-A: Target about six years of income — two years for treatment, two for recovery and two to return to work — plus a treatment buffer of RM100,000 to RM150,000. For a RM5,000 monthly income that&#x27;s roughly RM360,000 plus buffer.
+A: Target about six years of income — two years for treatment, two for recovery and two to return to work — plus a treatment buffer of RM100,000 to RM150,000. For a RM5,000 monthly income that's roughly RM360,000 plus buffer.
 
 **Q: Can I claim critical illness and medical insurance for the same illness?**
 A: Yes. They are separate contracts covering different things: your medical card reimburses hospital and treatment bills, while the critical illness rider pays a lump sum directly to you. Both can pay for the same diagnosis.
@@ -459,7 +459,7 @@ Because insurance charges rise with age, entry age is locked into your pricing f
 Compare affordable PRUTerm cover →
 
 
-### What&#x27;s the most common mistake Malaysians make?
+### What's the most common mistake Malaysians make?
 The most common mistake is buying a medical card and assuming the family is protected. Medical insurance pays hospital bills; it pays nothing to replace your income if you die or become permanently disabled. Those are separate risks that need separate coverage.
 
 The second most common mistake is never revisiting the number. Coverage bought before marriage rarely fits after a mortgage and two children. Review it whenever a major life event changes your obligations.
@@ -472,7 +472,7 @@ Avoid the common mistake — ask Annabel →
 A: Roughly 10–15 times your annual income as a rule of thumb, but the accurate figure is a needs-based calculation: outstanding debts + (monthly living costs × 12 × years of support) + education fund + final expenses − existing coverage and savings.
 
 **Q: Does EPF count as life insurance?**
-A: EPF is a savings resource your family can draw on, so it should be subtracted from your coverage need — but it is not insurance. EPF balances are typically far smaller than a family&#x27;s long-term income needs, especially for younger workers.
+A: EPF is a savings resource your family can draw on, so it should be subtracted from your coverage need — but it is not insurance. EPF balances are typically far smaller than a family's long-term income needs, especially for younger workers.
 
 **Q: Should I buy term or whole life insurance?**
 A: Term insurance gives maximum coverage per ringgit for a fixed period, ideal for covering mortgage and child-raising years. Whole life or investment-linked plans cost more but provide lifelong coverage, cash value and the ability to attach medical and critical illness riders.
@@ -536,7 +536,7 @@ Lock in your cover today →
 A: The annual limit is the maximum payable in one policy year and resets annually. The lifetime limit caps total claims across the whole policy and, once exhausted, ends your coverage permanently. Plans with no lifetime limit are strongly preferable.
 
 **Q: Can I have two medical cards?**
-A: Yes, and it&#x27;s common — many Malaysians hold an employer plan plus a personal card. Setting a deductible on the personal card so it covers costs above the employer plan reduces premiums while eliminating gaps if you change jobs.
+A: Yes, and it's common — many Malaysians hold an employer plan plus a personal card. Setting a deductible on the personal card so it covers costs above the employer plan reduces premiums while eliminating gaps if you change jobs.
 
 **Q: Does a medical card cover outpatient treatment?**
 A: Comprehensive plans cover specified outpatient treatments including cancer therapy, kidney dialysis, physiotherapy after discharge, and pre- and post-hospitalisation consultations. Routine GP visits are usually not covered.
@@ -603,7 +603,7 @@ A: MRTA is not legally compulsory for most residential home loans, though some b
 A: You can cancel MRTA, but refunds are typically small and reduce sharply over time since much of the premium is consumed in early years. Compare the surrender value against the cost of new coverage before switching.
 
 **Q: What happens to MRTA if I pay off my loan early?**
-A: Coverage ends when the loan is settled, and any refund depends on the policy&#x27;s surrender terms. Since MRTA has no cash value, early settlement often means the remaining coverage simply lapses.
+A: Coverage ends when the loan is settled, and any refund depends on the policy's surrender terms. Since MRTA has no cash value, early settlement often means the remaining coverage simply lapses.
 
 ---
 
@@ -664,14 +664,14 @@ Book a new-parent policy review →
 A: Coverage can start from as early as 13 weeks of pregnancy with maternity and child plans such as PRUMy Child Plus. Standard child medical cards usually begin from 14 to 30 days after birth.
 
 **Q: Should I insure my child before myself?**
-A: No. Protect the income earners first with life, critical illness and medical coverage. A child&#x27;s policy depends entirely on a parent&#x27;s ability to keep paying premiums, so parental coverage — plus a payor benefit — protects the child&#x27;s plan too.
+A: No. Protect the income earners first with life, critical illness and medical coverage. A child's policy depends entirely on a parent's ability to keep paying premiums, so parental coverage — plus a payor benefit — protects the child's plan too.
 
 **Q: Do stay-at-home parents need life insurance?**
 A: Yes. Replacing full-time childcare, cooking and household management with paid help is a significant recurring cost that appears immediately if a non-earning parent dies. Coverage sized to a few years of replacement care is a sensible baseline.
 
 ---
 
-## PRUMy Critical Care — Critical Illness Insurance Malaysia
+## PRUMy Critical Care — Build Your CI Cover from 5 Riders | Malaysia
 Source URL: https://annaprudential.com/products/my-critical-care/
 
 PRUMy Critical Care is a solution, not a single rider: it combines PRUWith You Plus as the base plan with your choice of critical illness riders — Total Multi Crisis Care, Critical Care Plus, Critical Care, Essential Cancer Care and Essential Child Plus. You pick the protection tier that fits your life and budget.
@@ -679,25 +679,25 @@ PRUMy Critical Care is a solution, not a single rider: it combines PRUWith You P
 
 ### Frequently Asked Questions
 **Q: Is PRUMy Critical Care a single insurance plan?**
-A: No — it&#x27;s a packaged solution: PRUWith You Plus as the base plan plus a selection of critical illness riders (Total Multi Crisis Care, Critical Care Plus, Critical Care, Essential Cancer Care, Essential Child Plus). You choose which components to include.
+A: No — it's a packaged solution: PRUWith You Plus as the base plan plus a selection of critical illness riders (Total Multi Crisis Care, Critical Care Plus, Critical Care, Essential Cancer Care, Essential Child Plus). You choose which components to include.
 
 **Q: Which rider tier should I choose?**
 A: Essential Cancer Care or Critical Care for affordable, focused protection; Critical Care Plus for 80 conditions with ICU and reconstructive benefits; Total Multi Crisis Care for the most comprehensive cover — 160 early-to-late-stage conditions with multiple claims up to 400%. Annabel can tailor the mix to your budget.
 
 **Q: What is the Assurance Upgrade Privilege?**
-A: At life milestones (childbirth, marriage, income doubling, buying a property over RM500k, or a child&#x27;s school enrolment), you can increase your rider coverage by up to 50% of the sum assured — capped at RM300,000 — without medical underwriting. Exercisable once per policy in the first 10 rider years, before age 50.
+A: At life milestones (childbirth, marriage, income doubling, buying a property over RM500k, or a child's school enrolment), you can increase your rider coverage by up to 50% of the sum assured — capped at RM300,000 — without medical underwriting. Exercisable once per policy in the first 10 rider years, before age 50.
 
 ---
 
-## Total Multi Crisis Care — Critical Illness Insurance Malaysia
+## Total Multi Crisis Care — 160 Conditions, Claims to 400% | Malaysia
 Source URL: https://annaprudential.com/products/multi-crisis-care/
 
 Total Multi Crisis Care is an additional critical illness rider covering 160 early-to-late-stage conditions. Claims do not reduce your basic sum assured, and you can claim multiple times up to 400%.
 
 
 ### Frequently Asked Questions
-**Q: What&#x27;s the difference between &#x27;accelerate&#x27; and &#x27;additional&#x27; riders?**
-A: An accelerated rider&#x27;s payout reduces your basic (life) sum assured. An additional rider like Total Multi Crisis Care pays out on top — your life coverage remains fully intact after a CI claim.
+**Q: What's the difference between 'accelerate' and 'additional' riders?**
+A: An accelerated rider's payout reduces your basic (life) sum assured. An additional rider like Total Multi Crisis Care pays out on top — your life coverage remains fully intact after a CI claim.
 
 **Q: How does re-diagnosis coverage work?**
 A: A subsequent cancer claim requires a new, unrelated primary cancer diagnosed at least 3 years after the first; a subsequent late-stage heart attack or stroke must be unrelated and at least 1 year after the first. All claims count toward the 400% overall cap.
@@ -707,14 +707,14 @@ A: For rider sum assured of RM250,000 and above: Case Management Service (second
 
 ---
 
-## Critical Care Plus — Critical Illness Insurance Malaysia
+## Critical Care Plus — ICU Shield & Reconstructive Cover | Malaysia
 Source URL: https://annaprudential.com/products/critical-care-plus/
 
-Critical Care Plus is an additional rider covering 80 critical illnesses, with extra benefits most plans don&#x27;t have: ICU Shield, Reconstructive Care, a Wellness Bonus, and upgrade privileges.
+Critical Care Plus is an additional rider covering 80 critical illnesses, with extra benefits most plans don't have: ICU Shield, Reconstructive Care, a Wellness Bonus, and upgrade privileges.
 
 
 ### Frequently Asked Questions
-**Q: What&#x27;s the difference vs Critical Care?**
+**Q: What's the difference vs Critical Care?**
 A: Both cover 80 conditions, but Critical Care is an accelerated rider (claims reduce life coverage) while Critical Care Plus is additional (claims paid on top), and adds ICU Shield, Reconstructive Care, Wellness Bonus and the Assurance Upgrade Privilege.
 
 **Q: When does the ICU Shield Benefit apply?**
@@ -746,12 +746,12 @@ A: Yes. PRUWith You Plus is a popular base plan for riders like PRUMillion Med 2
 ## PRUMillion Med 2.0 — Medical Card Malaysia
 Source URL: https://annaprudential.com/products/million-med/
 
-PRUMillion Med 2.0 is the &#x27;Be at Ease&#x27; plan of the PRUMillion Med Series: comprehensive medical coverage with a RM2 million annual limit refreshed every year, no lifetime limit, and the option to boost it further with PRUMillion Med Booster 3.0.
+PRUMillion Med 2.0 is the 'Be at Ease' plan of the PRUMillion Med Series: comprehensive medical coverage with a RM2 million annual limit refreshed every year, no lifetime limit, and the option to boost it further with PRUMillion Med Booster 3.0.
 
 
 ### Frequently Asked Questions
 **Q: What does PRUMillion Med Booster 3.0 add?**
-A: Unlimited days for Room &amp; Board and ICU (vs 150 days per year), a guaranteed annual limit increase of RM100,000 every year, coverage for 13 maternity complications during and after childbirth, post-hospitalisation treatment for serious conditions extended from 180 to 365 days, double coverage for home nursing care, extended outpatient physiotherapy, and a RM500 No Claims Benefit yearly for preventive care when you stay claim-free.
+A: Unlimited days for Room & Board and ICU (vs 150 days per year), a guaranteed annual limit increase of RM100,000 every year, coverage for 13 maternity complications during and after childbirth, post-hospitalisation treatment for serious conditions extended from 180 to 365 days, double coverage for home nursing care, extended outpatient physiotherapy, and a RM500 No Claims Benefit yearly for preventive care when you stay claim-free.
 
 **Q: What is the No Claims Benefit?**
 A: If you made no claims in the preceding year, you can redeem up to RM500 (voucher or reimbursement) for preventive care — health screenings and wellness programmes — rewarding you for staying healthy.
@@ -764,7 +764,7 @@ A: It attaches to investment-linked plans like PRUWith You Plus. Annabel can rec
 
 ---
 
-## PRUTerm — Life Insurance Malaysia | Benefits, Coverage &amp; FAQ
+## PRUTerm — Life Insurance Malaysia | Benefits, Coverage & FAQ
 Source URL: https://annaprudential.com/products/term/
 
 PRUTerm is straightforward term life insurance: high coverage at low cost, for a period you choose. Ideal for covering income-earning years or specific liabilities like a mortgage.

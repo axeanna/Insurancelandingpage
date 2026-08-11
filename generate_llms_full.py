@@ -1,7 +1,11 @@
+import html
 import os
 import re
 
-root_dir = r'c:\Users\User\Desktop\ANTIGRAVITY\insurance-landing-page'
+# Repo root = wherever this script lives, so it works from a git worktree or a
+# clone anywhere on disk. It used to be an absolute path to one machine's copy,
+# which meant running it from a worktree silently rewrote the *other* checkout.
+root_dir = os.path.dirname(os.path.abspath(__file__))
 
 # FAQ first: 51 Malaysia-specific Q&As, the densest answer source on the site
 # and the thing answer engines are most likely to quote.
@@ -31,48 +35,52 @@ full_content += (
     "Source: Annabel Ong, Prudential Wealth Planner Malaysia (annaprudential.com)\n\n"
 )
 
-def strip_tags(html):
-    return re.sub(r'\s+', ' ', re.sub('<[^<]+>', ' ', html)).strip()
+def strip_tags(markup):
+    """Tags out, entities decoded. This is a plain-text file for LLM ingestion,
+    so a literal "&amp;" in it is just noise the model has to see through."""
+    return html.unescape(re.sub(r'\s+', ' ', re.sub('<[^<]+>', ' ', markup))).strip()
 
 
-def extract_faqs(html):
+def extract_faqs(page):
     """Pull (question, answer) pairs, tracking <div> depth so answers that
     contain nested markup (the CI review timeline, for one) are captured whole
     instead of being cut at the first closing tag."""
     out = []
-    for m in re.finditer(r'<button class="faq-q">(.*?)</button>', html, re.I | re.S):
+    for m in re.finditer(r'<button class="faq-q">(.*?)</button>', page, re.I | re.S):
         q = strip_tags(m.group(1))
-        a_open = re.search(r'<div class="faq-a">', html[m.end():], re.I)
+        a_open = re.search(r'<div class="faq-a">', page[m.end():], re.I)
         if not a_open:
             continue
         start = m.end() + a_open.end()
         depth, i = 1, start
-        for tag in re.finditer(r'<(/?)div\b', html[start:], re.I):
+        for tag in re.finditer(r'<(/?)div\b', page[start:], re.I):
             depth += -1 if tag.group(1) else 1
             if depth == 0:
                 i = start + tag.start()
                 break
-        out.append((q, strip_tags(html[start:i])))
+        out.append((q, strip_tags(page[start:i])))
     return out
 
 for url in core_urls:
     filepath = os.path.join(root_dir, url.replace('/', os.sep))
     if os.path.exists(filepath):
+        # Named `page`, not `html` — the stdlib `html` module is imported above
+        # for entity decoding and shadowing it here would break strip_tags().
         with open(filepath, 'r', encoding='utf-8') as f:
-            html = f.read()
-        
+            page = f.read()
+
         # Extract title
-        title_match = re.search(r'<title>(.*?)</title>', html, re.IGNORECASE)
-        title = title_match.group(1) if title_match else url
+        title_match = re.search(r'<title>(.*?)</title>', page, re.IGNORECASE)
+        title = html.unescape(title_match.group(1)) if title_match else url
         
         full_content += f"## {title}\n"
         full_content += f"Source URL: https://annaprudential.com/{url.replace('index.html', '')}\n\n"
         
         # Extract main content in article or section
-        article_match = re.search(r'<article.*?>(.*?)</article>', html, re.IGNORECASE | re.DOTALL)
+        article_match = re.search(r'<article.*?>(.*?)</article>', page, re.IGNORECASE | re.DOTALL)
         if not article_match:
             # try to grab the first main section
-            article_match = re.search(r'<section class="section.*?>(.*?)</section>', html, re.IGNORECASE | re.DOTALL)
+            article_match = re.search(r'<section class="section.*?>(.*?)</section>', page, re.IGNORECASE | re.DOTALL)
             
         if article_match:
             article_html = article_match.group(1)
@@ -89,7 +97,7 @@ for url in core_urls:
                     full_content += f"{text}\n\n"
         
         # Extract FAQ
-        faqs = extract_faqs(html)
+        faqs = extract_faqs(page)
         if faqs:
             full_content += "\n### Frequently Asked Questions\n"
             for q, a in faqs:

@@ -1,134 +1,104 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "cleanUrls": false,
+
   "redirects": [
+    { "source": "/pages/critical-care-plus.html", "destination": "/products/critical-care-plus/", "permanent": true },
+    { "source": "/pages/critical-care.html", "destination": "/products/critical-care/", "permanent": true },
+    { "source": "/pages/essential-child-plus.html", "destination": "/products/essential-child-plus/", "permanent": true },
+    { "source": "/pages/legacy-settlement-option.html", "destination": "/products/legacy-settlement/", "permanent": true },
+    { "source": "/pages/prucash-double-reward.html", "destination": "/products/cash-double-reward/", "permanent": true },
+    { "source": "/pages/prucash-enrich.html", "destination": "/products/cash-enrich/", "permanent": true },
+    { "source": "/pages/pruelite-flex.html", "destination": "/products/elite-flex/", "permanent": true },
+    { "source": "/pages/pruelite-invest.html", "destination": "/products/elite-invest/", "permanent": true },
+    { "source": "/pages/prulive-well.html", "destination": "/products/live-well/", "permanent": true },
+    { "source": "/pages/pruman-and-prulady.html", "destination": "/products/man-and-lady/", "permanent": true },
+    { "source": "/pages/prumillion-med-2.html", "destination": "/products/million-med/", "permanent": true },
+    { "source": "/pages/prumillion-med-active-2.html", "destination": "/products/million-med-active/", "permanent": true },
+    { "source": "/pages/prumy-child-plus.html", "destination": "/products/my-child-plus/", "permanent": true },
+    { "source": "/pages/prumy-critical-care.html", "destination": "/products/my-critical-care/", "permanent": true },
+    { "source": "/pages/pruterm.html", "destination": "/products/term/", "permanent": true },
+    { "source": "/pages/pruvalue-med.html", "destination": "/products/value-med/", "permanent": true },
+    { "source": "/pages/pruwealth-enrich-2.html", "destination": "/products/wealth-enrich/", "permanent": true },
+    { "source": "/pages/pruwith-you-plus.html", "destination": "/products/with-you-plus/", "permanent": true },
+    { "source": "/pages/total-multi-crisis-care.html", "destination": "/products/multi-crisis-care/", "permanent": true },
+
+    { "source": "/pages/critical-care-plus-ms.html", "destination": "/ms/produk/critical-care-plus/", "permanent": true },
+    { "source": "/pages/critical-care-ms.html", "destination": "/ms/produk/critical-care/", "permanent": true },
+    { "source": "/pages/essential-child-plus-ms.html", "destination": "/ms/produk/essential-child-plus/", "permanent": true },
+    { "source": "/pages/legacy-settlement-option-ms.html", "destination": "/ms/produk/legacy-settlement/", "permanent": true },
+    { "source": "/pages/prucash-double-reward-ms.html", "destination": "/ms/produk/cash-double-reward/", "permanent": true },
+    { "source": "/pages/prucash-enrich-ms.html", "destination": "/ms/produk/cash-enrich/", "permanent": true },
+    { "source": "/pages/pruelite-flex-ms.html", "destination": "/ms/produk/elite-flex/", "permanent": true },
+    { "source": "/pages/pruelite-invest-ms.html", "destination": "/ms/produk/elite-invest/", "permanent": true },
+    { "source": "/pages/prulive-well-ms.html", "destination": "/ms/produk/live-well/", "permanent": true },
+    { "source": "/pages/pruman-and-prulady-ms.html", "destination": "/ms/produk/man-and-lady/", "permanent": true },
+    { "source": "/pages/prumillion-med-2-ms.html", "destination": "/ms/produk/million-med/", "permanent": true },
+    { "source": "/pages/prumillion-med-active-2-ms.html", "destination": "/ms/produk/million-med-active/", "permanent": true },
+    { "source": "/pages/prumy-child-plus-ms.html", "destination": "/ms/produk/my-child-plus/", "permanent": true },
+    { "source": "/pages/prumy-critical-care-ms.html", "destination": "/ms/produk/my-critical-care/", "permanent": true },
+    { "source": "/pages/pruterm-ms.html", "destination": "/ms/produk/term/", "permanent": true },
+    { "source": "/pages/pruvalue-med-ms.html", "destination": "/ms/produk/value-med/", "permanent": true },
+    { "source": "/pages/pruwealth-enrich-2-ms.html", "destination": "/ms/produk/wealth-enrich/", "permanent": true },
+    { "source": "/pages/pruwith-you-plus-ms.html", "destination": "/ms/produk/with-you-plus/", "permanent": true },
+    { "source": "/pages/total-multi-crisis-care-ms.html", "destination": "/ms/produk/multi-crisis-care/", "permanent": true },
+
+    { "source": "/pages", "destination": "/products/", "permanent": true },
+    { "source": "/pages/", "destination": "/products/", "permanent": true },
+
+    { "source": "/products.html", "destination": "/products/", "permanent": true },
+    { "source": "/partners.html", "destination": "/partners/", "permanent": true },
+    { "source": "/request-quote.html", "destination": "/#connect", "permanent": true },
+    { "source": "/calculator.html", "destination": "/calculators/life/", "permanent": true },
+    { "source": "/calculator-medical.html", "destination": "/calculators/medical/", "permanent": true },
+    { "source": "/calculator-mrta.html", "destination": "/calculators/mortgage/", "permanent": true },
+
+    { "source": "/index-ms.html", "destination": "/ms/", "permanent": true },
+    { "source": "/products-ms.html", "destination": "/ms/produk/", "permanent": true },
+    { "source": "/partners-ms.html", "destination": "/ms/rakan-kongsi/", "permanent": true },
+    { "source": "/calculator-ms.html", "destination": "/calculators/life/", "permanent": true },
+    { "source": "/calculator-medical-ms.html", "destination": "/calculators/medical/", "permanent": true },
+    { "source": "/calculator-mrta-ms.html", "destination": "/calculators/mortgage/", "permanent": true },
+
+    { "source": "/ms/products/", "destination": "/ms/produk/", "permanent": true },
+    { "source": "/ms/partners/", "destination": "/ms/rakan-kongsi/", "permanent": true }
+  ],
+
+  "headers": [
     {
-      "source": "/pages/critical-care-plus-ms.html",
-      "destination": "/ms/produk/critical-care-plus/",
-      "permanent": true
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Permissions-Policy", "value": "geolocation=(), microphone=(), camera=(), interest-cohort=()" },
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" }
+      ]
     },
     {
-      "source": "/pages/critical-care-ms.html",
-      "destination": "/ms/produk/critical-care/",
-      "permanent": true
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
     },
     {
-      "source": "/pages/essential-child-plus-ms.html",
-      "destination": "/ms/produk/essential-child-plus/",
-      "permanent": true
+      "source": "/(css|js)/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
     },
     {
-      "source": "/pages/legacy-settlement-option-ms.html",
-      "destination": "/ms/produk/legacy-settlement/",
-      "permanent": true
+      "source": "/(.*).html",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
     },
     {
-      "source": "/pages/prucash-double-reward-ms.html",
-      "destination": "/ms/produk/cash-double-reward/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/prucash-enrich-ms.html",
-      "destination": "/ms/produk/cash-enrich/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/pruelite-flex-ms.html",
-      "destination": "/ms/produk/elite-flex/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/pruelite-invest-ms.html",
-      "destination": "/ms/produk/elite-invest/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/prulive-well-ms.html",
-      "destination": "/ms/produk/live-well/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/pruman-and-prulady-ms.html",
-      "destination": "/ms/produk/man-and-lady/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/prumillion-med-2-ms.html",
-      "destination": "/ms/produk/million-med/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/prumillion-med-active-2-ms.html",
-      "destination": "/ms/produk/million-med-active/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/prumy-child-plus-ms.html",
-      "destination": "/ms/produk/my-child-plus/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/prumy-critical-care-ms.html",
-      "destination": "/ms/produk/my-critical-care/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/pruterm-ms.html",
-      "destination": "/ms/produk/term/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/pruvalue-med-ms.html",
-      "destination": "/ms/produk/value-med/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/pruwealth-enrich-2-ms.html",
-      "destination": "/ms/produk/wealth-enrich/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/pruwith-you-plus-ms.html",
-      "destination": "/ms/produk/with-you-plus/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/total-multi-crisis-care-ms.html",
-      "destination": "/ms/produk/multi-crisis-care/",
-      "permanent": true
-    },
-    {
-      "source": "/index-ms.html",
-      "destination": "/ms/",
-      "permanent": true
-    },
-    {
-      "source": "/products-ms.html",
-      "destination": "/ms/produk/",
-      "permanent": true
-    },
-    {
-      "source": "/partners-ms.html",
-      "destination": "/ms/rakan-kongsi/",
-      "permanent": true
-    },
-    {
-      "source": "/calculator-ms.html",
-      "destination": "/calculators/life/",
-      "permanent": true
-    },
-    {
-      "source": "/calculator-medical-ms.html",
-      "destination": "/calculators/medical/",
-      "permanent": true
-    },
-    {
-      "source": "/calculator-mrta-ms.html",
-      "destination": "/calculators/mortgage/",
-      "permanent": true
-    },
-    {
-      "source": "/pages/:slug-ms.html",
-      "destination": "/ms/produk/",
-      "permanent": true
+      "source": "/(sitemap.xml|robots.txt|llms.txt|llms-full.txt)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
     }
   ]
 }

@@ -123,17 +123,18 @@ h3 { font-size: 1.25rem; }
 }
 .nav-links > li > a {
   display: block;
-  padding: 10px 14px;
+  padding: 10px 12px;
   border-radius: 10px;
   text-decoration: none;
   color: var(--ink-2);
   font-weight: 500;
-  font-size: .98rem;
+  font-size: .95rem;
+  white-space: nowrap;
   transition: color .15s, background .15s;
 }
 .nav-links > li > a:hover { color: var(--red); background: var(--red-soft); }
 .nav-links > li > a.active { color: var(--red); font-weight: 600; }
-.nav-cta { margin-left: 8px; padding: 11px 22px !important; background: var(--red); color: var(--white) !important; border-radius: 999px; font-weight: 600 !important; }
+.nav-cta { margin-left: 8px; padding: 11px 20px !important; background: var(--red); color: var(--white) !important; border-radius: 999px; font-weight: 600 !important; }
 .nav-cta:hover { background: var(--red-dark) !important; }
 
 /* EN / MS language switch. Reads as a toggle rather than another nav item, so
@@ -200,7 +201,11 @@ h3 { font-size: 1.25rem; }
 .nav-toggle.open span:nth-child(2) { opacity: 0; }
 .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-@media (max-width: 992px) {
+/* 1100px, not 992px: the Malay labels ("Soalan Lazim", "Rakan Kongsi") are far
+   longer than their English twins, and at 992 the bar overflowed the container
+   before the hamburger appeared. Both editions switch at the same width so the
+   two sites behave identically. */
+@media (max-width: 1100px) {
   .nav-toggle { display: block; }
   /* backdrop-filter makes .navbar the containing block for its position:fixed
      children, which collapsed the slide-in menu to the navbar's height (~36px)
@@ -454,8 +459,21 @@ input[type="range"]::-moz-range-thumb {
 
 /* ---------- Calculator layout ---------- */
 .calc-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start; }
-@media (max-width: 900px) { .calc-layout { grid-template-columns: 1fr; } }
+/* Chart pages give the right column more room — declared above the collapse
+   rule so the single-column mobile layout still wins. */
+.calc-layout-chart { grid-template-columns: 1fr 1.4fr; }
+@media (max-width: 900px) {
+  .calc-layout, .calc-layout-chart { grid-template-columns: 1fr; }
+}
+/* A grid/flex item refuses to shrink below its content's min-content width
+   unless told otherwise. Chart.js sizes its canvas from the parent, so without
+   this the canvas sets the floor and the whole page scrolls sideways. */
+.calc-layout > * { min-width: 0; }
+.chart-wrap canvas { max-width: 100%; }
 .calc-panel { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 36px; box-shadow: var(--shadow-sm); }
+/* 36px each side eats a fifth of a 375px screen; these are the lead-capture
+   pages, so give the inputs the width instead. */
+@media (max-width: 640px) { .calc-panel { padding: 22px 18px; } }
 .calc-panel h3 { margin-bottom: 22px; }
 .result-big { text-align: center; padding: 26px; border-radius: var(--radius); background: var(--red-soft); margin-bottom: 16px; }
 .result-big .label { font-size: .88rem; font-weight: 600; color: var(--ink-3); text-transform: uppercase; letter-spacing: .08em; }
@@ -636,9 +654,11 @@ input[type="range"]::-moz-range-thumb {
 }
 .quote-cta a:hover { background: var(--red); color: #fff; }
 
-/* ---------- Sticky mobile CTA bar (product detail pages) ---------- */
+/* ---------- Sticky mobile CTA bar ---------- */
+/* Most visitors arrive on a phone, so Book and WhatsApp stay one tap away on
+   every page rather than only on product detail pages. Injected from main.js. */
 .mobile-cta-bar { display: none; }
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
   .mobile-cta-bar {
     display: flex; gap: 10px;
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 950;
@@ -648,12 +668,17 @@ input[type="range"]::-moz-range-thumb {
     box-shadow: 0 -6px 20px rgba(0, 0, 0, .09);
   }
   .mobile-cta-bar a {
-    flex: 1; text-align: center; padding: 13px 10px; border-radius: 999px;
+    flex: 1; text-align: center; padding: 14px 10px; border-radius: 999px;
     font-weight: 600; font-size: .98rem; text-decoration: none;
+    /* 48px min target — the whole bar is thumb-reach real estate. */
+    min-height: 48px; display: flex; align-items: center; justify-content: center;
   }
   .mobile-cta-bar .mcta-book { background: var(--red); color: #fff; }
-  .mobile-cta-bar .mcta-wa { background: var(--red-soft, #fde8ea); color: var(--red); border: 1px solid var(--red); }
-  body.has-mobile-cta { padding-bottom: 78px; }
+  .mobile-cta-bar .mcta-wa { background: #23A455; color: #fff; }
+  body.has-mobile-cta { padding-bottom: 82px; }
+  /* The bar already carries a WhatsApp button — the floating bubble would sit
+     on top of it and say the same thing twice. */
+  body.has-mobile-cta .wa-float { display: none; }
 }
 
 /* ---------- FAQ hub (/faq/) ---------- */
