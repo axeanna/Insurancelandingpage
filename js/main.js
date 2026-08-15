@@ -138,11 +138,51 @@ function isDemoMode() {
   try { return localStorage.getItem('anna_demo') === '1'; } catch (e) { return false; }
 }
 
+/* Google Ads conversion tracking.
+ *
+ * The gtag.js loader sits in every page's <head>; this reports the "Contact"
+ * conversion back to the Google Ads account. Until this existed the account had
+ * no measurement at all, so the Performance Max campaign was bidding
+ * "maximise conversions" against zero conversion data and buying whatever
+ * traffic was cheapest.
+ *
+ * Fired from exactly two places, both of which are real lead signals:
+ *   - sendLead(), the single chokepoint every calculator gate and the timed
+ *     popup already funnel through, and
+ *   - a WhatsApp click, which for this business is a lead in its own right.
+ * The conversion counts once per click within its 30-day window, so a visitor
+ * who both fills a gate and taps WhatsApp is still one conversion, not two. */
+var ADS_CONVERSION_CONTACT = 'AW-18370369340/-BeCCNbD4uAcELyu1rdE';
+
+function trackLead(method) {
+  // Demo walk-throughs must not report — they would teach the bidding
+  // algorithm that Annabel's own demos are the customer to chase.
+  if (isDemoMode()) return;
+  try {
+    if (typeof gtag !== 'function') return;
+    gtag('event', 'conversion', { send_to: ADS_CONVERSION_CONTACT });
+    // GA4's recommended lead event. Marked as a key event in GA4 it gives the
+    // "Book appointment" conversion action something real to import; `method`
+    // separates the form fills from the WhatsApp taps in reporting.
+    gtag('event', 'generate_lead', { method: method });
+  } catch (e) { /* tag blocked by an extension — the lead itself still records */ }
+}
+
+/* WhatsApp is the main lead path on mobile, so the taps have to count. Delegated
+ * because several of these links (the mobile CTA bar, the results confirmation)
+ * are built by script after this handler is attached, and the floating button
+ * wraps an SVG — closest() keeps a tap on the icon from being missed. */
+document.addEventListener('click', function (e) {
+  var link = e.target.closest && e.target.closest('a[href*="wa.me"]');
+  if (link) trackLead('whatsapp');
+});
+
 function sendLead(fields) {
   if (isDemoMode()) {
     console.log('[demo] lead suppressed:', fields);
     return Promise.resolve();
   }
+  trackLead('form');
   var params = new URLSearchParams();
   Object.keys(fields).forEach(function (k) { params.append(k, fields[k]); });
   // keepalive lets the request finish even if the user navigates away
