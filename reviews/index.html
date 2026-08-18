@@ -28,7 +28,7 @@ gtag('config', 'AW-18370369340');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/site.css?v=16">
+<link rel="stylesheet" href="../css/site.css?v=17">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -176,7 +176,11 @@ gtag('config', 'AW-18370369340');
 <section class="section">
   <div class="container">
 
-    <div class="review-grid">
+    <!-- The cards are repeated once so the marquee can loop seamlessly; the
+         second set is aria-hidden and tagged data-clone. Keep the two sets
+         identical when adding a review, or the loop will visibly jump. -->
+    <div class="review-marquee">
+      <div class="review-track">
 
       <div class="review-card">
         <div class="review-stars" aria-label="5 out of 5">★★★★★</div>
@@ -214,6 +218,43 @@ gtag('config', 'AW-18370369340');
         </div>
       </div>
 
+      <div class="review-card" data-clone aria-hidden="true">
+        <div class="review-stars" aria-label="5 out of 5">★★★★★</div>
+        <p class="review-text">Had a really detailed explanation before deciding to sign up for a policy with Prudential. Annabel explained everything clearly and thoroughly, which made the whole process easy to understand. The subscription process was also quick and smooth. Overall, I’m very satisfied with the service and would definitely recommend Annabel to others.</p>
+        <div class="review-meta">
+          <strong>R. Kong</strong>
+          Client since June 2026 · Medical
+        </div>
+      </div>
+
+      <div class="review-card" data-clone aria-hidden="true">
+        <div class="review-stars" aria-label="5 out of 5">★★★★★</div>
+        <p class="review-text">Annabel is very professional in regard to explanation my insured packages.</p>
+        <div class="review-meta">
+          <strong>Alan T.</strong>
+          Submitted via annaprudential.com
+        </div>
+      </div>
+
+      <div class="review-card" data-clone aria-hidden="true">
+        <div class="review-stars" aria-label="5 out of 5">★★★★★</div>
+        <p class="review-text">Annabel so cooperated even though we didnt meet up..so clear and well being person</p>
+        <div class="review-meta">
+          <strong>Hakim</strong>
+          Submitted via annaprudential.com
+        </div>
+      </div>
+
+      <div class="review-card" data-clone aria-hidden="true">
+        <div class="review-stars" aria-label="5 out of 5">★★★★★</div>
+        <p class="review-text">Annabel is very helpful, she understands what I need and propose the best insurance plan for me.</p>
+        <div class="review-meta">
+          <strong>Eugenie Y.</strong>
+          Submitted via annaprudential.com
+        </div>
+      </div>
+
+      </div>
     </div>
 
     <p style="text-align:center; margin-top:32px; color:var(--ink-3); font-size:.95rem;">

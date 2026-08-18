@@ -798,6 +798,59 @@ input[type="range"]::-moz-range-thumb {
 }
 .review-meta strong { display: block; color: var(--ink); font-size: .95rem; }
 
+/* Auto-scrolling reviews. The track holds the cards twice over: the animation
+   slides it exactly -50%, so the moment the first set has left the viewport the
+   second set is sitting where the first started, and the jump back to 0 is
+   invisible. The duplicate cards are aria-hidden so screen readers and the
+   card/schema parity check only ever see one set.
+
+   --marquee-speed is seconds for one full pass. Bump it when reviews are added,
+   or the track gets longer and the cards appear to speed up. */
+.review-marquee {
+  --marquee-speed: 44s;
+  --marquee-gap: 22px;
+  overflow: hidden;
+  /* Fades the cards out at both edges instead of clipping them mid-word. */
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.review-track {
+  display: flex; width: max-content;
+  padding: 4px 0; /* room for the cards' box-shadow, which overflow would clip */
+  animation: review-scroll var(--marquee-speed) linear infinite;
+}
+/* Spacing is a trailing margin, deliberately not `gap`. With `gap` the track is
+   8 cards + 7 gaps wide, so sliding -50% lands half a gap short of the clone and
+   the loop stutters once per pass. A margin on every card makes the two halves
+   exactly equal, so -50% is seamless. */
+.review-track .review-card {
+  flex: 0 0 clamp(260px, 78vw, 340px);
+  margin-right: var(--marquee-gap);
+}
+
+/* Let people stop it to finish reading. focus-within covers keyboard users
+   tabbing through, since the cards can contain links. */
+.review-marquee:hover .review-track,
+.review-marquee:focus-within .review-track { animation-play-state: paused; }
+
+@keyframes review-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* No motion: drop the duplicates and fall back to the plain grid, so the
+   reviews are all visible at once and nothing moves. */
+@media (prefers-reduced-motion: reduce) {
+  .review-track {
+    animation: none; width: auto;
+    display: grid; gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .review-track .review-card { flex: none; margin-right: 0; }
+  .review-card[data-clone] { display: none; }
+  .review-marquee { -webkit-mask-image: none; mask-image: none; overflow: visible; }
+}
+
 /* Shown while the page is still filling up. Being straight about having few
    reviews reads better than padding the page out with thin ones. */
 .review-empty {
